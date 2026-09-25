@@ -1,0 +1,40 @@
+.footer {
+  background: var(--ink);
+  color: #9aa3b0;
+  font-size: 14px;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  max-width: var(--page-max);
+  margin: 0 auto;
+  padding: 28px var(--gutter);
+}
+
+.links {
+  display: flex;
+  gap: 28px;
+}
+
+.links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: #c9ced6;
+}
+
+@media (max-width: 767px) {
+  .inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    padding: 22px var(--gutter);
+  }
+
+  .links {
+    gap: 20px;
+  }
+}

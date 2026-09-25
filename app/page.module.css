@@ -1,0 +1,42 @@
+.placeholder {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: var(--page-max);
+  margin: 0 auto;
+  padding: 96px var(--gutter) 120px;
+}
+
+.label {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+}
+
+.title {
+  max-width: 900px;
+  font-size: clamp(38px, 6vw, 68px);
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.text {
+  max-width: 620px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--text-2);
+}
+
+.cta {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  min-height: 54px;
+  padding: 0 28px;
+  border-radius: var(--radius-pill);
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 16px;
+  font-weight: 600;
+}

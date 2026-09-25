@@ -1,0 +1,45 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 44px;
+}
+
+.logo:hover {
+  opacity: 1;
+}
+
+.mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 9px;
+  background: var(--accent);
+  color: var(--paper);
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+@media (max-width: 767px) {
+  .logo {
+    gap: 10px;
+  }
+  .mark {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-size: 13px;
+  }
+  .name {
+    font-size: 17px;
+  }
+}

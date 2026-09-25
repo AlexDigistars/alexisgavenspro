@@ -1,0 +1,158 @@
+.header {
+  position: relative;
+  z-index: 50;
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.bar {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  max-width: var(--page-max);
+  margin: 0 auto;
+  padding: 26px var(--gutter);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  font-size: 15px;
+  color: #c9d0da;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
+.active {
+  color: var(--paper);
+  font-weight: 600;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 20px;
+  border-radius: 999px;
+  background: var(--paper);
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.menuButton {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 12px;
+  background: var(--ink-2);
+  color: var(--paper);
+  cursor: pointer;
+}
+
+.panel {
+  display: none;
+}
+
+/* Tablette large : navigation resserrée */
+@media (max-width: 1100px) {
+  .nav {
+    gap: 22px;
+    font-size: 14px;
+  }
+}
+
+/* Tablette et mobile : bouton menu + panneau plein écran */
+@media (max-width: 1023px) {
+  .nav {
+    display: none;
+  }
+
+  .menuButton {
+    display: flex;
+  }
+
+  .panel {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 104px var(--gutter) 32px;
+    background: var(--ink);
+    overflow-y: auto;
+  }
+
+  .panel[hidden] {
+    display: none;
+  }
+
+  .panelOpen {
+    animation: panel-in 0.2s ease-out;
+  }
+
+  .panelNav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .panelLink {
+    display: flex;
+    align-items: center;
+    min-height: 60px;
+    border-bottom: 1px solid rgba(246, 245, 241, 0.12);
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: #c9d0da;
+  }
+
+  .panelLink.active {
+    color: var(--accent-light);
+  }
+
+  .panelCta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+    border-radius: 999px;
+    background: var(--paper);
+    color: var(--ink);
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 767px) {
+  .bar {
+    padding: 16px var(--gutter);
+  }
+
+  .panel {
+    padding-top: 88px;
+  }
+}
+
+@keyframes panel-in {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
