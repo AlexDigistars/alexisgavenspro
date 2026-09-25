@@ -127,6 +127,12 @@ button {
   top: 16px;
 }
 
+/* ===== Animations : en pause tant que le bloc n'est pas à l'écran ===== */
+[data-reveal]:not(.is-visible),
+[data-reveal]:not(.is-visible) * {
+  animation-play-state: paused !important;
+}
+
 /* ===== Mouvement réduit : animations coupées, état final affiché ===== */
 @media (prefers-reduced-motion: reduce) {
   *,
@@ -134,5 +140,19 @@ button {
   *::after {
     animation: none !important;
     transition: none !important;
+  }
+}
+
+/* ===== Versions bureau / mobile d'une même page ===== */
+.only-mobile {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .only-desktop {
+    display: none;
+  }
+  .only-mobile {
+    display: block;
   }
 }

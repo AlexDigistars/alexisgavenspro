@@ -1,0 +1,390 @@
+/* Généré depuis design-reference/APropos.html : styles de la maquette. */
+
+/* Animations de la maquette */
+.prog{animation:prog 8s ease-in-out infinite}
+@keyframes prog{0%{height:0%}70%,100%{height:100%}}
+.float{animation:float 6s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+
+.c1 {
+  display: flex;
+  flex-direction: column;
+  background: #0E1A2B;
+  color: #F6F5F1;
+}
+.c2 {
+  display: grid;
+  grid-template-columns: 1fr 440px;
+  gap: 96px;
+  padding: 72px 80px 112px;
+  align-items: center;
+}
+.c3 {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.c4 {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: #8FD0C5;
+}
+.c5 {
+  margin: 0;
+  font-size: 68px;
+  line-height: 1.0;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+.c6 {
+  margin: 0;
+  max-width: 620px;
+  font-size: 19px;
+  line-height: 1.6;
+  color: #A9B2BF;
+}
+.c7 {
+  position: relative;
+}
+.c8 {
+  display: block;
+  width: 440px;
+  height: 540px;
+  border-radius: 28px;
+  object-fit: cover;
+  object-position: 50% 30%;
+}
+.c9 {
+  position: absolute;
+  left: -40px;
+  bottom: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 16px 20px;
+  border-radius: 16px;
+  background: #F6F5F1;
+  color: #0E1A2B;
+  box-shadow: 0 20px 40px -16px rgba(0,0,0,0.5);
+}
+.c10 {
+  font-size: 17px;
+  font-weight: 700;
+}
+.c11 {
+  font-size: 13px;
+  color: #5A6474;
+}
+.c12 {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 96px;
+  padding: 120px 80px;
+}
+.c13 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.c14 {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: #1D5C57;
+}
+.c15 {
+  margin: 0;
+  font-size: 48px;
+  line-height: 1.05;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+}
+.c16 {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #3A4556;
+}
+.c17 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 56px;
+}
+.c18 {
+  position: absolute;
+  left: 19px;
+  top: 24px;
+  bottom: 24px;
+  width: 2px;
+  background: #D5D2CA;
+}
+.c19 {
+  width: 2px;
+  background: #1D5C57;
+}
+.c20 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 24px 28px;
+  border-radius: 18px;
+  background: #FFFFFF;
+}
+.c21 {
+  position: absolute;
+  left: -56px;
+  top: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 2px solid #1D5C57;
+}
+.c22 {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: #5A6474;
+}
+.c23 {
+  font-size: 21px;
+  font-weight: 700;
+}
+.c24 {
+  font-size: 15px;
+  line-height: 1.55;
+  color: #3A4556;
+}
+.c25 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 24px 28px;
+  border-radius: 18px;
+  background: #0E1A2B;
+  color: #F6F5F1;
+}
+.c26 {
+  position: absolute;
+  left: -56px;
+  top: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #1D5C57;
+}
+.c27 {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: #8FD0C5;
+}
+.c28 {
+  font-size: 15px;
+  line-height: 1.55;
+  color: #C9D0DA;
+}
+.c29 {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+  font-size: 14px;
+}
+.c30 {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: #ECEAE3;
+}
+.c31 {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 120px 80px;
+  background: #ECEAE3;
+}
+.c32 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+.c33 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 32px;
+  border-radius: 20px;
+  background: #FFFFFF;
+}
+.c34 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: #DCEAE7;
+}
+.c35 {
+  font-size: 22px;
+  font-weight: 700;
+}
+.c36 {
+  animation-delay: .7s !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: #DCEAE7;
+}
+.c37 {
+  animation-delay: 1.4s !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: #DCEAE7;
+}
+.c38 {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+  padding: 112px 80px;
+  background: #1D5C57;
+  color: #FFFFFF;
+}
+.c39 {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.c40 {
+  margin: 0;
+  font-size: 26px;
+  line-height: 1.35;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+.c41 {
+  font-size: 15px;
+  color: #D6E6E4;
+}
+.c42 {
+  color: #FFFFFF;
+}
+.c43 {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  padding: 44px;
+  border-radius: 24px;
+  background: #F6F5F1;
+  color: #0E1A2B;
+}
+.c44 {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.02;
+  letter-spacing: -0.035em;
+}
+.c45 {
+  font-size: 17px;
+  line-height: 1.55;
+  color: #3A4556;
+}
+.c46 {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  min-height: 54px;
+  padding: 0 28px;
+  border-radius: 999px;
+  background: #0E1A2B;
+  color: #F6F5F1;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* ===== Adaptation tablette et mobile (généré à partir des styles de la maquette) ===== */
+@media (max-width: 1100px) {
+  .c2 { padding: 72px 40px 112px 40px; }
+  .c5 { font-size: 56px; }
+  .c12 { padding: 120px 40px 120px 40px; }
+  .c15 { font-size: 39px; }
+  .c31 { padding: 120px 40px 120px 40px; }
+  .c38 { padding: 112px 40px 112px 40px; }
+  .c44 { font-size: 36px; }
+}
+@media (max-width: 1023px) {
+  .c2 { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+  .c8 { width: 100%; max-width: 440px; }
+  .c12 { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+  .c32 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .c38 { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+}
+@media (max-width: 767px) {
+  .c2 { padding: 40px 20px 56px 20px; gap: 32px; }
+  .c5 { font-size: 38px; }
+  .c6 { max-width: 100%; }
+  .c12 { padding: 60px 20px 60px 20px; gap: 32px; }
+  .c15 { font-size: 30px; }
+  .c31 { padding: 60px 20px 60px 20px; }
+  .c32 { grid-template-columns: minmax(0, 1fr); }
+  .c38 { padding: 56px 20px 56px 20px; gap: 32px; }
+  .c40 { font-size: 22px; }
+  .c43 { padding: 24px 24px 24px 24px; }
+  .c44 { font-size: 28px; }
+}
+
+/* ===== Adaptation tablette et mobile (généré à partir des styles de la maquette) ===== */
+@media (max-width: 1100px) {
+  .c2 { padding: 72px 40px 112px 40px; }
+  .c5 { font-size: 56px; }
+  .c12 { padding: 120px 40px 120px 40px; }
+  .c15 { font-size: 39px; }
+  .c31 { padding: 120px 40px 120px 40px; }
+  .c38 { padding: 112px 40px 112px 40px; }
+  .c44 { font-size: 36px; }
+}
+@media (max-width: 1023px) {
+  .c2 { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+  .c8 { width: 100%; max-width: 440px; }
+  .c12 { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+  .c32 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .c38 { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+}
+@media (max-width: 767px) {
+  .c2 { padding: 40px 20px 56px 20px; gap: 32px; }
+  .c5 { font-size: 38px; }
+  .c6 { max-width: 100%; }
+  .c12 { padding: 60px 20px 60px 20px; gap: 32px; }
+  .c15 { font-size: 30px; }
+  .c31 { padding: 60px 20px 60px 20px; }
+  .c32 { grid-template-columns: minmax(0, 1fr); }
+  .c38 { padding: 56px 20px 56px 20px; gap: 32px; }
+  .c40 { font-size: 22px; }
+  .c43 { padding: 24px 24px 24px 24px; }
+  .c44 { font-size: 28px; }
+}
+
+/* ===== Ajustements manuels (tablette et mobile) ===== */
+
+@media (max-width: 1023px) {
+  .c7 { width: 100%; max-width: 440px; }
+  .c8 { width: 100%; height: auto; aspect-ratio: 440 / 540; }
+}
+
+/* Boutons jamais coupés sur deux lignes, rangées de boutons qui passent à la ligne */
+.c46 { white-space: nowrap; }
+@media (max-width: 1023px) {
+  .c9 { left: 16px; bottom: 16px; }
+}
