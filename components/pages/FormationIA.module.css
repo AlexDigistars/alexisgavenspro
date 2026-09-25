@@ -550,3 +550,8 @@
   font-size: 19px;
   color: #D6E6E4;
 }
+
+/* Animations coupées (préférence système) : on affiche l'état final */
+@media (prefers-reduced-motion: reduce) {
+  .typing { opacity: 0; }
+}

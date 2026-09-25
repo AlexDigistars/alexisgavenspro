@@ -1,3 +1,4 @@
+import SwipeCarousel from "@/components/SwipeCarousel";
 import Link from "next/link";
 import CalendlyLink from "@/components/CalendlyLink";
 import { CONTACT_EMAIL, CONTACT_PHONE_HREF } from "@/config/site";
@@ -171,7 +172,7 @@ export default function HomeMobile() {
         Créer, repenser, améliorer.
       </h2>
       {" "}
-      <div className={s.c43}>
+      <SwipeCarousel label="Créer, repenser, améliorer">
         <div className={s.c44}>
           <div className={s.c45}>
             <div className={s.c46}></div>
@@ -189,7 +190,6 @@ export default function HomeMobile() {
             Un outil pensé autour de vos process réels.
           </span>
         </div>
-        {" "}
         <div className={s.c44}>
           <div className={s.c52}>
             <div className={s.c53}>
@@ -235,16 +235,28 @@ export default function HomeMobile() {
             Vos process existants réinventés, enrichis, simplifiés.
           </span>
         </div>
-      </div>
+        <div className={s.c44}>
+          <div className={s.c52}>
+            <div className={s.c53}>
+              <span>Suivi des commandes</span>
+              <span className={s.c34}>Actif</span>
+            </div>
+            <div className={`${s.c53} ${s.improveNew}`}>
+              <strong>+ Relances automatiques</strong>
+            </div>
+            <div className={`${s.c53} ${s.improveNew}`}>
+              <strong>+ Résumé d&apos;intervention par IA</strong>
+            </div>
+          </div>
+          <span className={s.c50}>
+            Améliorer
+          </span>
+          <span className={s.c51}>
+            Ajouter, automatiser, intégrer l&apos;IA quand elle sert vraiment.
+          </span>
+        </div>
+      </SwipeCarousel>
       {" "}
-      <div className={s.c55}>
-        <span className={s.c56}></span>
-        <span className={s.c57}></span>
-        <span className={s.c57}></span>
-        <span className={s.c58}>
-          Glissez →
-        </span>
-      </div>
     </section>
     {" "}
     {" "}
@@ -257,165 +269,151 @@ export default function HomeMobile() {
         Au bureau comme sur le terrain, un clic vous mène à la bonne information.
       </p>
       {" "}
-      <div className={s.c61}>
-        <div className={`${s.c43} ${s.slide}`}>
-          <div className={s.c62}>
-            <span className={s.c63}>
-              Un clic, la bonne information
+      <SwipeCarousel label="Exemples d'écrans">
+      <div className={s.c62}>
+        <span className={s.c63}>
+          Un clic, la bonne information
+        </span>
+        {" "}
+        <div className={s.c64}>
+          <span>
+            {"#1043 · "}
+            <strong className={s.c65}>
+              Studio Nova
+            </strong>
+          </span>
+          <span>
+            En cours
+          </span>
+        </div>
+        {" "}
+        <svg className={s.c66} width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M12 5v14M5 12l7 7 7-7" />
+        </svg>
+        {" "}
+        <div className={s.c67}>
+          <strong>
+            Fiche client · Studio Nova
+          </strong>
+          <span className={s.c68}>
+            Contrat maintenance 2026
+          </span>
+        </div>
+        {" "}
+        <svg className={s.c66} width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M12 5v14M5 12l7 7 7-7" />
+        </svg>
+        {" "}
+        <div className={s.c69}>
+          <strong>
+            Contrat · 9 / 12
+          </strong>
+          <span className={s.c70}>
+            Facturer · Pennylane
+          </span>
+        </div>
+      </div>
+      <div className={s.c71}>
+        <span className={s.c72}>
+          Sur le terrain
+        </span>
+        {" "}
+        <div className={s.c73}>
+          <div className={s.c74}>
+            <strong className={s.c75}>
+              Bonjour Karim
+            </strong>
+            <div className={s.c76}>
+              08:30 · SCI Horizon ✓
+            </div>
+            <div className={s.c77}>
+              11:00 · Mme Roux
+            </div>
+            <div className={s.c78}>
+              14:00 · M. Martin
+            </div>
+            <span className={s.c79}>
+              Démarrer
             </span>
-            {" "}
-            <div className={s.c64}>
-              <span>
-                {"#1043 · "}
-                <strong className={s.c65}>
-                  Studio Nova
-                </strong>
-              </span>
-              <span>
-                En cours
-              </span>
-            </div>
-            {" "}
-            <svg className={s.c66} width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M12 5v14M5 12l7 7 7-7" />
-            </svg>
-            {" "}
-            <div className={s.c67}>
-              <strong>
-                Fiche client · Studio Nova
-              </strong>
-              <span className={s.c68}>
-                Contrat maintenance 2026
-              </span>
-            </div>
-            {" "}
-            <svg className={s.c66} width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M12 5v14M5 12l7 7 7-7" />
-            </svg>
-            {" "}
-            <div className={s.c69}>
-              <strong>
-                Contrat · 9 / 12
-              </strong>
-              <span className={s.c70}>
-                Facturer · Pennylane
-              </span>
-            </div>
-          </div>
-          {" "}
-          <div className={s.c71}>
-            <span className={s.c72}>
-              Sur le terrain
-            </span>
-            {" "}
-            <div className={s.c73}>
-              <div className={s.c74}>
-                <strong className={s.c75}>
-                  Bonjour Karim
-                </strong>
-                <div className={s.c76}>
-                  08:30 · SCI Horizon ✓
-                </div>
-                <div className={s.c77}>
-                  11:00 · Mme Roux
-                </div>
-                <div className={s.c78}>
-                  14:00 · M. Martin
-                </div>
-                <span className={s.c79}>
-                  Démarrer
-                </span>
-              </div>
-            </div>
-          </div>
-          {" "}
-          <div className={s.c80}>
-            <span className={s.c63}>
-              Planning des interventions
-            </span>
-            {" "}
-            <div className={s.c81}>
-              <span>
-                Karim
-              </span>
-              <div className={s.c82}>
-                <div className={`${s.c83} ${s.grow}`}></div>
-              </div>
-            </div>
-            {" "}
-            <div className={s.c81}>
-              <span>
-                Julie
-              </span>
-              <div className={s.c82}>
-                <div className={`${s.c84} ${s.grow}`}></div>
-              </div>
-            </div>
-            {" "}
-            <div className={s.c81}>
-              <span>
-                Marc
-              </span>
-              <div className={s.c82}>
-                <div className={`${s.c85} ${s.grow}`}></div>
-              </div>
-            </div>
-            {" "}
-            <div className={s.c81}>
-              <span>
-                Sofia
-              </span>
-              <div className={s.c82}>
-                <div className={`${s.c86} ${s.grow}`}></div>
-              </div>
-            </div>
-          </div>
-          {" "}
-          <div className={s.c87}>
-            <span className={s.c63}>
-              Zéro ressaisie
-            </span>
-            {" "}
-            <div className={s.c88}>
-              <span className={`${s.c89} ${s.dot}`}></span>
-            </div>
-            {" "}
-            <div className={s.c90}>
-              <span>
-                Demande
-                <br />
-                <span className={s.c34}>
-                  Gmail
-                </span>
-              </span>
-              <span>
-                Devis
-                <br />
-                <span className={s.c34}>
-                  Logiciel
-                </span>
-              </span>
-              <span>
-                Facture
-                <br />
-                <span className={s.c34}>
-                  Pennylane
-                </span>
-              </span>
-            </div>
           </div>
         </div>
       </div>
-      {" "}
-      <div className={s.c55}>
-        <span className={`${s.c91} ${s.d1}`}></span>
-        <span className={`${s.c91} ${s.d2}`}></span>
-        <span className={`${s.c91} ${s.d3}`}></span>
-        <span className={`${s.c91} ${s.d4}`}></span>
-        <span className={s.c58}>
-          Glissez →
+      <div className={s.c80}>
+        <span className={s.c63}>
+          Planning des interventions
         </span>
+        {" "}
+        <div className={s.c81}>
+          <span>
+            Karim
+          </span>
+          <div className={s.c82}>
+            <div className={`${s.c83} ${s.grow}`}></div>
+          </div>
+        </div>
+        {" "}
+        <div className={s.c81}>
+          <span>
+            Julie
+          </span>
+          <div className={s.c82}>
+            <div className={`${s.c84} ${s.grow}`}></div>
+          </div>
+        </div>
+        {" "}
+        <div className={s.c81}>
+          <span>
+            Marc
+          </span>
+          <div className={s.c82}>
+            <div className={`${s.c85} ${s.grow}`}></div>
+          </div>
+        </div>
+        {" "}
+        <div className={s.c81}>
+          <span>
+            Sofia
+          </span>
+          <div className={s.c82}>
+            <div className={`${s.c86} ${s.grow}`}></div>
+          </div>
+        </div>
       </div>
+      <div className={s.c87}>
+        <span className={s.c63}>
+          Zéro ressaisie
+        </span>
+        {" "}
+        <div className={s.c88}>
+          <span className={`${s.c89} ${s.dot}`}></span>
+        </div>
+        {" "}
+        <div className={s.c90}>
+          <span>
+            Demande
+            <br />
+            <span className={s.c34}>
+              Gmail
+            </span>
+          </span>
+          <span>
+            Devis
+            <br />
+            <span className={s.c34}>
+              Logiciel
+            </span>
+          </span>
+          <span>
+            Facture
+            <br />
+            <span className={s.c34}>
+              Pennylane
+            </span>
+          </span>
+        </div>
+      </div>
+      </SwipeCarousel>
+      {" "}
     </section>
     {" "}
     {" "}

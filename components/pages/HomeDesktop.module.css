@@ -1988,3 +1988,8 @@
 .c276 {
   font-weight: 500;
 }
+
+/* Animations coupées (préférence système) : on affiche l'état final */
+@media (prefers-reduced-motion: reduce) {
+  .bad, .cur { opacity: 0; }
+}

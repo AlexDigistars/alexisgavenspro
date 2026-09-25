@@ -1674,3 +1674,9 @@
   color: #FFFFFF;
   border-bottom: 1px solid rgba(255,255,255,0.5);
 }
+
+/* Animations coupées (préférence système) : on affiche l'état final */
+@media (prefers-reduced-motion: reduce) {
+  .cur2 { opacity: 0; }
+  .check { background: #1D5C57; border-color: #1D5C57; }
+}

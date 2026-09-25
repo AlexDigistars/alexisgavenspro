@@ -922,3 +922,16 @@
   border-top: 1px solid rgba(14,26,43,0.12);
   font-size: 15px;
 }
+
+/* Carte « Améliorer » ajoutée au carrousel mobile (reprise de la version bureau) */
+.improveNew {
+  box-shadow: inset 0 0 0 1.5px #1D5C57;
+}
+
+/* Animations coupées (préférence système) : on affiche l'état final */
+@media (prefers-reduced-motion: reduce) {
+  .stA { opacity: 0; }
+  .tabA { background: transparent; color: #5A6474; }
+  .tabB { background: #1D5C57; color: #FFFFFF; }
+  .status { background: #E3F1E6; color: #2F6B3E; }
+}
