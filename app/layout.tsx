@@ -1,9 +1,10 @@
 import type { Metadata, Viewport } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { IBM_Plex_Mono, Schibsted_Grotesk } from "next/font/google";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import RevealObserver from "@/components/RevealObserver";
-import { SITE_URL } from "@/config/site";
+import { SITE_NAME, SITE_URL } from "@/config/site";
 import "./globals.css";
 
 const schibsted = Schibsted_Grotesk({
@@ -25,6 +26,13 @@ export const metadata: Metadata = {
   title: "Alexis Gavens · Logiciels métier sur mesure pour PME",
   description:
     "Je conçois, reprends et fais évoluer les outils internes des PME. Logiciels métier sur mesure et formation IA.",
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    locale: "fr_FR",
+    siteName: SITE_NAME,
+    url: SITE_URL,
+  },
 };
 
 export const viewport: Viewport = {
@@ -42,6 +50,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main id="contenu">{children}</main>
         <Footer />
         <RevealObserver />
+        <Analytics />
       </body>
     </html>
   );
