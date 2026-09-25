@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Accueil V2 — démonstratif</title>
+
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&amp;family=Schibsted+Grotesk:wght@400;500;600;700;800&amp;display=swap">
+<style>
+body{margin:0;background:#F6F5F1;font-family:'Schibsted Grotesk',system-ui,sans-serif;color:#0E1A2B}
+a{color:inherit;text-decoration:none}a:hover{opacity:.8}
+.mv-card{animation:mvcard 9s ease-in-out infinite}
+@keyframes mvcard{0%{opacity:0;transform:translate(0,10px)}4%,20%{opacity:1;transform:translate(0,0)}26%,45%{opacity:1;transform:translate(144px,0)}51%,70%{opacity:1;transform:translate(288px,0)}76%,94%{opacity:1;transform:translate(432px,0)}99%{opacity:0;transform:translate(432px,0)}100%{opacity:0;transform:translate(0,10px)}}
+.toast{animation:toast 9s ease-in-out infinite}
+@keyframes toast{0%,76%{opacity:0;transform:translateY(14px)}80%,94%{opacity:1;transform:translateY(0)}98%,100%{opacity:0;transform:translateY(0)}}
+.sign{stroke-dasharray:320;animation:sign 6s ease-in-out infinite}
+@keyframes sign{0%,20%{stroke-dashoffset:320}60%,92%{stroke-dashoffset:0}100%{stroke-dashoffset:320}}
+.float{animation:float 6s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.lit{animation:lit 7s ease-in-out infinite}
+@keyframes lit{0%,8%{background:#FFFFFF;border-color:rgba(14,26,43,.12)}16%,88%{background:#DCEAE7;border-color:#1D5C57}100%{background:#FFFFFF;border-color:rgba(14,26,43,.12)}}
+.flow{stroke-dasharray:6 8;animation:flow 1.2s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-28}}
+.wf{animation:wf 6s ease-in-out infinite}
+@keyframes wf{0%,12%{background:transparent;border-color:#B7BDC6;border-style:dashed}24%,90%{background:#DCEAE7;border-color:#1D5C57;border-style:solid}100%{background:transparent;border-color:#B7BDC6;border-style:dashed}}
+.bad{animation:bad 7s ease-in-out infinite}
+@keyframes bad{0%,18%{opacity:1}26%,92%{opacity:0}100%{opacity:1}}
+.good{animation:good 7s ease-in-out infinite}
+@keyframes good{0%,18%{opacity:0}26%,92%{opacity:1}100%{opacity:0}}
+.slidein{animation:slidein 7s ease-in-out infinite}
+@keyframes slidein{0%,18%{opacity:0;transform:translateY(-10px)}28%,90%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-10px)}}
+.knob{animation:knob 7s ease-in-out infinite}
+@keyframes knob{0%,38%{transform:translateX(0)}46%,90%{transform:translateX(18px)}100%{transform:translateX(0)}}
+.track{animation:track 7s ease-in-out infinite}
+@keyframes track{0%,38%{background:#C9CDD3}46%,90%{background:#1D5C57}100%{background:#C9CDD3}}
+.grow{transform-origin:left center;animation:grow 10s ease-out infinite}
+@keyframes grow{0%{transform:scaleX(0)}14%,92%{transform:scaleX(1)}100%{transform:scaleX(1)}}
+.dot{animation:dot 3s linear infinite}
+@keyframes dot{0%{left:0%;opacity:0}8%{opacity:1}92%{opacity:1}100%{left:100%;opacity:0}}
+.pulse{animation:pulse 2s ease-out infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(29,92,87,.55)}70%{box-shadow:0 0 0 10px rgba(29,92,87,0)}100%{box-shadow:0 0 0 0 rgba(29,92,87,0)}}
+.prog{animation:prog 6s ease-in-out infinite}
+@keyframes prog{0%{width:0%}70%,100%{width:100%}}
+.stA{animation:stA 8s ease-in-out infinite}
+@keyframes stA{0%,35%{opacity:1;transform:scale(1)}45%,90%{opacity:0;transform:scale(0.97)}100%{opacity:1;transform:scale(1)}}
+.stB{animation:stB 8s ease-in-out infinite}
+@keyframes stB{0%,40%{opacity:0;transform:translateY(12px)}50%,88%{opacity:1;transform:translateY(0)}98%,100%{opacity:0;transform:translateY(12px)}}
+.cell{animation:cell 10s ease-out infinite}
+@keyframes cell{0%{opacity:0;transform:scale(.92)}6%,94%{opacity:1;transform:scale(1)}100%{opacity:1}}
+.step{animation:step 9s ease-in-out infinite}
+@keyframes step{0%,4%{border-color:#E3E1DA;box-shadow:0 0 0 0 rgba(29,92,87,0)}9%,30%{border-color:#1D5C57;box-shadow:0 0 0 5px rgba(29,92,87,.14)}36%,100%{border-color:#E3E1DA;box-shadow:0 0 0 0 rgba(29,92,87,0)}}
+.cur{animation:cur 9s ease-in-out infinite}
+@keyframes cur{0%,6%{opacity:0;transform:translate(18px,18px)}12%,22%{opacity:1;transform:translate(0,0)}25%{opacity:1;transform:scale(.85)}28%{opacity:1;transform:scale(1)}33%,100%{opacity:0;transform:translate(0,0)}}
+.slow{animation:slow 8s linear infinite}
+@keyframes slow{0%{width:0%}85%,100%{width:100%}}
+.fast{animation:fast 8s ease-out infinite}
+@keyframes fast{0%{width:0%}4%,100%{width:100%}}
+.grow-y{transform-origin:bottom center;animation:growy 8s ease-out infinite}
+@keyframes growy{0%{transform:scaleY(0)}15%,92%{transform:scaleY(1)}100%{transform:scaleY(1)}}
+@media (prefers-reduced-motion: reduce){*{animation:none !important}}
+</style>
+</helmet>
+<div style="width: 1440px; height: 6540px; box-sizing: border-box; display: flex; flex-direction: column; background: #F6F5F1; color: #0E1A2B; font-family: 'Schibsted Grotesk', system-ui, sans-serif;">
+
+<!-- ============ HERO ============ -->
+<section style="display: flex; flex-direction: column; background: #0E1A2B; color: #F6F5F1;">
+<header style="display: flex; align-items: center; justify-content: space-between; padding: 26px 80px;">
+<div style="display: flex; align-items: center; gap: 12px;">
+<span style="display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 9px; background: #1D5C57; font-size: 15px; font-weight: 800; letter-spacing: -0.02em;">AG</span>
+<span style="font-size: 20px; font-weight: 700; letter-spacing: -0.02em;">Alexis Gavens</span>
+</div>
+<nav style="display: flex; align-items: center; gap: 36px; font-size: 15px; color: #C9D0DA;">
+<a href="#">Logiciels métier</a>
+<a href="EtudeCasEarly.dc.html">Réalisations</a>
+<a href="FormationIA.dc.html">Formation IA</a>
+<a href="APropos.dc.html">À propos</a>
+<a href="#v2-contact" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; border-radius: 999px; background: #F6F5F1; color: #0E1A2B; font-weight: 600;">Parlons de votre projet</a>
+</nav>
+</header>
+<div style="display: grid; grid-template-columns: 500px 1fr; gap: 64px; padding: 64px 80px 104px; align-items: center;">
+<div style="display: flex; flex-direction: column; gap: 30px;">
+<div style="display: flex; align-items: center; gap: 10px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.04em; color: #8FD0C5;">
+<span class="pulse" style="width: 8px; height: 8px; border-radius: 50%; background: #8FD0C5;"></span>
+<span>Logiciels métier sur mesure pour PME</span>
+</div>
+<h1 style="margin: 0; font-size: 68px; line-height: 1.0; font-weight: 700; letter-spacing: -0.04em;">Des logiciels métier qui épousent votre façon de travailler.</h1>
+<p style="margin: 0; font-size: 19px; line-height: 1.55; color: #A9B2BF;">Je conçois, reprends et fais évoluer les outils internes des PME.</p>
+<div style="display: flex; align-items: center; gap: 24px;">
+<a href="#v2-contact" style="display: inline-flex; align-items: center; min-height: 54px; padding: 0 28px; border-radius: 999px; background: #F6F5F1; color: #0E1A2B; font-size: 16px; font-weight: 600;">Réserver 20 min d'échange</a>
+<a href="#v2-demo" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; font-size: 16px; font-weight: 500; color: #F6F5F1;">Voir ce que je construis
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"></path></svg></a>
+</div>
+</div>
+
+<!-- Démo animée -->
+<div style="position: relative; height: 580px;">
+<!-- Fenêtre application -->
+<div style="position: absolute; left: 56px; top: 0; width: 660px; height: 470px; border-radius: 14px; background: #FFFFFF; color: #0E1A2B; overflow: hidden; box-shadow: 0 40px 80px -20px rgba(0,0,0,0.55);">
+<div style="display: flex; align-items: center; justify-content: space-between; height: 40px; padding: 0 16px; border-bottom: 1px solid #ECEAE3; background: #FAF9F6;">
+<div style="display: flex; gap: 6px;"><span style="width: 10px; height: 10px; border-radius: 50%; background: #D5D2CA;"></span><span style="width: 10px; height: 10px; border-radius: 50%; background: #D5D2CA;"></span><span style="width: 10px; height: 10px; border-radius: 50%; background: #D5D2CA;"></span></div>
+<span style="font-size: 12px; font-weight: 600; color: #5A6474;">Atelier Durand — Gestion</span>
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: #8A93A0;">EXEMPLE</span>
+</div>
+<div style="display: flex; height: 430px;">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 18px; width: 56px; padding-top: 18px; border-right: 1px solid #ECEAE3; background: #FAF9F6;">
+<span style="display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 8px; background: #DCEAE7;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="18" rx="1"></rect><rect x="14" y="3" width="7" height="11" rx="1"></rect></svg></span>
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8A93A0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="2"></rect><path d="M3 9h18M8 2v4M16 2v4"></path></svg>
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8A93A0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9-4 9 4-9 4z"></path><path d="M3 7v10l9 4 9-4V7"></path></svg>
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8A93A0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="4"></circle><path d="M2 21c0-4 3-6 7-6s7 2 7 6"></path></svg>
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8A93A0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h9l5 5v15H6z"></path><path d="M14 2v6h6"></path></svg>
+</div>
+<div style="position: relative; flex-grow: 1; display: flex; flex-direction: column; gap: 16px; padding: 18px 20px;">
+<div style="display: flex; align-items: center; justify-content: space-between;">
+<span style="font-size: 16px; font-weight: 700; letter-spacing: -0.01em;">Suivi des affaires</span>
+<span style="padding: 6px 12px; border-radius: 999px; background: #F3F2EE; font-size: 11px; color: #8A93A0;">Rechercher un client…</span>
+</div>
+<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.04em; color: #5A6474;">
+<span>DEVIS</span><span>COMMANDE</span><span>INTERVENTION</span><span>FACTURÉ</span>
+</div>
+<div style="position: relative; height: 300px;">
+<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px;">
+<div style="display: flex; flex-direction: column; gap: 4px; height: 58px; box-sizing: border-box; padding: 10px; border-radius: 8px; border: 1px solid #ECEAE3; font-size: 11px;"><span style="font-weight: 600;">Ballon — Leroy</span><span style="color: #8A93A0;">1 240 €</span></div>
+<div style="display: flex; flex-direction: column; gap: 4px; height: 58px; box-sizing: border-box; padding: 10px; border-radius: 8px; border: 1px solid #ECEAE3; font-size: 11px;"><span style="font-weight: 600;">Entretien — SCI Horizon</span><span style="color: #8A93A0;">Contrat annuel</span></div>
+<div style="display: flex; flex-direction: column; gap: 4px; height: 58px; box-sizing: border-box; padding: 10px; border-radius: 8px; border: 1px solid #ECEAE3; font-size: 11px;"><span style="font-weight: 600;">Dépannage — Roux</span><span style="color: #8A93A0;">Aujourd'hui 14h</span></div>
+<div style="display: flex; flex-direction: column; gap: 4px; height: 58px; box-sizing: border-box; padding: 10px; border-radius: 8px; border: 1px solid #ECEAE3; font-size: 11px;"><span style="font-weight: 600;">PAC — Garnier</span><span style="color: #1D5C57;">Payé</span></div>
+<div style="display: flex; flex-direction: column; gap: 4px; height: 58px; box-sizing: border-box; padding: 10px; border-radius: 8px; border: 1px solid #ECEAE3; font-size: 11px; opacity: 0.6;"><span style="font-weight: 600;">Clim — Bertin</span><span style="color: #8A93A0;">En attente</span></div>
+<div style="height: 58px;"></div>
+<div style="height: 58px;"></div>
+<div style="display: flex; flex-direction: column; gap: 4px; height: 58px; box-sizing: border-box; padding: 10px; border-radius: 8px; border: 1px solid #ECEAE3; font-size: 11px; opacity: 0.6;"><span style="font-weight: 600;">Réseau — Lamy</span><span style="color: #1D5C57;">Payé</span></div>
+</div>
+<div class="mv-card" style="position: absolute; left: 0; top: 140px; width: 132px; box-sizing: border-box; display: flex; flex-direction: column; gap: 6px; padding: 10px; border-radius: 8px; border: 1.5px solid #1D5C57; background: #FFFFFF; font-size: 11px; box-shadow: 0 10px 20px -8px rgba(29,92,87,0.45);">
+<span style="font-weight: 700;">Chaudière — Martin</span>
+<span style="color: #5A6474;">3 480 €</span>
+<span style="display: flex; gap: 4px;"><span style="width: 16px; height: 16px; border-radius: 50%; background: #0E1A2B; color: #FFFFFF; font-size: 8px; display: flex; align-items: center; justify-content: center;">KB</span><span style="padding: 2px 6px; border-radius: 4px; background: #DCEAE7; color: #143F3C; font-size: 9px;">Prioritaire</span></span>
+</div>
+</div>
+<div class="toast" style="position: absolute; right: 20px; bottom: 20px; display: flex; align-items: center; gap: 12px; padding: 12px 16px; border-radius: 10px; background: #0E1A2B; color: #F6F5F1; box-shadow: 0 16px 32px -12px rgba(14,26,43,0.5);">
+<span style="display: flex; align-items: center; justify-content: center; width: 24px; height: 24px; border-radius: 50%; background: #1D5C57;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"></path></svg></span>
+<span style="display: flex; flex-direction: column; gap: 2px;"><span style="font-size: 12px; font-weight: 600;">Facture envoyée à M. Martin</span><span style="font-size: 10px; color: #A9B2BF;">Via Pennylane · à l'instant</span></span>
+</div>
+</div>
+</div>
+</div>
+<!-- Téléphone terrain -->
+<div style="position: absolute; left: 0; top: 200px; width: 200px; height: 380px; box-sizing: border-box; padding: 8px; border-radius: 32px; background: #22324A; box-shadow: 0 30px 60px -20px rgba(0,0,0,0.6);">
+<div style="display: flex; flex-direction: column; gap: 10px; height: 100%; box-sizing: border-box; padding: 18px 14px 14px; border-radius: 25px; background: #F6F5F1; color: #0E1A2B;">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 9px; color: #1D5C57;">INTERVENTION · 14:00</span>
+<span style="font-size: 14px; font-weight: 700; line-height: 1.2;">Chaudière — M. Martin</span>
+<div style="display: flex; flex-direction: column; gap: 6px; font-size: 10px;">
+<span style="display: flex; align-items: center; gap: 6px;"><span style="width: 12px; height: 12px; border-radius: 3px; background: #1D5C57;"></span>Contrôle sécurité</span>
+<span style="display: flex; align-items: center; gap: 6px;"><span style="width: 12px; height: 12px; border-radius: 3px; background: #1D5C57;"></span>Remplacement pièce</span>
+<span style="display: flex; align-items: center; gap: 6px;"><span style="width: 12px; height: 12px; border-radius: 3px; background: #1D5C57;"></span>Photos avant / après</span>
+</div>
+<span style="font-size: 10px; color: #5A6474;">Signature client</span>
+<div style="height: 70px; border-radius: 8px; border: 1px dashed #B7BDC6; background: #FFFFFF;">
+<svg width="170" height="70" viewBox="0 0 170 70" fill="none"><path class="sign" d="M14 48c10-22 18-30 22-24s-8 26 0 22 14-26 20-22-2 20 6 18 10-16 16-14 0 14 8 12 14-10 22-8 10 6 18 2" stroke="#0E1A2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</div>
+<span style="display: flex; align-items: center; justify-content: center; height: 34px; border-radius: 999px; background: #1D5C57; color: #FFFFFF; font-size: 11px; font-weight: 600;">Valider l'intervention</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============ AVANT / APRÈS ============ -->
+<section style="display: flex; flex-direction: column; gap: 56px; padding: 120px 80px;">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 16px; text-align: center;">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: {{accent}};">Le constat</span>
+<h2 style="margin: 0; font-size: 56px; line-height: 1.05; font-weight: 700; letter-spacing: -0.035em;">De l'éparpillement à un seul outil.</h2>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 120px 1fr; align-items: center;">
+<div style="position: relative; height: 440px; border-radius: 20px; background: #ECEAE3; overflow: hidden;">
+<span style="position: absolute; left: 24px; bottom: 20px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5A6474;">AUJOURD'HUI</span>
+<div style="position: absolute; left: 36px; top: 40px; transform: rotate(-3deg);"><div class="float" style="display: flex; align-items: center; gap: 10px; padding: 12px 16px; border-radius: 10px; background: #FFFFFF; box-shadow: 0 6px 16px -6px rgba(14,26,43,0.25); font-size: 13px;"><span style="padding: 3px 5px; border-radius: 4px; background: #E3E6EA; font-family: 'IBM Plex Mono', monospace; font-size: 9px;">XLS</span>Suivi_commandes_v3_FINAL.xlsx</div></div>
+<div style="position: absolute; left: 250px; top: 128px; transform: rotate(2deg);"><div class="float" style="animation-delay: 1.2s; display: flex; align-items: center; gap: 10px; padding: 12px 16px; border-radius: 10px; background: #FFFFFF; box-shadow: 0 6px 16px -6px rgba(14,26,43,0.25); font-size: 13px;"><span style="padding: 3px 5px; border-radius: 4px; background: #E3E6EA; font-family: 'IBM Plex Mono', monospace; font-size: 9px;">XLS</span>Planning techniciens (2).xlsx</div></div>
+<div style="position: absolute; left: 48px; top: 186px; transform: rotate(-1deg);"><div class="float" style="animation-delay: 2.1s; display: flex; flex-direction: column; gap: 4px; width: 230px; padding: 14px 16px; border-radius: 10px; background: #FFFFFF; box-shadow: 0 6px 16px -6px rgba(14,26,43,0.25); font-size: 12px;"><span style="font-weight: 700;">RE: RE: TR: dispo mardi ?</span><span style="color: #5A6474;">Chantier Leroy · 23 messages</span></div></div>
+<div style="position: absolute; left: 390px; top: 30px; transform: rotate(4deg);"><div class="float" style="animation-delay: 0.6s; width: 130px; padding: 14px; background: #F1E3B0; box-shadow: 0 6px 16px -6px rgba(14,26,43,0.25); font-size: 13px; line-height: 1.35;">Rappeler M. Petit pour le devis ??</div></div>
+<div style="position: absolute; left: 300px; top: 290px; transform: rotate(3deg);"><div class="float" style="animation-delay: 3s; display: flex; align-items: center; gap: 10px; padding: 12px 16px; border-radius: 10px; background: #FFFFFF; box-shadow: 0 6px 16px -6px rgba(14,26,43,0.25); font-size: 13px;"><span style="padding: 3px 5px; border-radius: 4px; background: #E3E6EA; font-family: 'IBM Plex Mono', monospace; font-size: 9px;">XLS</span>Stock_2026_MAJ.xlsx</div></div>
+<div style="position: absolute; left: 70px; top: 300px; transform: rotate(-5deg);"><div class="float" style="animation-delay: 1.7s; width: 150px; height: 80px; padding: 12px; box-sizing: border-box; background: #FBFAF7; border: 1px solid #D5D2CA; font-size: 11px; color: #5A6474;">Bon d'intervention<br>papier n° 0412</div></div>
+</div>
+<div style="display: flex; justify-content: center;">
+<svg width="100" height="24" viewBox="0 0 100 24" fill="none"><path class="flow" d="M4 12h84" stroke="#1D5C57" stroke-width="2"></path><path d="M84 5l10 7-10 7" stroke="#1D5C57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</div>
+<div style="position: relative; height: 440px; box-sizing: border-box; display: flex; flex-direction: column; gap: 20px; padding: 28px; border-radius: 20px; background: #FFFFFF; border: 1px solid rgba(14,26,43,0.1); box-shadow: 0 30px 60px -30px rgba(14,26,43,0.3);">
+<div style="display: flex; align-items: center; justify-content: space-between;">
+<span style="font-size: 18px; font-weight: 700; letter-spacing: -0.01em;">Votre logiciel</span>
+<span style="display: flex; align-items: center; gap: 8px; font-size: 12px; color: #1D5C57;"><span class="pulse" style="width: 8px; height: 8px; border-radius: 50%; background: #1D5C57;"></span>Tout est à jour</span>
+</div>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; flex-grow: 1;">
+<div class="lit" style="display: flex; flex-direction: column; justify-content: flex-end; gap: 4px; padding: 16px; border-radius: 12px; border: 1px solid rgba(14,26,43,0.12);"><span style="font-size: 15px; font-weight: 600;">Commandes</span><span style="font-size: 12px; color: #5A6474;">Devis → facture</span></div>
+<div class="lit" style="animation-delay: 0.5s; display: flex; flex-direction: column; justify-content: flex-end; gap: 4px; padding: 16px; border-radius: 12px; border: 1px solid rgba(14,26,43,0.12);"><span style="font-size: 15px; font-weight: 600;">Planning</span><span style="font-size: 12px; color: #5A6474;">Techniciens</span></div>
+<div class="lit" style="animation-delay: 1s; display: flex; flex-direction: column; justify-content: flex-end; gap: 4px; padding: 16px; border-radius: 12px; border: 1px solid rgba(14,26,43,0.12);"><span style="font-size: 15px; font-weight: 600;">Stocks</span><span style="font-size: 12px; color: #5A6474;">Alertes auto</span></div>
+<div class="lit" style="animation-delay: 1.5s; display: flex; flex-direction: column; justify-content: flex-end; gap: 4px; padding: 16px; border-radius: 12px; border: 1px solid rgba(14,26,43,0.12);"><span style="font-size: 15px; font-weight: 600;">Clients</span><span style="font-size: 12px; color: #5A6474;">Historique</span></div>
+<div class="lit" style="animation-delay: 2s; display: flex; flex-direction: column; justify-content: flex-end; gap: 4px; padding: 16px; border-radius: 12px; border: 1px solid rgba(14,26,43,0.12);"><span style="font-size: 15px; font-weight: 600;">Factures</span><span style="font-size: 12px; color: #5A6474;">Vers la compta</span></div>
+<div class="lit" style="animation-delay: 2.5s; display: flex; flex-direction: column; justify-content: flex-end; gap: 4px; padding: 16px; border-radius: 12px; border: 1px solid rgba(14,26,43,0.12);"><span style="font-size: 15px; font-weight: 600;">Documents</span><span style="font-size: 12px; color: #5A6474;">Rapports, photos</span></div>
+</div>
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #1D5C57;">DEMAIN</span>
+</div>
+</div>
+<div style="display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap;">
+<span style="margin-right: 8px; font-size: 15px; color: #5A6474;">Relié aux outils que vous utilisez déjà</span>
+<span style="display: inline-flex; align-items: center; gap: 8px; padding: 9px 14px; border-radius: 999px; background: #FFFFFF; border: 1px solid rgba(14,26,43,0.1); font-size: 14px; font-weight: 600;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h9l5 5v15H6z"></path><path d="M14 2v6h6"></path><path d="M12 12v6M9.5 14h4"></path></svg>Pennylane</span>
+<span style="display: inline-flex; align-items: center; gap: 8px; padding: 9px 14px; border-radius: 999px; background: #FFFFFF; border: 1px solid rgba(14,26,43,0.1); font-size: 14px; font-weight: 600;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"></rect><path d="M4 9h16M4 15h16M10 9v12"></path></svg>Google Sheets</span>
+<span style="display: inline-flex; align-items: center; gap: 8px; padding: 9px 14px; border-radius: 999px; background: #FFFFFF; border: 1px solid rgba(14,26,43,0.1); font-size: 14px; font-weight: 600;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg>Gmail</span>
+<span style="display: inline-flex; align-items: center; gap: 8px; padding: 9px 14px; border-radius: 999px; background: #FFFFFF; border: 1px solid rgba(14,26,43,0.1); font-size: 14px; font-weight: 600;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="2"></rect><path d="M3 9h18M8 2v4M16 2v4"></path></svg>Google Agenda</span>
+<span style="display: inline-flex; align-items: center; gap: 8px; padding: 9px 14px; border-radius: 999px; background: #FFFFFF; border: 1px solid rgba(14,26,43,0.1); font-size: 14px; font-weight: 600;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"></rect><path d="M4 9h16M4 15h16M10 9v12"></path></svg>Excel</span>
+<span style="display: inline-flex; align-items: center; gap: 8px; padding: 9px 14px; border-radius: 999px; background: #FFFFFF; border: 1px solid rgba(14,26,43,0.1); font-size: 14px; font-weight: 600;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg>Outlook</span>
+<span style="display: inline-flex; align-items: center; gap: 8px; padding: 9px 14px; border-radius: 999px; background: #FFFFFF; border: 1px solid rgba(14,26,43,0.1); font-size: 14px; font-weight: 600;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"></rect><path d="M2 10h20M6 15h4"></path></svg>Qonto</span>
+<span style="display: inline-flex; align-items: center; gap: 8px; padding: 9px 14px; border-radius: 999px; background: #FFFFFF; border: 1px solid rgba(14,26,43,0.1); font-size: 14px; font-weight: 600;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3L7 21M17 3l-2 18M4 8h17M3 16h17"></path></svg>Slack</span>
+</div>
+</section>
+
+<!-- ============ CRÉER / REPRENDRE / AMÉLIORER ============ -->
+<section style="display: flex; flex-direction: column; gap: 48px; padding: 40px 80px 120px;">
+<div style="display: flex; align-items: end; justify-content: space-between; gap: 80px;">
+<h2 style="margin: 0; font-size: 56px; line-height: 1.05; font-weight: 700; letter-spacing: -0.035em;">Créer, repenser,<br>améliorer.</h2>
+<p style="margin: 0; max-width: 420px; font-size: 18px; line-height: 1.55; color: #3A4556;">Un nouvel outil, des process à réinventer ou un logiciel à faire grandir.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px;">
+
+<div style="display: flex; flex-direction: column; gap: 20px; padding: 16px 16px 28px; border-radius: 20px; background: #FFFFFF; border: 1px solid rgba(14,26,43,0.08);">
+<div style="display: flex; flex-direction: column; gap: 10px; height: 260px; box-sizing: border-box; padding: 20px; border-radius: 14px; background: #F0EFEA;">
+<div class="wf" style="height: 28px; border-radius: 6px; border: 1.5px dashed #B7BDC6;"></div>
+<div style="display: grid; grid-template-columns: 70px 1fr; gap: 10px; flex-grow: 1;">
+<div class="wf" style="animation-delay: 0.4s; border-radius: 6px; border: 1.5px dashed #B7BDC6;"></div>
+<div style="display: flex; flex-direction: column; gap: 10px;">
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; height: 60px;">
+<div class="wf" style="animation-delay: 0.8s; border-radius: 6px; border: 1.5px dashed #B7BDC6;"></div>
+<div class="wf" style="animation-delay: 1s; border-radius: 6px; border: 1.5px dashed #B7BDC6;"></div>
+<div class="wf" style="animation-delay: 1.2s; border-radius: 6px; border: 1.5px dashed #B7BDC6;"></div>
+</div>
+<div class="wf" style="animation-delay: 1.6s; flex-grow: 1; border-radius: 6px; border: 1.5px dashed #B7BDC6;"></div>
+</div>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px; padding: 0 12px;">
+<span style="font-size: 26px; font-weight: 700; letter-spacing: -0.02em;">Créer</span>
+<span style="font-size: 16px; line-height: 1.5; color: #3A4556;">Un outil pensé autour de vos process réels.</span>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 20px; padding: 16px 16px 28px; border-radius: 20px; background: #FFFFFF; border: 1px solid rgba(14,26,43,0.08);">
+<div style="display: flex; flex-direction: column; gap: 10px; height: 260px; box-sizing: border-box; padding: 20px; border-radius: 14px; background: #F0EFEA;">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #1D5C57;">VOTRE PROCESS, REPENSÉ</span>
+<div style="display: flex; align-items: center; justify-content: space-between; height: 40px; padding: 0 12px; border-radius: 8px; background: #FFFFFF; font-size: 14px;"><span style="position: relative; flex-grow: 1; height: 20px;"><span class="bad" style="animation-delay: 0s; position: absolute; left: 0; top: 0; color: #8A93A0; text-decoration: line-through;">Ressaisie dans Excel</span><span class="good" style="animation-delay: 0s; position: absolute; left: 0; top: 0; font-weight: 600;">Saisie unique, partagée</span></span><span style="position: relative; width: 20px; height: 20px;"><span class="bad" style="animation-delay: 0s; position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: #D5D2CA;"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round"><path d="M6 12h12"></path></svg></span><span class="good" style="animation-delay: 0s; position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: #2F8A80;"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"></path></svg></span></span></div>
+<div style="display: flex; align-items: center; justify-content: space-between; height: 40px; padding: 0 12px; border-radius: 8px; background: #FFFFFF; font-size: 14px;"><span style="position: relative; flex-grow: 1; height: 20px;"><span class="bad" style="animation-delay: 0.7s; position: absolute; left: 0; top: 0; color: #8A93A0; text-decoration: line-through;">Devis copié à la main</span><span class="good" style="animation-delay: 0.7s; position: absolute; left: 0; top: 0; font-weight: 600;">Devis généré en un clic</span></span><span style="position: relative; width: 20px; height: 20px;"><span class="bad" style="animation-delay: 0.7s; position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: #D5D2CA;"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round"><path d="M6 12h12"></path></svg></span><span class="good" style="animation-delay: 0.7s; position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: #2F8A80;"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"></path></svg></span></span></div>
+<div style="display: flex; align-items: center; justify-content: space-between; height: 40px; padding: 0 12px; border-radius: 8px; background: #FFFFFF; font-size: 14px;"><span style="position: relative; flex-grow: 1; height: 20px;"><span class="bad" style="animation-delay: 1.4s; position: absolute; left: 0; top: 0; color: #8A93A0; text-decoration: line-through;">Relances par e-mail</span><span class="good" style="animation-delay: 1.4s; position: absolute; left: 0; top: 0; font-weight: 600;">Relances automatiques</span></span><span style="position: relative; width: 20px; height: 20px;"><span class="bad" style="animation-delay: 1.4s; position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: #D5D2CA;"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round"><path d="M6 12h12"></path></svg></span><span class="good" style="animation-delay: 1.4s; position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: #2F8A80;"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"></path></svg></span></span></div>
+<div style="display: flex; align-items: center; justify-content: space-between; height: 40px; padding: 0 12px; border-radius: 8px; background: #FFFFFF; font-size: 14px;"><span style="position: relative; flex-grow: 1; height: 20px;"><span class="bad" style="animation-delay: 2.1s; position: absolute; left: 0; top: 0; color: #8A93A0; text-decoration: line-through;">Facture refaite en compta</span><span class="good" style="animation-delay: 2.1s; position: absolute; left: 0; top: 0; font-weight: 600;">Facture envoyée seule</span></span><span style="position: relative; width: 20px; height: 20px;"><span class="bad" style="animation-delay: 2.1s; position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: #D5D2CA;"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round"><path d="M6 12h12"></path></svg></span><span class="good" style="animation-delay: 2.1s; position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: #2F8A80;"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"></path></svg></span></span></div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px; padding: 0 12px;">
+<span style="font-size: 26px; font-weight: 700; letter-spacing: -0.02em;">Repenser</span>
+<span style="font-size: 16px; line-height: 1.5; color: #3A4556;">Vos process existants réinventés, enrichis, simplifiés.</span>
+</div>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 20px; padding: 16px 16px 28px; border-radius: 20px; background: #FFFFFF; border: 1px solid rgba(14,26,43,0.08);">
+<div style="display: flex; flex-direction: column; gap: 10px; height: 260px; box-sizing: border-box; padding: 20px; border-radius: 14px; background: #F0EFEA;">
+<div style="display: flex; align-items: center; justify-content: space-between; padding: 12px 14px; border-radius: 8px; background: #FFFFFF; font-size: 14px;"><span>Suivi des commandes</span><span style="font-size: 12px; color: #5A6474;">Actif</span></div>
+<div style="display: flex; align-items: center; justify-content: space-between; padding: 12px 14px; border-radius: 8px; background: #FFFFFF; font-size: 14px;"><span>Planning équipes</span><span style="font-size: 12px; color: #5A6474;">Actif</span></div>
+<div class="slidein" style="display: flex; align-items: center; justify-content: space-between; padding: 12px 14px; border-radius: 8px; background: #FFFFFF; border: 1.5px solid #1D5C57; font-size: 14px;"><span style="font-weight: 600;">+ Relances automatiques</span><span class="track" style="position: relative; width: 38px; height: 20px; border-radius: 999px; background: #C9CDD3;"><span class="knob" style="position: absolute; left: 2px; top: 2px; width: 16px; height: 16px; border-radius: 50%; background: #FFFFFF;"></span></span></div>
+<div class="slidein" style="animation-delay: 1.2s; display: flex; align-items: center; justify-content: space-between; padding: 12px 14px; border-radius: 8px; background: #FFFFFF; border: 1.5px solid #1D5C57; font-size: 14px;"><span style="font-weight: 600;">+ Résumé d'intervention par IA</span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: #1D5C57;">NOUVEAU</span></div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px; padding: 0 12px;">
+<span style="font-size: 26px; font-weight: 700; letter-spacing: -0.02em;">Améliorer</span>
+<span style="font-size: 16px; line-height: 1.5; color: #3A4556;">Ajouter, automatiser, intégrer l'IA quand elle sert vraiment.</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ============ SIMPLE, CLAIR, RELIÉ (bureau + terrain) ============ -->
+<section id="v2-demo" style="display: flex; flex-direction: column; gap: 48px; padding: 120px 80px; background: #ECEAE3;">
+<div style="display: flex; align-items: end; justify-content: space-between; gap: 80px;">
+<h2 style="margin: 0; font-size: 56px; line-height: 1.05; font-weight: 700; letter-spacing: -0.035em;">Simple, clair,<br>et tout est relié.</h2>
+<p style="margin: 0; max-width: 460px; font-size: 18px; line-height: 1.55; color: #3A4556;">Au bureau comme sur le terrain : seul l'utile à l'écran, et un clic vous mène à la bonne information.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: 420px 360px; gap: 20px;">
+
+<!-- Tout est relié -->
+<div style="grid-column: span 2; display: flex; flex-direction: column; gap: 18px; padding: 28px; border-radius: 20px; background: #FFFFFF;">
+<div style="display: flex; align-items: center; justify-content: space-between;"><span style="font-size: 20px; font-weight: 700; letter-spacing: -0.01em;">Un clic, la bonne information</span><span style="padding: 5px 12px; border-radius: 999px; background: #F0EFEA; font-size: 12px; font-weight: 600;">Données reliées</span></div>
+<div style="display: flex; align-items: center; gap: 6px; flex-grow: 1;">
+
+<div class="step" style="position: relative; flex: 1; display: flex; flex-direction: column; gap: 9px; height: 100%; box-sizing: border-box; padding: 16px; border-radius: 14px; background: #FAF9F6; border: 1.5px solid #E3E1DA;">
+<span style="font-size: 13px; font-weight: 700;">Commandes</span>
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 11px;"><span>#1042 · Maison Lenoir</span><span style="padding: 2px 6px; border-radius: 999px; background: #E3F1E6; color: #2F6B3E; font-size: 9px;">Livrée</span></div>
+<div style="display: flex; justify-content: space-between; align-items: center; padding: 6px; margin: 0 -6px; border-radius: 8px; background: #DCEAE7; font-size: 11px;"><span>#1043 · <span style="font-weight: 700; color: #1D5C57; text-decoration: underline;">Studio Nova</span></span><span style="padding: 2px 6px; border-radius: 999px; background: #E2ECFB; color: #2B57A8; font-size: 9px;">En cours</span></div>
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 11px;"><span>#1044 · Garage Ferrand</span><span style="padding: 2px 6px; border-radius: 999px; background: #FBEBD6; color: #9A5B12; font-size: 9px;">À préparer</span></div>
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 11px;"><span>#1045 · Boulangerie Roche</span><span style="padding: 2px 6px; border-radius: 999px; background: #E3F1E6; color: #2F6B3E; font-size: 9px;">Livrée</span></div>
+<div style="display: flex; justify-content: space-between; align-items: center; font-size: 11px; opacity: 0.55;"><span>#1046 · Studio Nova</span><span style="padding: 2px 6px; border-radius: 999px; background: #F0EFEA; color: #5A6474; font-size: 9px;">Devis</span></div>
+<svg class="cur" width="20" height="20" viewBox="0 0 24 24" style="position: absolute; left: 118px; top: 84px;" fill="#0E1A2B" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="round"><path d="M4 2l16 10-7 2-3 7z"></path></svg>
+</div>
+
+<svg width="24" height="16" viewBox="0 0 24 16" fill="none" style="flex-shrink: 0;"><path class="flow" d="M1 8h16" stroke="#1D5C57" stroke-width="2"></path><path d="M15 3l6 5-6 5" stroke="#1D5C57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+
+<div class="step" style="animation-delay: 3s; position: relative; flex: 1; display: flex; flex-direction: column; gap: 10px; height: 100%; box-sizing: border-box; padding: 16px; border-radius: 14px; background: #FAF9F6; border: 1.5px solid #E3E1DA;">
+<div style="display: flex; align-items: center; gap: 10px;"><span style="display: flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 10px; background: #0E1A2B; color: #F6F5F1; font-size: 12px; font-weight: 700;">SN</span><div style="display: flex; flex-direction: column;"><span style="font-size: 13px; font-weight: 700;">Studio Nova</span><span style="font-size: 10px; color: #5A6474;">Fiche client</span></div></div>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px;">
+<div style="display: flex; flex-direction: column; gap: 2px; padding: 8px; border-radius: 8px; background: #FFFFFF;"><span style="font-size: 9px; color: #5A6474;">En cours</span><span style="font-size: 15px; font-weight: 700;">3</span></div>
+<div style="display: flex; flex-direction: column; gap: 2px; padding: 8px; border-radius: 8px; background: #FFFFFF;"><span style="font-size: 9px; color: #5A6474;">CA de l'année</span><span style="font-size: 15px; font-weight: 700;">18,4 k€</span></div>
+</div>
+<span style="font-size: 9px; font-weight: 700; color: #8A93A0;">CONTRAT</span>
+<div style="display: flex; align-items: center; justify-content: space-between; padding: 9px 10px; border-radius: 8px; background: #DCEAE7; font-size: 11px;"><span style="font-weight: 700; color: #1D5C57; text-decoration: underline;">Maintenance 2026</span><span style="font-size: 10px; color: #143F3C;">Ouvrir</span></div>
+<span style="font-size: 9px; font-weight: 700; color: #8A93A0;">DERNIÈRE FACTURE</span>
+<div style="display: flex; justify-content: space-between; padding: 8px 10px; border-radius: 8px; background: #FFFFFF; font-size: 11px;"><span>Septembre</span><span style="color: #2F6B3E;">Payée</span></div>
+<svg class="cur" width="20" height="20" viewBox="0 0 24 24" style="animation-delay: 3s; position: absolute; left: 110px; top: 176px;" fill="#0E1A2B" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="round"><path d="M4 2l16 10-7 2-3 7z"></path></svg>
+</div>
+
+<svg width="24" height="16" viewBox="0 0 24 16" fill="none" style="flex-shrink: 0;"><path class="flow" d="M1 8h16" stroke="#1D5C57" stroke-width="2"></path><path d="M15 3l6 5-6 5" stroke="#1D5C57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+
+<div class="step" style="animation-delay: 6s; flex: 1; display: flex; flex-direction: column; gap: 10px; height: 100%; box-sizing: border-box; padding: 16px; border-radius: 14px; background: #FAF9F6; border: 1.5px solid #E3E1DA;">
+<div style="display: flex; flex-direction: column;"><span style="font-size: 13px; font-weight: 700;">Maintenance 2026</span><span style="font-size: 10px; color: #5A6474;">Studio Nova · contrat annuel</span></div>
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 10px; border-radius: 8px; background: #FFFFFF;">
+<div style="display: flex; justify-content: space-between; font-size: 10px;"><span>Interventions incluses</span><span style="font-weight: 700;">9 / 12</span></div>
+<div style="height: 5px; border-radius: 5px; background: #E3E1DA;"><div class="grow" style="width: 75%; height: 5px; border-radius: 5px; background: #1D5C57;"></div></div>
+</div>
+<div style="display: flex; justify-content: space-between; padding: 8px 10px; border-radius: 8px; background: #FFFFFF; font-size: 11px;"><span>Factures liées</span><span style="font-weight: 700;">9</span></div>
+<div style="display: flex; justify-content: space-between; padding: 8px 10px; border-radius: 8px; background: #FFFFFF; font-size: 11px;"><span>Commandes rattachées</span><span style="font-weight: 700;">14</span></div>
+<span style="display: flex; align-items: center; justify-content: center; gap: 6px; height: 34px; margin-top: auto; border-radius: 999px; background: #1D5C57; color: #FFFFFF; font-size: 11px; font-weight: 600;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"></path><path d="M22 2l-7 20-4-9-9-4z"></path></svg>Facturer <span style="padding: 1px 6px; border-radius: 5px; background: #FFFFFF; color: #0E1A2B; font-weight: 700;">Pennylane</span></span>
+</div>
+</div>
+</div>
+
+<!-- Téléphone -->
+<div style="grid-row: span 2; display: flex; flex-direction: column; align-items: center; gap: 24px; padding: 28px; border-radius: 20px; background: #0E1A2B; color: #F6F5F1;">
+<div style="display: flex; align-items: center; justify-content: space-between; align-self: stretch;"><span style="font-size: 20px; font-weight: 700;">Sur le terrain</span><span style="padding: 5px 12px; border-radius: 999px; background: #1D5C57; font-size: 12px; font-weight: 600;">App mobile</span></div>
+<div style="width: 270px; height: 600px; box-sizing: border-box; padding: 10px; border-radius: 40px; background: #22324A;">
+<div style="display: flex; flex-direction: column; gap: 12px; height: 100%; box-sizing: border-box; padding: 26px 16px 16px; border-radius: 31px; background: #F6F5F1; color: #0E1A2B;">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: #1D5C57;">MARDI · 3 ARRÊTS</span>
+<span style="font-size: 20px; font-weight: 700; letter-spacing: -0.02em;">Bonjour Karim</span>
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 12px; border-radius: 12px; background: #FFFFFF; font-size: 12px;"><div style="display: flex; justify-content: space-between;"><span style="font-weight: 700;">08:30 · SCI Horizon</span><span style="color: #1D5C57;">Fait</span></div><span style="color: #5A6474;">Entretien annuel</span></div>
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 12px; border-radius: 12px; background: #FFFFFF; border: 1.5px solid #1D5C57; font-size: 12px;"><div style="display: flex; justify-content: space-between; align-items: center;"><span style="font-weight: 700;">11:00 · Mme Roux</span><span class="pulse" style="width: 8px; height: 8px; border-radius: 50%; background: #1D5C57;"></span></div><span style="color: #5A6474;">Dépannage · en route</span></div>
+<div style="display: flex; flex-direction: column; gap: 6px; padding: 12px; border-radius: 12px; background: #FFFFFF; font-size: 12px; opacity: 0.6;"><div style="display: flex; justify-content: space-between;"><span style="font-weight: 700;">14:00 · M. Martin</span><span style="color: #5A6474;">À venir</span></div><span style="color: #5A6474;">Chaudière</span></div>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; flex-grow: 1;">
+<div style="display: flex; align-items: center; justify-content: center; border-radius: 12px; background: #DCEAE7; font-size: 11px; color: #143F3C;">Photo avant</div>
+<div style="display: flex; align-items: center; justify-content: center; border-radius: 12px; border: 1.5px dashed #B7BDC6; font-size: 11px; color: #5A6474;">+ Photo après</div>
+</div>
+<span style="display: flex; align-items: center; justify-content: center; height: 42px; border-radius: 999px; background: #1D5C57; color: #FFFFFF; font-size: 13px; font-weight: 600;">Démarrer l'intervention</span>
+</div>
+</div>
+</div>
+
+<!-- Planning -->
+<div style="display: flex; flex-direction: column; gap: 16px; padding: 28px; border-radius: 20px; background: #FFFFFF;">
+<div style="display: flex; align-items: center; justify-content: space-between;"><span style="font-size: 18px; font-weight: 700; letter-spacing: -0.01em;">Planning des interventions</span><span style="padding: 5px 12px; border-radius: 999px; background: #F0EFEA; font-size: 12px; font-weight: 600;">Bureau</span></div>
+<div style="display: grid; grid-template-columns: 56px repeat(5, minmax(0, 1fr)); font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: #8A93A0;"><span></span><span>LUN</span><span>MAR</span><span>MER</span><span>JEU</span><span>VEN</span></div>
+<div style="display: flex; flex-direction: column; gap: 12px;">
+<div style="display: grid; grid-template-columns: 56px 1fr; align-items: center; font-size: 12px;"><span style="font-weight: 600;">Karim</span><div style="position: relative; height: 32px; border-radius: 8px; background: #F6F5F1;"><div class="grow" style="position: absolute; left: 0; width: 38%; height: 32px; border-radius: 8px; background: #1D5C57;"></div><div class="grow" style="animation-delay: 0.3s; position: absolute; left: 42%; width: 36%; height: 32px; border-radius: 8px; background: #7FB5AD;"></div></div></div>
+<div style="display: grid; grid-template-columns: 56px 1fr; align-items: center; font-size: 12px;"><span style="font-weight: 600;">Julie</span><div style="position: relative; height: 32px; border-radius: 8px; background: #F6F5F1;"><div class="grow" style="animation-delay: 0.5s; position: absolute; left: 20%; width: 58%; height: 32px; border-radius: 8px; background: #0E1A2B;"></div></div></div>
+<div style="display: grid; grid-template-columns: 56px 1fr; align-items: center; font-size: 12px;"><span style="font-weight: 600;">Marc</span><div style="position: relative; height: 32px; border-radius: 8px; background: #F6F5F1;"><div class="grow" style="animation-delay: 0.7s; position: absolute; left: 0; width: 18%; height: 32px; border-radius: 8px; background: #C58B2A;"></div><div class="grow" style="animation-delay: 0.9s; position: absolute; left: 22%; width: 56%; height: 32px; border-radius: 8px; background: #1D5C57;"></div></div></div>
+<div style="display: grid; grid-template-columns: 56px 1fr; align-items: center; font-size: 12px;"><span style="font-weight: 600;">Sofia</span><div style="position: relative; height: 32px; border-radius: 8px; background: #F6F5F1;"><div class="grow" style="animation-delay: 1.1s; position: absolute; left: 60%; width: 40%; height: 32px; border-radius: 8px; background: #7FB5AD;"></div></div></div>
+</div>
+</div>
+
+<!-- Automatisation -->
+<div style="display: flex; flex-direction: column; justify-content: space-between; padding: 28px; border-radius: 20px; background: #FFFFFF;">
+<div style="display: flex; align-items: center; justify-content: space-between;"><span style="font-size: 18px; font-weight: 700;">Zéro ressaisie</span><span style="padding: 5px 12px; border-radius: 999px; background: #F0EFEA; font-size: 12px; font-weight: 600;">Automatisation</span></div>
+<div style="display: flex; flex-direction: column; gap: 18px;">
+<div style="position: relative; height: 2px; margin: 0 22px; background: #D5D2CA;"><span class="dot" style="position: absolute; top: -5px; width: 12px; height: 12px; margin-left: -6px; border-radius: 50%; background: #1D5C57;"></span></div>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; text-align: center; font-size: 12px;">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 6px;"><span style="display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 12px; background: #F0EFEA;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0E1A2B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg></span><span>Demande reçue</span><span style="font-size: 10px; color: #5A6474;">Gmail</span></div>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 6px;"><span style="display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 12px; background: #F0EFEA;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0E1A2B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h9l5 5v15H6z"></path><path d="M9 13h8M9 17h6"></path></svg></span><span>Devis généré</span><span style="font-size: 10px; color: #5A6474;">Votre logiciel</span></div>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 6px;"><span style="display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 12px; background: #DCEAE7;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"></path></svg></span><span>Facture créée</span><span style="font-size: 10px; color: #5A6474;">Pennylane</span></div>
+</div>
+</div>
+</div>
+</div>
+
+<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px;">
+<div style="display: flex; gap: 14px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><circle cx="12" cy="12" r="9"></circle><path d="M9 12h6"></path></svg><div style="display: flex; flex-direction: column; gap: 4px;"><span style="font-size: 17px; font-weight: 700;">Simple</span><span style="font-size: 14px; line-height: 1.5; color: #3A4556;">Seules les actions utiles apparaissent.</span></div></div>
+<div style="display: flex; gap: 14px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><rect x="3" y="3" width="7" height="7" rx="1.5"></rect><rect x="14" y="3" width="7" height="7" rx="1.5"></rect><rect x="3" y="14" width="7" height="7" rx="1.5"></rect><rect x="14" y="14" width="7" height="7" rx="1.5"></rect></svg><div style="display: flex; flex-direction: column; gap: 4px;"><span style="font-size: 17px; font-weight: 700;">Clair</span><span style="font-size: 14px; line-height: 1.5; color: #3A4556;">Chaque information à sa place.</span></div></div>
+<div style="display: flex; gap: 14px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"></path><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"></path></svg><div style="display: flex; flex-direction: column; gap: 4px;"><span style="font-size: 17px; font-weight: 700;">Relié</span><span style="font-size: 14px; line-height: 1.5; color: #3A4556;">Clients, commandes, factures : tout se répond.</span></div></div>
+<div style="display: flex; gap: 14px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0;"><path d="M13 2L4 14h7l-1 8 9-12h-7z"></path></svg><div style="display: flex; flex-direction: column; gap: 4px;"><span style="font-size: 17px; font-weight: 700;">Rapide</span><span style="font-size: 14px; line-height: 1.5; color: #3A4556;">Une navigation fluide et instantanée.</span></div></div>
+</div>
+</section>
+
+<!-- ============ RÉFÉRENCE EARLY ============ -->
+<section style="display: grid; grid-template-columns: 1fr 1fr; gap: 72px; padding: 120px 80px; background: #0E1A2B; color: #F6F5F1;">
+<div style="display: flex; flex-direction: column; gap: 28px;">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #8FD0C5;">Référence client</span>
+<div style="display: flex; align-items: baseline; gap: 16px;">
+<span style="font-size: 44px; font-weight: 800; letter-spacing: -0.04em;">Early</span>
+<span style="font-size: 15px; color: #A9B2BF;">Agence de communication · une quinzaine de personnes</span>
+</div>
+<h2 style="margin: 0; font-size: 46px; line-height: 1.05; font-weight: 700; letter-spacing: -0.035em;">Un logiciel repris, accéléré et enrichi, sans jamais l'arrêter.</h2>
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 16px; padding: 28px; border-radius: 16px; background: #16253B;">
+<svg width="28" height="22" viewBox="0 0 28 22" fill="#8FD0C5"><path d="M0 22V12C0 5 4 1 11 0l1 3c-4 1-6 4-6 7h5v12zm16 0V12c0-7 4-11 11-12l1 3c-4 1-6 4-6 7h5v12z"></path></svg>
+<blockquote style="margin: 0; font-size: 20px; line-height: 1.45; font-weight: 500; letter-spacing: -0.01em;">Alexis a vraiment fait évoluer notre logiciel : il est plus rapide, plus réactif et bien plus simple à utiliser. Il écoute nos besoins et il est force de proposition. C'est agréable de travailler avec lui.</blockquote>
+<figcaption style="display: flex; flex-direction: column; gap: 2px; font-size: 14px;"><span style="font-weight: 700;">Joseph Herbinet</span><span style="color: #A9B2BF;">Dirigeant d'Early</span></figcaption>
+</figure>
+<a href="EtudeCasEarly.dc.html" style="align-self: flex-start; display: inline-flex; align-items: center; gap: 10px; min-height: 50px; padding: 0 24px; border-radius: 999px; border: 1px solid rgba(246,245,241,0.4); font-size: 15px; font-weight: 600; color: #F6F5F1;">Lire l'étude de cas
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></a>
+</div>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; align-content: center;">
+<div style="display: flex; flex-direction: column; gap: 12px; padding: 26px; border-radius: 18px; background: #16253B;">
+<span class="float" style="animation-delay: 0.0s; display: flex; align-items: center; justify-content: center; width: 52px; height: 52px; border-radius: 14px; background: #1D5C57;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8FD0C5" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.64-6.36"></path><path d="M21 3v6h-6"></path><circle cx="12" cy="12" r="3"></circle></svg></span>
+<span style="font-size: 20px; font-weight: 700; letter-spacing: -0.015em; color: #F6F5F1;">Vision 360°</span>
+<span style="font-size: 14px; line-height: 1.5; color: #A9B2BF;">Toute l'activité sur un seul écran : clients, équipes, finances.</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px; padding: 26px; border-radius: 18px; background: #16253B;">
+<span class="float" style="animation-delay: 0.7s; display: flex; align-items: center; justify-content: center; width: 52px; height: 52px; border-radius: 14px; background: #1D5C57;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8FD0C5" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h9l5 5v15H6z"></path><path d="M14 2v6h6"></path><path d="M9 15l2 2 4-4"></path></svg></span>
+<span style="font-size: 20px; font-weight: 700; letter-spacing: -0.015em; color: #F6F5F1;">Facturation automatisée</span>
+<span style="font-size: 14px; line-height: 1.5; color: #A9B2BF;">Du temps passé à la facture dans la compta, sans ressaisie.</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px; padding: 26px; border-radius: 18px; background: #16253B;">
+<span class="float" style="animation-delay: 1.4s; display: flex; align-items: center; justify-content: center; width: 52px; height: 52px; border-radius: 14px; background: #1D5C57;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8FD0C5" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"></circle><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"></path><path d="M16 11h6M19 8v6"></path></svg></span>
+<span style="font-size: 20px; font-weight: 700; letter-spacing: -0.015em; color: #F6F5F1;">CRM connecté</span>
+<span style="font-size: 14px; line-height: 1.5; color: #A9B2BF;">Chaque client relié à ses contrats, ses missions et ses campagnes.</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px; padding: 26px; border-radius: 18px; background: #16253B;">
+<span class="float" style="animation-delay: 2.0999999999999996s; display: flex; align-items: center; justify-content: center; width: 52px; height: 52px; border-radius: 14px; background: #1D5C57;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8FD0C5" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="3"></circle><circle cx="17" cy="9" r="2.5"></circle><path d="M2 20c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5"></path><path d="M14.5 15.2c.8-.5 1.6-.7 2.5-.7 2.8 0 5 1.9 5 4.9"></path></svg></span>
+<span style="font-size: 20px; font-weight: 700; letter-spacing: -0.015em; color: #F6F5F1;">Équipes pilotées simplement</span>
+<span style="font-size: 14px; line-height: 1.5; color: #A9B2BF;">Charge, temps et accès de chacun, en un coup d'œil.</span>
+</div>
+</div>
+</section>
+
+<!-- ============ CTA MI-PAGE ============ -->
+<section style="display: flex; align-items: center; justify-content: space-between; gap: 48px; margin: 0 80px; padding: 48px 56px; border-radius: 28px; background: {{accent}}; color: #FFFFFF; transform: translateY(-56px); box-shadow: 0 30px 60px -30px rgba(14,26,43,0.5);">
+<div style="display: flex; flex-direction: column; gap: 10px;">
+<span style="font-size: 34px; font-weight: 700; line-height: 1.1; letter-spacing: -0.03em;">Et si on regardait votre cas ?</span>
+<span style="font-size: 17px; color: #D6E6E4;">20 minutes, gratuit et sans engagement : vous repartez avec des pistes concrètes.</span>
+</div>
+<a href="#v2-contact" style="flex-shrink: 0; display: inline-flex; align-items: center; gap: 10px; min-height: 56px; padding: 0 30px; border-radius: 999px; background: #F6F5F1; color: #0E1A2B; font-size: 17px; font-weight: 700;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0E1A2B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="2"></rect><path d="M3 9h18M8 2v4M16 2v4"></path></svg>Réserver 20 min</a>
+</section>
+
+<!-- ============ MÉTHODE ============ -->
+<section style="display: flex; flex-direction: column; gap: 56px; padding: 64px 80px 120px;">
+<h2 style="margin: 0; font-size: 56px; line-height: 1.05; font-weight: 700; letter-spacing: -0.035em;">Un projet cadré, livré par étapes.</h2>
+<div style="position: relative; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px;">
+<div style="position: absolute; left: 24px; right: 24px; top: 23px; height: 2px; background: #D5D2CA;"><div class="prog" style="height: 2px; background: {{accent}};"></div></div>
+<div style="position: relative; display: flex; flex-direction: column; gap: 14px;"><span style="display: flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 50%; background: {{accent}}; color: #FFFFFF; font-weight: 700;">1</span><span style="font-size: 22px; font-weight: 700; letter-spacing: -0.01em;">Diagnostic</span><span style="font-size: 15px; line-height: 1.5; color: #3A4556;">Comprendre votre activité et ce qui bloque.</span></div>
+<div style="position: relative; display: flex; flex-direction: column; gap: 14px;"><span style="display: flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 50%; background: {{accent}}; color: #FFFFFF; font-weight: 700;">2</span><span style="font-size: 22px; font-weight: 700; letter-spacing: -0.01em;">Co-construction</span><span style="font-size: 15px; line-height: 1.5; color: #3A4556;">Ateliers et maquettes avec vous, chaque écran validé.</span></div>
+<div style="position: relative; display: flex; flex-direction: column; gap: 14px;"><span style="display: flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 50%; background: {{accent}}; color: #FFFFFF; font-weight: 700;">3</span><span style="font-size: 22px; font-weight: 700; letter-spacing: -0.01em;">Livraison par lots</span><span style="font-size: 15px; line-height: 1.5; color: #3A4556;">Chaque lot testé avec vos équipes.</span></div>
+<div style="position: relative; display: flex; flex-direction: column; gap: 14px;"><span style="display: flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 50%; background: {{accent}}; color: #FFFFFF; font-weight: 700;">4</span><span style="font-size: 22px; font-weight: 700; letter-spacing: -0.01em;">Suivi</span><span style="font-size: 15px; line-height: 1.5; color: #3A4556;">Maintenance et évolutions dans la durée.</span></div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 28px; margin-top: 24px; padding: 40px 44px; border-radius: 24px; background: #FFFFFF; border: 1px solid rgba(14,26,43,0.08);">
+<div style="display: flex; align-items: baseline; justify-content: space-between;"><span style="font-size: 28px; font-weight: 700; letter-spacing: -0.02em;">Mes engagements, écrits dans chaque devis</span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: {{accent}};">SANS PETITES LIGNES</span></div>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px 40px;">
+<div style="display: flex; gap: 12px; align-items: flex-start;"><span style="display: flex; align-items: center; justify-content: center; flex-shrink: 0; width: 26px; height: 26px; border-radius: 50%; background: #DCEAE7;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"></path></svg></span><div style="display: flex; flex-direction: column; gap: 3px;"><span style="font-size: 16px; font-weight: 700;">Sans engagement de durée</span><span style="font-size: 14px; color: #5A6474;">Chaque lot se commande séparément.</span></div></div>
+<div style="display: flex; gap: 12px; align-items: flex-start;"><span style="display: flex; align-items: center; justify-content: center; flex-shrink: 0; width: 26px; height: 26px; border-radius: 50%; background: #DCEAE7;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"></path></svg></span><div style="display: flex; flex-direction: column; gap: 3px;"><span style="font-size: 16px; font-weight: 700;">Maquette validée avant de coder</span><span style="font-size: 14px; color: #5A6474;">Vous voyez l'écran avant qu'il existe.</span></div></div>
+<div style="display: flex; gap: 12px; align-items: flex-start;"><span style="display: flex; align-items: center; justify-content: center; flex-shrink: 0; width: 26px; height: 26px; border-radius: 50%; background: #DCEAE7;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"></path></svg></span><div style="display: flex; flex-direction: column; gap: 3px;"><span style="font-size: 16px; font-weight: 700;">Tests automatiques</span><span style="font-size: 14px; color: #5A6474;">Chaque évolution vérifiée, rien ne casse.</span></div></div>
+<div style="display: flex; gap: 12px; align-items: flex-start;"><span style="display: flex; align-items: center; justify-content: center; flex-shrink: 0; width: 26px; height: 26px; border-radius: 50%; background: #DCEAE7;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"></path></svg></span><div style="display: flex; flex-direction: column; gap: 3px;"><span style="font-size: 16px; font-weight: 700;">Garantie 3 mois</span><span style="font-size: 14px; color: #5A6474;">Tout défaut corrigé sans frais.</span></div></div>
+<div style="display: flex; gap: 12px; align-items: flex-start;"><span style="display: flex; align-items: center; justify-content: center; flex-shrink: 0; width: 26px; height: 26px; border-radius: 50%; background: #DCEAE7;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"></path></svg></span><div style="display: flex; flex-direction: column; gap: 3px;"><span style="font-size: 16px; font-weight: 700;">Le code vous appartient</span><span style="font-size: 14px; color: #5A6474;">Code source et documentation cédés.</span></div></div>
+<div style="display: flex; gap: 12px; align-items: flex-start;"><span style="display: flex; align-items: center; justify-content: center; flex-shrink: 0; width: 26px; height: 26px; border-radius: 50%; background: #DCEAE7;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"></path></svg></span><div style="display: flex; flex-direction: column; gap: 3px;"><span style="font-size: 16px; font-weight: 700;">Aucun abonnement imposé</span><span style="font-size: 14px; color: #5A6474;">Pas de coût récurrent ajouté.</span></div></div>
+</div>
+</div>
+</section>
+
+<!-- ============ APPROCHE + CONTACT ============ -->
+<section id="v2-contact" style="flex-grow: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 64px; padding: 112px 80px; background: {{accent}}; color: #FFFFFF;">
+<div style="display: flex; flex-direction: column; justify-content: space-between; gap: 40px;">
+<div style="display: flex; flex-direction: column; gap: 28px;">
+<div style="display: flex; align-items: center; gap: 20px;">
+<img src="alexis-portrait.jpg" alt="Portrait d'Alexis Gavens" style="width: 128px; height: 128px; border-radius: 50%; object-fit: cover; object-position: 50% 28%; border: 3px solid rgba(255,255,255,0.35);">
+<div style="display: flex; flex-direction: column; gap: 4px;"><span style="font-size: 20px; font-weight: 700;">Alexis Gavens</span><span style="font-size: 15px; color: #D6E6E4;">Ex-responsable ADV &amp; logistique, développeur de logiciels métier</span></div>
+</div>
+<p style="margin: 0; font-size: 34px; line-height: 1.2; font-weight: 600; letter-spacing: -0.02em;">« Je viens des opérations. Je comprends votre travail avant de concevoir le logiciel. »</p>
+<a href="#" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; font-size: 16px; font-weight: 600; color: #FFFFFF;">Mon parcours
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"></path></svg></a>
+</div>
+<div style="display: flex; gap: 16px;">
+<a href="#" style="display: flex; flex-direction: column; gap: 6px; flex-grow: 1; padding: 20px; border-radius: 14px; background: rgba(255,255,255,0.1);"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #BFD8D5;">RÉALISATION</span><span style="font-size: 16px; font-weight: 600;">Early : l'étude de cas complète →</span></a>
+<a href="#" style="display: flex; flex-direction: column; gap: 6px; flex-grow: 1; padding: 20px; border-radius: 14px; background: rgba(255,255,255,0.1);"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #BFD8D5;">FORMATION</span><span style="font-size: 16px; font-weight: 600;">Former vos équipes à l'IA →</span></a>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 28px; padding: 48px; border-radius: 24px; background: #F6F5F1; color: #0E1A2B;">
+<h2 style="margin: 0; font-size: 52px; line-height: 1.02; font-weight: 700; letter-spacing: -0.035em;">Parlons de votre projet.</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.55; color: #3A4556;">20 minutes pour comprendre votre besoin et vous dire franchement si je peux vous aider.</p>
+<a href="#" style="align-self: flex-start; display: inline-flex; align-items: center; min-height: 54px; padding: 0 28px; border-radius: 999px; background: #0E1A2B; color: #F6F5F1; font-size: 16px; font-weight: 600;">Réserver un créneau</a>
+<div style="display: flex; flex-direction: column; margin-top: auto; font-size: 16px;">
+<div style="display: flex; justify-content: space-between; padding: 16px 0; border-top: 1px solid rgba(14,26,43,0.12);"><span style="color: #5A6474;">Téléphone</span><span style="font-weight: 500;">06 38 61 08 42</span></div>
+<div style="display: flex; justify-content: space-between; padding: 16px 0; border-top: 1px solid rgba(14,26,43,0.12);"><span style="color: #5A6474;">E-mail</span><span style="font-weight: 500;">agavens87@gmail.com</span></div>
+<div style="display: flex; justify-content: space-between; padding: 16px 0; border-top: 1px solid rgba(14,26,43,0.12);"><span style="color: #5A6474;">Zone</span><span style="font-weight: 500;">Partout en France</span></div>
+</div>
+</div>
+</section>
+
+<footer style="display: flex; justify-content: space-between; align-items: center; padding: 28px 80px; background: #0E1A2B; color: #9AA3B0; font-size: 14px;">
+<span>© 2026 Alexis Gavens · Entrepreneur individuel</span>
+<div style="display: flex; gap: 28px;">
+<a href="MentionsLegales.dc.html" style="color: #C9CED6;">Mentions légales</a>
+<a href="https://www.linkedin.com/in/alexis-gavens-b74906130/" style="color: #C9CED6;">LinkedIn</a>
+</div>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#1D5C57","options":["#1D5C57","#23415F","#2E4A3A"]},"$preview":{"width":1440,"height":6540}}'>
+class Component extends DCLogic {
+renderVals() {
+return { accent: this.props.accent ?? '#1D5C57' };
+}
+}
+</script>
+</body>
+</html>
