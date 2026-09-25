@@ -1993,3 +1993,152 @@
 @media (prefers-reduced-motion: reduce) {
   .bad, .cur { opacity: 0; }
 }
+
+/* ===== Adaptation tablette et mobile (généré à partir des styles de la maquette) ===== */
+@media (max-width: 1100px) {
+  .c2 { padding: 64px 40px 104px 40px; }
+  .c6 { font-size: 56px; }
+  .c55 { padding: 120px 40px 120px 40px; }
+  .c58 { font-size: 46px; }
+  .c93 { padding: 40px 40px 120px 40px; }
+  .c137 { padding: 120px 40px 120px 40px; }
+  .c218 { padding: 120px 40px 120px 40px; }
+  .c222 { font-size: 36px; }
+  .c224 { font-size: 38px; }
+  .c239 { font-size: 28px; }
+  .c242 { padding: 64px 40px 120px 40px; }
+  .c259 { padding: 112px 40px 112px 40px; }
+  .c264 { font-size: 28px; }
+  .c271 { font-size: 43px; }
+}
+@media (max-width: 1023px) {
+  .c2 { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+  .c94 { flex-direction: column; align-items: flex-start; gap: 20px; }
+  .c96 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .c139 { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: none; grid-auto-rows: auto; }
+  .c213 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .c218 { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+  .c238 { flex-direction: column; align-items: flex-start; gap: 20px; }
+  .c243 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .c253 { grid-template-columns: minmax(0, 1fr); gap: 40px; }
+  .c259 { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+}
+@media (max-width: 767px) {
+  .c2 { padding: 40px 20px 52px 20px; gap: 32px; }
+  .c6 { font-size: 38px; }
+  .c55 { padding: 60px 20px 60px 20px; }
+  .c58 { font-size: 32px; }
+  .c93 { padding: 40px 20px 60px 20px; }
+  .c95 { max-width: 100%; }
+  .c96 { grid-template-columns: minmax(0, 1fr); }
+  .c109 { font-size: 22px; }
+  .c137 { padding: 60px 20px 60px 20px; }
+  .c138 { max-width: 100%; }
+  .c139 { grid-template-columns: minmax(0, 1fr); }
+  .c213 { grid-template-columns: minmax(0, 1fr); }
+  .c218 { padding: 60px 20px 60px 20px; gap: 32px; }
+  .c222 { font-size: 28px; }
+  .c224 { font-size: 28px; }
+  .c230 { grid-template-columns: minmax(0, 1fr); }
+  .c238 { padding: 24px 24px 24px 24px; }
+  .c239 { font-size: 26px; }
+  .c242 { padding: 40px 20px 60px 20px; }
+  .c243 { grid-template-columns: minmax(0, 1fr); }
+  .c250 { padding: 24px 24px 24px 24px; }
+  .c252 { font-size: 24px; }
+  .c253 { gap: 32px; }
+  .c259 { padding: 56px 20px 56px 20px; gap: 32px; }
+  .c264 { font-size: 26px; }
+  .c270 { padding: 24px 24px 24px 24px; }
+  .c271 { font-size: 30px; }
+}
+
+/* ===== Adaptation tablette et mobile (généré à partir des styles de la maquette) ===== */
+@media (max-width: 1100px) {
+  .c2 { padding: 64px 40px 104px 40px; }
+  .c6 { font-size: 56px; }
+  .c55 { padding: 120px 40px 120px 40px; }
+  .c58 { font-size: 46px; }
+  .c93 { padding: 40px 40px 120px 40px; }
+  .c137 { padding: 120px 40px 120px 40px; }
+  .c218 { padding: 120px 40px 120px 40px; }
+  .c222 { font-size: 36px; }
+  .c224 { font-size: 38px; }
+  .c238 { margin: 0px 40px 0px 40px; }
+  .c239 { font-size: 28px; }
+  .c242 { padding: 64px 40px 120px 40px; }
+  .c259 { padding: 112px 40px 112px 40px; }
+  .c264 { font-size: 28px; }
+  .c271 { font-size: 43px; }
+}
+@media (max-width: 1023px) {
+  .c2 { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+  .c94 { flex-direction: column; align-items: flex-start; gap: 20px; }
+  .c96 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .c139 { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: none; grid-auto-rows: auto; }
+  .c213 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .c218 { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+  .c238 { flex-direction: column; align-items: flex-start; gap: 20px; }
+  .c243 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .c253 { grid-template-columns: minmax(0, 1fr); gap: 40px; }
+  .c259 { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+}
+@media (max-width: 767px) {
+  .c2 { padding: 40px 20px 52px 20px; gap: 32px; }
+  .c6 { font-size: 38px; }
+  .c55 { padding: 60px 20px 60px 20px; }
+  .c58 { font-size: 32px; }
+  .c93 { padding: 40px 20px 60px 20px; }
+  .c95 { max-width: 100%; }
+  .c96 { grid-template-columns: minmax(0, 1fr); }
+  .c109 { font-size: 22px; }
+  .c137 { padding: 60px 20px 60px 20px; }
+  .c138 { max-width: 100%; }
+  .c139 { grid-template-columns: minmax(0, 1fr); }
+  .c213 { grid-template-columns: minmax(0, 1fr); }
+  .c218 { padding: 60px 20px 60px 20px; gap: 32px; }
+  .c222 { font-size: 28px; }
+  .c224 { font-size: 28px; }
+  .c230 { grid-template-columns: minmax(0, 1fr); }
+  .c238 { padding: 24px 24px 24px 24px; margin: 0px 20px 0px 20px; }
+  .c239 { font-size: 26px; }
+  .c242 { padding: 40px 20px 60px 20px; }
+  .c243 { grid-template-columns: minmax(0, 1fr); }
+  .c250 { padding: 24px 24px 24px 24px; }
+  .c252 { font-size: 24px; }
+  .c253 { gap: 32px; }
+  .c259 { padding: 56px 20px 56px 20px; gap: 32px; }
+  .c264 { font-size: 26px; }
+  .c270 { padding: 24px 24px 24px 24px; }
+  .c271 { font-size: 30px; }
+}
+
+/* ===== Ajustements manuels (tablette et mobile) ===== */
+
+/* Héros : colonne de texte resserrée puis démo réduite entre 1100 et 1360 px */
+@media (max-width: 1360px) {
+  .c2 { grid-template-columns: 440px minmax(0, 1fr); gap: 48px; }
+  .c11 { zoom: 0.77; }
+}
+@media (max-width: 1200px) {
+  .c2 { grid-template-columns: minmax(0, 1fr); gap: 56px; }
+  .c3 { max-width: 640px; }
+  .c11 { zoom: 1; width: 716px; margin-inline: auto; }
+}
+@media (max-width: 800px) {
+  .c11 { zoom: 0.94; }
+}
+/* Avant / après empilés sur tablette */
+@media (max-width: 1023px) {
+  .c59 { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .c59 > div:nth-child(2) svg { transform: rotate(90deg); }
+  .c60 { width: 100%; max-width: 580px; margin-inline: auto; }
+  .c76 { width: 100%; max-width: 580px; margin-inline: auto; }
+}
+
+/* Boutons jamais coupés sur deux lignes, rangées de boutons qui passent à la ligne */
+.c9, .c229, .c241, .c273 { white-space: nowrap; }
+.c8, .c261 { flex-wrap: wrap; }
+@media (max-width: 1360px) and (min-width: 1201px) {
+  .c6 { font-size: 58px; }
+}

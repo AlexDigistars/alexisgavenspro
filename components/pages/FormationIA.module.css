@@ -555,3 +555,97 @@
 @media (prefers-reduced-motion: reduce) {
   .typing { opacity: 0; }
 }
+
+/* ===== Adaptation tablette et mobile (généré à partir des styles de la maquette) ===== */
+@media (max-width: 1100px) {
+  .c2 { padding: 64px 40px 104px 40px; }
+  .c6 { font-size: 52px; }
+  .c30 { padding: 120px 40px 120px 40px; }
+  .c32 { font-size: 43px; }
+  .c44 { padding: 120px 40px 120px 40px; }
+  .c57 { padding: 120px 40px 120px 40px; }
+  .c59 { font-size: 36px; }
+  .c73 { padding: 104px 40px 104px 40px; }
+  .c74 { font-size: 46px; }
+}
+@media (max-width: 1023px) {
+  .c2 { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+  .c31 { flex-direction: column; align-items: flex-start; gap: 20px; }
+  .c34 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .c45 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .c57 { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+}
+@media (max-width: 767px) {
+  .c2 { padding: 40px 20px 52px 20px; gap: 32px; }
+  .c6 { font-size: 36px; }
+  .c28 { font-size: 24px; }
+  .c30 { padding: 60px 20px 60px 20px; }
+  .c32 { font-size: 30px; }
+  .c33 { max-width: 100%; }
+  .c34 { grid-template-columns: minmax(0, 1fr); }
+  .c44 { padding: 60px 20px 60px 20px; }
+  .c45 { grid-template-columns: minmax(0, 1fr); }
+  .c48 { font-size: 24px; }
+  .c57 { padding: 60px 20px 60px 20px; gap: 32px; }
+  .c59 { font-size: 28px; }
+  .c66 { padding: 24px 24px 24px 24px; }
+  .c68 { font-size: 26px; }
+  .c73 { padding: 52px 20px 52px 20px; }
+  .c74 { font-size: 32px; max-width: 100%; }
+}
+
+/* ===== Adaptation tablette et mobile (généré à partir des styles de la maquette) ===== */
+@media (max-width: 1100px) {
+  .c2 { padding: 64px 40px 104px 40px; }
+  .c6 { font-size: 52px; }
+  .c30 { padding: 120px 40px 120px 40px; }
+  .c32 { font-size: 43px; }
+  .c44 { padding: 120px 40px 120px 40px; }
+  .c57 { padding: 120px 40px 120px 40px; }
+  .c59 { font-size: 36px; }
+  .c73 { padding: 104px 40px 104px 40px; }
+  .c74 { font-size: 46px; }
+}
+@media (max-width: 1023px) {
+  .c2 { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+  .c31 { flex-direction: column; align-items: flex-start; gap: 20px; }
+  .c34 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .c45 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .c57 { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+}
+@media (max-width: 767px) {
+  .c2 { padding: 40px 20px 52px 20px; gap: 32px; }
+  .c6 { font-size: 36px; }
+  .c28 { font-size: 24px; }
+  .c30 { padding: 60px 20px 60px 20px; }
+  .c32 { font-size: 30px; }
+  .c33 { max-width: 100%; }
+  .c34 { grid-template-columns: minmax(0, 1fr); }
+  .c44 { padding: 60px 20px 60px 20px; }
+  .c45 { grid-template-columns: minmax(0, 1fr); }
+  .c48 { font-size: 24px; }
+  .c57 { padding: 60px 20px 60px 20px; gap: 32px; }
+  .c59 { font-size: 28px; }
+  .c66 { padding: 24px 24px 24px 24px; }
+  .c68 { font-size: 26px; }
+  .c73 { padding: 52px 20px 52px 20px; }
+  .c74 { font-size: 32px; max-width: 100%; }
+}
+
+/* ===== Ajustements manuels (tablette et mobile) ===== */
+@media (max-width: 1023px) {
+  .c11 { width: 668px; max-width: none; margin-inline: auto; }
+}
+@media (max-width: 800px) {
+  .c11 { zoom: 1; }
+}
+@media (max-width: 767px) {
+  .c11 { zoom: 0.479; }
+}
+@media (min-width: 400px) and (max-width: 767px) {
+  .c11 { zoom: 0.524; }
+}
+
+/* Boutons jamais coupés sur deux lignes, rangées de boutons qui passent à la ligne */
+.c9 { white-space: nowrap; }
+.c8 { flex-wrap: wrap; }

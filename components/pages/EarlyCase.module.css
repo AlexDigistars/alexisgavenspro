@@ -1680,3 +1680,142 @@
   .cur2 { opacity: 0; }
   .check { background: #1D5C57; border-color: #1D5C57; }
 }
+
+/* ===== Adaptation tablette et mobile (généré à partir des styles de la maquette) ===== */
+@media (max-width: 1100px) {
+  .c2 { padding: 56px 40px 96px 40px; }
+  .c5 { font-size: 51px; }
+  .c52 { padding: 120px 40px 120px 40px; }
+  .c55 { font-size: 39px; }
+  .c94 { padding: 120px 40px 120px 40px; }
+  .c138 { padding: 120px 40px 120px 40px; }
+  .c155 { font-size: 46px; }
+  .c161 { font-size: 28px; }
+  .c221 { padding: 112px 40px 112px 40px; }
+  .c226 { padding: 128px 40px 128px 40px; }
+  .c227 { font-size: 31px; }
+  .c241 { padding: 112px 40px 112px 40px; }
+  .c242 { font-size: 49px; }
+}
+@media (max-width: 1023px) {
+  .c2 { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+  .c52 { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+  .c65 { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+  .c94 { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+  .c138 { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+  .c154 { flex-direction: column; align-items: flex-start; gap: 20px; }
+  .c157 { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+  .c179 { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+  .c221 { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+  .c231 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 767px) {
+  .c2 { padding: 56px 20px 48px 20px; gap: 32px; }
+  .c5 { font-size: 36px; }
+  .c52 { padding: 60px 20px 60px 20px; gap: 32px; }
+  .c55 { font-size: 30px; }
+  .c60 { grid-template-columns: minmax(0, 1fr); }
+  .c65 { gap: 32px; }
+  .c90 { max-width: 100%; }
+  .c94 { padding: 60px 20px 60px 20px; gap: 32px; }
+  .c138 { padding: 60px 20px 60px 20px; gap: 32px; }
+  .c155 { font-size: 32px; }
+  .c156 { max-width: 100%; }
+  .c157 { padding: 24px 24px 24px 24px; gap: 32px; }
+  .c161 { font-size: 26px; }
+  .c179 { padding: 24px 24px 24px 24px; gap: 32px; }
+  .c180 { grid-template-columns: minmax(0, 1fr); }
+  .c221 { padding: 56px 20px 56px 20px; gap: 32px; }
+  .c226 { padding: 64px 20px 64px 20px; }
+  .c227 { font-size: 23px; }
+  .c231 { grid-template-columns: minmax(0, 1fr); }
+  .c241 { padding: 56px 20px 56px 20px; }
+  .c242 { font-size: 34px; max-width: 100%; }
+}
+
+/* ===== Adaptation tablette et mobile (généré à partir des styles de la maquette) ===== */
+@media (max-width: 1100px) {
+  .c2 { padding: 56px 40px 96px 40px; }
+  .c5 { font-size: 51px; }
+  .c52 { padding: 120px 40px 120px 40px; }
+  .c55 { font-size: 39px; }
+  .c65 { padding: 0px 40px 120px 40px; }
+  .c94 { padding: 120px 40px 120px 40px; }
+  .c138 { padding: 120px 40px 120px 40px; }
+  .c153 { padding: 0px 40px 120px 40px; }
+  .c155 { font-size: 46px; }
+  .c161 { font-size: 28px; }
+  .c221 { padding: 112px 40px 112px 40px; }
+  .c226 { padding: 128px 40px 128px 40px; }
+  .c227 { font-size: 31px; }
+  .c230 { padding: 0px 40px 120px 40px; }
+  .c241 { padding: 112px 40px 112px 40px; }
+  .c242 { font-size: 49px; }
+}
+@media (max-width: 1023px) {
+  .c2 { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+  .c52 { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+  .c65 { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+  .c94 { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+  .c138 { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+  .c154 { flex-direction: column; align-items: flex-start; gap: 20px; }
+  .c157 { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+  .c179 { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+  .c221 { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+  .c231 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 767px) {
+  .c2 { padding: 56px 20px 48px 20px; gap: 32px; }
+  .c5 { font-size: 36px; }
+  .c52 { padding: 60px 20px 60px 20px; gap: 32px; }
+  .c55 { font-size: 30px; }
+  .c60 { grid-template-columns: minmax(0, 1fr); }
+  .c65 { padding: 0px 20px 60px 20px; gap: 32px; }
+  .c90 { max-width: 100%; }
+  .c94 { padding: 60px 20px 60px 20px; gap: 32px; }
+  .c138 { padding: 60px 20px 60px 20px; gap: 32px; }
+  .c153 { padding: 0px 20px 60px 20px; }
+  .c155 { font-size: 32px; }
+  .c156 { max-width: 100%; }
+  .c157 { padding: 24px 24px 24px 24px; gap: 32px; }
+  .c161 { font-size: 26px; }
+  .c179 { padding: 24px 24px 24px 24px; gap: 32px; }
+  .c180 { grid-template-columns: minmax(0, 1fr); }
+  .c221 { padding: 56px 20px 56px 20px; gap: 32px; }
+  .c226 { padding: 64px 20px 64px 20px; }
+  .c227 { font-size: 23px; }
+  .c230 { padding: 0px 20px 60px 20px; }
+  .c231 { grid-template-columns: minmax(0, 1fr); }
+  .c241 { padding: 56px 20px 56px 20px; }
+  .c242 { font-size: 34px; max-width: 100%; }
+}
+
+/* ===== Ajustements manuels (tablette et mobile) ===== */
+@media (max-width: 1023px) {
+  .c14 { width: 656px; max-width: none; margin-inline: auto; }
+  .c71 { width: 629px; max-width: none; margin-inline: auto; }
+  .c98 { width: 671px; max-width: none; margin-inline: auto; }
+  .c142 { width: 646px; max-width: none; margin-inline: auto; }
+}
+@media (max-width: 800px) {
+  .c14 { zoom: 1; }
+  .c71 { zoom: 1; }
+  .c98 { zoom: 1; }
+  .c142 { zoom: 1; }
+}
+@media (max-width: 767px) {
+  .c14 { zoom: 0.488; }
+  .c71 { zoom: 0.509; }
+  .c98 { zoom: 0.477; }
+  .c142 { zoom: 0.495; }
+}
+@media (min-width: 400px) and (max-width: 767px) {
+  .c14 { zoom: 0.534; }
+  .c71 { zoom: 0.556; }
+  .c98 { zoom: 0.522; }
+  .c142 { zoom: 0.542; }
+}
+
+/* Boutons jamais coupés sur deux lignes, rangées de boutons qui passent à la ligne */
+.c245 { white-space: nowrap; }
+.c244 { flex-wrap: wrap; }

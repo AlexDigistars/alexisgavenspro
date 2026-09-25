@@ -1,3 +1,5 @@
+import Image from "next/image";
+import portrait from "@/public/alexis-portrait.jpg";
 import Link from "next/link";
 import CalendlyLink from "@/components/CalendlyLink";
 import { CONTACT_EMAIL } from "@/config/site";
@@ -1512,7 +1514,7 @@ export default function HomeDesktop() {
       <div className={s.c260}>
         <div className={s.c219}>
           <div className={s.c261}>
-            <img className={s.c262} src="/alexis-portrait.jpg" alt="Portrait d'Alexis Gavens" />
+            <Image className={s.c262} src={portrait} alt="Portrait d'Alexis Gavens" width={128} height={128} />
             {" "}
             <div className={s.c215}>
               <span className={s.c179}>

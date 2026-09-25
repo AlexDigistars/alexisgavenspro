@@ -935,3 +935,6 @@
   .tabB { background: #1D5C57; color: #FFFFFF; }
   .status { background: #E3F1E6; color: #2F6B3E; }
 }
+
+/* Boutons jamais coupés sur deux lignes, rangées de boutons qui passent à la ligne */
+.c7, .c102, .c106, .c125 { white-space: nowrap; }

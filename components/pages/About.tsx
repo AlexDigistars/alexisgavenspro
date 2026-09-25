@@ -1,3 +1,5 @@
+import Image from "next/image";
+import portrait from "@/public/alexis-portrait.jpg";
 import CalendlyLink from "@/components/CalendlyLink";
 import s from "./About.module.css";
 
@@ -24,7 +26,7 @@ export default function About() {
         </div>
         {" "}
         <div className={s.c7}>
-          <img className={s.c8} src="/alexis-portrait.jpg" alt="Portrait d'Alexis Gavens" />
+          <Image className={s.c8} src={portrait} alt="Portrait d'Alexis Gavens" width={440} height={540} priority sizes="(max-width: 1023px) 100vw, 440px" />
           {" "}
           <div className={s.c9}>
             <span className={s.c10}>

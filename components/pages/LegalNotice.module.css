@@ -96,3 +96,45 @@
   line-height: 1.6;
   color: #3A4556;
 }
+
+/* ===== Adaptation tablette et mobile (généré à partir des styles de la maquette) ===== */
+@media (max-width: 1100px) {
+  .c1 { padding: 96px 40px 120px 40px; }
+  .c8 { font-size: 46px; }
+}
+@media (max-width: 1023px) {
+  .c1 { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+}
+@media (max-width: 767px) {
+  .c1 { padding: 48px 20px 60px 20px; gap: 32px; }
+  .c6 { max-width: 100%; }
+  .c8 { font-size: 32px; }
+  .c11 { font-size: 22px; }
+}
+
+/* ===== Adaptation tablette et mobile (généré à partir des styles de la maquette) ===== */
+@media (max-width: 1100px) {
+  .c1 { padding: 96px 40px 120px 40px; }
+  .c8 { font-size: 46px; }
+}
+@media (max-width: 1023px) {
+  .c1 { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+}
+@media (max-width: 767px) {
+  .c1 { padding: 48px 20px 60px 20px; gap: 32px; }
+  .c6 { max-width: 100%; }
+  .c8 { font-size: 32px; }
+  .c11 { font-size: 22px; }
+}
+
+/* ===== Ajustements manuels (tablette et mobile) ===== */
+
+@media (max-width: 767px) {
+  .c1 { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+}
+@media (max-width: 600px) {
+  .c12 { grid-template-columns: minmax(0, 1fr); gap: 2px; }
+  .c12 > :nth-child(even) { margin-bottom: 12px; }
+}
+
+/* Boutons jamais coupés sur deux lignes, rangées de boutons qui passent à la ligne */

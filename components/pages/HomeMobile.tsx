@@ -1,3 +1,5 @@
+import Image from "next/image";
+import portrait from "@/public/alexis-portrait.jpg";
 import SwipeCarousel from "@/components/SwipeCarousel";
 import Link from "next/link";
 import CalendlyLink from "@/components/CalendlyLink";
@@ -606,7 +608,7 @@ export default function HomeMobile() {
     {" "}
     <section className={s.c117} data-reveal id="m-contact">
       <div className={s.c118}>
-        <img className={s.c119} src="/alexis-portrait.jpg" alt="Portrait d'Alexis Gavens" />
+        <Image className={s.c119} src={portrait} alt="Portrait d'Alexis Gavens" width={72} height={72} />
         <div className={s.c120}>
           <span className={s.c115}>
             Alexis Gavens

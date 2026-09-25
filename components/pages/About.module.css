@@ -313,3 +313,78 @@
   font-size: 16px;
   font-weight: 600;
 }
+
+/* ===== Adaptation tablette et mobile (généré à partir des styles de la maquette) ===== */
+@media (max-width: 1100px) {
+  .c2 { padding: 72px 40px 112px 40px; }
+  .c5 { font-size: 56px; }
+  .c12 { padding: 120px 40px 120px 40px; }
+  .c15 { font-size: 39px; }
+  .c31 { padding: 120px 40px 120px 40px; }
+  .c38 { padding: 112px 40px 112px 40px; }
+  .c44 { font-size: 36px; }
+}
+@media (max-width: 1023px) {
+  .c2 { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+  .c8 { width: 100%; max-width: 440px; }
+  .c12 { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+  .c32 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .c38 { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+}
+@media (max-width: 767px) {
+  .c2 { padding: 40px 20px 56px 20px; gap: 32px; }
+  .c5 { font-size: 38px; }
+  .c6 { max-width: 100%; }
+  .c12 { padding: 60px 20px 60px 20px; gap: 32px; }
+  .c15 { font-size: 30px; }
+  .c31 { padding: 60px 20px 60px 20px; }
+  .c32 { grid-template-columns: minmax(0, 1fr); }
+  .c38 { padding: 56px 20px 56px 20px; gap: 32px; }
+  .c40 { font-size: 22px; }
+  .c43 { padding: 24px 24px 24px 24px; }
+  .c44 { font-size: 28px; }
+}
+
+/* ===== Adaptation tablette et mobile (généré à partir des styles de la maquette) ===== */
+@media (max-width: 1100px) {
+  .c2 { padding: 72px 40px 112px 40px; }
+  .c5 { font-size: 56px; }
+  .c12 { padding: 120px 40px 120px 40px; }
+  .c15 { font-size: 39px; }
+  .c31 { padding: 120px 40px 120px 40px; }
+  .c38 { padding: 112px 40px 112px 40px; }
+  .c44 { font-size: 36px; }
+}
+@media (max-width: 1023px) {
+  .c2 { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+  .c8 { width: 100%; max-width: 440px; }
+  .c12 { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+  .c32 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .c38 { grid-template-columns: minmax(0, 1fr); gap: 48px; }
+}
+@media (max-width: 767px) {
+  .c2 { padding: 40px 20px 56px 20px; gap: 32px; }
+  .c5 { font-size: 38px; }
+  .c6 { max-width: 100%; }
+  .c12 { padding: 60px 20px 60px 20px; gap: 32px; }
+  .c15 { font-size: 30px; }
+  .c31 { padding: 60px 20px 60px 20px; }
+  .c32 { grid-template-columns: minmax(0, 1fr); }
+  .c38 { padding: 56px 20px 56px 20px; gap: 32px; }
+  .c40 { font-size: 22px; }
+  .c43 { padding: 24px 24px 24px 24px; }
+  .c44 { font-size: 28px; }
+}
+
+/* ===== Ajustements manuels (tablette et mobile) ===== */
+
+@media (max-width: 1023px) {
+  .c7 { width: 100%; max-width: 440px; }
+  .c8 { width: 100%; height: auto; aspect-ratio: 440 / 540; }
+}
+
+/* Boutons jamais coupés sur deux lignes, rangées de boutons qui passent à la ligne */
+.c46 { white-space: nowrap; }
+@media (max-width: 1023px) {
+  .c9 { left: 16px; bottom: 16px; }
+}
