@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { IBM_Plex_Mono, Schibsted_Grotesk } from "next/font/google";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import RevealObserver from "@/components/RevealObserver";
 import { SITE_URL } from "@/config/site";
 import "./globals.css";
 
@@ -40,6 +41,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main id="contenu">{children}</main>
         <Footer />
+        <RevealObserver />
       </body>
     </html>
   );
