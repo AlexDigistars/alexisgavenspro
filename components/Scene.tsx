@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState, type ReactNode } from "react";
+import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
 import styles from "./Scene.module.css";
 
 type Props = {
@@ -12,13 +12,18 @@ type Props = {
   reveal?: boolean;
   /** Place le bouton en haut à droite quand le bas de la scène est occupé. */
   buttonPosition?: "bottom" | "top";
+  /**
+   * Moment du cycle (en secondes) où démarre la démonstration : on choisit un
+   * instant où tout est affiché, pour qu'elle apparaisse pleine dès la première image.
+   */
+  shift?: number;
 };
 
 /**
  * Démonstration animée : bouton Pause / Reprendre, et pause automatique
  * quand la scène sort de l'écran (animation-play-state, voir globals.css).
  */
-export default function Scene({ children, className, as: Tag = "div", id, reveal, buttonPosition = "bottom" }: Props) {
+export default function Scene({ children, className, as: Tag = "div", id, reveal, buttonPosition = "bottom", shift }: Props) {
   const ref = useRef<HTMLElement>(null);
   const [paused, setPaused] = useState(false);
   const [offscreen, setOffscreen] = useState(false);
@@ -80,6 +85,7 @@ export default function Scene({ children, className, as: Tag = "div", id, reveal
       id={id}
       data-reveal={reveal || undefined}
       data-scene=""
+      style={shift ? ({ "--scene-shift": `${shift}s` } as CSSProperties) : undefined}
       data-paused={frozen || offscreen ? "true" : undefined}
     >
       {children}

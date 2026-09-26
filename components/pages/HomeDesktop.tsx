@@ -1,6 +1,6 @@
 import Scene from "@/components/Scene";
 import Image from "next/image";
-import portrait from "@/public/alexis-portrait.jpg";
+import portrait from "@/public/alexis-portrait-hd.jpg";
 import Link from "next/link";
 import CalendlyLink from "@/components/CalendlyLink";
 import { CONTACT_EMAIL, CONTACT_PHONE, CONTACT_PHONE_HREF } from "@/config/site";
@@ -19,21 +19,21 @@ export default function HomeDesktop() {
             <span className={`${s.c5} ${s.pulse}`}></span>
             {" "}
             <span>
-              Logiciels métier sur mesure pour PME
+              Pour les PME · Partout en France
             </span>
           </div>
           {" "}
           <h1 className={s.c6}>
-            Des logiciels métier qui épousent votre façon de travailler.
+            Je crée des logiciels métier sur mesure pour vous.
           </h1>
           {" "}
           <p className={s.c7}>
-            Je conçois, reprends et fais évoluer les outils internes des PME.
+            Un seul outil pour piloter votre entreprise, gagner du temps et en finir avec les ressaisies.
           </p>
           {" "}
           <div className={s.c8}>
             <CalendlyLink className={s.c9}>
-              Réserver 20 min d'échange
+              Réserver 20 min
             </CalendlyLink>
             {" "}
             <a className={s.c10} href="#v2-demo">
@@ -46,7 +46,7 @@ export default function HomeDesktop() {
         </div>
         {" "}
         {" "}
-        <Scene className={s.c11}>
+        <Scene className={s.c11} shift={16.8}>
           <div className={s.c12}>
             <div className={s.c13}>
               <div className={s.c14}>
@@ -280,7 +280,7 @@ export default function HomeDesktop() {
         </h2>
       </div>
       {" "}
-      <Scene className={s.c59}>
+      <Scene className={s.c59} shift={4.5}>
         <div className={s.c60}>
           <span className={s.c61}>
             AUJOURD'HUI
@@ -360,6 +360,9 @@ export default function HomeDesktop() {
           {" "}
           <div className={s.c80}>
             <div className={`${s.c81} ${s.lit}`}>
+              <svg className={s.moduleIcon} aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M9 3h6v3H9z" /><path d="M9 4.5H6v16h12v-16h-3" /><path d="M9 11h6M9 15h4" />
+              </svg>
               <span className={s.c82}>
                 Commandes
               </span>
@@ -369,6 +372,9 @@ export default function HomeDesktop() {
             </div>
             {" "}
             <div className={`${s.c84} ${s.lit}`}>
+              <svg className={s.moduleIcon} aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <rect x="3" y="4" width="18" height="17" rx="2" /><path d="M3 9h18M8 2v4M16 2v4" />
+              </svg>
               <span className={s.c82}>
                 Planning
               </span>
@@ -378,6 +384,9 @@ export default function HomeDesktop() {
             </div>
             {" "}
             <div className={`${s.c85} ${s.lit}`}>
+              <svg className={s.moduleIcon} aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M3 7l9-4 9 4-9 4z" /><path d="M3 7v10l9 4 9-4V7" />
+              </svg>
               <span className={s.c82}>
                 Stocks
               </span>
@@ -387,6 +396,9 @@ export default function HomeDesktop() {
             </div>
             {" "}
             <div className={`${s.c86} ${s.lit}`}>
+              <svg className={s.moduleIcon} aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="9" cy="8" r="4" /><path d="M2 21c0-4 3-6 7-6s7 2 7 6" />
+              </svg>
               <span className={s.c82}>
                 Clients
               </span>
@@ -396,6 +408,9 @@ export default function HomeDesktop() {
             </div>
             {" "}
             <div className={`${s.c87} ${s.lit}`}>
+              <svg className={s.moduleIcon} aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M6 2h9l5 5v15H6z" /><path d="M14 2v6h6" /><path d="M9 13h6M9 17h4" />
+              </svg>
               <span className={s.c82}>
                 Factures
               </span>
@@ -405,6 +420,9 @@ export default function HomeDesktop() {
             </div>
             {" "}
             <div className={`${s.c88} ${s.lit}`}>
+              <svg className={s.moduleIcon} aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M3 6a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+              </svg>
               <span className={s.c82}>
                 Documents
               </span>
@@ -505,7 +523,7 @@ export default function HomeDesktop() {
         </p>
       </div>
       {" "}
-      <Scene className={s.c96}>
+      <Scene className={s.c96} shift={4.5}>
         <div className={s.c97}>
           <div className={s.c98}>
             <div className={`${s.c99} ${s.wf}`}></div>
@@ -704,17 +722,15 @@ export default function HomeDesktop() {
     <section className={s.c137} data-reveal id="v2-demo">
       <div className={s.c94}>
         <h2 className={s.c58}>
-          Simple, clair,
-          <br />
-          et tout est relié.
+          Un logiciel complet, connecté, simple à utiliser.
         </h2>
         {" "}
         <p className={s.c138}>
-          Au bureau comme sur le terrain : seul l'utile à l'écran, et un clic vous mène à la bonne information.
+          Au bureau comme sur le terrain : seul l'utile s'affiche à l'écran, et un clic vous mène à la bonne information.
         </p>
       </div>
       {" "}
-      <Scene className={s.c139}>
+      <Scene className={s.c139} shift={3}>
         <div className={s.c140}>
           <div className={s.c22}>
             <span className={s.c141}>
@@ -1171,7 +1187,7 @@ export default function HomeDesktop() {
           </svg>
           <div className={s.c215}>
             <span className={s.c216}>
-              Relié
+              Connecté
             </span>
             <span className={s.c217}>
               Clients, commandes, factures : tout se répond.
@@ -1213,8 +1229,11 @@ export default function HomeDesktop() {
         </div>
         {" "}
         <h2 className={s.c224}>
-          Un logiciel repris, accéléré et enrichi, sans jamais l'arrêter.
+          Un logiciel existant, transformé en vrai outil de pilotage.
         </h2>
+        <p className={s.earlyIntro}>
+          Rendu simple à utiliser, puis enrichi de ce qui manquait : facturation automatique, suivi clients, pilotage des équipes.
+        </p>
         {" "}
         <figure className={s.c225}>
           <svg aria-hidden="true" focusable="false" width="28" height="22" viewBox="0 0 28 22" fill="#8FD0C5">
@@ -1403,7 +1422,7 @@ export default function HomeDesktop() {
       <div className={s.c250}>
         <div className={s.c251}>
           <span className={s.c252}>
-            Mes engagements, écrits dans chaque devis
+            Mes engagements, noir sur blanc.
           </span>
           <span className={s.c89}>
             SANS PETITES LIGNES
@@ -1522,7 +1541,7 @@ export default function HomeDesktop() {
                 Alexis Gavens
               </span>
               <span className={s.c263}>
-                Ex-responsable administration des ventes (ADV) & logistique, développeur de logiciels métier
+                Créateur de logiciels métier · ex-responsable ADV & logistique
               </span>
             </div>
           </div>
@@ -1545,7 +1564,7 @@ export default function HomeDesktop() {
               RÉALISATION
             </span>
             <span className={s.c269}>
-              Early : l'étude de cas complète →
+              Early : l&apos;étude de cas complète&nbsp;→
             </span>
           </Link>
           {" "}
@@ -1554,7 +1573,7 @@ export default function HomeDesktop() {
               FORMATION
             </span>
             <span className={s.c269}>
-              Former vos équipes à l'IA →
+              Former vos équipes à l&apos;IA&nbsp;→
             </span>
           </Link>
         </div>
@@ -1570,7 +1589,7 @@ export default function HomeDesktop() {
         </p>
         {" "}
         <CalendlyLink className={s.c273}>
-          Réserver un créneau
+          Réserver 20 min
         </CalendlyLink>
         {" "}
         <div className={s.c274}>

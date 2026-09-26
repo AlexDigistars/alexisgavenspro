@@ -1,5 +1,5 @@
 import Image from "next/image";
-import portrait from "@/public/alexis-portrait.jpg";
+import portrait from "@/public/alexis-portrait-hd.jpg";
 import CalendlyLink from "@/components/CalendlyLink";
 import s from "./About.module.css";
 
@@ -17,7 +17,7 @@ export default function About() {
           </span>
           {" "}
           <h1 className={s.c5}>
-            J'ai été l'utilisateur de ces outils avant d'en être le concepteur.
+            J'ai utilisé ces outils avant de les créer.
           </h1>
           {" "}
           <p className={s.c6}>

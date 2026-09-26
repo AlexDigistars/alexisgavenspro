@@ -1,35 +1,35 @@
 /* Généré depuis design-reference/EtudeCasEarly.html : styles de la maquette. */
 
 /* Animations de la maquette */
-.pulse{animation:pulse 2s ease-out infinite}
+.pulse{animation:pulse 2s ease-out infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
 @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(29,92,87,.55)}70%{box-shadow:0 0 0 10px rgba(29,92,87,0)}100%{box-shadow:0 0 0 0 rgba(29,92,87,0)}}
-.pulse-warn{animation:pulsew 2s ease-out infinite}
+.pulse-warn{animation:pulsew 2s ease-out infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
 @keyframes pulsew{0%{box-shadow:0 0 0 0 rgba(197,139,42,.6)}70%{box-shadow:0 0 0 10px rgba(197,139,42,0)}100%{box-shadow:0 0 0 0 rgba(197,139,42,0)}}
-.cell{animation:cell 10s ease-out infinite}
+.cell{animation:cell 10s ease-out infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
 @keyframes cell{0%{opacity:0;transform:scale(.92)}6%,94%{opacity:1;transform:scale(1)}100%{opacity:1}}
-.grow{transform-origin:left center;animation:grow 10s ease-out infinite}
+.grow{transform-origin:left center;animation:grow 10s ease-out infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
 @keyframes grow{0%{transform:scaleX(0)}14%,92%{transform:scaleX(1)}100%{transform:scaleX(1)}}
-.slow{animation:slow 8s linear infinite}
+.slow{animation:slow 8s linear infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
 @keyframes slow{0%{width:0%}85%,100%{width:100%}}
-.fast{animation:fast 8s ease-out infinite}
+.fast{animation:fast 8s ease-out infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
 @keyframes fast{0%{width:0%}4%,100%{width:100%}}
-.okfast{animation:okfast 8s ease-out infinite}
+.okfast{animation:okfast 8s ease-out infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
 @keyframes okfast{0%,4%{opacity:0}7%,100%{opacity:1}}
-.okslow{animation:okslow 8s ease-out infinite}
+.okslow{animation:okslow 8s ease-out infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
 @keyframes okslow{0%,85%{opacity:0}88%,100%{opacity:1}}
-.check{animation:check 6s ease-in-out infinite}
+.check{animation:check 6s ease-in-out infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
 @keyframes check{0%,20%{background:#FFFFFF;border-color:#B7BDC6}30%,92%{background:#1D5C57;border-color:#1D5C57}100%{background:#FFFFFF;border-color:#B7BDC6}}
-.grow-y{transform-origin:bottom center;animation:growy 8s ease-out infinite}
+.grow-y{transform-origin:bottom center;animation:growy 8s ease-out infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
 @keyframes growy{0%{transform:scaleY(0)}15%,92%{transform:scaleY(1)}100%{transform:scaleY(1)}}
-.pin{animation:pin 9s ease-out infinite}
+.pin{animation:pin 9s ease-out infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
 @keyframes pin{0%,8%{opacity:0;transform:scale(.7)}14%,90%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(1)}}
-.pop{animation:pop 8s ease-out infinite}
+.pop{animation:pop 8s ease-out infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
 @keyframes pop{0%,18%{opacity:0;transform:translateY(8px) scale(.98)}24%,86%{opacity:1;transform:translateY(0) scale(1)}92%,100%{opacity:0;transform:translateY(0) scale(1)}}
-.cur2{animation:cur2 8s ease-in-out infinite}
+.cur2{animation:cur2 8s ease-in-out infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
 @keyframes cur2{0%{opacity:0;transform:translate(30px,30px)}10%,16%{opacity:1;transform:translate(0,0)}18%{opacity:1;transform:scale(.85)}20%{opacity:1;transform:scale(1)}28%,100%{opacity:0;transform:scale(1)}}
-.flow{stroke-dasharray:6 8;animation:flow 1.2s linear infinite}
+.flow{stroke-dasharray:6 8;animation:flow 1.2s linear infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
 @keyframes flow{to{stroke-dashoffset:-28}}
-.float{animation:float 6s ease-in-out infinite}
+.float{animation:float 6s ease-in-out infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
 
 .c1 {
@@ -245,105 +245,105 @@
   color: #2F6B3E;
 }
 .c37 {
-  animation-delay: .1s !important;
+  animation-delay: calc(.1s - var(--scene-shift, 0s)) !important;
   padding: 9px 0;
   border-radius: 7px;
   background: #E3F1E6;
   color: #2F6B3E;
 }
 .c38 {
-  animation-delay: .2s !important;
+  animation-delay: calc(.2s - var(--scene-shift, 0s)) !important;
   padding: 9px 0;
   border-radius: 7px;
   background: #FBEBD6;
   color: #9A5B12;
 }
 .c39 {
-  animation-delay: .3s !important;
+  animation-delay: calc(.3s - var(--scene-shift, 0s)) !important;
   padding: 9px 0;
   border-radius: 7px;
   background: #E2ECFB;
   color: #2B57A8;
 }
 .c40 {
-  animation-delay: .4s !important;
+  animation-delay: calc(.4s - var(--scene-shift, 0s)) !important;
   padding: 9px 0;
   border-radius: 7px;
   background: #E3F1E6;
   color: #2F6B3E;
 }
 .c41 {
-  animation-delay: .1s !important;
+  animation-delay: calc(.1s - var(--scene-shift, 0s)) !important;
   padding: 9px 0;
   border-radius: 7px;
   background: #FBE3E1;
   color: #A33A2F;
 }
 .c42 {
-  animation-delay: .2s !important;
+  animation-delay: calc(.2s - var(--scene-shift, 0s)) !important;
   padding: 9px 0;
   border-radius: 7px;
   background: #E3F1E6;
   color: #2F6B3E;
 }
 .c43 {
-  animation-delay: .3s !important;
+  animation-delay: calc(.3s - var(--scene-shift, 0s)) !important;
   padding: 9px 0;
   border-radius: 7px;
   background: #E3F1E6;
   color: #2F6B3E;
 }
 .c44 {
-  animation-delay: .4s !important;
+  animation-delay: calc(.4s - var(--scene-shift, 0s)) !important;
   padding: 9px 0;
   border-radius: 7px;
   border: 1px dashed #B7BDC6;
   color: #5A6474;
 }
 .c45 {
-  animation-delay: .5s !important;
+  animation-delay: calc(.5s - var(--scene-shift, 0s)) !important;
   padding: 9px 0;
   border-radius: 7px;
   background: #E2ECFB;
   color: #2B57A8;
 }
 .c46 {
-  animation-delay: .5s !important;
+  animation-delay: calc(.5s - var(--scene-shift, 0s)) !important;
   padding: 9px 0;
   border-radius: 7px;
   background: #E3F1E6;
   color: #2F6B3E;
 }
 .c47 {
-  animation-delay: .6s !important;
+  animation-delay: calc(.6s - var(--scene-shift, 0s)) !important;
   padding: 9px 0;
   border-radius: 7px;
   background: #E3F1E6;
   color: #2F6B3E;
 }
 .c48 {
-  animation-delay: .4s !important;
+  animation-delay: calc(.4s - var(--scene-shift, 0s)) !important;
   padding: 9px 0;
   border-radius: 7px;
   background: #FBEBD6;
   color: #9A5B12;
 }
 .c49 {
-  animation-delay: .6s !important;
+  animation-delay: calc(.6s - var(--scene-shift, 0s)) !important;
   padding: 9px 0;
   border-radius: 7px;
   background: #FBE3E1;
   color: #A33A2F;
 }
 .c50 {
-  animation-delay: .7s !important;
+  animation-delay: calc(.7s - var(--scene-shift, 0s)) !important;
   padding: 9px 0;
   border-radius: 7px;
   background: #E3F1E6;
   color: #2F6B3E;
 }
 .c51 {
-  animation-delay: .8s !important;
+  animation-delay: calc(.8s - var(--scene-shift, 0s)) !important;
   padding: 9px 0;
   border-radius: 7px;
   background: #FBEBD6;
@@ -590,7 +590,7 @@
   line-height: 1.4;
 }
 .c91 {
-  animation-delay: 1.5s !important;
+  animation-delay: calc(1.5s - var(--scene-shift, 0s)) !important;
   position: absolute;
   left: 330px;
   top: 250px;
@@ -599,7 +599,7 @@
   gap: 8px;
 }
 .c92 {
-  animation-delay: 3s !important;
+  animation-delay: calc(3s - var(--scene-shift, 0s)) !important;
   position: absolute;
   left: 190px;
   top: 392px;
@@ -608,7 +608,7 @@
   gap: 8px;
 }
 .c93 {
-  animation-delay: 4.5s !important;
+  animation-delay: calc(4.5s - var(--scene-shift, 0s)) !important;
   position: absolute;
   right: 24px;
   top: 20px;
@@ -1273,7 +1273,7 @@
   flex-grow: 1;
 }
 .c190 {
-  animation-delay: .6s !important;
+  animation-delay: calc(.6s - var(--scene-shift, 0s)) !important;
   width: 14px;
   height: 14px;
   border-radius: 4px;
@@ -1553,7 +1553,7 @@
   background: #FFFFFF;
 }
 .c233 {
-  animation-delay: 0.0s !important;
+  animation-delay: calc(0.0s - var(--scene-shift, 0s)) !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1574,7 +1574,7 @@
   color: #3A4556;
 }
 .c236 {
-  animation-delay: 0.5s !important;
+  animation-delay: calc(0.5s - var(--scene-shift, 0s)) !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1584,7 +1584,7 @@
   background: #DCEAE7;
 }
 .c237 {
-  animation-delay: 1.0s !important;
+  animation-delay: calc(1.0s - var(--scene-shift, 0s)) !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1594,7 +1594,7 @@
   background: #DCEAE7;
 }
 .c238 {
-  animation-delay: 1.5s !important;
+  animation-delay: calc(1.5s - var(--scene-shift, 0s)) !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1604,7 +1604,7 @@
   background: #DCEAE7;
 }
 .c239 {
-  animation-delay: 2.0s !important;
+  animation-delay: calc(2.0s - var(--scene-shift, 0s)) !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1614,7 +1614,7 @@
   background: #DCEAE7;
 }
 .c240 {
-  animation-delay: 2.5s !important;
+  animation-delay: calc(2.5s - var(--scene-shift, 0s)) !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1899,3 +1899,15 @@
 @media (max-width: 767px) {
   .c157, .c179 { padding-bottom: 64px; }
 }
+
+/* ===== Étude de cas en 4 actes ===== */
+/* Ligne de résultat de chaque lot, visible même accordéon fermé */
+.lotResult { font-size: 17px; line-height: 1.5; color: #3A4556; }
+/* Citation de Joseph, placée après les tuiles de résultats */
+.c230 > .c226 { padding: 48px 80px 0; }
+@media (max-width: 767px) {
+  .c230 > .c226 { padding: 32px 0 0; }
+  .lotResult { font-size: 16px; }
+}
+/* Mention « 04 · Résultats » collée à son titre, comme dans les autres actes */
+.c230 > .c54 { margin-bottom: -24px; }

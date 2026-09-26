@@ -1,3 +1,4 @@
+import CaseToc from "@/components/CaseToc";
 import { EarlyHeroMobile, EarlyMockupMobile, EarlyNavigationMobile, EarlyHubMobile } from "./EarlyMobileDemos";
 import m from "./EarlyMobileDemos.module.css";
 import Scene from "@/components/Scene";
@@ -19,7 +20,7 @@ export default function EarlyCase() {
           </span>
           {" "}
           <h1 className={s.c5}>
-            Early : un logiciel de gestion repris, sécurisé et enrichi, sans jamais l'arrêter.
+            Early : un logiciel existant, transformé en vrai outil de pilotage.
           </h1>
           {" "}
           <p className={s.c6}>
@@ -32,28 +33,28 @@ export default function EarlyCase() {
           <div className={s.c7}>
             <div className={s.c8}>
               <span className={s.c9}>
-                MISSION
+                FACTURATION
               </span>
               <span className={s.c10}>
-                Reprise et évolution
+                Automatisée, sans ressaisie
               </span>
             </div>
             {" "}
             <div className={s.c11}>
               <span className={s.c9}>
-                PÉRIMÈTRE
+                PILOTAGE
               </span>
               <span className={s.c10}>
-                4 lots, 7 fonctionnalités
+                Toute l&apos;activité sur un écran
               </span>
             </div>
             {" "}
             <div className={s.c8}>
               <span className={s.c9}>
-                RELIÉ À
+                OUTILS RELIÉS
               </span>
               <span className={s.c10}>
-                Pennylane · Google Agenda · Meta
+                Pennylane · Google Agenda · Meta · Excel
               </span>
             </div>
             {" "}
@@ -70,7 +71,7 @@ export default function EarlyCase() {
         </div>
         {" "}
         {" "}
-        <Scene className={m.sceneWrap}>
+        <Scene className={m.sceneWrap} shift={2}>
           <div className={`${s.c14} ${m.desktopOnly}`}>
             <div className={s.c15}>
               <div className={s.c16}>
@@ -295,14 +296,15 @@ export default function EarlyCase() {
     </section>
     {" "}
     {" "}
-    <section className={s.c52} data-reveal>
+    <CaseToc />
+    <section className={s.c52} data-reveal id="avant" data-act="1">
       <div className={s.c53}>
         <span className={s.c54}>
-          Le point de départ
+          01 · Avant
         </span>
         {" "}
         <h2 className={s.c55}>
-          Un outil utilisé chaque jour, devenu difficile à faire évoluer.
+          Un outil devenu un frein.
         </h2>
         {" "}
         <p className={s.c56}>
@@ -367,7 +369,7 @@ export default function EarlyCase() {
             Des accès mal maîtrisés
           </span>
           <span className={s.c64}>
-            Chaque changement passait par un prestataire.
+            Anciens prestataires et droits jamais revus.
           </span>
         </div>
         {" "}
@@ -389,14 +391,14 @@ export default function EarlyCase() {
     </section>
     {" "}
     {" "}
-    <section className={s.c65} data-reveal>
+    <section className={s.c65} data-reveal id="methode" data-act="2">
       <div className={s.c53}>
         <span className={s.c54}>
-          Co-construit avec le dirigeant
+          02 · Méthode
         </span>
         {" "}
         <h2 className={s.c55}>
-          Tout ce que le dirigeant avait en tête, transformé en écrans.
+          Chaque écran validé avant d&apos;être codé.
         </h2>
         {" "}
         <p className={s.c56}>
@@ -448,7 +450,7 @@ export default function EarlyCase() {
         </div>
       </div>
       {" "}
-      <Scene className={m.sceneWrap}>
+      <Scene className={m.sceneWrap} shift={6.5}>
         <div className={`${s.c71} ${m.desktopOnly}`}>
           <div className={s.c72}>
             <div className={s.c73}>
@@ -533,14 +535,14 @@ export default function EarlyCase() {
     </section>
     {" "}
     {" "}
-    <section className={s.c94} data-reveal>
+    <section className={s.c94} data-reveal id="logiciel" data-act="3">
       <div className={s.c53}>
         <span className={s.c4}>
-          Une expérience pensée écran par écran
+          03 · Le logiciel
         </span>
         {" "}
         <h2 className={s.c55}>
-          Des chiffres dans tous les sens, devenus une navigation où tout se répond.
+          Toute l&apos;information, à un clic.
         </h2>
         {" "}
         <p className={s.c95}>
@@ -574,7 +576,7 @@ export default function EarlyCase() {
         </CalendlyLink>
       </div>
       {" "}
-      <Scene className={m.sceneWrap}>
+      <Scene className={m.sceneWrap} shift={3}>
         <div className={`${s.c98} ${m.desktopOnly}`}>
           <div className={s.c99}>
             <span className={s.c100}>
@@ -775,36 +777,16 @@ export default function EarlyCase() {
         <EarlyNavigationMobile />
       </Scene>
     </section>
-    <section className={s.c226} data-reveal>
-      <svg aria-hidden="true" focusable="false" width="44" height="34" viewBox="0 0 28 22" fill="#1D5C57">
-        <path d="M0 22V12C0 5 4 1 11 0l1 3c-4 1-6 4-6 7h5v12zm16 0V12c0-7 4-11 11-12l1 3c-4 1-6 4-6 7h5v12z" />
-      </svg>
-      <blockquote className={s.c227}>
-        Alexis a vraiment fait évoluer notre logiciel : il est plus rapide, plus réactif et bien plus simple à utiliser. Il écoute nos besoins et il est force de proposition. C'est agréable de travailler avec lui.
-      </blockquote>
-      <div className={s.c68}>
-        <span className={s.c228}>
-          Joseph Herbinet
-        </span>
-        <span className={s.c229}>
-          Dirigeant d'Early
-        </span>
-      </div>
-    </section>
     {" "}
     {" "}
-    <section className={s.c138} data-reveal>
+    <section className={s.c138} data-reveal data-act="3">
       <div className={s.c53}>
-        <span className={s.c54}>
-          Automatisations et connexions
-        </span>
-        {" "}
         <h2 className={s.c55}>
-          Tout ce qui était éparpillé, réuni au même endroit.
+          Tous ses outils, un seul écran.
         </h2>
         {" "}
         <p className={s.c56}>
-          Des connexions directes avec les outils de l'agence ramènent tout dans le logiciel, automatiquement : campagnes publicitaires, agendas, comptabilité, fichiers de production. Plus besoin d'ouvrir cinq outils pour avoir une vision complète.
+          Des connexions directes avec les outils de l'agence ramènent tout dans le logiciel, automatiquement : campagnes publicitaires, agendas, comptabilité, fichiers de production. Plus besoin d'ouvrir plusieurs outils pour avoir une vision complète.
         </p>
         {" "}
         <div className={s.c139}>
@@ -853,7 +835,6 @@ export default function EarlyCase() {
             <path className={s.flow} d="M490 100 L310 260" stroke="#1D5C57" strokeWidth="2" />
             <path className={s.flow} d="M130 420 L310 260" stroke="#1D5C57" strokeWidth="2" />
             <path className={s.flow} d="M490 420 L310 260" stroke="#1D5C57" strokeWidth="2" />
-            <path className={s.flow} d="M310 60 L310 260" stroke="#1D5C57" strokeWidth="2" />
           </svg>
           {" "}
           <div className={s.c144}>
@@ -881,14 +862,6 @@ export default function EarlyCase() {
             Google Agenda
           </div>
           {" "}
-          <div className={s.c150}>
-            <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <rect x="3" y="5" width="18" height="14" rx="2" />
-              <path d="M3 7l9 6 9-6" />
-            </svg>
-            Gmail
-          </div>
-          {" "}
           <div className={s.c151}>
             <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <rect x="4" y="3" width="16" height="18" rx="2" />
@@ -910,21 +883,19 @@ export default function EarlyCase() {
     </section>
     {" "}
     {" "}
-    <section className={s.c153} data-reveal>
+    <section className={s.c153} data-reveal data-act="3">
       <div className={s.c154}>
         <h2 className={s.c155}>
-          Ce que j'ai livré,
-          <br />
-          lot par lot.
+          Livré en 4 étapes.
         </h2>
         {" "}
         <p className={s.c156}>
-          Chaque écran validé sur maquette par le dirigeant avant d'être développé, puis livré et vérifié avec l'équipe.
+          Trois lots livrés, le quatrième en finition.
         </p>
       </div>
       {" "}
       {" "}
-      <Scene className={s.c157}>
+      <Scene className={s.c157} shift={7.4}>
         <details className={`${s.c158} ${s.lotDetails}`}>
           <summary className={s.lotSummary}>
             <span className={`${s.c124} ${s.lotRow}`}>
@@ -943,6 +914,8 @@ export default function EarlyCase() {
             <h3 className={s.c161}>
               Sécurité, accès et rapidité
             </h3>
+            {" "}
+            <span className={s.lotResult}>Des écrans beaucoup plus rapides, des accès enfin maîtrisés.</span>
           </summary>
           <div className={s.c162}>
             <span>
@@ -1048,7 +1021,7 @@ export default function EarlyCase() {
       </Scene>
       {" "}
       {" "}
-      <Scene className={s.c179}>
+      <Scene className={s.c179} shift={3.5}>
         <div className={s.c180}>
           <div className={s.c181}>
             <span className={s.c182}>
@@ -1150,6 +1123,8 @@ export default function EarlyCase() {
             <h3 className={s.c161}>
               Facturation automatisée, marge enfin visible
             </h3>
+            {" "}
+            <span className={s.lotResult}>Le temps passé part en facture dans Pennylane, sans ressaisie.</span>
           </summary>
           <div className={s.c162}>
             <span>
@@ -1191,6 +1166,8 @@ export default function EarlyCase() {
             <h3 className={s.c161}>
               Plus aucune échéance oubliée
             </h3>
+            {" "}
+            <span className={s.lotResult}>Les validations en attente, triées par urgence.</span>
           </summary>
           <div className={s.c162}>
             <span>
@@ -1284,7 +1261,7 @@ export default function EarlyCase() {
       </Scene>
       {" "}
       {" "}
-      <Scene className={s.c179}>
+      <Scene className={s.c179} shift={2}>
         <div className={s.c211}>
           <div className={s.c73}>
             <span className={s.c197}>
@@ -1359,6 +1336,8 @@ export default function EarlyCase() {
             <h3 className={s.c161}>
               Plus un euro oublié à la facturation
             </h3>
+            {" "}
+            <span className={s.lotResult}>Prestations, heures et frais réunis avant chaque facture.</span>
           </summary>
           <div className={s.c162}>
             <span>
@@ -1382,9 +1361,12 @@ export default function EarlyCase() {
     {" "}
     {" "}
     {" "}
-    <section className={s.c230} data-reveal>
+    <section className={s.c230} data-reveal id="resultats" data-act="4">
+      <span className={s.c54}>
+        04 · Résultats
+      </span>
       <h2 className={s.c55}>
-        Ce qui a changé pour l'entreprise
+        Ce qui a changé.
       </h2>
       {" "}
       <div className={s.c231}>
@@ -1495,6 +1477,22 @@ export default function EarlyCase() {
           </span>
         </div>
       </div>
+      <div className={s.c226}>
+      <svg aria-hidden="true" focusable="false" width="44" height="34" viewBox="0 0 28 22" fill="#1D5C57">
+        <path d="M0 22V12C0 5 4 1 11 0l1 3c-4 1-6 4-6 7h5v12zm16 0V12c0-7 4-11 11-12l1 3c-4 1-6 4-6 7h5v12z" />
+      </svg>
+      <blockquote className={s.c227}>
+        Alexis a vraiment fait évoluer notre logiciel : il est plus rapide, plus réactif et bien plus simple à utiliser. Il écoute nos besoins et il est force de proposition. C'est agréable de travailler avec lui.
+      </blockquote>
+      <div className={s.c68}>
+        <span className={s.c228}>
+          Joseph Herbinet
+        </span>
+        <span className={s.c229}>
+          Dirigeant d'Early
+        </span>
+      </div>
+      </div>
     </section>
     {" "}
     {" "}
@@ -1509,7 +1507,7 @@ export default function EarlyCase() {
       {" "}
       <div className={s.c244}>
         <CalendlyLink className={s.c245}>
-          Réserver un créneau
+          Réserver 20 min
         </CalendlyLink>
         {" "}
         <Link className={s.c246} href="/">

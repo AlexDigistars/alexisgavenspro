@@ -1,6 +1,6 @@
 import Scene from "@/components/Scene";
 import Image from "next/image";
-import portrait from "@/public/alexis-portrait.jpg";
+import portrait from "@/public/alexis-portrait-hd.jpg";
 import SwipeCarousel from "@/components/SwipeCarousel";
 import Link from "next/link";
 import CalendlyLink from "@/components/CalendlyLink";
@@ -17,22 +17,22 @@ export default function HomeMobile() {
       <div className={s.c2}>
         <div className={s.c3}>
           <span className={`${s.c4} ${s.pulse}`}></span>
-          Logiciels métier sur mesure pour PME
+          Pour les PME · Partout en France
         </div>
         {" "}
         <h1 className={s.c5}>
-          Des logiciels métier qui épousent votre façon de travailler.
+          Je crée des logiciels métier sur mesure pour vous.
         </h1>
         {" "}
         <p className={s.c6}>
-          Je conçois, reprends et fais évoluer les outils internes des PME.
+          Un seul outil pour piloter votre entreprise, gagner du temps et en finir avec les ressaisies.
         </p>
         {" "}
         <CalendlyLink className={s.c7}>
-          Réserver 20 min d'échange
+          Réserver 20 min
         </CalendlyLink>
         {" "}
-        <Scene className={s.c8}>
+        <Scene className={s.c8} shift={3.5}>
           <div className={s.c9}>
             <span className={s.c10}>
               Suivi des affaires
@@ -89,7 +89,7 @@ export default function HomeMobile() {
     </section>
     {" "}
     {" "}
-    <Scene as="section" className={s.c24} reveal>
+    <section className={s.c24} data-reveal>
       <span className={s.c25}>
         Le constat
       </span>
@@ -98,57 +98,59 @@ export default function HomeMobile() {
         De l'éparpillement à un seul outil.
       </h2>
       {" "}
-      <div className={s.c27}>
-        <span className={`${s.c28} ${s.tabA}`}>
-          Aujourd'hui
-        </span>
-        <span className={`${s.c28} ${s.tabB}`}>
-          Demain
-        </span>
-      </div>
-      {" "}
-      <div className={s.c29}>
-        <div className={`${s.c30} ${s.stA}`}>
-          <div className={s.c31}>
-            Suivi_commandes_v3_FINAL.xlsx
-          </div>
-          {" "}
-          <div className={s.c32}>
-            Planning techniciens (2).xlsx
-          </div>
-          {" "}
-          <div className={s.c33}>
-            <strong>
-              RE: RE: TR: dispo mardi ?
-            </strong>
-            <span className={s.c34}>
-              23 messages
-            </span>
-          </div>
-          {" "}
-          <div className={s.c35}>
-            Rappeler M. Petit pour le devis ??
-          </div>
+      <Scene className={s.stage}>
+        <div className={s.c27}>
+          <span className={`${s.c28} ${s.tabA}`}>
+            Aujourd'hui
+          </span>
+          <span className={`${s.c28} ${s.tabB}`}>
+            Demain
+          </span>
         </div>
         {" "}
-        <div className={`${s.c36} ${s.stB}`}>
-          <div className={s.c37}>
-            Commandes
+        <div className={s.c29}>
+          <div className={`${s.c30} ${s.stA}`}>
+            <div className={s.c31}>
+              Suivi_commandes_v3_FINAL.xlsx
+            </div>
+            {" "}
+            <div className={s.c32}>
+              Planning techniciens (2).xlsx
+            </div>
+            {" "}
+            <div className={s.c33}>
+              <strong>
+                RE: RE: TR: dispo mardi ?
+              </strong>
+              <span className={s.c34}>
+                23 messages
+              </span>
+            </div>
+            {" "}
+            <div className={s.c35}>
+              Rappeler M. Petit pour le devis ??
+            </div>
           </div>
           {" "}
-          <div className={s.c37}>
-            Planning
-          </div>
-          {" "}
-          <div className={s.c37}>
-            Clients
-          </div>
-          {" "}
-          <div className={s.c37}>
-            Factures
+          <div className={`${s.c36} ${s.stB}`}>
+            <div className={s.c37}>
+              Commandes
+            </div>
+            {" "}
+            <div className={s.c37}>
+              Planning
+            </div>
+            {" "}
+            <div className={s.c37}>
+              Clients
+            </div>
+            {" "}
+            <div className={s.c37}>
+              Factures
+            </div>
           </div>
         </div>
-      </div>
+      </Scene>
       {" "}
       <div className={s.c38}>
         <span className={s.c39}>
@@ -167,7 +169,7 @@ export default function HomeMobile() {
           + 5 outils
         </span>
       </div>
-    </Scene>
+    </section>
     {" "}
     {" "}
     <section className={s.c41} data-reveal>
@@ -265,14 +267,14 @@ export default function HomeMobile() {
     {" "}
     <section className={s.c59} data-reveal>
       <h2 className={s.c42}>
-        Simple, clair, et tout est relié.
+        Un logiciel complet, connecté, simple à utiliser.
       </h2>
       {" "}
       <p className={s.c60}>
-        Au bureau comme sur le terrain, un clic vous mène à la bonne information.
+        Au bureau comme sur le terrain : seul l'utile s'affiche à l'écran, et un clic vous mène à la bonne information.
       </p>
       {" "}
-      <Scene>
+      <Scene shift={2.5}>
       <SwipeCarousel
         reserveControlSpace
         label="Exemples d'écrans"
@@ -432,8 +434,11 @@ export default function HomeMobile() {
       </span>
       {" "}
       <h2 className={s.c94}>
-        Un logiciel repris, accéléré et enrichi, sans jamais l'arrêter.
+        Un logiciel existant, transformé en vrai outil de pilotage.
       </h2>
+      <p className={s.earlyIntro}>
+        Rendu simple à utiliser, puis enrichi de ce qui manquait : facturation automatique, suivi clients, pilotage des équipes.
+      </p>
       {" "}
       <div className={s.c95}>
         <div className={s.c96}>
@@ -586,7 +591,7 @@ export default function HomeMobile() {
       {" "}
       <div className={s.c114}>
         <span className={s.c115}>
-          Mes engagements
+          Mes engagements, noir sur blanc.
         </span>
         {" "}
         <div className={s.c116}>
@@ -621,7 +626,7 @@ export default function HomeMobile() {
             Alexis Gavens
           </span>
           <span className={s.c121}>
-            Ex-responsable administration des ventes (ADV) & logistique
+            Créateur de logiciels métier · ex-responsable ADV & logistique
           </span>
         </div>
       </div>
@@ -636,7 +641,7 @@ export default function HomeMobile() {
         </span>
         {" "}
         <CalendlyLink className={s.c125}>
-          Réserver un créneau
+          Réserver 20 min
         </CalendlyLink>
         {" "}
         <a className={s.c126} href={CONTACT_PHONE_HREF}>
