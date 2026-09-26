@@ -2190,3 +2190,30 @@
 
 /* Bloc Early : phrase d'introduction sous le titre */
 .earlyIntro { margin: 0; font-size: 18px; line-height: 1.55; color: #A9B2BF; }
+
+/* ===== Haut de l'accueil sur ordinateur (≥ 1100 px) =====
+   Colonne de texte élargie (titre en 3 à 4 lignes à 68 px), démonstration calée
+   sur le bord droit du conteneur, aligné sur l'en-tête ; le téléphone reste à
+   cheval sur le coin bas gauche de la fenêtre. La démonstration est réduite par
+   paliers pour tenir dans la colonne restante. */
+@media (min-width: 1100px) {
+  .c2 {
+    grid-template-columns: 550px minmax(0, 1fr);
+    gap: 48px;
+    width: 100%;
+    max-width: var(--page-max);
+    margin-inline: auto;
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
+  }
+  .c3 { max-width: none; }
+  .c6 { font-size: 68px; }
+  .c11 { justify-self: end; width: 716px; margin-inline: 0; zoom: 1; }
+}
+@media (min-width: 1100px) and (max-width: 1439px) { .c11 { zoom: 0.89; } }
+@media (min-width: 1100px) and (max-width: 1359px) { .c11 { zoom: 0.78; } }
+@media (min-width: 1100px) and (max-width: 1279px) { .c11 { zoom: 0.67; } }
+@media (min-width: 1100px) and (max-width: 1199px) {
+  .c2 { grid-template-columns: 520px minmax(0, 1fr); gap: 40px; }
+  .c11 { zoom: 0.58; }
+}
