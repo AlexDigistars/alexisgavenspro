@@ -2220,9 +2220,9 @@
 
 /* « Votre logiciel » : une icône en haut de chaque module, le nom reste en bas */
 .moduleIcon { margin-bottom: auto; }
-/* « Zéro ressaisie » : le fil est centré dans la carte, plus de grand vide au-dessus */
-.c204 { justify-content: flex-start; }
-.c206 { margin-top: auto; margin-bottom: auto; gap: 22px; }
+/* « Zéro ressaisie » : la carte prend la hauteur de son contenu, sans grand vide au-dessus du fil */
+.c204 { align-self: start; justify-content: flex-start; gap: 28px; }
+.c206 { gap: 22px; }
 .c211 { width: 52px; height: 52px; border-radius: 14px; }
 .c209 { font-size: 13px; }
 
@@ -2235,3 +2235,15 @@
 @media (max-width: 800px) { .c11 { --pause-bottom: 115px; } }
 /* Notification « Facture envoyée » décalée vers la gauche : le coin bas droit reste au bouton Pause */
 .c40 { right: 64px; }
+
+/* ===== Conteneur commun : au-delà de 1440 px, contenu de 1 280 px centré et aligné sur l'en-tête (fonds toujours pleine largeur) ===== */
+@media (min-width: 1441px) {
+  .c55, .c93, .c137, .c218, .c242, .c259 {
+    padding-left: calc((100% - 1280px) / 2);
+    padding-right: calc((100% - 1280px) / 2);
+  }
+  .c238 {
+    margin-left: calc((100% - 1280px) / 2);
+    margin-right: calc((100% - 1280px) / 2);
+  }
+}

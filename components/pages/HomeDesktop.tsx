@@ -513,9 +513,7 @@ export default function HomeDesktop() {
     <section className={s.c93} data-reveal>
       <div className={s.c94}>
         <h2 className={s.c58}>
-          Créer, repenser,
-          <br />
-          améliorer.
+          Créer, repenser, améliorer.
         </h2>
         {" "}
         <p className={s.c95}>

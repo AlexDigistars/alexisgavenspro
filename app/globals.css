@@ -169,3 +169,10 @@ button {
     scroll-margin-top: 72px;
   }
 }
+
+/* Titres : lignes équilibrées, sans saut de ligne manuel */
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}

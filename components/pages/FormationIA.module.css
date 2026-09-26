@@ -663,3 +663,11 @@
 .exampleTag { align-self: flex-start; margin-top: 4px; padding: 2px 7px; border-radius: 6px; background: rgba(255, 255, 255, 0.18); color: #FFFFFF; font-family: var(--font-mono); font-size: 12px; }
 /* Bulle du devis moins large : le badge « 1 min » ne masque plus le total */
 .c20 { width: 72%; }
+
+/* ===== Conteneur commun : au-delà de 1440 px, contenu de 1 280 px centré et aligné sur l'en-tête (fonds toujours pleine largeur) ===== */
+@media (min-width: 1441px) {
+  .c2, .c30, .c44, .c57, .c73 {
+    padding-left: calc((100% - 1280px) / 2);
+    padding-right: calc((100% - 1280px) / 2);
+  }
+}

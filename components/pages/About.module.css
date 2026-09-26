@@ -406,3 +406,11 @@
 
 /* Diplômes : les pastilles passent à la ligne sur très petit écran */
 .c29 { flex-wrap: wrap; }
+
+/* ===== Conteneur commun : au-delà de 1440 px, contenu de 1 280 px centré et aligné sur l'en-tête (fonds toujours pleine largeur) ===== */
+@media (min-width: 1441px) {
+  .c2, .c12, .c31, .c38 {
+    padding-left: calc((100% - 1280px) / 2);
+    padding-right: calc((100% - 1280px) / 2);
+  }
+}

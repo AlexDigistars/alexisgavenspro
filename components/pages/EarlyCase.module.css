@@ -1911,3 +1911,11 @@
 }
 /* Mention « 04 · Résultats » collée à son titre, comme dans les autres actes */
 .c230 > .c54 { margin-bottom: -24px; }
+
+/* ===== Conteneur commun : au-delà de 1440 px, contenu de 1 280 px centré et aligné sur l'en-tête (fonds toujours pleine largeur) ===== */
+@media (min-width: 1441px) {
+  .c2, .c52, .c65, .c94, .c138, .c153, .c221, .c230, .c241 {
+    padding-left: calc((100% - 1280px) / 2);
+    padding-right: calc((100% - 1280px) / 2);
+  }
+}

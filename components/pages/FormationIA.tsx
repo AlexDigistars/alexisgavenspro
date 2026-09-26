@@ -115,9 +115,7 @@ export default function FormationIA() {
     <section className={s.c30} data-reveal>
       <div className={s.c31}>
         <h2 className={s.c32}>
-          Ce que vos équipes
-          <br />
-          sauront faire.
+          Ce que vos équipes sauront faire.
         </h2>
         {" "}
         <p className={s.c33}>
