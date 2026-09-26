@@ -913,7 +913,27 @@
 
 /* E2. Un outil pour chacun : trois blocs texte + visuel, en alternance sur ordinateur */
 .roles { display: flex; flex-direction: column; gap: 96px; padding: 120px 80px; }
-.sectionHead { display: flex; flex-direction: column; gap: 20px; max-width: 760px; }
+.sectionHead { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 72px; align-items: end; }
+.sectionHeadText { display: flex; flex-direction: column; gap: 20px; }
+
+/* Illustration du titre : trois écrans, un par profil, en escalier du salarié au dirigeant */
+.rolesVisual { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; align-items: end; padding: 28px; border-radius: 24px; background: #ECEAE3; }
+.rv { display: flex; flex-direction: column; gap: 10px; padding: 14px; border-radius: 14px; background: #FFFFFF; box-shadow: 0 20px 40px -24px rgba(14, 26, 43, 0.4); }
+.rv { min-height: 160px; }
+.rvMid { min-height: 186px; }
+.rvTop { min-height: 212px; background: #0E1A2B; color: #F6F5F1; }
+.rvHead { display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700; }
+.rvAvatar { display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; width: 28px; height: 28px; border-radius: 50%; background: #DCEAE7; color: #1D5C57; }
+.rvTop .rvAvatar { background: #1D5C57; color: #FFFFFF; }
+.rvScreen { display: flex; flex-direction: column; gap: 6px; }
+.rvLine { display: flex; align-items: center; justify-content: space-between; gap: 6px; padding: 6px 8px; border-radius: 8px; background: #F6F5F1; font-size: 11px; }
+.rvLine i { flex-grow: 1; height: 6px; border-radius: 999px; background: #D5D2CA; }
+.rvDone { padding: 5px 8px; border-radius: 8px; background: #E3F1E6; color: #2F6B3E; font-size: 11px; font-weight: 700; text-align: center; }
+.rvGrid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 4px; }
+.rvGrid i { height: 16px; border-radius: 4px; background: #DCEFE0; }
+.rvGrid .rvLate { background: #F6D8D4; }
+.rvChart { display: flex; align-items: flex-end; gap: 5px; height: 72px; padding: 8px; border-radius: 8px; background: #16253B; }
+.rvChart i { flex-grow: 1; border-radius: 3px 3px 0 0; background: #8FD0C5; }
 .role { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 72px; align-items: center; }
 .roleText { display: flex; flex-direction: column; gap: 20px; }
 .roleTitle { margin: 0; font-size: 34px; line-height: 1.1; font-weight: 700; letter-spacing: -0.03em; }
@@ -977,6 +997,8 @@
 }
 /* Tablette (jusqu'à 1099 px) : une colonne, toujours titre → texte → visuel */
 @media (max-width: 1099px) {
+  .sectionHead { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .rolesVisual { max-width: 560px; }
   .c2, .c65, .c94 { grid-template-columns: minmax(0, 1fr); gap: 48px; }
   .role { grid-template-columns: minmax(0, 1fr); gap: 32px; }
   .heroWindow { width: min(640px, calc(100vw - 80px)); margin-inline: auto; }
@@ -991,6 +1013,13 @@
   .c65, .c94 { padding-top: 56px; padding-bottom: 56px; }
   .c226 { padding: 24px 20px 56px; gap: 24px; }
   .roleTitle { font-size: 26px; }
+  .rolesVisual { gap: 8px; padding: 14px 12px; }
+  .rv { padding: 10px 8px; gap: 8px; }
+  .rv { min-height: 150px; }
+  .rvMid { min-height: 172px; }
+  .rvTop { min-height: 194px; }
+  .rvHead { flex-direction: column; align-items: flex-start; gap: 6px; font-size: 12px; }
+  .rvLine b { display: none; }
   .checkList { font-size: 16px; }
   .rolePanel { padding: 16px 16px 64px; }
   .heroWindow { width: calc(100vw - 40px); }

@@ -40,6 +40,65 @@ const MARGINS = [
   { client: "Garage Ferrand", value: "8 %", width: "16%", tone: s.dashWarn },
 ];
 
+/** Illustration du titre « Un outil pour chacun » : un même logiciel, trois écrans taillés pour chaque profil. */
+function RolesVisual() {
+  return (
+    <div className={s.rolesVisual} role="img" aria-label="Un même logiciel, trois écrans : salariés, managers et direction.">
+      <div className={s.rv} aria-hidden="true">
+        <span className={s.rvHead}>
+          <span className={s.rvAvatar}>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="12" cy="8" r="4" />
+              <path d="M4 21c0-4 3.6-7 8-7s8 3 8 7" />
+            </svg>
+          </span>
+          Salariés
+        </span>
+        <span className={s.rvScreen}>
+          <span className={s.rvLine}><i></i><b>3 h</b></span>
+          <span className={s.rvLine}><i></i><b>2 h 30</b></span>
+          <span className={s.rvDone}>✓ 7 h</span>
+        </span>
+      </div>
+      <div className={`${s.rv} ${s.rvMid}`} aria-hidden="true">
+        <span className={s.rvHead}>
+          <span className={s.rvAvatar}>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="9" cy="8" r="3.5" />
+              <circle cx="17" cy="9" r="2.5" />
+              <path d="M2.5 20c0-3.5 2.9-6 6.5-6s6.5 2.5 6.5 6M15 14.5c3 0 6 1.8 6 5" />
+            </svg>
+          </span>
+          Managers
+        </span>
+        <span className={s.rvGrid}>
+          {Array.from({ length: 15 }, (_, i) => (
+            <i key={i} className={i === 5 || i === 13 ? s.rvLate : undefined}></i>
+          ))}
+        </span>
+      </div>
+      <div className={`${s.rv} ${s.rvTop}`} aria-hidden="true">
+        <span className={s.rvHead}>
+          <span className={s.rvAvatar}>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M3 3v18h18" />
+              <path d="M7 15l4-4 3 3 5-6" />
+            </svg>
+          </span>
+          Direction
+        </span>
+        <span className={s.rvChart}>
+          <i style={{ height: "40%" }}></i>
+          <i style={{ height: "58%" }}></i>
+          <i style={{ height: "50%" }}></i>
+          <i style={{ height: "76%" }}></i>
+          <i style={{ height: "92%" }}></i>
+        </span>
+      </div>
+    </div>
+  );
+}
+
 export default function EarlyCase() {
   return (
     <>
@@ -122,8 +181,11 @@ export default function EarlyCase() {
       {/* E2. Un outil pour chacun */}
       <section className={s.roles} data-reveal id="changements">
         <div className={s.sectionHead}>
-          <h2 className={s.c55}>Un outil pour chacun, du salarié au dirigeant.</h2>
-          <p className={s.c56}>Chaque écran a été pensé pour ceux qui l&apos;utilisent, pas adapté d&apos;un logiciel générique.</p>
+          <div className={s.sectionHeadText}>
+            <h2 className={s.c55}>Un outil pour chacun, du salarié au dirigeant.</h2>
+            <p className={s.c56}>Chaque écran a été pensé pour ceux qui l&apos;utilisent, pas adapté d&apos;un logiciel générique.</p>
+          </div>
+          <RolesVisual />
         </div>
 
         {/* Bloc 1 — Salariés */}
