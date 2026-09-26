@@ -913,7 +913,7 @@
 
 /* E2. Un outil pour chacun : trois blocs texte + visuel, en alternance sur ordinateur */
 .roles { display: flex; flex-direction: column; gap: 96px; padding: 120px 80px; }
-.sectionHead { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 72px; align-items: end; }
+.sectionHead { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 72px; align-items: center; }
 .sectionHeadText { display: flex; flex-direction: column; gap: 20px; }
 
 /* Illustration du titre : trois écrans, un par profil, en escalier du salarié au dirigeant */
