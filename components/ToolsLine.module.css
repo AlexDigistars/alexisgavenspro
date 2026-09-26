@@ -1,0 +1,58 @@
+.line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.label {
+  margin-right: 8px;
+  font-size: 15px;
+  color: #3a4556;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 14px;
+  border-radius: 999px;
+  background: #ffffff;
+  border: 1px solid rgba(14, 26, 43, 0.1);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Mobile : libellé au-dessus, pastilles sur deux lignes équilibrées (3 + 3) */
+@media (max-width: 767px) {
+  .line {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .label {
+    margin-right: 0;
+    text-align: center;
+  }
+  .list {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    gap: 8px;
+  }
+  .chip {
+    justify-content: center;
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+}

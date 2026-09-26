@@ -1,3 +1,5 @@
+import Guarantees from "@/components/Guarantees";
+import ToolsLine from "@/components/ToolsLine";
 import Scene from "@/components/Scene";
 import Image from "next/image";
 import portrait from "@/public/alexis-portrait-hd.jpg";
@@ -17,7 +19,7 @@ export default function HomeMobile() {
       <div className={s.c2}>
         <div className={s.c3}>
           <span className={`${s.c4} ${s.pulse}`}></span>
-          Pour les PME · Partout en France
+          Pour les PME de services · Partout en France
         </div>
         {" "}
         <h1 className={s.c5}>
@@ -25,12 +27,18 @@ export default function HomeMobile() {
         </h1>
         {" "}
         <p className={s.c6}>
-          Un seul outil pour piloter votre entreprise, gagner du temps et en finir avec les ressaisies.
+          Que vous partiez de zéro ou d&apos;un logiciel existant : un seul outil pour piloter votre entreprise et en finir avec les ressaisies.
         </p>
         {" "}
-        <CalendlyLink className={s.c7}>
-          Réserver 20 min
-        </CalendlyLink>
+        <div className={s.ctaStack}>
+          <CalendlyLink className={s.c7}>
+            Réserver 20 min
+          </CalendlyLink>
+          <span className={s.ctaNote}>20 minutes, gratuit et sans engagement.</span>
+          <Link className={s.projectLink} href="/realisations/early">
+            Voir un projet réalisé →
+          </Link>
+        </div>
         {" "}
         <Scene className={s.c8} shift={3.5}>
           <div className={s.c9}>
@@ -38,7 +46,7 @@ export default function HomeMobile() {
               Suivi des affaires
             </span>
             <span className={s.c11}>
-              EXEMPLE
+              Exemple · données fictives
             </span>
           </div>
           {" "}
@@ -95,7 +103,7 @@ export default function HomeMobile() {
       </span>
       {" "}
       <h2 className={s.c26}>
-        De l'éparpillement à un seul outil.
+        De l&apos;éparpillement à un seul logiciel.
       </h2>
       {" "}
       <Scene className={s.stage}>
@@ -151,24 +159,6 @@ export default function HomeMobile() {
           </div>
         </div>
       </Scene>
-      {" "}
-      <div className={s.c38}>
-        <span className={s.c39}>
-          Pennylane
-        </span>
-        {" "}
-        <span className={s.c39}>
-          Google Sheets
-        </span>
-        {" "}
-        <span className={s.c39}>
-          Gmail
-        </span>
-        {" "}
-        <span className={s.c40}>
-          + 5 outils
-        </span>
-      </div>
     </section>
     {" "}
     {" "}
@@ -177,7 +167,7 @@ export default function HomeMobile() {
         Créer, repenser, améliorer.
       </h2>
       {" "}
-      <SwipeCarousel label="Créer, repenser, améliorer" slideLabels={["Créer", "Repenser", "Améliorer"]}>
+      <div className={s.stack}>
         <div className={s.c44}>
           <div className={s.c45}>
             <div className={s.c46}></div>
@@ -192,7 +182,7 @@ export default function HomeMobile() {
           </span>
           {" "}
           <span className={s.c51}>
-            Un outil pensé autour de votre façon de travailler.
+            Vous travaillez avec des fichiers Excel et du papier : je crée le logiciel qui les remplace, autour de votre façon de travailler.
           </span>
         </div>
         <div className={s.c44}>
@@ -237,7 +227,7 @@ export default function HomeMobile() {
           </span>
           {" "}
           <span className={s.c51}>
-            Vos méthodes de travail réinventées, enrichies, simplifiées.
+            Ressaisies, relances, allers-retours : je simplifie et j&apos;automatise vos façons de faire.
           </span>
         </div>
         <div className={s.c44}>
@@ -257,10 +247,10 @@ export default function HomeMobile() {
             Améliorer
           </span>
           <span className={s.c51}>
-            Ajouter, automatiser, intégrer l&apos;IA quand elle sert vraiment.
+            Vous avez déjà un logiciel qui ralentit vos équipes : je le reprends et je le fais évoluer.
           </span>
         </div>
-      </SwipeCarousel>
+      </div>
       {" "}
     </section>
     {" "}
@@ -425,111 +415,38 @@ export default function HomeMobile() {
       </SwipeCarousel>
       </Scene>
       {" "}
+      <ToolsLine />
     </section>
     {" "}
     {" "}
     <section className={s.c92} data-reveal>
       <span className={s.c93}>
-        Référence client · Early
+        Référence client
       </span>
+      <span className={s.earlyCompany}>Early · Agence de communication, une quinzaine de personnes</span>
       {" "}
       <h2 className={s.c94}>
-        Un logiciel existant, transformé en vrai outil de pilotage.
+        Leur logiciel de gestion, transformé en vrai outil de pilotage.
       </h2>
       <p className={s.earlyIntro}>
-        Rendu simple à utiliser, puis enrichi de ce qui manquait : facturation automatique, suivi clients, pilotage des équipes.
+        Clients, équipes, planning, facturation : tout passait par un logiciel qui ne suivait plus. Je l&apos;ai repris et enrichi d&apos;outils pour chacun : les salariés, les managers et la direction.
       </p>
-      {" "}
-      <div className={s.c95}>
-        <div className={s.c96}>
-          <span className={s.c97}>
-            <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8FD0C5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M21 12a9 9 0 1 1-2.64-6.36" />
-              <path d="M21 3v6h-6" />
-              <circle cx="12" cy="12" r="3" />
-            </svg>
-          </span>
-          <span className={s.c98}>
-            Vision 360°
-          </span>
-        </div>
-        {" "}
-        <div className={s.c96}>
-          <span className={s.c97}>
-            <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8FD0C5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M6 2h9l5 5v15H6z" />
-              <path d="M14 2v6h6" />
-              <path d="M9 15l2 2 4-4" />
-            </svg>
-          </span>
-          <span className={s.c98}>
-            Facturation automatisée
-          </span>
-        </div>
-        {" "}
-        <div className={s.c96}>
-          <span className={s.c97}>
-            <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8FD0C5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <circle cx="9" cy="8" r="3.5" />
-              <path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6" />
-              <path d="M16 11h6M19 8v6" />
-            </svg>
-          </span>
-          <span className={s.c98}>
-            Suivi clients connecté
-          </span>
-        </div>
-        {" "}
-        <div className={s.c96}>
-          <span className={s.c97}>
-            <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8FD0C5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <circle cx="8" cy="8" r="3" />
-              <circle cx="17" cy="9" r="2.5" />
-              <path d="M2 20c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5" />
-              <path d="M14.5 15.2c.8-.5 1.6-.7 2.5-.7 2.8 0 5 1.9 5 4.9" />
-            </svg>
-          </span>
-          <span className={s.c98}>
-            Équipes pilotées simplement
-          </span>
-        </div>
-      </div>
       {" "}
       <figure className={s.c99}>
         <blockquote className={s.c100}>
-          « Alexis a vraiment fait évoluer notre logiciel : il est plus rapide, plus réactif et bien plus simple à utiliser. Il écoute nos besoins et il est force de proposition. »
+          « Alexis a vraiment fait évoluer notre logiciel : il est plus rapide, plus réactif et bien plus simple à utiliser. »
         </blockquote>
         {" "}
         <figcaption className={s.c75}>
-          <strong>
-            Joseph Herbinet
-          </strong>
-          {" "}
-          <span className={s.c101}>
-            · Dirigeant d'Early
-          </span>
+          Joseph Herbinet, dirigeant d&apos;Early
         </figcaption>
       </figure>
       {" "}
       <Link className={s.c102} href="/realisations/early">
-        Lire l'étude de cas →
+        Lire l&apos;étude de cas →
       </Link>
     </section>
     {" "}
-    {" "}
-    <section className={s.c103} data-reveal>
-      <span className={s.c104}>
-        Et si on regardait votre cas ?
-      </span>
-      {" "}
-      <span className={s.c105}>
-        20 minutes, gratuit et sans engagement.
-      </span>
-      {" "}
-      <CalendlyLink className={s.c106}>
-        Réserver 20 min
-      </CalendlyLink>
-    </section>
     {" "}
     {" "}
     <section className={s.c107} data-reveal>
@@ -545,10 +462,10 @@ export default function HomeMobile() {
             1
           </span>
           <span className={s.c112}>
-            Diagnostic
+            Comprendre
           </span>
           <span className={s.c113}>
-            Comprendre votre activité et ce qui bloque.
+            Identifier vos besoins et ce qui bloque.
           </span>
         </div>
         {" "}
@@ -557,10 +474,10 @@ export default function HomeMobile() {
             2
           </span>
           <span className={s.c112}>
-            Co-construction
+            Dessiner
           </span>
           <span className={s.c113}>
-            Ateliers et maquettes avec vous, chaque écran validé.
+            Valider les écrans avant le développement.
           </span>
         </div>
         {" "}
@@ -569,10 +486,10 @@ export default function HomeMobile() {
             3
           </span>
           <span className={s.c112}>
-            Livraison par lots
+            Livrer
           </span>
           <span className={s.c113}>
-            Chaque lot testé avec vos équipes.
+            Tester chaque étape avec vos équipes.
           </span>
         </div>
         {" "}
@@ -581,40 +498,15 @@ export default function HomeMobile() {
             4
           </span>
           <span className={s.c112}>
-            Suivi
+            Faire évoluer
           </span>
           <span className={s.c113}>
-            Maintenance et évolutions dans la durée.
+            Maintenance et améliorations selon vos besoins.
           </span>
         </div>
       </div>
       {" "}
-      <div className={s.c114}>
-        <span className={s.c115}>
-          Mes engagements, noir sur blanc.
-        </span>
-        {" "}
-        <div className={s.c116}>
-          <span>
-            ✓ Sans engagement de durée
-          </span>
-          <span>
-            ✓ Maquette avant de coder
-          </span>
-          <span>
-            ✓ Tests automatiques
-          </span>
-          <span>
-            ✓ Garantie 3 mois
-          </span>
-          <span>
-            ✓ Le code vous appartient
-          </span>
-          <span>
-            ✓ Aucun abonnement imposé
-          </span>
-        </div>
-      </div>
+      <Guarantees />
     </section>
     {" "}
     {" "}
@@ -626,7 +518,7 @@ export default function HomeMobile() {
             Alexis Gavens
           </span>
           <span className={s.c121}>
-            Créateur de logiciels métier · ex-responsable ADV & logistique
+            Ancien responsable de l&apos;administration des ventes et de la logistique.
           </span>
         </div>
       </div>
@@ -634,11 +526,21 @@ export default function HomeMobile() {
       <p className={s.c122}>
         « Je comprends votre travail avant de concevoir le logiciel. »
       </p>
+      <Link className={s.parcoursLink} href="/a-propos">
+        Mon parcours →
+      </Link>
+      <Link className={s.formationCard} href="/formation-ia">
+        <span className={s.formationLabel}>FORMATION</span>
+        <span className={s.formationTitle}>Former vos équipes à l&apos;IA&nbsp;→</span>
+      </Link>
       {" "}
       <div className={s.c123}>
-        <span className={s.c124}>
+        <h2 className={s.c124}>
           Parlons de votre projet.
-        </span>
+        </h2>
+        <p className={s.contactIntro}>
+          20 minutes pour comprendre votre besoin et vous dire franchement si je peux vous aider.
+        </p>
         {" "}
         <CalendlyLink className={s.c125}>
           Réserver 20 min
@@ -646,7 +548,7 @@ export default function HomeMobile() {
         {" "}
         <a className={s.c126} href={CONTACT_PHONE_HREF}>
           <span className={s.c34}>
-            Appeler
+            Téléphone
           </span>
           <span className={s.c13}>
             06 38 61 08 42
@@ -661,6 +563,10 @@ export default function HomeMobile() {
             {CONTACT_EMAIL}
           </span>
         </a>
+        <div className={s.c127}>
+          <span className={s.c34}>Zone</span>
+          <span className={s.c13}>Partout en France</span>
+        </div>
       </div>
     </section>
     {" "}
