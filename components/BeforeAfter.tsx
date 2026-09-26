@@ -9,7 +9,7 @@ export default function BeforeAfter() {
       <div
         className={s.grid}
         role="img"
-        aria-label="Avant : un logiciel daté qui charge lentement. Après : un tableau de bord clair, à jour en temps réel."
+        aria-label="Avant : un logiciel daté qui charge lentement. Après : un tableau de bord clair, à jour en temps réel, avec des notifications utiles."
       >
         <div className={s.col}>
           <span className={s.tagBefore}>Avant</span>
@@ -76,6 +76,26 @@ export default function BeforeAfter() {
               <span className={`${s.row} ${s.warn}`}>
                 <small>Garage Ferrand</small>
                 <i style={{ width: "16%" }}></i>
+              </span>
+            </div>
+            <div className={s.toasts}>
+              <span className={`${s.toast} ${s.toastFirst}`}>
+                <span className={`${s.toastIcon} ${s.iconMoney}`}>€</span>
+                <span>
+                  <b>+ 3 240 € facturés</b> aujourd&apos;hui
+                </span>
+              </span>
+              <span className={`${s.toast} ${s.toastSecond}`}>
+                <span className={`${s.toastIcon} ${s.iconAlert}`}>!</span>
+                <span>
+                  <b>Garage Ferrand</b> : devis sans réponse depuis 7 jours
+                </span>
+              </span>
+              <span className={`${s.toast} ${s.toastThird}`}>
+                <span className={`${s.toastIcon} ${s.iconDone}`}>✓</span>
+                <span>
+                  <b>Camille</b> a complété sa semaine
+                </span>
               </span>
             </div>
           </div>
