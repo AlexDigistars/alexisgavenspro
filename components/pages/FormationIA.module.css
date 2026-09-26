@@ -1,21 +1,21 @@
 /* Généré depuis design-reference/FormationIA.html : styles de la maquette. */
 
 /* Animations de la maquette */
-.pulse{animation:pulse 2s ease-out infinite}
+.pulse{animation:pulse 2s ease-out infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
 @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(143,208,197,.6)}70%{box-shadow:0 0 0 10px rgba(143,208,197,0)}100%{box-shadow:0 0 0 0 rgba(143,208,197,0)}}
-.msg1{animation:msg1 10s ease-out infinite}
+.msg1{animation:msg1 10s ease-out infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
 @keyframes msg1{0%,4%{opacity:0;transform:translateY(10px)}8%,94%{opacity:1;transform:translateY(0)}100%{opacity:0}}
-.typing{animation:typing 10s ease-out infinite}
+.typing{animation:typing 10s ease-out infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
 @keyframes typing{0%,12%{opacity:0}16%,26%{opacity:1}30%,100%{opacity:0}}
-.msg2{animation:msg2 10s ease-out infinite}
+.msg2{animation:msg2 10s ease-out infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
 @keyframes msg2{0%,28%{opacity:0;transform:translateY(10px)}32%,94%{opacity:1;transform:translateY(0)}100%{opacity:0}}
-.line{transform-origin:left center;animation:line 10s ease-out infinite}
+.line{transform-origin:left center;animation:line 10s ease-out infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
 @keyframes line{0%,32%{transform:scaleX(0)}40%,94%{transform:scaleX(1)}100%{transform:scaleX(1)}}
-.saved{animation:saved 10s ease-out infinite}
+.saved{animation:saved 10s ease-out infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
 @keyframes saved{0%,55%{opacity:0;transform:scale(.9)}60%,94%{opacity:1;transform:scale(1)}100%{opacity:0}}
-.float{animation:float 6s ease-in-out infinite}
+.float{animation:float 6s ease-in-out infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
-.prog{animation:prog 7s ease-in-out infinite}
+.prog{animation:prog 7s ease-in-out infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
 @keyframes prog{0%{width:0%}70%,100%{width:100%}}
 
 .c1 {
@@ -182,14 +182,14 @@
   background: #D5D2CA;
 }
 .c24 {
-  animation-delay: .3s !important;
+  animation-delay: calc(.3s - var(--scene-shift, 0s)) !important;
   height: 8px;
   width: 78%;
   border-radius: 4px;
   background: #D5D2CA;
 }
 .c25 {
-  animation-delay: .6s !important;
+  animation-delay: calc(.6s - var(--scene-shift, 0s)) !important;
   height: 8px;
   width: 85%;
   border-radius: 4px;
@@ -282,7 +282,7 @@
   color: #3A4556;
 }
 .c39 {
-  animation-delay: .6s !important;
+  animation-delay: calc(.6s - var(--scene-shift, 0s)) !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -292,7 +292,7 @@
   background: #DCEAE7;
 }
 .c40 {
-  animation-delay: 1.2s !important;
+  animation-delay: calc(1.2s - var(--scene-shift, 0s)) !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -302,7 +302,7 @@
   background: #DCEAE7;
 }
 .c41 {
-  animation-delay: .3s !important;
+  animation-delay: calc(.3s - var(--scene-shift, 0s)) !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -312,7 +312,7 @@
   background: #DCEAE7;
 }
 .c42 {
-  animation-delay: .9s !important;
+  animation-delay: calc(.9s - var(--scene-shift, 0s)) !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -322,7 +322,7 @@
   background: #DCEAE7;
 }
 .c43 {
-  animation-delay: 1.5s !important;
+  animation-delay: calc(1.5s - var(--scene-shift, 0s)) !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -661,3 +661,5 @@
 
 /* Étiquette « Exemple » sur le gain de temps illustratif */
 .exampleTag { align-self: flex-start; margin-top: 4px; padding: 2px 7px; border-radius: 6px; background: rgba(255, 255, 255, 0.18); color: #FFFFFF; font-family: var(--font-mono); font-size: 12px; }
+/* Bulle du devis moins large : le badge « 1 min » ne masque plus le total */
+.c20 { width: 72%; }

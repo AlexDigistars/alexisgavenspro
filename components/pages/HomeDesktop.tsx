@@ -46,7 +46,7 @@ export default function HomeDesktop() {
         </div>
         {" "}
         {" "}
-        <Scene className={s.c11}>
+        <Scene className={s.c11} shift={16.8}>
           <div className={s.c12}>
             <div className={s.c13}>
               <div className={s.c14}>
@@ -280,7 +280,7 @@ export default function HomeDesktop() {
         </h2>
       </div>
       {" "}
-      <Scene className={s.c59}>
+      <Scene className={s.c59} shift={4.5}>
         <div className={s.c60}>
           <span className={s.c61}>
             AUJOURD'HUI
@@ -360,6 +360,9 @@ export default function HomeDesktop() {
           {" "}
           <div className={s.c80}>
             <div className={`${s.c81} ${s.lit}`}>
+              <svg className={s.moduleIcon} aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M9 3h6v3H9z" /><path d="M9 4.5H6v16h12v-16h-3" /><path d="M9 11h6M9 15h4" />
+              </svg>
               <span className={s.c82}>
                 Commandes
               </span>
@@ -369,6 +372,9 @@ export default function HomeDesktop() {
             </div>
             {" "}
             <div className={`${s.c84} ${s.lit}`}>
+              <svg className={s.moduleIcon} aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <rect x="3" y="4" width="18" height="17" rx="2" /><path d="M3 9h18M8 2v4M16 2v4" />
+              </svg>
               <span className={s.c82}>
                 Planning
               </span>
@@ -378,6 +384,9 @@ export default function HomeDesktop() {
             </div>
             {" "}
             <div className={`${s.c85} ${s.lit}`}>
+              <svg className={s.moduleIcon} aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M3 7l9-4 9 4-9 4z" /><path d="M3 7v10l9 4 9-4V7" />
+              </svg>
               <span className={s.c82}>
                 Stocks
               </span>
@@ -387,6 +396,9 @@ export default function HomeDesktop() {
             </div>
             {" "}
             <div className={`${s.c86} ${s.lit}`}>
+              <svg className={s.moduleIcon} aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="9" cy="8" r="4" /><path d="M2 21c0-4 3-6 7-6s7 2 7 6" />
+              </svg>
               <span className={s.c82}>
                 Clients
               </span>
@@ -396,6 +408,9 @@ export default function HomeDesktop() {
             </div>
             {" "}
             <div className={`${s.c87} ${s.lit}`}>
+              <svg className={s.moduleIcon} aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M6 2h9l5 5v15H6z" /><path d="M14 2v6h6" /><path d="M9 13h6M9 17h4" />
+              </svg>
               <span className={s.c82}>
                 Factures
               </span>
@@ -405,6 +420,9 @@ export default function HomeDesktop() {
             </div>
             {" "}
             <div className={`${s.c88} ${s.lit}`}>
+              <svg className={s.moduleIcon} aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M3 6a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+              </svg>
               <span className={s.c82}>
                 Documents
               </span>
@@ -505,7 +523,7 @@ export default function HomeDesktop() {
         </p>
       </div>
       {" "}
-      <Scene className={s.c96}>
+      <Scene className={s.c96} shift={4.5}>
         <div className={s.c97}>
           <div className={s.c98}>
             <div className={`${s.c99} ${s.wf}`}></div>
@@ -712,7 +730,7 @@ export default function HomeDesktop() {
         </p>
       </div>
       {" "}
-      <Scene className={s.c139}>
+      <Scene className={s.c139} shift={3}>
         <div className={s.c140}>
           <div className={s.c22}>
             <span className={s.c141}>

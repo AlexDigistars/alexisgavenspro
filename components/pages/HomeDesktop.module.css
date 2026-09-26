@@ -1,53 +1,53 @@
 /* Généré depuis design-reference/AccueilV2.html : styles de la maquette. */
 
 /* Animations de la maquette */
-.mv-card{animation:mvcard 9s ease-in-out infinite}
+.mv-card{animation:mvcard 9s ease-in-out infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
 @keyframes mvcard{0%{opacity:0;transform:translate(0,10px)}4%,20%{opacity:1;transform:translate(0,0)}26%,45%{opacity:1;transform:translate(144px,0)}51%,70%{opacity:1;transform:translate(288px,0)}76%,94%{opacity:1;transform:translate(432px,0)}99%{opacity:0;transform:translate(432px,0)}100%{opacity:0;transform:translate(0,10px)}}
-.toast{animation:toast 9s ease-in-out infinite}
+.toast{animation:toast 9s ease-in-out infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
 @keyframes toast{0%,76%{opacity:0;transform:translateY(14px)}80%,94%{opacity:1;transform:translateY(0)}98%,100%{opacity:0;transform:translateY(0)}}
-.sign{stroke-dasharray:320;animation:sign 6s ease-in-out infinite}
+.sign{stroke-dasharray:320;animation:sign 6s ease-in-out infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
 @keyframes sign{0%,20%{stroke-dashoffset:320}60%,92%{stroke-dashoffset:0}100%{stroke-dashoffset:320}}
-.float{animation:float 6s ease-in-out infinite}
+.float{animation:float 6s ease-in-out infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
-.lit{animation:lit 7s ease-in-out infinite}
+.lit{animation:lit 7s ease-in-out infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
 @keyframes lit{0%,8%{background:#FFFFFF;border-color:rgba(14,26,43,.12)}16%,88%{background:#DCEAE7;border-color:#1D5C57}100%{background:#FFFFFF;border-color:rgba(14,26,43,.12)}}
-.flow{stroke-dasharray:6 8;animation:flow 1.2s linear infinite}
+.flow{stroke-dasharray:6 8;animation:flow 1.2s linear infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
 @keyframes flow{to{stroke-dashoffset:-28}}
-.wf{animation:wf 6s ease-in-out infinite}
+.wf{animation:wf 6s ease-in-out infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
 @keyframes wf{0%,12%{background:transparent;border-color:#B7BDC6;border-style:dashed}24%,90%{background:#DCEAE7;border-color:#1D5C57;border-style:solid}100%{background:transparent;border-color:#B7BDC6;border-style:dashed}}
-.bad{animation:bad 7s ease-in-out infinite}
-@keyframes bad{0%,18%{opacity:1}26%,92%{opacity:0}100%{opacity:1}}
-.good{animation:good 7s ease-in-out infinite}
-@keyframes good{0%,18%{opacity:0}26%,92%{opacity:1}100%{opacity:0}}
-.slidein{animation:slidein 7s ease-in-out infinite}
+.bad{animation:bad 7s ease-in-out infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
+@keyframes bad{0%,18%{opacity:1}21.6%,96.4%{opacity:0}100%{opacity:1}}
+.good{animation:good 7s ease-in-out infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
+@keyframes good{0%,21.6%{opacity:0}25.2%,92%{opacity:1}95.6%,100%{opacity:0}}
+.slidein{animation:slidein 7s ease-in-out infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
 @keyframes slidein{0%,18%{opacity:0;transform:translateY(-10px)}28%,90%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-10px)}}
-.knob{animation:knob 7s ease-in-out infinite}
+.knob{animation:knob 7s ease-in-out infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
 @keyframes knob{0%,38%{transform:translateX(0)}46%,90%{transform:translateX(18px)}100%{transform:translateX(0)}}
-.track{animation:track 7s ease-in-out infinite}
+.track{animation:track 7s ease-in-out infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
 @keyframes track{0%,38%{background:#C9CDD3}46%,90%{background:#1D5C57}100%{background:#C9CDD3}}
-.grow{transform-origin:left center;animation:grow 10s ease-out infinite}
+.grow{transform-origin:left center;animation:grow 10s ease-out infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
 @keyframes grow{0%{transform:scaleX(0)}14%,92%{transform:scaleX(1)}100%{transform:scaleX(1)}}
-.dot{animation:dot 3s linear infinite}
+.dot{animation:dot 3s linear infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
 @keyframes dot{0%{left:0%;opacity:0}8%{opacity:1}92%{opacity:1}100%{left:100%;opacity:0}}
-.pulse{animation:pulse 2s ease-out infinite}
+.pulse{animation:pulse 2s ease-out infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
 @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(29,92,87,.55)}70%{box-shadow:0 0 0 10px rgba(29,92,87,0)}100%{box-shadow:0 0 0 0 rgba(29,92,87,0)}}
-.prog{animation:prog 6s ease-in-out infinite}
+.prog{animation:prog 6s ease-in-out infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
 @keyframes prog{0%{width:0%}70%,100%{width:100%}}
-.stA{animation:stA 8s ease-in-out infinite}
+.stA{animation:stA 8s ease-in-out infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
 @keyframes stA{0%,35%{opacity:1;transform:scale(1)}45%,90%{opacity:0;transform:scale(0.97)}100%{opacity:1;transform:scale(1)}}
-.stB{animation:stB 8s ease-in-out infinite}
+.stB{animation:stB 8s ease-in-out infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
 @keyframes stB{0%,40%{opacity:0;transform:translateY(12px)}50%,88%{opacity:1;transform:translateY(0)}98%,100%{opacity:0;transform:translateY(12px)}}
-.cell{animation:cell 10s ease-out infinite}
+.cell{animation:cell 10s ease-out infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
 @keyframes cell{0%{opacity:0;transform:scale(.92)}6%,94%{opacity:1;transform:scale(1)}100%{opacity:1}}
-.step{animation:step 9s ease-in-out infinite}
+.step{animation:step 9s ease-in-out infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
 @keyframes step{0%,4%{border-color:#E3E1DA;box-shadow:0 0 0 0 rgba(29,92,87,0)}9%,30%{border-color:#1D5C57;box-shadow:0 0 0 5px rgba(29,92,87,.14)}36%,100%{border-color:#E3E1DA;box-shadow:0 0 0 0 rgba(29,92,87,0)}}
-.cur{animation:cur 9s ease-in-out infinite}
+.cur{animation:cur 9s ease-in-out infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
 @keyframes cur{0%,6%{opacity:0;transform:translate(18px,18px)}12%,22%{opacity:1;transform:translate(0,0)}25%{opacity:1;transform:scale(.85)}28%{opacity:1;transform:scale(1)}33%,100%{opacity:0;transform:translate(0,0)}}
-.slow{animation:slow 8s linear infinite}
+.slow{animation:slow 8s linear infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
 @keyframes slow{0%{width:0%}85%,100%{width:100%}}
-.fast{animation:fast 8s ease-out infinite}
+.fast{animation:fast 8s ease-out infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
 @keyframes fast{0%{width:0%}4%,100%{width:100%}}
-.grow-y{transform-origin:bottom center;animation:growy 8s ease-out infinite}
+.grow-y{transform-origin:bottom center;animation:growy 8s ease-out infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
 @keyframes growy{0%{transform:scaleY(0)}15%,92%{transform:scaleY(1)}100%{transform:scaleY(1)}}
 
 .c1 {
@@ -487,7 +487,7 @@
   transform: rotate(2deg);
 }
 .c66 {
-  animation-delay: 1.2s !important;
+  animation-delay: calc(1.2s - var(--scene-shift, 0s)) !important;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -504,7 +504,7 @@
   transform: rotate(-1deg);
 }
 .c68 {
-  animation-delay: 2.1s !important;
+  animation-delay: calc(2.1s - var(--scene-shift, 0s)) !important;
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -522,7 +522,7 @@
   transform: rotate(4deg);
 }
 .c70 {
-  animation-delay: 0.6s !important;
+  animation-delay: calc(0.6s - var(--scene-shift, 0s)) !important;
   width: 130px;
   padding: 14px;
   background: #F1E3B0;
@@ -537,7 +537,7 @@
   transform: rotate(3deg);
 }
 .c72 {
-  animation-delay: 3s !important;
+  animation-delay: calc(3s - var(--scene-shift, 0s)) !important;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -554,7 +554,7 @@
   transform: rotate(-5deg);
 }
 .c74 {
-  animation-delay: 1.7s !important;
+  animation-delay: calc(1.7s - var(--scene-shift, 0s)) !important;
   width: 150px;
   height: 80px;
   padding: 12px;
@@ -621,7 +621,7 @@
   color: #5A6474;
 }
 .c84 {
-  animation-delay: 0.5s !important;
+  animation-delay: calc(0.5s - var(--scene-shift, 0s)) !important;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -631,7 +631,7 @@
   border: 1px solid rgba(14,26,43,0.12);
 }
 .c85 {
-  animation-delay: 1s !important;
+  animation-delay: calc(1s - var(--scene-shift, 0s)) !important;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -641,7 +641,7 @@
   border: 1px solid rgba(14,26,43,0.12);
 }
 .c86 {
-  animation-delay: 1.5s !important;
+  animation-delay: calc(1.5s - var(--scene-shift, 0s)) !important;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -651,7 +651,7 @@
   border: 1px solid rgba(14,26,43,0.12);
 }
 .c87 {
-  animation-delay: 2s !important;
+  animation-delay: calc(2s - var(--scene-shift, 0s)) !important;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -661,7 +661,7 @@
   border: 1px solid rgba(14,26,43,0.12);
 }
 .c88 {
-  animation-delay: 2.5s !important;
+  animation-delay: calc(2.5s - var(--scene-shift, 0s)) !important;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -752,7 +752,7 @@
   flex-grow: 1;
 }
 .c101 {
-  animation-delay: 0.4s !important;
+  animation-delay: calc(0.4s - var(--scene-shift, 0s)) !important;
   border-radius: 6px;
   border: 1.5px dashed #B7BDC6;
 }
@@ -768,22 +768,22 @@
   height: 60px;
 }
 .c104 {
-  animation-delay: 0.8s !important;
+  animation-delay: calc(0.8s - var(--scene-shift, 0s)) !important;
   border-radius: 6px;
   border: 1.5px dashed #B7BDC6;
 }
 .c105 {
-  animation-delay: 1s !important;
+  animation-delay: calc(1s - var(--scene-shift, 0s)) !important;
   border-radius: 6px;
   border: 1.5px dashed #B7BDC6;
 }
 .c106 {
-  animation-delay: 1.2s !important;
+  animation-delay: calc(1.2s - var(--scene-shift, 0s)) !important;
   border-radius: 6px;
   border: 1.5px dashed #B7BDC6;
 }
 .c107 {
-  animation-delay: 1.6s !important;
+  animation-delay: calc(1.6s - var(--scene-shift, 0s)) !important;
   flex-grow: 1;
   border-radius: 6px;
   border: 1.5px dashed #B7BDC6;
@@ -825,7 +825,7 @@
   height: 20px;
 }
 .c114 {
-  animation-delay: 0s !important;
+  animation-delay: calc(0s - var(--scene-shift, 0s)) !important;
   position: absolute;
   left: 0;
   top: 0;
@@ -833,7 +833,7 @@
   text-decoration: line-through;
 }
 .c115 {
-  animation-delay: 0s !important;
+  animation-delay: calc(0s - var(--scene-shift, 0s)) !important;
   position: absolute;
   left: 0;
   top: 0;
@@ -845,7 +845,7 @@
   height: 20px;
 }
 .c117 {
-  animation-delay: 0s !important;
+  animation-delay: calc(0s - var(--scene-shift, 0s)) !important;
   position: absolute;
   inset: 0;
   display: flex;
@@ -855,7 +855,7 @@
   background: #D5D2CA;
 }
 .c118 {
-  animation-delay: 0s !important;
+  animation-delay: calc(0s - var(--scene-shift, 0s)) !important;
   position: absolute;
   inset: 0;
   display: flex;
@@ -865,7 +865,7 @@
   background: #2F8A80;
 }
 .c119 {
-  animation-delay: 0.7s !important;
+  animation-delay: calc(0.7s - var(--scene-shift, 0s)) !important;
   position: absolute;
   left: 0;
   top: 0;
@@ -873,14 +873,14 @@
   text-decoration: line-through;
 }
 .c120 {
-  animation-delay: 0.7s !important;
+  animation-delay: calc(0.7s - var(--scene-shift, 0s)) !important;
   position: absolute;
   left: 0;
   top: 0;
   font-weight: 600;
 }
 .c121 {
-  animation-delay: 0.7s !important;
+  animation-delay: calc(0.7s - var(--scene-shift, 0s)) !important;
   position: absolute;
   inset: 0;
   display: flex;
@@ -890,7 +890,7 @@
   background: #D5D2CA;
 }
 .c122 {
-  animation-delay: 0.7s !important;
+  animation-delay: calc(0.7s - var(--scene-shift, 0s)) !important;
   position: absolute;
   inset: 0;
   display: flex;
@@ -900,7 +900,7 @@
   background: #2F8A80;
 }
 .c123 {
-  animation-delay: 1.4s !important;
+  animation-delay: calc(1.4s - var(--scene-shift, 0s)) !important;
   position: absolute;
   left: 0;
   top: 0;
@@ -908,14 +908,14 @@
   text-decoration: line-through;
 }
 .c124 {
-  animation-delay: 1.4s !important;
+  animation-delay: calc(1.4s - var(--scene-shift, 0s)) !important;
   position: absolute;
   left: 0;
   top: 0;
   font-weight: 600;
 }
 .c125 {
-  animation-delay: 1.4s !important;
+  animation-delay: calc(1.4s - var(--scene-shift, 0s)) !important;
   position: absolute;
   inset: 0;
   display: flex;
@@ -925,7 +925,7 @@
   background: #D5D2CA;
 }
 .c126 {
-  animation-delay: 1.4s !important;
+  animation-delay: calc(1.4s - var(--scene-shift, 0s)) !important;
   position: absolute;
   inset: 0;
   display: flex;
@@ -935,7 +935,7 @@
   background: #2F8A80;
 }
 .c127 {
-  animation-delay: 2.1s !important;
+  animation-delay: calc(2.1s - var(--scene-shift, 0s)) !important;
   position: absolute;
   left: 0;
   top: 0;
@@ -943,14 +943,14 @@
   text-decoration: line-through;
 }
 .c128 {
-  animation-delay: 2.1s !important;
+  animation-delay: calc(2.1s - var(--scene-shift, 0s)) !important;
   position: absolute;
   left: 0;
   top: 0;
   font-weight: 600;
 }
 .c129 {
-  animation-delay: 2.1s !important;
+  animation-delay: calc(2.1s - var(--scene-shift, 0s)) !important;
   position: absolute;
   inset: 0;
   display: flex;
@@ -960,7 +960,7 @@
   background: #D5D2CA;
 }
 .c130 {
-  animation-delay: 2.1s !important;
+  animation-delay: calc(2.1s - var(--scene-shift, 0s)) !important;
   position: absolute;
   inset: 0;
   display: flex;
@@ -1005,7 +1005,7 @@
   background: #FFFFFF;
 }
 .c135 {
-  animation-delay: 1.2s !important;
+  animation-delay: calc(1.2s - var(--scene-shift, 0s)) !important;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1148,7 +1148,7 @@
   flex-shrink: 0;
 }
 .c156 {
-  animation-delay: 3s !important;
+  animation-delay: calc(3s - var(--scene-shift, 0s)) !important;
   position: relative;
   flex: 1;
   display: flex;
@@ -1232,13 +1232,13 @@
   color: #2F6B3E;
 }
 .c169 {
-  animation-delay: 3s !important;
+  animation-delay: calc(3s - var(--scene-shift, 0s)) !important;
   position: absolute;
   left: 110px;
   top: 176px;
 }
 .c170 {
-  animation-delay: 6s !important;
+  animation-delay: calc(6s - var(--scene-shift, 0s)) !important;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -1457,7 +1457,7 @@
   background: #1D5C57;
 }
 .c199 {
-  animation-delay: 0.3s !important;
+  animation-delay: calc(0.3s - var(--scene-shift, 0s)) !important;
   position: absolute;
   left: 42%;
   width: 36%;
@@ -1466,7 +1466,7 @@
   background: #7FB5AD;
 }
 .c200 {
-  animation-delay: 0.5s !important;
+  animation-delay: calc(0.5s - var(--scene-shift, 0s)) !important;
   position: absolute;
   left: 20%;
   width: 58%;
@@ -1475,7 +1475,7 @@
   background: #0E1A2B;
 }
 .c201 {
-  animation-delay: 0.7s !important;
+  animation-delay: calc(0.7s - var(--scene-shift, 0s)) !important;
   position: absolute;
   left: 0;
   width: 18%;
@@ -1484,7 +1484,7 @@
   background: #C58B2A;
 }
 .c202 {
-  animation-delay: 0.9s !important;
+  animation-delay: calc(0.9s - var(--scene-shift, 0s)) !important;
   position: absolute;
   left: 22%;
   width: 56%;
@@ -1493,7 +1493,7 @@
   background: #1D5C57;
 }
 .c203 {
-  animation-delay: 1.1s !important;
+  animation-delay: calc(1.1s - var(--scene-shift, 0s)) !important;
   position: absolute;
   left: 60%;
   width: 40%;
@@ -1679,7 +1679,7 @@
   background: #16253B;
 }
 .c232 {
-  animation-delay: 0.0s !important;
+  animation-delay: calc(0.0s - var(--scene-shift, 0s)) !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1700,7 +1700,7 @@
   color: #A9B2BF;
 }
 .c235 {
-  animation-delay: 0.7s !important;
+  animation-delay: calc(0.7s - var(--scene-shift, 0s)) !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1710,7 +1710,7 @@
   background: #1D5C57;
 }
 .c236 {
-  animation-delay: 1.4s !important;
+  animation-delay: calc(1.4s - var(--scene-shift, 0s)) !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1720,7 +1720,7 @@
   background: #1D5C57;
 }
 .c237 {
-  animation-delay: 2.0999999999999996s !important;
+  animation-delay: calc(2.0999999999999996s - var(--scene-shift, 0s)) !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2217,3 +2217,21 @@
   .c2 { grid-template-columns: 520px minmax(0, 1fr); gap: 40px; }
   .c11 { zoom: 0.58; }
 }
+
+/* « Votre logiciel » : une icône en haut de chaque module, le nom reste en bas */
+.moduleIcon { margin-bottom: auto; }
+/* « Zéro ressaisie » : le fil est centré dans la carte, plus de grand vide au-dessus */
+.c204 { justify-content: flex-start; }
+.c206 { margin-top: auto; margin-bottom: auto; gap: 22px; }
+.c211 { width: 52px; height: 52px; border-radius: 14px; }
+.c209 { font-size: 13px; }
+
+/* Bouton Pause du héros : dans le coin bas droit de la fenêtre « Atelier Durand » */
+.c11 { --pause-bottom: 122px; }
+@media (min-width: 1100px) and (max-width: 1439px) { .c11 { --pause-bottom: 110px; } }
+@media (min-width: 1100px) and (max-width: 1359px) { .c11 { --pause-bottom: 98px; } }
+@media (min-width: 1100px) and (max-width: 1279px) { .c11 { --pause-bottom: 86px; } }
+@media (min-width: 1100px) and (max-width: 1199px) { .c11 { --pause-bottom: 76px; } }
+@media (max-width: 800px) { .c11 { --pause-bottom: 115px; } }
+/* Notification « Facture envoyée » décalée vers la gauche : le coin bas droit reste au bouton Pause */
+.c40 { right: 64px; }

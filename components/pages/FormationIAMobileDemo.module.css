@@ -173,3 +173,9 @@
   font-family: var(--font-mono);
   font-size: 12px;
 }
+
+/* Bouton Pause dans le coin bas droit de la fenêtre « Assistant IA » */
+.sceneWrap { --pause-right: 52px; }
+@media (max-width: 767px) {
+  .sceneWrap { --pause-right: 12px; }
+}

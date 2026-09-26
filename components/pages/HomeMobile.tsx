@@ -32,7 +32,7 @@ export default function HomeMobile() {
           Réserver 20 min
         </CalendlyLink>
         {" "}
-        <Scene className={s.c8}>
+        <Scene className={s.c8} shift={3.5}>
           <div className={s.c9}>
             <span className={s.c10}>
               Suivi des affaires
@@ -89,7 +89,7 @@ export default function HomeMobile() {
     </section>
     {" "}
     {" "}
-    <Scene as="section" className={s.c24} reveal>
+    <section className={s.c24} data-reveal>
       <span className={s.c25}>
         Le constat
       </span>
@@ -98,57 +98,59 @@ export default function HomeMobile() {
         De l'éparpillement à un seul outil.
       </h2>
       {" "}
-      <div className={s.c27}>
-        <span className={`${s.c28} ${s.tabA}`}>
-          Aujourd'hui
-        </span>
-        <span className={`${s.c28} ${s.tabB}`}>
-          Demain
-        </span>
-      </div>
-      {" "}
-      <div className={s.c29}>
-        <div className={`${s.c30} ${s.stA}`}>
-          <div className={s.c31}>
-            Suivi_commandes_v3_FINAL.xlsx
-          </div>
-          {" "}
-          <div className={s.c32}>
-            Planning techniciens (2).xlsx
-          </div>
-          {" "}
-          <div className={s.c33}>
-            <strong>
-              RE: RE: TR: dispo mardi ?
-            </strong>
-            <span className={s.c34}>
-              23 messages
-            </span>
-          </div>
-          {" "}
-          <div className={s.c35}>
-            Rappeler M. Petit pour le devis ??
-          </div>
+      <Scene className={s.stage}>
+        <div className={s.c27}>
+          <span className={`${s.c28} ${s.tabA}`}>
+            Aujourd'hui
+          </span>
+          <span className={`${s.c28} ${s.tabB}`}>
+            Demain
+          </span>
         </div>
         {" "}
-        <div className={`${s.c36} ${s.stB}`}>
-          <div className={s.c37}>
-            Commandes
+        <div className={s.c29}>
+          <div className={`${s.c30} ${s.stA}`}>
+            <div className={s.c31}>
+              Suivi_commandes_v3_FINAL.xlsx
+            </div>
+            {" "}
+            <div className={s.c32}>
+              Planning techniciens (2).xlsx
+            </div>
+            {" "}
+            <div className={s.c33}>
+              <strong>
+                RE: RE: TR: dispo mardi ?
+              </strong>
+              <span className={s.c34}>
+                23 messages
+              </span>
+            </div>
+            {" "}
+            <div className={s.c35}>
+              Rappeler M. Petit pour le devis ??
+            </div>
           </div>
           {" "}
-          <div className={s.c37}>
-            Planning
-          </div>
-          {" "}
-          <div className={s.c37}>
-            Clients
-          </div>
-          {" "}
-          <div className={s.c37}>
-            Factures
+          <div className={`${s.c36} ${s.stB}`}>
+            <div className={s.c37}>
+              Commandes
+            </div>
+            {" "}
+            <div className={s.c37}>
+              Planning
+            </div>
+            {" "}
+            <div className={s.c37}>
+              Clients
+            </div>
+            {" "}
+            <div className={s.c37}>
+              Factures
+            </div>
           </div>
         </div>
-      </div>
+      </Scene>
       {" "}
       <div className={s.c38}>
         <span className={s.c39}>
@@ -167,7 +169,7 @@ export default function HomeMobile() {
           + 5 outils
         </span>
       </div>
-    </Scene>
+    </section>
     {" "}
     {" "}
     <section className={s.c41} data-reveal>
@@ -272,7 +274,7 @@ export default function HomeMobile() {
         Au bureau comme sur le terrain : seul l'utile s'affiche à l'écran, et un clic vous mène à la bonne information.
       </p>
       {" "}
-      <Scene>
+      <Scene shift={2.5}>
       <SwipeCarousel
         reserveControlSpace
         label="Exemples d'écrans"

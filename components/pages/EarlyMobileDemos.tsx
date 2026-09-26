@@ -36,7 +36,7 @@ export function EarlyHeroMobile() {
           {TEAM_MONDAY.map((person, i) => (
             <li key={person.name} className={m.teamRow}>
               <span className={m.name}>{person.name}</span>
-              <span className={`${m.pill} ${person.tone} ${s.cell}`} style={{ animationDelay: `${i * 0.15}s`, animationFillMode: "backwards" }}>
+              <span className={`${m.pill} ${person.tone} ${s.cell}`} style={{ animationDelay: `calc(${i * 0.15}s - var(--scene-shift, 0s))`, animationFillMode: "backwards" }}>
                 {person.value}
               </span>
             </li>
@@ -64,7 +64,7 @@ export function EarlyMockupMobile() {
         <span className={m.meta}>3 commentaires</span>
         <ol className={m.comments}>
           {COMMENTS.map((text, i) => (
-            <li key={text} className={`${m.comment} ${s.pin}`} style={{ animationDelay: `${0.4 + i * 1.2}s`, animationFillMode: "backwards" }}>
+            <li key={text} className={`${m.comment} ${s.pin}`} style={{ animationDelay: `calc(${0.4 + i * 1.2}s - var(--scene-shift, 0s))`, animationFillMode: "backwards" }}>
               <span className={m.commentNumber} aria-hidden="true">
                 {i + 1}
               </span>
@@ -72,7 +72,7 @@ export function EarlyMockupMobile() {
             </li>
           ))}
         </ol>
-        <span className={`${m.validated} ${s.pin}`} style={{ animationDelay: "4.5s", animationFillMode: "backwards" }}>
+        <span className={`${m.validated} ${s.pin}`} style={{ animationDelay: "calc(4.5s - var(--scene-shift, 0s))", animationFillMode: "backwards" }}>
           <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
             <path d="M5 12l5 5L20 7" />
           </svg>

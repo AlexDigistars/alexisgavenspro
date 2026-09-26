@@ -71,7 +71,7 @@ export default function EarlyCase() {
         </div>
         {" "}
         {" "}
-        <Scene className={m.sceneWrap}>
+        <Scene className={m.sceneWrap} shift={2}>
           <div className={`${s.c14} ${m.desktopOnly}`}>
             <div className={s.c15}>
               <div className={s.c16}>
@@ -450,7 +450,7 @@ export default function EarlyCase() {
         </div>
       </div>
       {" "}
-      <Scene className={m.sceneWrap}>
+      <Scene className={m.sceneWrap} shift={6.5}>
         <div className={`${s.c71} ${m.desktopOnly}`}>
           <div className={s.c72}>
             <div className={s.c73}>
@@ -542,7 +542,7 @@ export default function EarlyCase() {
         </span>
         {" "}
         <h2 className={s.c55}>
-          Tout se répond, en un clic.
+          Toute l&apos;information, à un clic.
         </h2>
         {" "}
         <p className={s.c95}>
@@ -576,7 +576,7 @@ export default function EarlyCase() {
         </CalendlyLink>
       </div>
       {" "}
-      <Scene className={m.sceneWrap}>
+      <Scene className={m.sceneWrap} shift={3}>
         <div className={`${s.c98} ${m.desktopOnly}`}>
           <div className={s.c99}>
             <span className={s.c100}>
@@ -895,7 +895,7 @@ export default function EarlyCase() {
       </div>
       {" "}
       {" "}
-      <Scene className={s.c157}>
+      <Scene className={s.c157} shift={7.4}>
         <details className={`${s.c158} ${s.lotDetails}`}>
           <summary className={s.lotSummary}>
             <span className={`${s.c124} ${s.lotRow}`}>
@@ -1021,7 +1021,7 @@ export default function EarlyCase() {
       </Scene>
       {" "}
       {" "}
-      <Scene className={s.c179}>
+      <Scene className={s.c179} shift={3.5}>
         <div className={s.c180}>
           <div className={s.c181}>
             <span className={s.c182}>
@@ -1261,7 +1261,7 @@ export default function EarlyCase() {
       </Scene>
       {" "}
       {" "}
-      <Scene className={s.c179}>
+      <Scene className={s.c179} shift={2}>
         <div className={s.c211}>
           <div className={s.c73}>
             <span className={s.c197}>

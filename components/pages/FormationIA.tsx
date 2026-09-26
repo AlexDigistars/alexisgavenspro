@@ -38,7 +38,7 @@ export default function FormationIA() {
         </div>
         {" "}
         {" "}
-        <Scene className={m.sceneWrap}>
+        <Scene className={m.sceneWrap} shift={6.5}>
           <div className={`${s.c11} ${m.desktopOnly}`}>
             <div className={s.c12}>
               <div className={s.c13}>

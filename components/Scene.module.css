@@ -2,11 +2,13 @@
   position: relative;
 }
 
-/* Zone cliquable de 44 × 44 px ; la pilule visible reste discrète */
+/* Zone cliquable de 44 × 44 px ; la pilule visible reste discrète.
+   Toujours à l'intérieur du coin bas droit de la carte : décalage réglable par
+   page avec --pause-right et --pause-bottom quand la carte est plus petite que la scène. */
 .toggle {
   position: absolute;
-  right: 4px;
-  bottom: 4px;
+  right: var(--pause-right, 12px);
+  bottom: var(--pause-bottom, 12px);
   z-index: 5;
   display: flex;
   align-items: center;
@@ -21,7 +23,7 @@
 }
 
 .toggleTop {
-  top: 4px;
+  top: 12px;
   bottom: auto;
 }
 
