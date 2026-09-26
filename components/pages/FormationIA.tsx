@@ -1,3 +1,6 @@
+import { AssistantMobile } from "./FormationIAMobileDemo";
+import m from "./FormationIAMobileDemo.module.css";
+import Scene from "@/components/Scene";
 import CalendlyLink from "@/components/CalendlyLink";
 import s from "./FormationIA.module.css";
 
@@ -35,72 +38,76 @@ export default function FormationIA() {
         </div>
         {" "}
         {" "}
-        <div className={s.c11}>
-          <div className={s.c12}>
-            <div className={s.c13}>
-              <span className={s.c14}>
-                Assistant IA
-              </span>
-              <span className={s.c15}>
-                ATELIER · JOUR 1
-              </span>
-            </div>
-            {" "}
-            <div className={`${s.c16} ${s.msg1}`}>
-              <span>
-                À partir de mes notes de visite, rédige le devis pour Mme Roux, au format de nos devis habituels.
-              </span>
-              {" "}
-              <span className={s.c17}>
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#8FD0C5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M6 2h9l5 5v15H6z" />
-                </svg>
-                notes_visite_roux.pdf
-              </span>
-            </div>
-            {" "}
-            <div className={`${s.c18} ${s.typing}`}>
-              <span className={s.c19}></span>
-              <span className={s.c19}></span>
-              <span className={s.c19}></span>
-            </div>
-            {" "}
-            <div className={`${s.c20} ${s.msg2}`}>
-              <div className={s.c21}>
-                <strong>
-                  Devis n° 2026-118 · Mme Roux
-                </strong>
-                <span className={s.c22}>
-                  Brouillon
+        <Scene className={m.sceneWrap}>
+          <div className={`${s.c11} ${m.desktopOnly}`}>
+            <div className={s.c12}>
+              <div className={s.c13}>
+                <span className={s.c14}>
+                  Assistant IA
+                </span>
+                <span className={s.c15}>
+                  ATELIER · JOUR 1
                 </span>
               </div>
               {" "}
-              <div className={`${s.c23} ${s.line}`}></div>
-              {" "}
-              <div className={`${s.c24} ${s.line}`}></div>
-              {" "}
-              <div className={`${s.c25} ${s.line}`}></div>
-              {" "}
-              <div className={s.c26}>
+              <div className={`${s.c16} ${s.msg1}`}>
                 <span>
-                  Total HT
+                  À partir de mes notes de visite, rédige le devis pour Mme Roux, au format de nos devis habituels.
                 </span>
-                <strong>
-                  1 480,00 €
-                </strong>
+                {" "}
+                <span className={s.c17}>
+                  <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#8FD0C5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M6 2h9l5 5v15H6z" />
+                  </svg>
+                  notes_visite_roux.pdf
+                </span>
               </div>
-            </div>
-            {" "}
-            <div className={`${s.c27} ${s.saved}`}>
-              <span className={s.c28}>
-                1 min
-              </span>
-              <span className={s.c29}>
-                au lieu d'une demi-heure
-              </span>
+              {" "}
+              <div className={`${s.c18} ${s.typing}`}>
+                <span className={s.c19}></span>
+                <span className={s.c19}></span>
+                <span className={s.c19}></span>
+              </div>
+              {" "}
+              <div className={`${s.c20} ${s.msg2}`}>
+                <div className={s.c21}>
+                  <strong>
+                    Devis n° 2026-118 · Mme Roux
+                  </strong>
+                  <span className={s.c22}>
+                    Brouillon
+                  </span>
+                </div>
+                {" "}
+                <div className={`${s.c23} ${s.line}`}></div>
+                {" "}
+                <div className={`${s.c24} ${s.line}`}></div>
+                {" "}
+                <div className={`${s.c25} ${s.line}`}></div>
+                {" "}
+                <div className={s.c26}>
+                  <span>
+                    Total HT
+                  </span>
+                  <strong>
+                    1 480,00 €
+                  </strong>
+                </div>
+              </div>
+              {" "}
+              <div className={`${s.c27} ${s.saved}`}>
+                <span className={s.c28}>
+                  1 min
+                </span>
+                <span className={s.c29}>
+                  au lieu d'une demi-heure
+                </span>
+                <span className={s.exampleTag}>Exemple</span>
+              </div>
             </div>
           </div>
-        </div>
+          <AssistantMobile />
+        </Scene>
       </div>
     </section>
     {" "}
@@ -121,7 +128,7 @@ export default function FormationIA() {
       <div className={s.c34}>
         <div className={s.c35}>
           <span className={`${s.c36} ${s.float}`}>
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
+            <svg aria-hidden="true" focusable="false" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
               <path d="M6 2h9l5 5v15H6z" />
               <path d="M14 2v6h6" />
               <path d="M9 13h6M9 17h4" />
@@ -137,7 +144,7 @@ export default function FormationIA() {
         {" "}
         <div className={s.c35}>
           <span className={`${s.c39} ${s.float}`}>
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
+            <svg aria-hidden="true" focusable="false" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
               <rect x="3" y="5" width="18" height="14" rx="2" />
               <path d="M3 7l9 6 9-6" />
             </svg>
@@ -152,7 +159,7 @@ export default function FormationIA() {
         {" "}
         <div className={s.c35}>
           <span className={`${s.c40} ${s.float}`}>
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
+            <svg aria-hidden="true" focusable="false" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
               <circle cx="12" cy="12" r="9" />
               <path d="M8 12h8M8 8h8M8 16h5" />
             </svg>
@@ -167,7 +174,7 @@ export default function FormationIA() {
         {" "}
         <div className={s.c35}>
           <span className={`${s.c41} ${s.float}`}>
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
+            <svg aria-hidden="true" focusable="false" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
               <path d="M3 3v18h18" />
               <path d="M7 15l4-4 3 3 5-6" />
             </svg>
@@ -182,7 +189,7 @@ export default function FormationIA() {
         {" "}
         <div className={s.c35}>
           <span className={`${s.c42} ${s.float}`}>
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
+            <svg aria-hidden="true" focusable="false" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
               <path d="M4 12a8 8 0 0 1 14-5.3L20 9" />
               <path d="M20 4v5h-5" />
               <path d="M20 12a8 8 0 0 1-14 5.3L4 15" />
@@ -199,7 +206,7 @@ export default function FormationIA() {
         {" "}
         <div className={s.c35}>
           <span className={`${s.c43} ${s.float}`}>
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
+            <svg aria-hidden="true" focusable="false" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
               <rect x="4" y="7" width="16" height="12" rx="3" />
               <path d="M12 3v4M9 13h.01M15 13h.01" />
             </svg>
@@ -251,9 +258,6 @@ export default function FormationIA() {
           <div className={s.c52}>
             <span className={s.c53}>
               2 JOURS
-            </span>
-            <span className={s.c54}>
-              Le plus demandé
             </span>
           </div>
           {" "}
@@ -370,7 +374,7 @@ export default function FormationIA() {
       {" "}
       <div className={s.c66}>
         <span className={s.c67}>
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#8FD0C5" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
+          <svg aria-hidden="true" focusable="false" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#8FD0C5" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
             <path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z" />
             <path d="M9 12l2 2 4-4" />
           </svg>

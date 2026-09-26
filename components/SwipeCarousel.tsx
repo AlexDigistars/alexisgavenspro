@@ -6,12 +6,30 @@ import styles from "./SwipeCarousel.module.css";
 type Props = {
   children: ReactNode;
   label: string;
+  /** Titre de chaque carte, pour le nom des points (« Carte 2 sur 4 : Repenser »). */
+  slideLabels: string[];
+  /** Laisse la place au bouton Pause de la scène à droite de la rangée des points. */
+  reserveControlSpace?: boolean;
 };
 
+/** Suit le réglage système « réduire les animations », y compris s'il change en cours de visite. */
+function useReducedMotion() {
+  const [reduced, setReduced] = useState(false);
+  useEffect(() => {
+    const query = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const update = () => setReduced(query.matches);
+    update();
+    query.addEventListener("change", update);
+    return () => query.removeEventListener("change", update);
+  }, []);
+  return reduced;
+}
+
 /** Carrousel à glisser (CSS scroll-snap) avec points indicateurs. */
-export default function SwipeCarousel({ children, label }: Props) {
+export default function SwipeCarousel({ children, label, slideLabels, reserveControlSpace }: Props) {
   const trackRef = useRef<HTMLDivElement>(null);
   const [active, setActive] = useState(0);
+  const reducedMotion = useReducedMotion();
   const count = Children.count(children);
 
   useEffect(() => {
@@ -31,9 +49,10 @@ export default function SwipeCarousel({ children, label }: Props) {
   }, [count]);
 
   const goTo = (index: number) => {
-    const slide = trackRef.current?.children[index] as HTMLElement | undefined;
-    if (!slide || !trackRef.current) return;
-    trackRef.current.scrollTo({ left: slide.offsetLeft - trackRef.current.offsetLeft, behavior: "smooth" });
+    const track = trackRef.current;
+    const slide = track?.children[index] as HTMLElement | undefined;
+    if (!track || !slide) return;
+    track.scrollTo({ left: slide.offsetLeft - track.offsetLeft, behavior: reducedMotion ? "auto" : "smooth" });
   };
 
   return (
@@ -43,13 +62,13 @@ export default function SwipeCarousel({ children, label }: Props) {
           <div className={styles.slide}>{child}</div>
         ))}
       </div>
-      <div className={styles.controls}>
+      <div className={reserveControlSpace ? `${styles.controls} ${styles.controlsReserved}` : styles.controls}>
         {Array.from({ length: count }, (_, i) => (
           <button
             key={i}
             type="button"
             className={styles.dotButton}
-            aria-label={`Afficher l'élément ${i + 1} sur ${count}`}
+            aria-label={`Carte ${i + 1} sur ${count} : ${slideLabels[i] ?? ""}`}
             aria-current={i === active ? "true" : undefined}
             onClick={() => goTo(i)}
           >

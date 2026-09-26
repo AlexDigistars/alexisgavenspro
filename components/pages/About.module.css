@@ -388,3 +388,21 @@
 @media (max-width: 1023px) {
   .c9 { left: 16px; bottom: 16px; }
 }
+
+/* Contour de focus : vert clair sur les fonds sombres, vert pétrole sur les fonds clairs qu'ils contiennent */
+:is(.c1, .c19, .c25, .c26, .c38, .c46) :focus-visible { outline-color: #8FD0C5; }
+:is(.c1, .c19, .c25, .c26, .c38, .c46) :is(.c9, .c18, .c20, .c21, .c30, .c31, .c33, .c34, .c36, .c37, .c43) :focus-visible { outline-color: #1D5C57; }
+
+/* Petites animations décoratives hors démonstration : elles s'arrêtent d'elles-mêmes en 5 s environ */
+.float:not([data-scene] *) { animation-duration: 3s; animation-iteration-count: 1; }
+.prog:not([data-scene] *) { animation-duration: 5s; animation-iteration-count: 1; animation-fill-mode: forwards; }
+
+/* Bouton de rendez-vous dans l'introduction */
+.introCta {
+  align-self: flex-start;
+  background: #F6F5F1;
+  color: #0E1A2B;
+}
+
+/* Diplômes : les pastilles passent à la ligne sur très petit écran */
+.c29 { flex-wrap: wrap; }

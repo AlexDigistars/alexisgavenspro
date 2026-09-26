@@ -102,8 +102,8 @@ button {
 }
 
 :focus-visible {
-  outline: 2px solid var(--accent-light);
-  outline-offset: 3px;
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 
 .mono {
@@ -130,6 +130,12 @@ button {
 /* ===== Animations : en pause tant que le bloc n'est pas à l'écran ===== */
 [data-reveal]:not(.is-visible),
 [data-reveal]:not(.is-visible) * {
+  animation-play-state: paused !important;
+}
+
+/* ===== Démonstrations en pause (bouton Pause ou scène hors écran) ===== */
+[data-scene][data-paused="true"],
+[data-scene][data-paused="true"] * {
   animation-play-state: paused !important;
 }
 

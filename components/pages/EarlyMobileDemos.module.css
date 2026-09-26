@@ -1,0 +1,420 @@
+/* Démonstrations mobiles d'Early : texte utile autour de 14 px, rien d'essentiel sous 12 px. */
+
+.mobileOnly {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .mobileOnly {
+    display: flex;
+  }
+  /* Les maquettes de bureau ne sont plus réduites : elles laissent la place aux versions mobiles. */
+  .desktopOnly {
+    display: none !important;
+  }
+}
+
+/* Enveloppe de scène : colle à la maquette de bureau sur tablette, pleine largeur sur mobile */
+.sceneWrap {
+  min-width: 0;
+}
+@media (max-width: 1023px) {
+  .sceneWrap {
+    width: fit-content;
+    max-width: 100%;
+    margin-inline: auto;
+  }
+}
+@media (max-width: 767px) {
+  .sceneWrap {
+    width: 100%;
+  }
+}
+
+.window {
+  flex-direction: column;
+  width: 100%;
+  border-radius: 16px;
+  background: #ffffff;
+  color: #0e1a2b;
+  overflow: hidden;
+  box-shadow: 0 30px 60px -24px rgba(0, 0, 0, 0.5);
+}
+
+.windowBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 16px;
+  border-bottom: 1px solid #eceae3;
+  background: #faf9f6;
+}
+
+.windowTitle {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.fictive,
+.mono {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: #5a6474;
+}
+
+.windowBody {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 16px 16px 56px;
+}
+
+.rowBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.meta {
+  font-size: 13px;
+  color: #5a6474;
+}
+
+.days {
+  display: flex;
+  gap: 6px;
+  font-size: 13px;
+  color: #5a6474;
+}
+
+.days span {
+  padding: 6px 10px;
+  border-radius: 999px;
+}
+
+.days .dayActive {
+  background: #0e1a2b;
+  color: #f6f5f1;
+  font-weight: 600;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.teamRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #eceae3;
+}
+
+.name {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.pill {
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.ok {
+  background: #e3f1e6;
+  color: #2f6b3e;
+}
+
+.err {
+  background: #fbe3e1;
+  color: #a33a2f;
+}
+
+.info {
+  background: #e2ecfb;
+  color: #2b57a8;
+}
+
+/* Co-construction */
+.beige {
+  width: 100%;
+  padding: 16px 16px 60px;
+  border-radius: 20px;
+  background: #eceae3;
+}
+
+.paper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  padding: 18px;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 20px 40px -24px rgba(14, 26, 43, 0.3);
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.comment {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.commentNumber {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50% 50% 50% 0;
+  background: #1d5c57;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.commentText {
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #0e1a2b;
+  color: #f6f5f1;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.validated {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background: #1d5c57;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* Navigation reliée */
+.back {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.day {
+  font-weight: 700;
+}
+
+.personRow {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar,
+.avatarLarge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #dceae7;
+  color: #143f3c;
+  font-weight: 700;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  font-size: 12px;
+}
+
+.avatarLarge {
+  width: 40px;
+  height: 40px;
+  font-size: 14px;
+}
+
+.personLink {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1d5c57;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.pointer {
+  margin-left: -4px;
+  margin-top: 16px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  border-radius: 14px;
+  border: 1px solid #e3e1da;
+  background: #ffffff;
+  box-shadow: 0 24px 48px -20px rgba(14, 26, 43, 0.35);
+}
+
+.profileHead {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profileName {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+}
+
+.hours {
+  font-size: 18px;
+}
+
+.bar {
+  height: 6px;
+  border-radius: 6px;
+  background: #eceae3;
+}
+
+.barFill {
+  display: block;
+  width: 76%;
+  height: 100%;
+  border-radius: 6px;
+  background: #1d5c57;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #1d5c57;
+}
+
+.chips span {
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: #dceae7;
+}
+
+/* Tout centralisé : liste verticale reliée au logiciel */
+.hub {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+  padding-left: 28px;
+}
+
+.trunk {
+  position: absolute;
+  left: 11px;
+  top: 20px;
+  width: 2px;
+  height: calc(100% - 60px);
+  overflow: visible;
+}
+
+.tools {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tool {
+  position: relative;
+  padding: 11px 14px;
+  border-radius: 10px;
+  background: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  box-shadow: 0 8px 18px -12px rgba(14, 26, 43, 0.35);
+}
+
+/* Petit trait horizontal qui relie chaque outil au tronc vertical */
+.tool::before {
+  content: "";
+  position: absolute;
+  left: -17px;
+  top: 50%;
+  width: 17px;
+  border-top: 2px dashed #1d5c57;
+}
+
+.core {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  padding: 16px 18px;
+  border-radius: 18px;
+  background: #0e1a2b;
+  color: #f6f5f1;
+}
+
+.core::before {
+  content: "";
+  position: absolute;
+  left: -17px;
+  top: 50%;
+  width: 17px;
+  border-top: 2px solid #1d5c57;
+}
+
+.coreDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #8fd0c5;
+}
+
+.coreTitle {
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.coreText {
+  font-size: 14px;
+  color: #a9b2bf;
+}

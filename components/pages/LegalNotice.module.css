@@ -138,3 +138,59 @@
 }
 
 /* Boutons jamais coupés sur deux lignes, rangées de boutons qui passent à la ligne */
+
+/* Contour de focus : vert clair sur les fonds sombres, vert pétrole sur les fonds clairs qu'ils contiennent */
+
+/* Sommaire : liens de 44 px de haut */
+.c2 { gap: 0; }
+.c4, .c5 { display: flex; align-items: center; min-height: 44px; }
+.c3 { margin-bottom: 4px; }
+
+/* « Une question ? » : e-mail et téléphone en deux boutons-liens */
+.contactLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.contactLink {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 20px;
+  border-radius: 999px;
+  border: 1px solid rgba(14, 26, 43, 0.15);
+  background: #F6F5F1;
+  font-size: 15px;
+  font-weight: 600;
+  color: #0E1A2B;
+}
+
+/* Section « Données personnelles » */
+.subTitle {
+  margin: 12px 0 0;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.facts {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 1.65;
+  color: #3A4556;
+}
+
+.facts strong {
+  color: #0E1A2B;
+}
+
+.textLink {
+  color: #1D5C57;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
