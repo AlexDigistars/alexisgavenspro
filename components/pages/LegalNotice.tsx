@@ -8,7 +8,15 @@ export default function LegalNotice() {
     {" "}
     {" "}
     <div className={s.c1} data-reveal>
-      <aside className={s.c2}>
+      <div className={`${s.c7} ${s.pageHead}`}>
+        <h1 className={s.c8}>
+          Mentions légales
+        </h1>
+        <span className={s.c9}>
+          Dernière mise à jour : {LEGAL_UPDATED_AT}
+        </span>
+      </div>
+      <aside className={`${s.c2} ${s.toc}`}>
         <span className={s.c3}>
           SUR CETTE PAGE
         </span>
@@ -38,17 +46,7 @@ export default function LegalNotice() {
         </a>
       </aside>
       {" "}
-      <article className={s.c6}>
-        <div className={s.c7}>
-          <h1 className={s.c8}>
-            Mentions légales
-          </h1>
-          {" "}
-          <span className={s.c9}>
-            Dernière mise à jour : {LEGAL_UPDATED_AT}
-          </span>
-        </div>
-        {" "}
+      <article className={`${s.c6} ${s.body}`}>
         <section className={s.c10} data-reveal id="ml-editeur">
           <h2 className={s.c11}>
             Éditeur du site
@@ -205,7 +203,7 @@ export default function LegalNotice() {
         {" "}
         <section className={s.c15} data-reveal id="ml-contact">
           <h2 className={s.c11}>
-            Une question ?
+            Contact
           </h2>
           {" "}
           <p className={s.c16}>

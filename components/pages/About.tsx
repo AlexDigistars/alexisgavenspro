@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import portrait from "@/public/alexis-portrait-hd.jpg";
 import CalendlyLink from "@/components/CalendlyLink";
 import s from "./About.module.css";
@@ -21,7 +22,7 @@ export default function About() {
           </h1>
           {" "}
           <p className={s.c6}>
-            Je viens des opérations. En administration des ventes et en logistique, j'ai commencé par automatiser les livraisons, puis créé un outil de suivi de machines utilisé chaque jour par l'équipe. C'est là que j'ai appris à comprendre le travail avant de concevoir le logiciel.
+            Ancien responsable de l&apos;administration des ventes et de la logistique, je pars de votre travail quotidien pour concevoir ou faire évoluer votre logiciel.
           </p>
           <CalendlyLink className={`${s.c46} ${s.introCta}`}>
             Réserver 20 min
@@ -72,9 +73,6 @@ export default function About() {
           <span className={s.c23}>
             Référent qualité et gestion des risques, EHPAD
           </span>
-          <span className={s.c24}>
-            Formaliser les procédures, évaluer les pratiques et suivre les plans d'action avec les équipes de terrain.
-          </span>
         </div>
         {" "}
         <div className={s.c20}>
@@ -84,9 +82,6 @@ export default function About() {
           </span>
           <span className={s.c23}>
             Agent instructeur en préfecture
-          </span>
-          <span className={s.c24}>
-            Instruire des dossiers administratifs complexes, avec rigueur, écoute et respect strict des procédures.
           </span>
         </div>
         {" "}
@@ -112,7 +107,7 @@ export default function About() {
             Responsable administration des ventes (ADV) & logistique
           </span>
           <span className={s.c24}>
-            Commandes, facturation, stocks, livraisons. Automatisation des livraisons récurrentes, puis une application mobile de suivi du parc, utilisée chaque jour par l'équipe.
+            Commandes, facturation, stocks, livraisons. Automatisation des livraisons récurrentes, puis une application mobile de suivi des machines, utilisée chaque jour par l&apos;équipe.
           </span>
         </div>
         {" "}
@@ -193,10 +188,10 @@ export default function About() {
             </svg>
           </span>
           <span className={s.c35}>
-            Rigueur et sécurité
+            Une méthode structurée.
           </span>
           <span className={s.c24}>
-            Des années de qualité et d'administration : vos données et vos méthodes de travail sont entre de bonnes mains.
+            Je clarifie les besoins, je vous présente les écrans et nous validons chaque étape.
           </span>
         </div>
       </div>
@@ -205,20 +200,9 @@ export default function About() {
     {" "}
     <section className={s.c38} data-reveal id="ap-contact">
       <div className={s.c39}>
-        <svg aria-hidden="true" focusable="false" width="36" height="28" viewBox="0 0 28 22" fill="#BFD8D5">
-          <path d="M0 22V12C0 5 4 1 11 0l1 3c-4 1-6 4-6 7h5v12zm16 0V12c0-7 4-11 11-12l1 3c-4 1-6 4-6 7h5v12z" />
-        </svg>
-        {" "}
-        <p className={s.c40}>
-          Alexis écoute nos besoins et il est force de proposition. C'est agréable de travailler avec lui.
-        </p>
-        {" "}
-        <span className={s.c41}>
-          <strong className={s.c42}>
-            Joseph Herbinet
-          </strong>
-          {" · Dirigeant d'Early"}
-        </span>
+        <Link className={s.earlyLink} href="/realisations/early">
+          Voir le logiciel repris pour Early →
+        </Link>
       </div>
       {" "}
       <div className={s.c43}>

@@ -1005,3 +1005,11 @@
   .dashKpi { flex-direction: row; align-items: center; }
   .dashRow { grid-template-columns: 104px minmax(0, 1fr) 40px; }
 }
+
+/* Conteneur commun au-delà de 1440 px : la règle générale est déclarée plus haut, « .roles » redéfinit ses marges ensuite */
+@media (min-width: 1441px) {
+  .roles {
+    padding-left: calc((100% - 1280px) / 2);
+    padding-right: calc((100% - 1280px) / 2);
+  }
+}
