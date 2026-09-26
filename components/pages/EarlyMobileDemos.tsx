@@ -139,7 +139,7 @@ export function EarlyNavigationMobile() {
   );
 }
 
-const TOOLS = ["Campagnes Meta", "Google Agenda", "Gmail", "47 fichiers Excel", "Pennylane"];
+const TOOLS = ["Campagnes Meta", "Google Agenda", "47 fichiers Excel", "Pennylane"];
 
 /** Tout centralisé : les outils, reliés au logiciel par un trait vertical. */
 export function EarlyHubMobile() {
