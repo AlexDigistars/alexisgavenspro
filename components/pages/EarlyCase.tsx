@@ -1,3 +1,5 @@
+import { EarlyHeroMobile, EarlyMockupMobile, EarlyNavigationMobile, EarlyHubMobile } from "./EarlyMobileDemos";
+import m from "./EarlyMobileDemos.module.css";
 import Scene from "@/components/Scene";
 import Link from "next/link";
 import CalendlyLink from "@/components/CalendlyLink";
@@ -65,223 +67,226 @@ export default function EarlyCase() {
         </div>
         {" "}
         {" "}
-        <Scene className={s.c14}>
-          <div className={s.c15}>
-            <div className={s.c16}>
-              <span className={s.c17}></span>
-              <span className={s.c17}></span>
-              <span className={s.c17}></span>
+        <Scene className={m.sceneWrap}>
+          <div className={`${s.c14} ${m.desktopOnly}`}>
+            <div className={s.c15}>
+              <div className={s.c16}>
+                <span className={s.c17}></span>
+                <span className={s.c17}></span>
+                <span className={s.c17}></span>
+              </div>
+              {" "}
+              <span className={s.c18}>
+                Early Work — Tâches
+              </span>
+              {" "}
+              <span className={s.c19}>
+                DONNÉES FICTIVES
+              </span>
             </div>
             {" "}
-            <span className={s.c18}>
-              Early Work — Tâches
-            </span>
-            {" "}
-            <span className={s.c19}>
-              DONNÉES FICTIVES
-            </span>
+            <div className={s.c20}>
+              <div className={s.c21}>
+                <span className={s.c22}>
+                  Tableau de bord
+                </span>
+                {" "}
+                <span className={s.c23}>
+                  Production
+                </span>
+                {" "}
+                <span className={s.c24}>
+                  Planning
+                </span>
+                {" "}
+                <span className={s.c25}>
+                  Tâches
+                </span>
+                {" "}
+                <span className={s.c24}>
+                  Charge & Travail
+                </span>
+                {" "}
+                <span className={s.c24}>
+                  Calendrier
+                </span>
+                {" "}
+                <span className={s.c23}>
+                  Clients & contenus
+                </span>
+                {" "}
+                <span className={s.c24}>
+                  Clients
+                </span>
+                {" "}
+                <span className={s.c24}>
+                  Contrats
+                </span>
+                {" "}
+                <span className={s.c23}>
+                  Équipe
+                </span>
+                {" "}
+                <span className={s.c23}>
+                  Suivi financier
+                </span>
+                {" "}
+                <span className={s.c23}>
+                  Réglages & suivi
+                </span>
+              </div>
+              {" "}
+              <div className={s.c26}>
+                <span className={s.c27}>
+                  Tâches
+                </span>
+                {" "}
+                <div className={s.c28}>
+                  <span className={s.c29}>
+                    Mon temps
+                  </span>
+                  <span className={s.c29}>
+                    Missions
+                  </span>
+                  <span className={s.c30}>
+                    Suivi de l'équipe
+                  </span>
+                  <span className={s.c29}>
+                    Statistiques
+                  </span>
+                </div>
+                {" "}
+                <div className={s.c31}>
+                  <span className={s.c32}>
+                    Semaine 39
+                  </span>
+                  <span>
+                    Lun.
+                  </span>
+                  <span>
+                    Mar.
+                  </span>
+                  <span>
+                    Mer.
+                  </span>
+                  <span>
+                    Jeu.
+                  </span>
+                  <span>
+                    Ven.
+                  </span>
+                </div>
+                {" "}
+                <div className={s.c33}>
+                  <div className={s.c34}>
+                    <span className={s.c35}>
+                      Camille
+                    </span>
+                    <span className={`${s.c36} ${s.cell}`}>
+                      ✓ 7 h
+                    </span>
+                    <span className={`${s.c37} ${s.cell}`}>
+                      ✓ 7 h
+                    </span>
+                    <span className={`${s.c38} ${s.cell}`}>
+                      8 h
+                    </span>
+                    <span className={`${s.c39} ${s.cell}`}>
+                      4 h 30
+                    </span>
+                    <span className={`${s.c40} ${s.cell}`}>
+                      ✓ 7 h
+                    </span>
+                  </div>
+                  {" "}
+                  <div className={s.c34}>
+                    <span className={s.c35}>
+                      Hugo
+                    </span>
+                    <span className={`${s.c41} ${s.cell}`}>
+                      À saisir
+                    </span>
+                    <span className={`${s.c42} ${s.cell}`}>
+                      ✓ 7 h
+                    </span>
+                    <span className={`${s.c43} ${s.cell}`}>
+                      ✓ 7 h
+                    </span>
+                    <span className={`${s.c44} ${s.cell}`}>
+                      Off
+                    </span>
+                    <span className={`${s.c45} ${s.cell}`}>
+                      2 h 30
+                    </span>
+                  </div>
+                  {" "}
+                  <div className={s.c34}>
+                    <span className={s.c35}>
+                      Inès
+                    </span>
+                    <span className={`${s.c42} ${s.cell}`}>
+                      ✓ 7 h
+                    </span>
+                    <span className={`${s.c43} ${s.cell}`}>
+                      ✓ 7 h
+                    </span>
+                    <span className={`${s.c40} ${s.cell}`}>
+                      ✓ 7 h
+                    </span>
+                    <span className={`${s.c46} ${s.cell}`}>
+                      ✓ 7 h
+                    </span>
+                    <span className={`${s.c47} ${s.cell}`}>
+                      ✓ 7 h
+                    </span>
+                  </div>
+                  {" "}
+                  <div className={s.c34}>
+                    <span className={s.c35}>
+                      Karim
+                    </span>
+                    <span className={`${s.c39} ${s.cell}`}>
+                      4 h 30
+                    </span>
+                    <span className={`${s.c48} ${s.cell}`}>
+                      8 h
+                    </span>
+                    <span className={`${s.c46} ${s.cell}`}>
+                      ✓ 7 h
+                    </span>
+                    <span className={`${s.c49} ${s.cell}`}>
+                      À saisir
+                    </span>
+                    <span className={`${s.c50} ${s.cell}`}>
+                      ✓ 7 h
+                    </span>
+                  </div>
+                  {" "}
+                  <div className={s.c34}>
+                    <span className={s.c35}>
+                      Léa
+                    </span>
+                    <span className={`${s.c40} ${s.cell}`}>
+                      ✓ 7 h
+                    </span>
+                    <span className={`${s.c45} ${s.cell}`}>
+                      4 h 30
+                    </span>
+                    <span className={`${s.c47} ${s.cell}`}>
+                      ✓ 7 h
+                    </span>
+                    <span className={`${s.c50} ${s.cell}`}>
+                      ✓ 7 h
+                    </span>
+                    <span className={`${s.c51} ${s.cell}`}>
+                      8 h
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          {" "}
-          <div className={s.c20}>
-            <div className={s.c21}>
-              <span className={s.c22}>
-                Tableau de bord
-              </span>
-              {" "}
-              <span className={s.c23}>
-                Production
-              </span>
-              {" "}
-              <span className={s.c24}>
-                Planning
-              </span>
-              {" "}
-              <span className={s.c25}>
-                Tâches
-              </span>
-              {" "}
-              <span className={s.c24}>
-                Charge & Travail
-              </span>
-              {" "}
-              <span className={s.c24}>
-                Calendrier
-              </span>
-              {" "}
-              <span className={s.c23}>
-                Clients & contenus
-              </span>
-              {" "}
-              <span className={s.c24}>
-                Clients
-              </span>
-              {" "}
-              <span className={s.c24}>
-                Contrats
-              </span>
-              {" "}
-              <span className={s.c23}>
-                Équipe
-              </span>
-              {" "}
-              <span className={s.c23}>
-                Suivi financier
-              </span>
-              {" "}
-              <span className={s.c23}>
-                Réglages & suivi
-              </span>
-            </div>
-            {" "}
-            <div className={s.c26}>
-              <span className={s.c27}>
-                Tâches
-              </span>
-              {" "}
-              <div className={s.c28}>
-                <span className={s.c29}>
-                  Mon temps
-                </span>
-                <span className={s.c29}>
-                  Missions
-                </span>
-                <span className={s.c30}>
-                  Suivi de l'équipe
-                </span>
-                <span className={s.c29}>
-                  Statistiques
-                </span>
-              </div>
-              {" "}
-              <div className={s.c31}>
-                <span className={s.c32}>
-                  Semaine 39
-                </span>
-                <span>
-                  Lun.
-                </span>
-                <span>
-                  Mar.
-                </span>
-                <span>
-                  Mer.
-                </span>
-                <span>
-                  Jeu.
-                </span>
-                <span>
-                  Ven.
-                </span>
-              </div>
-              {" "}
-              <div className={s.c33}>
-                <div className={s.c34}>
-                  <span className={s.c35}>
-                    Camille
-                  </span>
-                  <span className={`${s.c36} ${s.cell}`}>
-                    ✓ 7 h
-                  </span>
-                  <span className={`${s.c37} ${s.cell}`}>
-                    ✓ 7 h
-                  </span>
-                  <span className={`${s.c38} ${s.cell}`}>
-                    8 h
-                  </span>
-                  <span className={`${s.c39} ${s.cell}`}>
-                    4 h 30
-                  </span>
-                  <span className={`${s.c40} ${s.cell}`}>
-                    ✓ 7 h
-                  </span>
-                </div>
-                {" "}
-                <div className={s.c34}>
-                  <span className={s.c35}>
-                    Hugo
-                  </span>
-                  <span className={`${s.c41} ${s.cell}`}>
-                    À saisir
-                  </span>
-                  <span className={`${s.c42} ${s.cell}`}>
-                    ✓ 7 h
-                  </span>
-                  <span className={`${s.c43} ${s.cell}`}>
-                    ✓ 7 h
-                  </span>
-                  <span className={`${s.c44} ${s.cell}`}>
-                    Off
-                  </span>
-                  <span className={`${s.c45} ${s.cell}`}>
-                    2 h 30
-                  </span>
-                </div>
-                {" "}
-                <div className={s.c34}>
-                  <span className={s.c35}>
-                    Inès
-                  </span>
-                  <span className={`${s.c42} ${s.cell}`}>
-                    ✓ 7 h
-                  </span>
-                  <span className={`${s.c43} ${s.cell}`}>
-                    ✓ 7 h
-                  </span>
-                  <span className={`${s.c40} ${s.cell}`}>
-                    ✓ 7 h
-                  </span>
-                  <span className={`${s.c46} ${s.cell}`}>
-                    ✓ 7 h
-                  </span>
-                  <span className={`${s.c47} ${s.cell}`}>
-                    ✓ 7 h
-                  </span>
-                </div>
-                {" "}
-                <div className={s.c34}>
-                  <span className={s.c35}>
-                    Karim
-                  </span>
-                  <span className={`${s.c39} ${s.cell}`}>
-                    4 h 30
-                  </span>
-                  <span className={`${s.c48} ${s.cell}`}>
-                    8 h
-                  </span>
-                  <span className={`${s.c46} ${s.cell}`}>
-                    ✓ 7 h
-                  </span>
-                  <span className={`${s.c49} ${s.cell}`}>
-                    À saisir
-                  </span>
-                  <span className={`${s.c50} ${s.cell}`}>
-                    ✓ 7 h
-                  </span>
-                </div>
-                {" "}
-                <div className={s.c34}>
-                  <span className={s.c35}>
-                    Léa
-                  </span>
-                  <span className={`${s.c40} ${s.cell}`}>
-                    ✓ 7 h
-                  </span>
-                  <span className={`${s.c45} ${s.cell}`}>
-                    4 h 30
-                  </span>
-                  <span className={`${s.c47} ${s.cell}`}>
-                    ✓ 7 h
-                  </span>
-                  <span className={`${s.c50} ${s.cell}`}>
-                    ✓ 7 h
-                  </span>
-                  <span className={`${s.c51} ${s.cell}`}>
-                    8 h
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
+          <EarlyHeroMobile />
         </Scene>
       </div>
     </section>
@@ -440,84 +445,87 @@ export default function EarlyCase() {
         </div>
       </div>
       {" "}
-      <Scene className={s.c71}>
-        <div className={s.c72}>
-          <div className={s.c73}>
-            <span className={s.c74}>
-              MAQUETTE · SUIVI DE L'ÉQUIPE · V3
-            </span>
-            <span className={s.c75}>
-              3 commentaires
-            </span>
-          </div>
-          {" "}
-          <div className={s.c76}></div>
-          {" "}
-          <div className={s.c77}>
-            <div className={s.c78}></div>
-            <div className={s.c78}></div>
-            <div className={s.c78}></div>
-          </div>
-          {" "}
-          <div className={s.c79}>
-            <div className={s.c80}></div>
-            <div className={s.c81}></div>
-            <div className={s.c81}></div>
-            <div className={s.c82}></div>
-            <div className={s.c83}></div>
+      <Scene className={m.sceneWrap}>
+        <div className={`${s.c71} ${m.desktopOnly}`}>
+          <div className={s.c72}>
+            <div className={s.c73}>
+              <span className={s.c74}>
+                MAQUETTE · SUIVI DE L'ÉQUIPE · V3
+              </span>
+              <span className={s.c75}>
+                3 commentaires
+              </span>
+            </div>
             {" "}
-            <div className={s.c80}></div>
-            <div className={s.c81}></div>
-            <div className={s.c84}></div>
-            <div className={s.c81}></div>
-            <div className={s.c81}></div>
+            <div className={s.c76}></div>
             {" "}
-            <div className={s.c80}></div>
-            <div className={s.c83}></div>
-            <div className={s.c81}></div>
-            <div className={s.c81}></div>
-            <div className={s.c82}></div>
+            <div className={s.c77}>
+              <div className={s.c78}></div>
+              <div className={s.c78}></div>
+              <div className={s.c78}></div>
+            </div>
+            {" "}
+            <div className={s.c79}>
+              <div className={s.c80}></div>
+              <div className={s.c81}></div>
+              <div className={s.c81}></div>
+              <div className={s.c82}></div>
+              <div className={s.c83}></div>
+              {" "}
+              <div className={s.c80}></div>
+              <div className={s.c81}></div>
+              <div className={s.c84}></div>
+              <div className={s.c81}></div>
+              <div className={s.c81}></div>
+              {" "}
+              <div className={s.c80}></div>
+              <div className={s.c83}></div>
+              <div className={s.c81}></div>
+              <div className={s.c81}></div>
+              <div className={s.c82}></div>
+            </div>
+            {" "}
+            <div className={s.c85}>
+              <div className={s.c86}></div>
+              <div className={s.c87}></div>
+            </div>
           </div>
           {" "}
-          <div className={s.c85}>
-            <div className={s.c86}></div>
-            <div className={s.c87}></div>
+          <div className={`${s.c88} ${s.pin}`}>
+            <span className={s.c89}>
+              1
+            </span>
+            <span className={s.c90}>
+              Un clic sur le nom ouvre tout son historique
+            </span>
+          </div>
+          {" "}
+          <div className={`${s.c91} ${s.pin}`}>
+            <span className={s.c89}>
+              2
+            </span>
+            <span className={s.c90}>
+              Les heures manquantes en rouge, visibles tout de suite
+            </span>
+          </div>
+          {" "}
+          <div className={`${s.c92} ${s.pin}`}>
+            <span className={s.c89}>
+              3
+            </span>
+            <span className={s.c90}>
+              Un retour arrière partout, pour ne jamais se perdre
+            </span>
+          </div>
+          {" "}
+          <div className={`${s.c93} ${s.pin}`}>
+            <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M5 12l5 5L20 7" />
+            </svg>
+            Validé par le dirigeant
           </div>
         </div>
-        {" "}
-        <div className={`${s.c88} ${s.pin}`}>
-          <span className={s.c89}>
-            1
-          </span>
-          <span className={s.c90}>
-            Un clic sur le nom ouvre tout son historique
-          </span>
-        </div>
-        {" "}
-        <div className={`${s.c91} ${s.pin}`}>
-          <span className={s.c89}>
-            2
-          </span>
-          <span className={s.c90}>
-            Les heures manquantes en rouge, visibles tout de suite
-          </span>
-        </div>
-        {" "}
-        <div className={`${s.c92} ${s.pin}`}>
-          <span className={s.c89}>
-            3
-          </span>
-          <span className={s.c90}>
-            Un retour arrière partout, pour ne jamais se perdre
-          </span>
-        </div>
-        {" "}
-        <div className={`${s.c93} ${s.pin}`}>
-          <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M5 12l5 5L20 7" />
-          </svg>
-          Validé par le dirigeant
-        </div>
+        <EarlyMockupMobile />
       </Scene>
     </section>
     {" "}
@@ -560,202 +568,205 @@ export default function EarlyCase() {
         </div>
       </div>
       {" "}
-      <Scene className={s.c98}>
-        <div className={s.c99}>
-          <span className={s.c100}>
-            <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0E1A2B" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M19 12H5M11 5l-7 7 7 7" />
-            </svg>
-            Retour
-          </span>
-          {" "}
-          <span className={s.c101}>
-            {"Tâches / Historique / "}
-            <span className={s.c102}>
-              Semaine 39
+      <Scene className={m.sceneWrap}>
+        <div className={`${s.c98} ${m.desktopOnly}`}>
+          <div className={s.c99}>
+            <span className={s.c100}>
+              <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0E1A2B" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M19 12H5M11 5l-7 7 7 7" />
+              </svg>
+              Retour
             </span>
-          </span>
-        </div>
-        {" "}
-        <div className={s.c103}>
-          <div className={s.c104}>
-            <span>
-              Vendredi 25 septembre
-            </span>
-            <span className={s.c105}>
-              8 h · 1 personne
-            </span>
-          </div>
-          {" "}
-          <div className={s.c106}>
-            <div className={s.c107}>
-              <span className={s.c108}>
-                IM
-              </span>
-              <span className={s.c109}>
-                Inès Morel
-              </span>
-            </div>
             {" "}
-            <div className={s.c110}>
-              <div className={s.c111}>
-                <span>
-                  <strong>
-                    Studio Nova
-                  </strong>
-                  {" "}
-                  <span className={s.c112}>
-                    Réunion
-                  </span>
-                </span>
-                <span className={s.c113}>
-                  4 h
-                </span>
-              </div>
-              {" "}
-              <div className={s.c114}>
-                <span>
-                  <strong>
-                    Maison Lenoir
-                  </strong>
-                  {" "}
-                  <span className={s.c115}>
-                    Création
-                  </span>
-                </span>
-                <span className={s.c113}>
-                  3 h
-                </span>
-              </div>
-              {" "}
-              <div className={s.c116}>
-                <span>
-                  <strong>
-                    Interne
-                  </strong>
-                  {" "}
-                  <span className={s.c117}>
-                    Organisation
-                  </span>
-                </span>
-                <span className={s.c113}>
-                  1 h
-                </span>
-              </div>
-            </div>
-          </div>
-          {" "}
-          <div className={s.c118}>
-            <span>
-              Jeudi 24 septembre
-            </span>
-            <span className={s.c105}>
-              7 h · 1 personne
+            <span className={s.c101}>
+              {"Tâches / Historique / "}
+              <span className={s.c102}>
+                Semaine 39
+              </span>
             </span>
           </div>
           {" "}
-          <div className={s.c106}>
-            <div className={s.c107}>
-              <span className={s.c108}>
-                IM
-              </span>
-              <span className={s.c119}>
-                Inès Morel
-              </span>
-            </div>
-            {" "}
-            <div className={s.c110}>
-              <div className={s.c120}>
-                <span>
-                  <strong>
-                    Garage Ferrand
-                  </strong>
-                  {" "}
-                  <span className={s.c121}>
-                    À facturer
-                  </span>
-                  {" · demandé par le client"}
-                </span>
-                <span className={s.c113}>
-                  2 h 30
-                </span>
-              </div>
-              {" "}
-              <div className={s.c114}>
-                <span>
-                  <strong>
-                    Boulangerie Roche
-                  </strong>
-                  {" "}
-                  <span className={s.c115}>
-                    Création
-                  </span>
-                </span>
-                <span className={s.c113}>
-                  4 h 30
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-        {" "}
-        <svg aria-hidden="true" focusable="false" className={`${s.c122} ${s.cur2}`} width="22" height="22" viewBox="0 0 24 24" fill="#0E1A2B" stroke="#FFFFFF" strokeWidth="1.5" strokeLinejoin="round">
-          <path d="M4 2l16 10-7 2-3 7z" />
-        </svg>
-        {" "}
-        <div className={`${s.c123} ${s.pop}`}>
-          <div className={s.c124}>
-            <span className={s.c125}>
-              IM
-            </span>
-            <div className={s.c66}>
-              <span className={s.c126}>
-                Inès Morel
-              </span>
-              <span className={s.c127}>
-                Chargée de projet
-              </span>
-            </div>
-          </div>
-          {" "}
-          <div className={s.c128}>
-            <div className={s.c129}>
+          <div className={s.c103}>
+            <div className={s.c104}>
               <span>
-                <strong className={s.c130}>
-                  26 h 30
-                </strong>
-                {" sur 35 h"}
+                Vendredi 25 septembre
               </span>
+              <span className={s.c105}>
+                8 h · 1 personne
+              </span>
+            </div>
+            {" "}
+            <div className={s.c106}>
+              <div className={s.c107}>
+                <span className={s.c108}>
+                  IM
+                </span>
+                <span className={s.c109}>
+                  Inès Morel
+                </span>
+              </div>
+              {" "}
+              <div className={s.c110}>
+                <div className={s.c111}>
+                  <span>
+                    <strong>
+                      Studio Nova
+                    </strong>
+                    {" "}
+                    <span className={s.c112}>
+                      Réunion
+                    </span>
+                  </span>
+                  <span className={s.c113}>
+                    4 h
+                  </span>
+                </div>
+                {" "}
+                <div className={s.c114}>
+                  <span>
+                    <strong>
+                      Maison Lenoir
+                    </strong>
+                    {" "}
+                    <span className={s.c115}>
+                      Création
+                    </span>
+                  </span>
+                  <span className={s.c113}>
+                    3 h
+                  </span>
+                </div>
+                {" "}
+                <div className={s.c116}>
+                  <span>
+                    <strong>
+                      Interne
+                    </strong>
+                    {" "}
+                    <span className={s.c117}>
+                      Organisation
+                    </span>
+                  </span>
+                  <span className={s.c113}>
+                    1 h
+                  </span>
+                </div>
+              </div>
+            </div>
+            {" "}
+            <div className={s.c118}>
+              <span>
+                Jeudi 24 septembre
+              </span>
+              <span className={s.c105}>
+                7 h · 1 personne
+              </span>
+            </div>
+            {" "}
+            <div className={s.c106}>
+              <div className={s.c107}>
+                <span className={s.c108}>
+                  IM
+                </span>
+                <span className={s.c119}>
+                  Inès Morel
+                </span>
+              </div>
+              {" "}
+              <div className={s.c110}>
+                <div className={s.c120}>
+                  <span>
+                    <strong>
+                      Garage Ferrand
+                    </strong>
+                    {" "}
+                    <span className={s.c121}>
+                      À facturer
+                    </span>
+                    {" · demandé par le client"}
+                  </span>
+                  <span className={s.c113}>
+                    2 h 30
+                  </span>
+                </div>
+                {" "}
+                <div className={s.c114}>
+                  <span>
+                    <strong>
+                      Boulangerie Roche
+                    </strong>
+                    {" "}
+                    <span className={s.c115}>
+                      Création
+                    </span>
+                  </span>
+                  <span className={s.c113}>
+                    4 h 30
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          {" "}
+          <svg aria-hidden="true" focusable="false" className={`${s.c122} ${s.cur2}`} width="22" height="22" viewBox="0 0 24 24" fill="#0E1A2B" stroke="#FFFFFF" strokeWidth="1.5" strokeLinejoin="round">
+            <path d="M4 2l16 10-7 2-3 7z" />
+          </svg>
+          {" "}
+          <div className={`${s.c123} ${s.pop}`}>
+            <div className={s.c124}>
+              <span className={s.c125}>
+                IM
+              </span>
+              <div className={s.c66}>
+                <span className={s.c126}>
+                  Inès Morel
+                </span>
+                <span className={s.c127}>
+                  Chargée de projet
+                </span>
+              </div>
+            </div>
+            {" "}
+            <div className={s.c128}>
+              <div className={s.c129}>
+                <span>
+                  <strong className={s.c130}>
+                    26 h 30
+                  </strong>
+                  {" sur 35 h"}
+                </span>
+                <span className={s.c131}>
+                  76 %
+                </span>
+              </div>
+              <div className={s.c132}>
+                <div className={s.c133}></div>
+              </div>
+            </div>
+            {" "}
+            <div className={s.c134}>
               <span className={s.c131}>
-                76 %
+                Jour sans saisie
+              </span>
+              <span className={s.c135}>
+                lun. 21 sept.
               </span>
             </div>
-            <div className={s.c132}>
-              <div className={s.c133}></div>
+            {" "}
+            <div className={s.c136}>
+              <span className={s.c137}>
+                Voir sa semaine
+              </span>
+              <span className={s.c137}>
+                Voir son historique
+              </span>
+              <span className={s.c137}>
+                Fiche employé
+              </span>
             </div>
-          </div>
-          {" "}
-          <div className={s.c134}>
-            <span className={s.c131}>
-              Jour sans saisie
-            </span>
-            <span className={s.c135}>
-              lun. 21 sept.
-            </span>
-          </div>
-          {" "}
-          <div className={s.c136}>
-            <span className={s.c137}>
-              Voir sa semaine
-            </span>
-            <span className={s.c137}>
-              Voir son historique
-            </span>
-            <span className={s.c137}>
-              Fiche employé
-            </span>
           </div>
         </div>
+        <EarlyNavigationMobile />
       </Scene>
     </section>
     {" "}
@@ -813,63 +824,66 @@ export default function EarlyCase() {
         </div>
       </div>
       {" "}
-      <Scene className={s.c142}>
-        <svg aria-hidden="true" focusable="false" className={s.c143} width="620" height="520" viewBox="0 0 620 520" fill="none">
-          <path className={s.flow} d="M130 100 L310 260" stroke="#1D5C57" strokeWidth="2" />
-          <path className={s.flow} d="M490 100 L310 260" stroke="#1D5C57" strokeWidth="2" />
-          <path className={s.flow} d="M130 420 L310 260" stroke="#1D5C57" strokeWidth="2" />
-          <path className={s.flow} d="M490 420 L310 260" stroke="#1D5C57" strokeWidth="2" />
-          <path className={s.flow} d="M310 60 L310 260" stroke="#1D5C57" strokeWidth="2" />
-        </svg>
-        {" "}
-        <div className={s.c144}>
-          <span className={`${s.c145} ${s.pulse}`}></span>
-          <span className={s.c146}>
-            Le logiciel
-          </span>
-          <span className={s.c147}>
-            tout au même endroit
-          </span>
-        </div>
-        {" "}
-        <div className={s.c148}>
-          <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M3 11l18-8-8 18-2-8z" />
+      <Scene className={m.sceneWrap}>
+        <div className={`${s.c142} ${m.desktopOnly}`}>
+          <svg aria-hidden="true" focusable="false" className={s.c143} width="620" height="520" viewBox="0 0 620 520" fill="none">
+            <path className={s.flow} d="M130 100 L310 260" stroke="#1D5C57" strokeWidth="2" />
+            <path className={s.flow} d="M490 100 L310 260" stroke="#1D5C57" strokeWidth="2" />
+            <path className={s.flow} d="M130 420 L310 260" stroke="#1D5C57" strokeWidth="2" />
+            <path className={s.flow} d="M490 420 L310 260" stroke="#1D5C57" strokeWidth="2" />
+            <path className={s.flow} d="M310 60 L310 260" stroke="#1D5C57" strokeWidth="2" />
           </svg>
-          Campagnes Meta
+          {" "}
+          <div className={s.c144}>
+            <span className={`${s.c145} ${s.pulse}`}></span>
+            <span className={s.c146}>
+              Le logiciel
+            </span>
+            <span className={s.c147}>
+              tout au même endroit
+            </span>
+          </div>
+          {" "}
+          <div className={s.c148}>
+            <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M3 11l18-8-8 18-2-8z" />
+            </svg>
+            Campagnes Meta
+          </div>
+          {" "}
+          <div className={s.c149}>
+            <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <rect x="3" y="4" width="18" height="17" rx="2" />
+              <path d="M3 9h18M8 2v4M16 2v4" />
+            </svg>
+            Google Agenda
+          </div>
+          {" "}
+          <div className={s.c150}>
+            <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <rect x="3" y="5" width="18" height="14" rx="2" />
+              <path d="M3 7l9 6 9-6" />
+            </svg>
+            Gmail
+          </div>
+          {" "}
+          <div className={s.c151}>
+            <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <rect x="4" y="3" width="16" height="18" rx="2" />
+              <path d="M4 9h16M4 15h16M10 9v12" />
+            </svg>
+            47 fichiers Excel
+          </div>
+          {" "}
+          <div className={s.c152}>
+            <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M6 2h9l5 5v15H6z" />
+              <path d="M14 2v6h6" />
+            </svg>
+            Pennylane
+          </div>
         </div>
-        {" "}
-        <div className={s.c149}>
-          <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <rect x="3" y="4" width="18" height="17" rx="2" />
-            <path d="M3 9h18M8 2v4M16 2v4" />
-          </svg>
-          Google Agenda
-        </div>
-        {" "}
-        <div className={s.c150}>
-          <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <rect x="3" y="5" width="18" height="14" rx="2" />
-            <path d="M3 7l9 6 9-6" />
-          </svg>
-          Gmail
-        </div>
-        {" "}
-        <div className={s.c151}>
-          <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <rect x="4" y="3" width="16" height="18" rx="2" />
-            <path d="M4 9h16M4 15h16M10 9v12" />
-          </svg>
-          47 fichiers Excel
-        </div>
-        {" "}
-        <div className={s.c152}>
-          <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M6 2h9l5 5v15H6z" />
-            <path d="M14 2v6h6" />
-          </svg>
-          Pennylane
-        </div>
+        <EarlyHubMobile />
       </Scene>
     </section>
     {" "}

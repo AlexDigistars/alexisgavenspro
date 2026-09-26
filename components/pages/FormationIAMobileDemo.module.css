@@ -1,0 +1,166 @@
+/* Démonstration mobile de Formation IA : texte utile autour de 14 px. */
+.chat {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .chat {
+    display: flex;
+  }
+  .desktopOnly {
+    display: none !important;
+  }
+}
+
+.sceneWrap {
+  min-width: 0;
+}
+@media (max-width: 1023px) {
+  .sceneWrap {
+    width: fit-content;
+    max-width: 100%;
+    margin-inline: auto;
+  }
+}
+@media (max-width: 767px) {
+  .sceneWrap {
+    width: 100%;
+  }
+}
+
+.chat {
+  flex-direction: column;
+  width: 100%;
+  border-radius: 16px;
+  background: #ffffff;
+  color: #0e1a2b;
+  overflow: hidden;
+  box-shadow: 0 30px 60px -24px rgba(0, 0, 0, 0.5);
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 16px;
+  border-bottom: 1px solid #eceae3;
+}
+
+.appName {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.mono {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: #5a6474;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px 16px 56px;
+}
+
+.userBubble {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 14px;
+  border-radius: 14px 14px 4px 14px;
+  background: #0e1a2b;
+  color: #f6f5f1;
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.attachment {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  background: #16253b;
+  color: #c9d0da;
+  font-size: 13px;
+}
+
+.typing {
+  align-self: flex-start;
+  display: flex;
+  gap: 4px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: #eceae3;
+}
+
+.typing span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #5a6474;
+}
+
+.answer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 14px;
+  border-radius: 14px 14px 14px 4px;
+  border: 1px solid #e3e1da;
+  background: #faf9f6;
+  font-size: 14px;
+}
+
+.rowBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.draft {
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: #fbebd6;
+  color: #9a5b12;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.line {
+  display: block;
+  height: 8px;
+  border-radius: 4px;
+  background: #eceae3;
+}
+
+.lineShort {
+  width: 70%;
+}
+
+.total {
+  padding-top: 8px;
+  border-top: 1px solid #e3e1da;
+  font-size: 15px;
+}
+
+.saved {
+  align-self: flex-start;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: #1d5c57;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.saved strong {
+  font-size: 18px;
+}

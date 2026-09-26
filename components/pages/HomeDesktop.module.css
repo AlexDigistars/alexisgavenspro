@@ -2164,3 +2164,26 @@
 .prog:not([data-scene] *) { animation-duration: 5s; animation-iteration-count: 1; animation-fill-mode: forwards; }
 .flow:not([data-scene] *) { animation-iteration-count: 4; }
 .grow:not([data-scene] *) { animation-iteration-count: 1; animation-fill-mode: forwards; }
+
+/* ===== Accueil tablette (768–1023 px) : moins de hauteur, sans réduire les textes ===== */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .c2 { padding-bottom: 64px; gap: 40px; }
+  .c55 { padding-top: 72px; padding-bottom: 72px; gap: 40px; }
+  .c93 { padding-bottom: 72px; gap: 32px; }
+  .c137 { padding-top: 72px; padding-bottom: 72px; gap: 32px; }
+  .c242 { padding-top: 48px; padding-bottom: 72px; gap: 40px; }
+  .c60, .c76 { height: 380px; }
+  /* Référence Early : texte et tuiles côte à côte */
+  .c218 { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px; padding-top: 72px; padding-bottom: 72px; }
+  /* Contact : présentation et carte côte à côte */
+  .c259 { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px; padding-top: 72px; padding-bottom: 72px; }
+  .c270 { padding: 32px 28px; gap: 22px; }
+  .c250 { padding: 32px; }
+  /* « Améliorer » sur toute la largeur : maquette et texte côte à côte */
+  .c96 > .c97:nth-child(3) { grid-column: span 2; flex-direction: row; align-items: center; }
+  .c96 > .c97:nth-child(3) > :first-child { flex: 0 0 55%; }
+  /* Tuiles Early sur une colonne, à côté du texte */
+  .c230 { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+  /* Engagements sur deux colonnes */
+  .c253 { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 32px; }
+}

@@ -1,3 +1,5 @@
+import { AssistantMobile } from "./FormationIAMobileDemo";
+import m from "./FormationIAMobileDemo.module.css";
 import Scene from "@/components/Scene";
 import CalendlyLink from "@/components/CalendlyLink";
 import s from "./FormationIA.module.css";
@@ -36,71 +38,74 @@ export default function FormationIA() {
         </div>
         {" "}
         {" "}
-        <Scene className={s.c11}>
-          <div className={s.c12}>
-            <div className={s.c13}>
-              <span className={s.c14}>
-                Assistant IA
-              </span>
-              <span className={s.c15}>
-                ATELIER · JOUR 1
-              </span>
-            </div>
-            {" "}
-            <div className={`${s.c16} ${s.msg1}`}>
-              <span>
-                À partir de mes notes de visite, rédige le devis pour Mme Roux, au format de nos devis habituels.
-              </span>
-              {" "}
-              <span className={s.c17}>
-                <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#8FD0C5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M6 2h9l5 5v15H6z" />
-                </svg>
-                notes_visite_roux.pdf
-              </span>
-            </div>
-            {" "}
-            <div className={`${s.c18} ${s.typing}`}>
-              <span className={s.c19}></span>
-              <span className={s.c19}></span>
-              <span className={s.c19}></span>
-            </div>
-            {" "}
-            <div className={`${s.c20} ${s.msg2}`}>
-              <div className={s.c21}>
-                <strong>
-                  Devis n° 2026-118 · Mme Roux
-                </strong>
-                <span className={s.c22}>
-                  Brouillon
+        <Scene className={m.sceneWrap}>
+          <div className={`${s.c11} ${m.desktopOnly}`}>
+            <div className={s.c12}>
+              <div className={s.c13}>
+                <span className={s.c14}>
+                  Assistant IA
+                </span>
+                <span className={s.c15}>
+                  ATELIER · JOUR 1
                 </span>
               </div>
               {" "}
-              <div className={`${s.c23} ${s.line}`}></div>
-              {" "}
-              <div className={`${s.c24} ${s.line}`}></div>
-              {" "}
-              <div className={`${s.c25} ${s.line}`}></div>
-              {" "}
-              <div className={s.c26}>
+              <div className={`${s.c16} ${s.msg1}`}>
                 <span>
-                  Total HT
+                  À partir de mes notes de visite, rédige le devis pour Mme Roux, au format de nos devis habituels.
                 </span>
-                <strong>
-                  1 480,00 €
-                </strong>
+                {" "}
+                <span className={s.c17}>
+                  <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#8FD0C5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M6 2h9l5 5v15H6z" />
+                  </svg>
+                  notes_visite_roux.pdf
+                </span>
               </div>
-            </div>
-            {" "}
-            <div className={`${s.c27} ${s.saved}`}>
-              <span className={s.c28}>
-                1 min
-              </span>
-              <span className={s.c29}>
-                au lieu d'une demi-heure
-              </span>
+              {" "}
+              <div className={`${s.c18} ${s.typing}`}>
+                <span className={s.c19}></span>
+                <span className={s.c19}></span>
+                <span className={s.c19}></span>
+              </div>
+              {" "}
+              <div className={`${s.c20} ${s.msg2}`}>
+                <div className={s.c21}>
+                  <strong>
+                    Devis n° 2026-118 · Mme Roux
+                  </strong>
+                  <span className={s.c22}>
+                    Brouillon
+                  </span>
+                </div>
+                {" "}
+                <div className={`${s.c23} ${s.line}`}></div>
+                {" "}
+                <div className={`${s.c24} ${s.line}`}></div>
+                {" "}
+                <div className={`${s.c25} ${s.line}`}></div>
+                {" "}
+                <div className={s.c26}>
+                  <span>
+                    Total HT
+                  </span>
+                  <strong>
+                    1 480,00 €
+                  </strong>
+                </div>
+              </div>
+              {" "}
+              <div className={`${s.c27} ${s.saved}`}>
+                <span className={s.c28}>
+                  1 min
+                </span>
+                <span className={s.c29}>
+                  au lieu d'une demi-heure
+                </span>
+              </div>
             </div>
           </div>
+          <AssistantMobile />
         </Scene>
       </div>
     </section>
