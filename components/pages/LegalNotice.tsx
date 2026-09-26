@@ -130,13 +130,66 @@ export default function LegalNotice() {
           <h2 className={s.c11}>
             Données personnelles
           </h2>
-          {" "}
           <p className={s.c14}>
-            Les informations transmises via le formulaire de contact ou la prise de rendez-vous (nom, e-mail, entreprise, message) servent uniquement à répondre à votre demande. Elles ne sont ni vendues ni cédées à des tiers, et sont conservées au maximum trois ans après le dernier échange.
+            Ce site ne comporte aucun formulaire de contact. Vous pouvez me joindre par e-mail à {CONTACT_EMAIL} (messagerie
+            hébergée par OVHcloud, en France), par téléphone, ou réserver un rendez-vous avec Calendly.
           </p>
-          {" "}
+
+          <h3 className={s.subTitle}>Demandes et rendez-vous</h3>
+          <ul className={s.facts}>
+            <li>
+              <strong>Données recueillies par Calendly :</strong> votre nom, votre e-mail, vos réponses éventuelles aux questions
+              du formulaire de réservation, puis la date du rendez-vous.
+            </li>
+            <li>
+              <strong>Finalité :</strong> répondre à vos demandes et organiser le rendez-vous.
+            </li>
+            <li>
+              <strong>Base légale :</strong> mesures précontractuelles prises à votre demande (article 6.1.b du RGPD).
+            </li>
+            <li>
+              <strong>Conservation :</strong> trois ans après le dernier échange.
+            </li>
+          </ul>
+
+          <h3 className={s.subTitle}>Mesure d&apos;audience</h3>
+          <ul className={s.facts}>
+            <li>
+              <strong>Outil :</strong> Vercel Web Analytics, sans cookie, qui ne produit que des statistiques agrégées.
+            </li>
+            <li>
+              <strong>Base légale :</strong> intérêt légitime à connaître la fréquentation du site (article 6.1.f du RGPD).
+            </li>
+          </ul>
+
+          <h3 className={s.subTitle}>Destinataires</h3>
           <p className={s.c14}>
-            {"Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, d'effacement et d'opposition. Pour l'exercer, écrivez à "}{CONTACT_EMAIL}. Vous pouvez aussi saisir la CNIL (cnil.fr).
+            Vos données sont destinées uniquement à Alexis Gavens. Sous-traitants techniques : Vercel Inc. (hébergement et
+            mesure d&apos;audience), Calendly LLC (prise de rendez-vous) et OVHcloud (messagerie).
+          </p>
+
+          <h3 className={s.subTitle}>Transferts hors de l&apos;Union européenne</h3>
+          <p className={s.c14}>
+            Vercel Inc. et Calendly LLC sont établis aux États-Unis. Ces transferts sont encadrés selon les garanties décrites
+            par chaque prestataire dans sa politique de confidentialité :{" "}
+            <a className={s.textLink} href="https://vercel.com/legal/privacy-policy" rel="noopener noreferrer">
+              politique de confidentialité de Vercel
+            </a>{" "}
+            et{" "}
+            <a className={s.textLink} href="https://calendly.com/legal/privacy-notice" rel="noopener noreferrer">
+              politique de confidentialité de Calendly
+            </a>
+            .
+          </p>
+
+          <h3 className={s.subTitle}>Vos droits</h3>
+          <p className={s.c14}>
+            Conformément au RGPD, vous disposez d&apos;un droit d&apos;accès, de rectification, d&apos;effacement,
+            d&apos;opposition et de limitation du traitement. Pour l&apos;exercer, écrivez à{" "}
+            <a className={s.textLink} href={`mailto:${CONTACT_EMAIL}`}>
+              {CONTACT_EMAIL}
+            </a>
+            . Vous pouvez aussi saisir la CNIL (cnil.fr).
           </p>
         </section>
         {" "}
@@ -146,7 +199,7 @@ export default function LegalNotice() {
           </h2>
           {" "}
           <p className={s.c14}>
-            Ce site utilise une mesure d'audience anonyme, sans cookie publicitaire ni suivi individuel. Aucun bandeau de consentement n'est donc nécessaire.
+            Ce site n&apos;utilise aucun cookie de suivi : la mesure d&apos;audience (Vercel Web Analytics) fonctionne sans cookie. Aucun bandeau de consentement n&apos;est donc nécessaire.
           </p>
         </section>
         {" "}
