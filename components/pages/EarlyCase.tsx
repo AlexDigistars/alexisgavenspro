@@ -1,3 +1,4 @@
+import Scene from "@/components/Scene";
 import Link from "next/link";
 import CalendlyLink from "@/components/CalendlyLink";
 import s from "./EarlyCase.module.css";
@@ -64,7 +65,7 @@ export default function EarlyCase() {
         </div>
         {" "}
         {" "}
-        <div className={s.c14}>
+        <Scene className={s.c14}>
           <div className={s.c15}>
             <div className={s.c16}>
               <span className={s.c17}></span>
@@ -281,7 +282,7 @@ export default function EarlyCase() {
               </div>
             </div>
           </div>
-        </div>
+        </Scene>
       </div>
     </section>
     {" "}
@@ -439,7 +440,7 @@ export default function EarlyCase() {
         </div>
       </div>
       {" "}
-      <div className={s.c71}>
+      <Scene className={s.c71}>
         <div className={s.c72}>
           <div className={s.c73}>
             <span className={s.c74}>
@@ -517,7 +518,7 @@ export default function EarlyCase() {
           </svg>
           Validé par le dirigeant
         </div>
-      </div>
+      </Scene>
     </section>
     {" "}
     {" "}
@@ -559,7 +560,7 @@ export default function EarlyCase() {
         </div>
       </div>
       {" "}
-      <div className={s.c98}>
+      <Scene className={s.c98}>
         <div className={s.c99}>
           <span className={s.c100}>
             <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0E1A2B" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
@@ -755,7 +756,7 @@ export default function EarlyCase() {
             </span>
           </div>
         </div>
-      </div>
+      </Scene>
     </section>
     {" "}
     {" "}
@@ -812,7 +813,7 @@ export default function EarlyCase() {
         </div>
       </div>
       {" "}
-      <div className={s.c142}>
+      <Scene className={s.c142}>
         <svg aria-hidden="true" focusable="false" className={s.c143} width="620" height="520" viewBox="0 0 620 520" fill="none">
           <path className={s.flow} d="M130 100 L310 260" stroke="#1D5C57" strokeWidth="2" />
           <path className={s.flow} d="M490 100 L310 260" stroke="#1D5C57" strokeWidth="2" />
@@ -869,7 +870,7 @@ export default function EarlyCase() {
           </svg>
           Pennylane
         </div>
-      </div>
+      </Scene>
     </section>
     {" "}
     {" "}
@@ -887,7 +888,7 @@ export default function EarlyCase() {
       </div>
       {" "}
       {" "}
-      <div className={s.c157}>
+      <Scene className={s.c157}>
         <div className={s.c158}>
           <div className={s.c124}>
             <span className={s.c159}>
@@ -1000,10 +1001,10 @@ export default function EarlyCase() {
             </div>
           </div>
         </div>
-      </div>
+      </Scene>
       {" "}
       {" "}
-      <div className={s.c179}>
+      <Scene className={s.c179}>
         <div className={s.c180}>
           <div className={s.c181}>
             <span className={s.c182}>
@@ -1119,10 +1120,10 @@ export default function EarlyCase() {
             </span>
           </div>
         </div>
-      </div>
+      </Scene>
       {" "}
       {" "}
-      <div className={s.c157}>
+      <Scene className={s.c157}>
         <div className={s.c158}>
           <div className={s.c124}>
             <span className={s.c159}>
@@ -1226,10 +1227,10 @@ export default function EarlyCase() {
             </span>
           </div>
         </div>
-      </div>
+      </Scene>
       {" "}
       {" "}
-      <div className={s.c179}>
+      <Scene className={s.c179}>
         <div className={s.c211}>
           <div className={s.c73}>
             <span className={s.c197}>
@@ -1315,7 +1316,7 @@ export default function EarlyCase() {
             </span>
           </div>
         </div>
-      </div>
+      </Scene>
     </section>
     {" "}
     {" "}

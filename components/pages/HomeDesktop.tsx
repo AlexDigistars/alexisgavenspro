@@ -1,3 +1,4 @@
+import Scene from "@/components/Scene";
 import Image from "next/image";
 import portrait from "@/public/alexis-portrait.jpg";
 import Link from "next/link";
@@ -45,7 +46,7 @@ export default function HomeDesktop() {
         </div>
         {" "}
         {" "}
-        <div className={s.c11}>
+        <Scene className={s.c11}>
           <div className={s.c12}>
             <div className={s.c13}>
               <div className={s.c14}>
@@ -263,7 +264,7 @@ export default function HomeDesktop() {
               </span>
             </div>
           </div>
-        </div>
+        </Scene>
       </div>
     </section>
     {" "}
@@ -279,7 +280,7 @@ export default function HomeDesktop() {
         </h2>
       </div>
       {" "}
-      <div className={s.c59}>
+      <Scene className={s.c59}>
         <div className={s.c60}>
           <span className={s.c61}>
             AUJOURD'HUI
@@ -417,7 +418,7 @@ export default function HomeDesktop() {
             DEMAIN
           </span>
         </div>
-      </div>
+      </Scene>
       {" "}
       <div className={s.c90}>
         <span className={s.c91}>
@@ -504,7 +505,7 @@ export default function HomeDesktop() {
         </p>
       </div>
       {" "}
-      <div className={s.c96}>
+      <Scene className={s.c96}>
         <div className={s.c97}>
           <div className={s.c98}>
             <div className={`${s.c99} ${s.wf}`}></div>
@@ -696,7 +697,7 @@ export default function HomeDesktop() {
             </span>
           </div>
         </div>
-      </div>
+      </Scene>
     </section>
     {" "}
     {" "}
@@ -713,7 +714,7 @@ export default function HomeDesktop() {
         </p>
       </div>
       {" "}
-      <div className={s.c139}>
+      <Scene className={s.c139}>
         <div className={s.c140}>
           <div className={s.c22}>
             <span className={s.c141}>
@@ -1128,7 +1129,7 @@ export default function HomeDesktop() {
             </div>
           </div>
         </div>
-      </div>
+      </Scene>
       {" "}
       <div className={s.c213}>
         <div className={s.c214}>

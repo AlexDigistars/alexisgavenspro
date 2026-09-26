@@ -133,6 +133,12 @@ button {
   animation-play-state: paused !important;
 }
 
+/* ===== Démonstrations en pause (bouton Pause ou scène hors écran) ===== */
+[data-scene][data-paused="true"],
+[data-scene][data-paused="true"] * {
+  animation-play-state: paused !important;
+}
+
 /* ===== Mouvement réduit : animations coupées, état final affiché ===== */
 @media (prefers-reduced-motion: reduce) {
   *,

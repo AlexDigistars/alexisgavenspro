@@ -2157,3 +2157,10 @@
   text-decoration-color: rgba(14, 26, 43, 0.25);
   text-underline-offset: 3px;
 }
+
+/* Petites animations décoratives hors démonstration : elles s'arrêtent d'elles-mêmes en 5 s environ */
+.pulse:not([data-scene] *) { animation-iteration-count: 2; }
+.float:not([data-scene] *) { animation-duration: 3s; animation-iteration-count: 1; }
+.prog:not([data-scene] *) { animation-duration: 5s; animation-iteration-count: 1; animation-fill-mode: forwards; }
+.flow:not([data-scene] *) { animation-iteration-count: 4; }
+.grow:not([data-scene] *) { animation-iteration-count: 1; animation-fill-mode: forwards; }

@@ -1,0 +1,53 @@
+.scene {
+  position: relative;
+}
+
+/* Zone cliquable de 44 × 44 px ; la pilule visible reste discrète */
+.toggle {
+  position: absolute;
+  right: 4px;
+  bottom: 4px;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: none;
+  cursor: pointer;
+}
+
+.toggleTop {
+  top: 4px;
+  bottom: auto;
+}
+
+.pill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 999px;
+  border: 1px solid #5a6474;
+  background: #f6f5f1;
+  color: #0e1a2b;
+}
+
+/* Contour de focus lisible sur fond clair comme sombre */
+.toggle:focus-visible {
+  background: #f6f5f1;
+  outline: 2px solid #1d5c57 !important;
+  outline-offset: 0;
+  box-shadow: 0 0 0 4px #f6f5f1;
+}
+
+/* Animations coupées par le système : le bouton n'a plus d'utilité */
+@media (prefers-reduced-motion: reduce) {
+  .toggle {
+    display: none;
+  }
+}

@@ -942,3 +942,8 @@
 /* Contour de focus : vert clair sur les fonds sombres, vert pétrole sur les fonds clairs qu'ils contiennent */
 :is(.c1, .c19, .c20, .c56, .c70, .c71, .c73, .c79, .c83, .c84, .c89, .c92, .c96, .c97, .c99, .c103, .c109, .c111, .c117, .c125) :focus-visible { outline-color: #8FD0C5; }
 :is(.c1, .c19, .c20, .c56, .c70, .c71, .c73, .c79, .c83, .c84, .c89, .c92, .c96, .c97, .c99, .c103, .c109, .c111, .c117, .c125) :is(.c4, .c7, .c8, .c14, .c18, .c27, .c30, .c31, .c32, .c33, .c35, .c36, .c37, .c39, .c40, .c44, .c45, .c46, .c48, .c52, .c53, .c57, .c59, .c62, .c64, .c67, .c68, .c69, .c74, .c76, .c77, .c78, .c80, .c82, .c85, .c86, .c87, .c88, .c106, .c114, .c123) :focus-visible { outline-color: #1D5C57; }
+
+/* Petites animations décoratives hors démonstration : elles s'arrêtent d'elles-mêmes en 5 s environ */
+.pulse:not([data-scene] *) { animation-iteration-count: 2; }
+.flow:not([data-scene] *) { animation-iteration-count: 4; }
+.grow:not([data-scene] *) { animation-iteration-count: 1; animation-fill-mode: forwards; }

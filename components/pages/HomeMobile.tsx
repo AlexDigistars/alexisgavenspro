@@ -1,3 +1,4 @@
+import Scene from "@/components/Scene";
 import Image from "next/image";
 import portrait from "@/public/alexis-portrait.jpg";
 import SwipeCarousel from "@/components/SwipeCarousel";
@@ -31,7 +32,7 @@ export default function HomeMobile() {
           Réserver 20 min d'échange
         </CalendlyLink>
         {" "}
-        <div className={s.c8}>
+        <Scene className={s.c8}>
           <div className={s.c9}>
             <span className={s.c10}>
               Suivi des affaires
@@ -83,12 +84,12 @@ export default function HomeMobile() {
               </span>
             </span>
           </div>
-        </div>
+        </Scene>
       </div>
     </section>
     {" "}
     {" "}
-    <section className={s.c24} data-reveal>
+    <Scene as="section" className={s.c24} reveal>
       <span className={s.c25}>
         Le constat
       </span>
@@ -166,7 +167,7 @@ export default function HomeMobile() {
           + 5 outils
         </span>
       </div>
-    </section>
+    </Scene>
     {" "}
     {" "}
     <section className={s.c41} data-reveal>
@@ -271,7 +272,9 @@ export default function HomeMobile() {
         Au bureau comme sur le terrain, un clic vous mène à la bonne information.
       </p>
       {" "}
+      <Scene>
       <SwipeCarousel
+        reserveControlSpace
         label="Exemples d'écrans"
         slideLabels={["Un clic, la bonne information", "Sur le terrain", "Planning des interventions", "Zéro ressaisie"]}
       >
@@ -418,6 +421,7 @@ export default function HomeMobile() {
         </div>
       </div>
       </SwipeCarousel>
+      </Scene>
       {" "}
     </section>
     {" "}

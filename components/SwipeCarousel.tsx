@@ -8,6 +8,8 @@ type Props = {
   label: string;
   /** Titre de chaque carte, pour le nom des points (« Carte 2 sur 4 : Repenser »). */
   slideLabels: string[];
+  /** Laisse la place au bouton Pause de la scène à droite de la rangée des points. */
+  reserveControlSpace?: boolean;
 };
 
 /** Suit le réglage système « réduire les animations », y compris s'il change en cours de visite. */
@@ -24,7 +26,7 @@ function useReducedMotion() {
 }
 
 /** Carrousel à glisser (CSS scroll-snap) avec points indicateurs. */
-export default function SwipeCarousel({ children, label, slideLabels }: Props) {
+export default function SwipeCarousel({ children, label, slideLabels, reserveControlSpace }: Props) {
   const trackRef = useRef<HTMLDivElement>(null);
   const [active, setActive] = useState(0);
   const reducedMotion = useReducedMotion();
@@ -60,7 +62,7 @@ export default function SwipeCarousel({ children, label, slideLabels }: Props) {
           <div className={styles.slide}>{child}</div>
         ))}
       </div>
-      <div className={styles.controls}>
+      <div className={reserveControlSpace ? `${styles.controls} ${styles.controlsReserved}` : styles.controls}>
         {Array.from({ length: count }, (_, i) => (
           <button
             key={i}

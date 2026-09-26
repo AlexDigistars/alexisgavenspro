@@ -1,3 +1,4 @@
+import Scene from "@/components/Scene";
 import CalendlyLink from "@/components/CalendlyLink";
 import s from "./FormationIA.module.css";
 
@@ -35,7 +36,7 @@ export default function FormationIA() {
         </div>
         {" "}
         {" "}
-        <div className={s.c11}>
+        <Scene className={s.c11}>
           <div className={s.c12}>
             <div className={s.c13}>
               <span className={s.c14}>
@@ -100,7 +101,7 @@ export default function FormationIA() {
               </span>
             </div>
           </div>
-        </div>
+        </Scene>
       </div>
     </section>
     {" "}
