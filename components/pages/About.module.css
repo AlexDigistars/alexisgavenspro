@@ -403,3 +403,6 @@
   background: #F6F5F1;
   color: #0E1A2B;
 }
+
+/* Diplômes : les pastilles passent à la ligne sur très petit écran */
+.c29 { flex-wrap: wrap; }
