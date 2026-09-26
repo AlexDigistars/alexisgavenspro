@@ -12,8 +12,8 @@ const TEAM_MONDAY = [
   { name: "Léa", value: "✓ 7 h", tone: m.ok },
 ];
 
-/** Héros : le suivi de l'équipe, réduit à la journée du lundi. */
-export function EarlyHeroMobile() {
+/** Managers : le suivi de l'équipe, réduit à la journée du lundi. */
+export function EarlyTeamMobile() {
   return (
     <div className={`${m.mobileOnly} ${m.window}`}>
       <div className={m.windowBar}>
@@ -50,10 +50,9 @@ export function EarlyHeroMobile() {
 const COMMENTS = [
   "Un clic sur le nom ouvre tout son historique",
   "Les heures manquantes en rouge, visibles tout de suite",
-  "Un retour arrière partout, pour ne jamais se perdre",
 ];
 
-/** Co-construction : la maquette commentée, puis validée. */
+/** Pensé avec la direction : la maquette commentée, puis validée. */
 export function EarlyMockupMobile() {
   return (
     <div className={`${m.mobileOnly} ${m.beige}`}>
@@ -61,7 +60,6 @@ export function EarlyMockupMobile() {
         <div className={m.rowBetween}>
           <span className={m.mono}>MAQUETTE · SUIVI DE L&apos;ÉQUIPE · V3</span>
         </div>
-        <span className={m.meta}>3 commentaires</span>
         <ol className={m.comments}>
           {COMMENTS.map((text, i) => (
             <li key={text} className={`${m.comment} ${s.pin}`} style={{ animationDelay: `calc(${0.4 + i * 1.2}s - var(--scene-shift, 0s))`, animationFillMode: "backwards" }}>
@@ -83,63 +81,7 @@ export function EarlyMockupMobile() {
   );
 }
 
-/** Navigation reliée : un clic sur un nom (action) ouvre sa fiche (résultat). */
-export function EarlyNavigationMobile() {
-  return (
-    <div className={`${m.mobileOnly} ${m.window}`}>
-      <div className={m.windowBar}>
-        <span className={m.back}>← Retour</span>
-        <span className={m.meta}>Tâches / Historique / Semaine 39</span>
-      </div>
-      <div className={m.windowBody}>
-        <div className={m.rowBetween}>
-          <span className={m.day}>Vendredi 25 septembre</span>
-          <span className={m.meta}>8 h</span>
-        </div>
-        <div className={m.personRow}>
-          <span className={m.avatar} aria-hidden="true">
-            IM
-          </span>
-          <span className={m.personLink}>Inès Morel</span>
-          <svg className={`${m.pointer} ${s.cur2}`} aria-hidden="true" focusable="false" width="22" height="22" viewBox="0 0 24 24" fill="#0E1A2B" stroke="#FFFFFF" strokeWidth="1.5" strokeLinejoin="round">
-            <path d="M5 3l14 8-6 2-3 6z" />
-          </svg>
-        </div>
-        <div className={`${m.profile} ${s.pop}`}>
-          <div className={m.profileHead}>
-            <span className={m.avatarLarge} aria-hidden="true">
-              IM
-            </span>
-            <span className={m.profileName}>
-              <strong>Inès Morel</strong>
-              <span className={m.meta}>Chargée de projet</span>
-            </span>
-          </div>
-          <div className={m.rowBetween}>
-            <span>
-              <strong className={m.hours}>26 h 30</strong> <span className={m.meta}>sur 35 h</span>
-            </span>
-            <span className={m.meta}>76 %</span>
-          </div>
-          <div className={m.bar} aria-hidden="true">
-            <span className={m.barFill} />
-          </div>
-          <div className={m.rowBetween}>
-            <span className={m.meta}>Jour sans saisie</span>
-            <span className={`${m.pill} ${m.err}`}>lun. 21 sept.</span>
-          </div>
-          <div className={m.chips}>
-            <span>Voir sa semaine</span>
-            <span>Voir son historique</span>
-            <span>Fiche employé</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-const TOOLS = ["Campagnes Meta", "Google Agenda", "47 fichiers Excel", "Pennylane"];
+const TOOLS = ["Campagnes Meta", "Google Agenda", "47 plannings Excel", "Pennylane"];
 
 /** Tout centralisé : les outils, reliés au logiciel par un trait vertical. */
 export function EarlyHubMobile() {
@@ -158,8 +100,7 @@ export function EarlyHubMobile() {
         </ul>
         <div className={m.core}>
           <span className={`${m.coreDot} ${s.pulse}`} aria-hidden="true" />
-          <span className={m.coreTitle}>Le logiciel</span>
-          <span className={m.coreText}>tout au même endroit</span>
+          <span className={m.coreTitle}>Le logiciel Early</span>
         </div>
       </div>
     </div>

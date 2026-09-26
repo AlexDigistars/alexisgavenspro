@@ -115,9 +115,7 @@ export default function FormationIA() {
     <section className={s.c30} data-reveal>
       <div className={s.c31}>
         <h2 className={s.c32}>
-          Ce que vos équipes
-          <br />
-          sauront faire.
+          Ce que vos équipes sauront faire.
         </h2>
         {" "}
         <p className={s.c33}>
@@ -138,7 +136,7 @@ export default function FormationIA() {
             Rédiger en quelques minutes
           </span>
           <span className={s.c38}>
-            Devis, courriers, comptes-rendus, fiches produits, à partir de simples notes.
+            Devis, courriers, comptes rendus, fiches produits, à partir de simples notes.
           </span>
         </div>
         {" "}
@@ -168,7 +166,7 @@ export default function FormationIA() {
             Résumer réunions et documents
           </span>
           <span className={s.c38}>
-            Un compte-rendu clair et les actions à mener, en sortant de réunion.
+            Un compte rendu clair et les actions à mener, en sortant de réunion.
           </span>
         </div>
         {" "}
@@ -215,7 +213,7 @@ export default function FormationIA() {
             Créer leurs propres assistants
           </span>
           <span className={s.c38}>
-            Des assistants réglés sur leurs tâches récurrentes, réutilisables par toute l'équipe.
+            Des assistants réglés sur leurs tâches récurrentes, réutilisables par toute l'équipe. (formats 2 et 3 jours)
           </span>
         </div>
       </div>
@@ -342,7 +340,7 @@ export default function FormationIA() {
               Ateliers sur vos documents
             </span>
             <span className={s.c38}>
-              Devis, e-mails, comptes-rendus : chacun travaille sur ses vraies tâches.
+              Devis, e-mails, comptes rendus : chacun travaille sur ses vraies tâches.
             </span>
           </div>
           {" "}

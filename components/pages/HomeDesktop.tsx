@@ -1,3 +1,6 @@
+import Guarantees from "@/components/Guarantees";
+import BeforeAfter from "@/components/BeforeAfter";
+import ToolsLine from "@/components/ToolsLine";
 import Scene from "@/components/Scene";
 import Image from "next/image";
 import portrait from "@/public/alexis-portrait-hd.jpg";
@@ -19,7 +22,7 @@ export default function HomeDesktop() {
             <span className={`${s.c5} ${s.pulse}`}></span>
             {" "}
             <span>
-              Pour les PME · Partout en France
+              Pour les PME de services · Partout en France
             </span>
           </div>
           {" "}
@@ -28,20 +31,22 @@ export default function HomeDesktop() {
           </h1>
           {" "}
           <p className={s.c7}>
-            Un seul outil pour piloter votre entreprise, gagner du temps et en finir avec les ressaisies.
+            Que vous partiez de zéro ou d&apos;un logiciel existant : un seul outil pour piloter votre entreprise et en finir avec les ressaisies.
           </p>
           {" "}
           <div className={s.c8}>
-            <CalendlyLink className={s.c9}>
-              Réserver 20 min
-            </CalendlyLink>
-            {" "}
-            <a className={s.c10} href="#v2-demo">
-              {"Voir ce que je construis "}
+            <div className={s.ctaStack}>
+              <CalendlyLink className={s.c9}>
+                Réserver 20 min
+              </CalendlyLink>
+              <span className={s.ctaNote}>20 minutes, gratuit et sans engagement.</span>
+            </div>
+            <Link className={`${s.c10} ${s.projectLink}`} href="/realisations/early">
+              Voir un projet réalisé
               <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M12 5v14M5 12l7 7 7-7" />
+                <path d="M5 12h14M13 5l7 7-7 7" />
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
         {" "}
@@ -60,7 +65,7 @@ export default function HomeDesktop() {
               </span>
               {" "}
               <span className={s.c17}>
-                EXEMPLE
+                Exemple · données fictives
               </span>
             </div>
             {" "}
@@ -276,7 +281,7 @@ export default function HomeDesktop() {
         </span>
         {" "}
         <h2 className={s.c58}>
-          De l'éparpillement à un seul outil.
+          Des fichiers dispersés à un seul logiciel.
         </h2>
       </div>
       {" "}
@@ -437,90 +442,14 @@ export default function HomeDesktop() {
           </span>
         </div>
       </Scene>
-      {" "}
-      <div className={s.c90}>
-        <span className={s.c91}>
-          Relié aux outils que vous utilisez déjà
-        </span>
-        {" "}
-        <span className={s.c92}>
-          <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M6 2h9l5 5v15H6z" />
-            <path d="M14 2v6h6" />
-            <path d="M12 12v6M9.5 14h4" />
-          </svg>
-          Pennylane
-        </span>
-        {" "}
-        <span className={s.c92}>
-          <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <rect x="4" y="3" width="16" height="18" rx="2" />
-            <path d="M4 9h16M4 15h16M10 9v12" />
-          </svg>
-          Google Sheets
-        </span>
-        {" "}
-        <span className={s.c92}>
-          <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <rect x="3" y="5" width="18" height="14" rx="2" />
-            <path d="M3 7l9 6 9-6" />
-          </svg>
-          Gmail
-        </span>
-        {" "}
-        <span className={s.c92}>
-          <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <rect x="3" y="4" width="18" height="17" rx="2" />
-            <path d="M3 9h18M8 2v4M16 2v4" />
-          </svg>
-          Google Agenda
-        </span>
-        {" "}
-        <span className={s.c92}>
-          <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <rect x="4" y="3" width="16" height="18" rx="2" />
-            <path d="M4 9h16M4 15h16M10 9v12" />
-          </svg>
-          Excel
-        </span>
-        {" "}
-        <span className={s.c92}>
-          <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <rect x="3" y="5" width="18" height="14" rx="2" />
-            <path d="M3 7l9 6 9-6" />
-          </svg>
-          Outlook
-        </span>
-        {" "}
-        <span className={s.c92}>
-          <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <rect x="2" y="5" width="20" height="14" rx="2" />
-            <path d="M2 10h20M6 15h4" />
-          </svg>
-          Qonto
-        </span>
-        {" "}
-        <span className={s.c92}>
-          <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M9 3L7 21M17 3l-2 18M4 8h17M3 16h17" />
-          </svg>
-          Slack
-        </span>
-      </div>
     </section>
     {" "}
     {" "}
     <section className={s.c93} data-reveal>
       <div className={s.c94}>
         <h2 className={s.c58}>
-          Créer, repenser,
-          <br />
-          améliorer.
+          Créer, repenser, améliorer.
         </h2>
-        {" "}
-        <p className={s.c95}>
-          Un nouvel outil, des méthodes de travail à réinventer ou un logiciel à faire grandir.
-        </p>
       </div>
       {" "}
       <Scene className={s.c96} shift={4.5}>
@@ -551,7 +480,7 @@ export default function HomeDesktop() {
             </span>
             {" "}
             <span className={s.c110}>
-              Un outil pensé autour de votre façon de travailler.
+              Vous travaillez avec des fichiers Excel et du papier : je crée le logiciel qui les remplace, autour de votre façon de travailler.
             </span>
           </div>
         </div>
@@ -661,7 +590,7 @@ export default function HomeDesktop() {
             </span>
             {" "}
             <span className={s.c110}>
-              Vos méthodes de travail réinventées, enrichies, simplifiées.
+              Ressaisies, relances, allers-retours : je simplifie et j&apos;automatise vos façons de faire.
             </span>
           </div>
         </div>
@@ -711,7 +640,7 @@ export default function HomeDesktop() {
             </span>
             {" "}
             <span className={s.c110}>
-              Ajouter, automatiser, intégrer l'IA quand elle sert vraiment.
+              Vous avez déjà un logiciel qui ralentit vos équipes : je le reprends et je le fais évoluer.
             </span>
           </div>
         </div>
@@ -735,9 +664,6 @@ export default function HomeDesktop() {
           <div className={s.c22}>
             <span className={s.c141}>
               Un clic, la bonne information
-            </span>
-            <span className={s.c142}>
-              Données reliées
             </span>
           </div>
           {" "}
@@ -1146,76 +1072,14 @@ export default function HomeDesktop() {
           </div>
         </div>
       </Scene>
-      {" "}
-      <div className={s.c213}>
-        <div className={s.c214}>
-          <svg aria-hidden="true" focusable="false" className={s.c155} width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <circle cx="12" cy="12" r="9" />
-            <path d="M9 12h6" />
-          </svg>
-          <div className={s.c215}>
-            <span className={s.c216}>
-              Simple
-            </span>
-            <span className={s.c217}>
-              Seules les actions utiles apparaissent.
-            </span>
-          </div>
-        </div>
-        {" "}
-        <div className={s.c214}>
-          <svg aria-hidden="true" focusable="false" className={s.c155} width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <rect x="3" y="3" width="7" height="7" rx="1.5" />
-            <rect x="14" y="3" width="7" height="7" rx="1.5" />
-            <rect x="3" y="14" width="7" height="7" rx="1.5" />
-            <rect x="14" y="14" width="7" height="7" rx="1.5" />
-          </svg>
-          <div className={s.c215}>
-            <span className={s.c216}>
-              Clair
-            </span>
-            <span className={s.c217}>
-              Chaque information à sa place.
-            </span>
-          </div>
-        </div>
-        {" "}
-        <div className={s.c214}>
-          <svg aria-hidden="true" focusable="false" className={s.c155} width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1" />
-            <path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1" />
-          </svg>
-          <div className={s.c215}>
-            <span className={s.c216}>
-              Connecté
-            </span>
-            <span className={s.c217}>
-              Clients, commandes, factures : tout se répond.
-            </span>
-          </div>
-        </div>
-        {" "}
-        <div className={s.c214}>
-          <svg aria-hidden="true" focusable="false" className={s.c155} width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M13 2L4 14h7l-1 8 9-12h-7z" />
-          </svg>
-          <div className={s.c215}>
-            <span className={s.c216}>
-              Rapide
-            </span>
-            <span className={s.c217}>
-              Une navigation fluide et instantanée.
-            </span>
-          </div>
-        </div>
-      </div>
+      <ToolsLine />
     </section>
     {" "}
     {" "}
     <section className={s.c218} data-reveal>
       <div className={s.c219}>
         <span className={s.c220}>
-          Référence client
+          Dernière réalisation
         </span>
         {" "}
         <div className={s.c221}>
@@ -1224,36 +1088,16 @@ export default function HomeDesktop() {
           </span>
           {" "}
           <span className={s.c223}>
-            Agence de communication · une quinzaine de personnes
+            Agence de communication, une quinzaine de personnes
           </span>
         </div>
         {" "}
         <h2 className={s.c224}>
-          Un logiciel existant, transformé en vrai outil de pilotage.
+          Transformer un logiciel de gestion vieillissant en véritable outil de pilotage.
         </h2>
         <p className={s.earlyIntro}>
-          Rendu simple à utiliser, puis enrichi de ce qui manquait : facturation automatique, suivi clients, pilotage des équipes.
+          Clients, équipes, planning, facturation : tout passait par un logiciel qui ne suivait plus. Je l&apos;ai repris et enrichi d&apos;outils pour chacun : les salariés, les managers et la direction.
         </p>
-        {" "}
-        <figure className={s.c225}>
-          <svg aria-hidden="true" focusable="false" width="28" height="22" viewBox="0 0 28 22" fill="#8FD0C5">
-            <path d="M0 22V12C0 5 4 1 11 0l1 3c-4 1-6 4-6 7h5v12zm16 0V12c0-7 4-11 11-12l1 3c-4 1-6 4-6 7h5v12z" />
-          </svg>
-          {" "}
-          <blockquote className={s.c226}>
-            Alexis a vraiment fait évoluer notre logiciel : il est plus rapide, plus réactif et bien plus simple à utiliser. Il écoute nos besoins et il est force de proposition. C'est agréable de travailler avec lui.
-          </blockquote>
-          {" "}
-          <figcaption className={s.c227}>
-            <span className={s.c35}>
-              Joseph Herbinet
-            </span>
-            <span className={s.c228}>
-              Dirigeant d'Early
-            </span>
-          </figcaption>
-        </figure>
-        {" "}
         <Link className={s.c229} href="/realisations/early">
           {"Lire l'étude de cas "}
           <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -1261,103 +1105,19 @@ export default function HomeDesktop() {
           </svg>
         </Link>
       </div>
-      {" "}
-      <div className={s.c230}>
-        <div className={s.c231}>
-          <span className={`${s.c232} ${s.float}`}>
-            <svg aria-hidden="true" focusable="false" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8FD0C5" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M21 12a9 9 0 1 1-2.64-6.36" />
-              <path d="M21 3v6h-6" />
-              <circle cx="12" cy="12" r="3" />
-            </svg>
-          </span>
-          {" "}
-          <span className={s.c233}>
-            Vision 360°
-          </span>
-          {" "}
-          <span className={s.c234}>
-            Toute l'activité sur un seul écran : clients, équipes, finances.
-          </span>
-        </div>
-        {" "}
-        <div className={s.c231}>
-          <span className={`${s.c235} ${s.float}`}>
-            <svg aria-hidden="true" focusable="false" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8FD0C5" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M6 2h9l5 5v15H6z" />
-              <path d="M14 2v6h6" />
-              <path d="M9 15l2 2 4-4" />
-            </svg>
-          </span>
-          {" "}
-          <span className={s.c233}>
-            Facturation automatisée
-          </span>
-          {" "}
-          <span className={s.c234}>
-            Du temps passé à la facture dans la compta, sans ressaisie.
-          </span>
-        </div>
-        {" "}
-        <div className={s.c231}>
-          <span className={`${s.c236} ${s.float}`}>
-            <svg aria-hidden="true" focusable="false" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8FD0C5" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
-              <circle cx="9" cy="8" r="3.5" />
-              <path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6" />
-              <path d="M16 11h6M19 8v6" />
-            </svg>
-          </span>
-          {" "}
-          <span className={s.c233}>
-            Suivi clients connecté
-          </span>
-          {" "}
-          <span className={s.c234}>
-            Chaque client relié à ses contrats, ses missions et ses campagnes.
-          </span>
-        </div>
-        {" "}
-        <div className={s.c231}>
-          <span className={`${s.c237} ${s.float}`}>
-            <svg aria-hidden="true" focusable="false" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8FD0C5" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
-              <circle cx="8" cy="8" r="3" />
-              <circle cx="17" cy="9" r="2.5" />
-              <path d="M2 20c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5" />
-              <path d="M14.5 15.2c.8-.5 1.6-.7 2.5-.7 2.8 0 5 1.9 5 4.9" />
-            </svg>
-          </span>
-          {" "}
-          <span className={s.c233}>
-            Équipes pilotées simplement
-          </span>
-          {" "}
-          <span className={s.c234}>
-            Charge, temps et accès de chacun, en un coup d'œil.
-          </span>
-        </div>
+      <div className={s.earlyVisual}>
+        <BeforeAfter />
+        <figure className={s.earlyQuote}>
+          <blockquote className={s.c226}>
+            « Alexis a vraiment fait évoluer notre logiciel : il est plus rapide, plus réactif et bien plus simple à utiliser. »
+          </blockquote>
+          <figcaption className={s.c227}>
+            Joseph Herbinet, dirigeant d&apos;Early
+          </figcaption>
+        </figure>
       </div>
     </section>
     {" "}
-    {" "}
-    <section className={s.c238} data-reveal>
-      <div className={s.c102}>
-        <span className={s.c239}>
-          Et si on regardait votre cas ?
-        </span>
-        {" "}
-        <span className={s.c240}>
-          20 minutes, gratuit et sans engagement : vous repartez avec des pistes concrètes.
-        </span>
-      </div>
-      {" "}
-      <CalendlyLink className={s.c241}>
-        <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0E1A2B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <rect x="3" y="4" width="18" height="17" rx="2" />
-          <path d="M3 9h18M8 2v4M16 2v4" />
-        </svg>
-        Réserver 20 min
-      </CalendlyLink>
-    </section>
     {" "}
     {" "}
     <section className={s.c242} data-reveal>
@@ -1375,10 +1135,10 @@ export default function HomeDesktop() {
             1
           </span>
           <span className={s.c248}>
-            Diagnostic
+            Comprendre
           </span>
           <span className={s.c249}>
-            Comprendre votre activité et ce qui bloque.
+            Identifier vos besoins et ce qui bloque.
           </span>
         </div>
         {" "}
@@ -1387,10 +1147,10 @@ export default function HomeDesktop() {
             2
           </span>
           <span className={s.c248}>
-            Co-construction
+            Dessiner
           </span>
           <span className={s.c249}>
-            Ateliers et maquettes avec vous, chaque écran validé.
+            Valider les écrans avant le développement.
           </span>
         </div>
         {" "}
@@ -1399,10 +1159,10 @@ export default function HomeDesktop() {
             3
           </span>
           <span className={s.c248}>
-            Livraison par lots
+            Livrer
           </span>
           <span className={s.c249}>
-            Chaque lot testé avec vos équipes.
+            Tester chaque étape avec vos équipes.
           </span>
         </div>
         {" "}
@@ -1411,122 +1171,15 @@ export default function HomeDesktop() {
             4
           </span>
           <span className={s.c248}>
-            Suivi
+            Faire évoluer
           </span>
           <span className={s.c249}>
-            Maintenance et évolutions dans la durée.
+            Maintenance et améliorations selon vos besoins.
           </span>
         </div>
       </div>
       {" "}
-      <div className={s.c250}>
-        <div className={s.c251}>
-          <span className={s.c252}>
-            Mes engagements, noir sur blanc.
-          </span>
-          <span className={s.c89}>
-            SANS PETITES LIGNES
-          </span>
-        </div>
-        {" "}
-        <div className={s.c253}>
-          <div className={s.c254}>
-            <span className={s.c255}>
-              <svg aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M5 12l5 5L20 7" />
-              </svg>
-            </span>
-            <div className={s.c256}>
-              <span className={s.c257}>
-                Sans engagement de durée
-              </span>
-              <span className={s.c258}>
-                Chaque lot se commande séparément.
-              </span>
-            </div>
-          </div>
-          {" "}
-          <div className={s.c254}>
-            <span className={s.c255}>
-              <svg aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M5 12l5 5L20 7" />
-              </svg>
-            </span>
-            <div className={s.c256}>
-              <span className={s.c257}>
-                Maquette validée avant de coder
-              </span>
-              <span className={s.c258}>
-                Vous voyez l'écran avant qu'il existe.
-              </span>
-            </div>
-          </div>
-          {" "}
-          <div className={s.c254}>
-            <span className={s.c255}>
-              <svg aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M5 12l5 5L20 7" />
-              </svg>
-            </span>
-            <div className={s.c256}>
-              <span className={s.c257}>
-                Tests automatiques
-              </span>
-              <span className={s.c258}>
-                Testé à chaque livraison.
-              </span>
-            </div>
-          </div>
-          {" "}
-          <div className={s.c254}>
-            <span className={s.c255}>
-              <svg aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M5 12l5 5L20 7" />
-              </svg>
-            </span>
-            <div className={s.c256}>
-              <span className={s.c257}>
-                Garantie 3 mois
-              </span>
-              <span className={s.c258}>
-                Tout défaut corrigé sans frais.
-              </span>
-            </div>
-          </div>
-          {" "}
-          <div className={s.c254}>
-            <span className={s.c255}>
-              <svg aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M5 12l5 5L20 7" />
-              </svg>
-            </span>
-            <div className={s.c256}>
-              <span className={s.c257}>
-                Le code vous appartient
-              </span>
-              <span className={s.c258}>
-                Code source et documentation cédés.
-              </span>
-            </div>
-          </div>
-          {" "}
-          <div className={s.c254}>
-            <span className={s.c255}>
-              <svg aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M5 12l5 5L20 7" />
-              </svg>
-            </span>
-            <div className={s.c256}>
-              <span className={s.c257}>
-                Aucun abonnement imposé
-              </span>
-              <span className={s.c258}>
-                Pas de coût récurrent ajouté.
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Guarantees />
     </section>
     {" "}
     {" "}
@@ -1541,13 +1194,13 @@ export default function HomeDesktop() {
                 Alexis Gavens
               </span>
               <span className={s.c263}>
-                Créateur de logiciels métier · ex-responsable ADV & logistique
+                Ancien responsable de l&apos;administration des ventes et de la logistique.
               </span>
             </div>
           </div>
           {" "}
           <p className={s.c264}>
-            « Je viens des opérations. Je comprends votre travail avant de concevoir le logiciel. »
+            « Je comprends votre travail avant de concevoir le logiciel. »
           </p>
           {" "}
           <Link className={s.c265} href="/a-propos">
@@ -1559,14 +1212,6 @@ export default function HomeDesktop() {
         </div>
         {" "}
         <div className={s.c266}>
-          <Link className={s.c267} href="/realisations/early">
-            <span className={s.c268}>
-              RÉALISATION
-            </span>
-            <span className={s.c269}>
-              Early : l&apos;étude de cas complète&nbsp;→
-            </span>
-          </Link>
           {" "}
           <Link className={s.c267} href="/formation-ia">
             <span className={s.c268}>

@@ -163,9 +163,9 @@ button {
   }
 }
 
-/* Étude de cas : les actes ne passent pas sous le sommaire fixe */
-@media (min-width: 1100px) {
-  [data-act] {
-    scroll-margin-top: 72px;
-  }
+/* Titres : lignes équilibrées, sans saut de ligne manuel */
+h1,
+h2,
+h3 {
+  text-wrap: balance;
 }
