@@ -1,5 +1,5 @@
 import Image from "next/image";
-import portrait from "@/public/alexis-portrait.jpg";
+import portrait from "@/public/alexis-portrait-hd.jpg";
 import CalendlyLink from "@/components/CalendlyLink";
 import s from "./About.module.css";
 

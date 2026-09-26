@@ -1,6 +1,6 @@
 import Scene from "@/components/Scene";
 import Image from "next/image";
-import portrait from "@/public/alexis-portrait.jpg";
+import portrait from "@/public/alexis-portrait-hd.jpg";
 import SwipeCarousel from "@/components/SwipeCarousel";
 import Link from "next/link";
 import CalendlyLink from "@/components/CalendlyLink";

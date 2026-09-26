@@ -1,6 +1,6 @@
 import Scene from "@/components/Scene";
 import Image from "next/image";
-import portrait from "@/public/alexis-portrait.jpg";
+import portrait from "@/public/alexis-portrait-hd.jpg";
 import Link from "next/link";
 import CalendlyLink from "@/components/CalendlyLink";
 import { CONTACT_EMAIL, CONTACT_PHONE, CONTACT_PHONE_HREF } from "@/config/site";
