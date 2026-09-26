@@ -19,12 +19,15 @@ export default function EarlyCase() {
           </span>
           {" "}
           <h1 className={s.c5}>
-            Early : un ERP repris, sécurisé et enrichi, sans jamais l'arrêter.
+            Early : un logiciel de gestion repris, sécurisé et enrichi, sans jamais l'arrêter.
           </h1>
           {" "}
           <p className={s.c6}>
             Agence de communication d'une quinzaine de personnes, basée à Saint-Tropez.
           </p>
+          <CalendlyLink className={`${s.c245} ${s.introCta}`}>
+            Réserver 20 min
+          </CalendlyLink>
           {" "}
           <div className={s.c7}>
             <div className={s.c8}>
@@ -566,6 +569,9 @@ export default function EarlyCase() {
             Des couleurs qui disent l'essentiel d'un coup d'œil
           </span>
         </div>
+        <CalendlyLink className={`${s.c245} ${s.proofCta}`}>
+          Réserver 20 min
+        </CalendlyLink>
       </div>
       {" "}
       <Scene className={m.sceneWrap}>
@@ -769,6 +775,22 @@ export default function EarlyCase() {
         <EarlyNavigationMobile />
       </Scene>
     </section>
+    <section className={s.c226} data-reveal>
+      <svg aria-hidden="true" focusable="false" width="44" height="34" viewBox="0 0 28 22" fill="#1D5C57">
+        <path d="M0 22V12C0 5 4 1 11 0l1 3c-4 1-6 4-6 7h5v12zm16 0V12c0-7 4-11 11-12l1 3c-4 1-6 4-6 7h5v12z" />
+      </svg>
+      <blockquote className={s.c227}>
+        Alexis a vraiment fait évoluer notre logiciel : il est plus rapide, plus réactif et bien plus simple à utiliser. Il écoute nos besoins et il est force de proposition. C'est agréable de travailler avec lui.
+      </blockquote>
+      <div className={s.c68}>
+        <span className={s.c228}>
+          Joseph Herbinet
+        </span>
+        <span className={s.c229}>
+          Dirigeant d'Early
+        </span>
+      </div>
+    </section>
     {" "}
     {" "}
     <section className={s.c138} data-reveal>
@@ -903,20 +925,25 @@ export default function EarlyCase() {
       {" "}
       {" "}
       <Scene className={s.c157}>
-        <div className={s.c158}>
-          <div className={s.c124}>
-            <span className={s.c159}>
-              LOT 0
+        <details className={`${s.c158} ${s.lotDetails}`}>
+          <summary className={s.lotSummary}>
+            <span className={`${s.c124} ${s.lotRow}`}>
+              <span className={s.c159}>
+                LOT 0
+              </span>
+              {" "}
+              <span className={s.c160}>
+                Livré
+              </span>
+              <svg className={s.lotChevron} aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M6 9l6 6 6-6" />
+              </svg>
             </span>
-            <span className={s.c160}>
-              Livré
-            </span>
-          </div>
-          {" "}
-          <h3 className={s.c161}>
-            Sécurité, accès et rapidité
-          </h3>
-          {" "}
+            {" "}
+            <h3 className={s.c161}>
+              Sécurité, accès et rapidité
+            </h3>
+          </summary>
           <div className={s.c162}>
             <span>
               — Des écrans qui s'ouvrent en une seconde au lieu de trente
@@ -938,13 +965,16 @@ export default function EarlyCase() {
               — Une navigation repensée : chacun trouve tout en deux clics
             </span>
           </div>
-        </div>
+        </details>
         {" "}
         <div className={s.c163}>
           <div className={s.c164}>
-            <span className={s.c126}>
-              Ouverture d'un écran
-            </span>
+            <div className={s.exampleRow}>
+              <span className={s.c126}>
+                Ouverture d&apos;un écran
+              </span>
+              <span className={s.exampleTag}>Exemple</span>
+            </div>
             {" "}
             <div className={s.c165}>
               <div className={s.c166}>
@@ -1102,20 +1132,25 @@ export default function EarlyCase() {
           </div>
         </div>
         {" "}
-        <div className={s.c158}>
-          <div className={s.c124}>
-            <span className={s.c159}>
-              LOT 1
+        <details className={`${s.c158} ${s.lotDetails}`}>
+          <summary className={s.lotSummary}>
+            <span className={`${s.c124} ${s.lotRow}`}>
+              <span className={s.c159}>
+                LOT 1
+              </span>
+              {" "}
+              <span className={s.c160}>
+                Livré
+              </span>
+              <svg className={s.lotChevron} aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M6 9l6 6 6-6" />
+              </svg>
             </span>
-            <span className={s.c160}>
-              Livré
-            </span>
-          </div>
-          {" "}
-          <h3 className={s.c161}>
-            Facturation automatisée, marge enfin visible
-          </h3>
-          {" "}
+            {" "}
+            <h3 className={s.c161}>
+              Facturation automatisée, marge enfin visible
+            </h3>
+          </summary>
           <div className={s.c162}>
             <span>
               — Chacun saisit son temps par client en une minute, en fin de journée
@@ -1133,25 +1168,30 @@ export default function EarlyCase() {
               — Plus aucune ressaisie : les factures arrivent prêtes à relire
             </span>
           </div>
-        </div>
+        </details>
       </Scene>
       {" "}
       {" "}
       <Scene className={s.c157}>
-        <div className={s.c158}>
-          <div className={s.c124}>
-            <span className={s.c159}>
-              LOT 2
+        <details className={`${s.c158} ${s.lotDetails}`}>
+          <summary className={s.lotSummary}>
+            <span className={`${s.c124} ${s.lotRow}`}>
+              <span className={s.c159}>
+                LOT 2
+              </span>
+              {" "}
+              <span className={s.c160}>
+                Livré
+              </span>
+              <svg className={s.lotChevron} aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M6 9l6 6 6-6" />
+              </svg>
             </span>
-            <span className={s.c160}>
-              Livré
-            </span>
-          </div>
-          {" "}
-          <h3 className={s.c161}>
-            Plus aucune échéance oubliée
-          </h3>
-          {" "}
+            {" "}
+            <h3 className={s.c161}>
+              Plus aucune échéance oubliée
+            </h3>
+          </summary>
           <div className={s.c162}>
             <span>
               — Les 47 plannings Excel de l'agence lus automatiquement, tels quels
@@ -1169,7 +1209,7 @@ export default function EarlyCase() {
               — La direction repère d'un coup d'œil les dossiers en retard
             </span>
           </div>
-        </div>
+        </details>
         {" "}
         <div className={s.c195}>
           <div className={s.c196}>
@@ -1301,21 +1341,25 @@ export default function EarlyCase() {
           </div>
         </div>
         {" "}
-        <div className={s.c158}>
-          <div className={s.c124}>
-            <span className={s.c159}>
-              LOT 3
+        <details className={`${s.c158} ${s.lotDetails}`}>
+          <summary className={s.lotSummary}>
+            <span className={`${s.c124} ${s.lotRow}`}>
+              <span className={s.c159}>
+                LOT 3
+              </span>
+              <span className={s.c219}>
+                <span className={`${s.c220} ${s.pulse}`}></span>
+                En finition
+              </span>
+              <svg className={s.lotChevron} aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M6 9l6 6 6-6" />
+              </svg>
             </span>
-            <span className={s.c219}>
-              <span className={`${s.c220} ${s.pulse}`}></span>
-              En finition
-            </span>
-          </div>
-          {" "}
-          <h3 className={s.c161}>
-            Plus un euro oublié à la facturation
-          </h3>
-          {" "}
+            {" "}
+            <h3 className={s.c161}>
+              Plus un euro oublié à la facturation
+            </h3>
+          </summary>
           <div className={s.c162}>
             <span>
               — Les heures facturables remontent seules des agendas
@@ -1329,92 +1373,13 @@ export default function EarlyCase() {
               — Un récapitulatif par client, prêt à facturer
             </span>
           </div>
-        </div>
+        </details>
       </Scene>
     </section>
     {" "}
     {" "}
-    <section className={s.c221} data-reveal>
-      <div className={s.c222}>
-        <span className={s.c4}>
-          La méthode sur ce projet
-        </span>
-        {" "}
-        <h2 className={s.c55}>
-          Rien n'est développé sans avoir été vu et validé.
-        </h2>
-      </div>
-      {" "}
-      <div className={s.c180}>
-        <div className={s.c223}>
-          <span className={s.c224}>
-            01
-          </span>
-          <span className={s.c63}>
-            Maquette validée d'abord
-          </span>
-          <span className={s.c225}>
-            Le dirigeant voit chaque écran avant qu'il soit codé.
-          </span>
-        </div>
-        {" "}
-        <div className={s.c223}>
-          <span className={s.c224}>
-            02
-          </span>
-          <span className={s.c63}>
-            Un lot à la fois
-          </span>
-          <span className={s.c225}>
-            Livré, vérifié par l'équipe, puis le suivant.
-          </span>
-        </div>
-        {" "}
-        <div className={s.c223}>
-          <span className={s.c224}>
-            03
-          </span>
-          <span className={s.c63}>
-            Tests automatiques
-          </span>
-          <span className={s.c225}>
-            Chaque évolution vérifie que rien ne s'est cassé.
-          </span>
-        </div>
-        {" "}
-        <div className={s.c223}>
-          <span className={s.c224}>
-            04
-          </span>
-          <span className={s.c63}>
-            Le code reste au client
-          </span>
-          <span className={s.c225}>
-            Déposé dans son espace, documenté en français.
-          </span>
-        </div>
-      </div>
-    </section>
     {" "}
     {" "}
-    <section className={s.c226} data-reveal>
-      <svg aria-hidden="true" focusable="false" width="44" height="34" viewBox="0 0 28 22" fill="#1D5C57">
-        <path d="M0 22V12C0 5 4 1 11 0l1 3c-4 1-6 4-6 7h5v12zm16 0V12c0-7 4-11 11-12l1 3c-4 1-6 4-6 7h5v12z" />
-      </svg>
-      {" "}
-      <blockquote className={s.c227}>
-        Alexis a vraiment fait évoluer notre logiciel : il est plus rapide, plus réactif et bien plus simple à utiliser. Il écoute nos besoins et il est force de proposition. C'est agréable de travailler avec lui.
-      </blockquote>
-      {" "}
-      <div className={s.c68}>
-        <span className={s.c228}>
-          Joseph Herbinet
-        </span>
-        <span className={s.c229}>
-          Dirigeant d'Early
-        </span>
-      </div>
-    </section>
     {" "}
     {" "}
     <section className={s.c230} data-reveal>
@@ -1469,7 +1434,7 @@ export default function EarlyCase() {
           </span>
           {" "}
           <span className={s.c234}>
-            CRM connecté
+            Suivi clients connecté
           </span>
           {" "}
           <span className={s.c235}>

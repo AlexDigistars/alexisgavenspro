@@ -501,7 +501,7 @@ export default function HomeDesktop() {
         </h2>
         {" "}
         <p className={s.c95}>
-          Un nouvel outil, des process à réinventer ou un logiciel à faire grandir.
+          Un nouvel outil, des méthodes de travail à réinventer ou un logiciel à faire grandir.
         </p>
       </div>
       {" "}
@@ -533,7 +533,7 @@ export default function HomeDesktop() {
             </span>
             {" "}
             <span className={s.c110}>
-              Un outil pensé autour de vos process réels.
+              Un outil pensé autour de votre façon de travailler.
             </span>
           </div>
         </div>
@@ -541,7 +541,7 @@ export default function HomeDesktop() {
         <div className={s.c97}>
           <div className={s.c98}>
             <span className={s.c111}>
-              VOTRE PROCESS, REPENSÉ
+              VOTRE FAÇON DE TRAVAILLER, REPENSÉE
             </span>
             {" "}
             <div className={s.c112}>
@@ -643,7 +643,7 @@ export default function HomeDesktop() {
             </span>
             {" "}
             <span className={s.c110}>
-              Vos process existants réinventés, enrichis, simplifiés.
+              Vos méthodes de travail réinventées, enrichies, simplifiées.
             </span>
           </div>
         </div>
@@ -1290,7 +1290,7 @@ export default function HomeDesktop() {
           </span>
           {" "}
           <span className={s.c233}>
-            CRM connecté
+            Suivi clients connecté
           </span>
           {" "}
           <span className={s.c234}>
@@ -1454,7 +1454,7 @@ export default function HomeDesktop() {
                 Tests automatiques
               </span>
               <span className={s.c258}>
-                Chaque évolution vérifiée, rien ne casse.
+                Testé à chaque livraison.
               </span>
             </div>
           </div>
@@ -1522,7 +1522,7 @@ export default function HomeDesktop() {
                 Alexis Gavens
               </span>
               <span className={s.c263}>
-                Ex-responsable ADV & logistique, développeur de logiciels métier
+                Ex-responsable administration des ventes (ADV) & logistique, développeur de logiciels métier
               </span>
             </div>
           </div>

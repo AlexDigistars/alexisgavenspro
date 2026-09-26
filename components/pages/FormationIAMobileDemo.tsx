@@ -42,6 +42,7 @@ export function AssistantMobile() {
         <div className={`${m.saved} ${s.saved}`}>
           <strong>1 min</strong>
           <span>au lieu d&apos;une demi-heure</span>
+          <span className={m.exampleTag}>Exemple</span>
         </div>
       </div>
     </div>

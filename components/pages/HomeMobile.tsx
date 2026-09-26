@@ -190,7 +190,7 @@ export default function HomeMobile() {
           </span>
           {" "}
           <span className={s.c51}>
-            Un outil pensé autour de vos process réels.
+            Un outil pensé autour de votre façon de travailler.
           </span>
         </div>
         <div className={s.c44}>
@@ -235,7 +235,7 @@ export default function HomeMobile() {
           </span>
           {" "}
           <span className={s.c51}>
-            Vos process existants réinventés, enrichis, simplifiés.
+            Vos méthodes de travail réinventées, enrichies, simplifiées.
           </span>
         </div>
         <div className={s.c44}>
@@ -471,7 +471,7 @@ export default function HomeMobile() {
             </svg>
           </span>
           <span className={s.c98}>
-            CRM connecté
+            Suivi clients connecté
           </span>
         </div>
         {" "}
@@ -621,7 +621,7 @@ export default function HomeMobile() {
             Alexis Gavens
           </span>
           <span className={s.c121}>
-            Ex-responsable ADV & logistique
+            Ex-responsable administration des ventes (ADV) & logistique
           </span>
         </div>
       </div>

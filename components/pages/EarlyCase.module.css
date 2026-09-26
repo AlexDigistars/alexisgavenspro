@@ -1838,3 +1838,64 @@
 @media (max-width: 767px) {
   .c172, .c174, .c175, .c178, .c182, .c186, .c212 { font-size: 12px; }
 }
+
+/* Étiquette « Exemple » sur les chiffres illustratifs */
+.exampleRow { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.exampleTag { padding: 3px 8px; border-radius: 6px; background: #ECEAE3; color: #3A4556; font-family: var(--font-mono); font-size: 12px; }
+
+/* ===== Lots en accordéons : numéro, statut et titre toujours visibles ===== */
+.lotDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.lotSummary {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  list-style: none;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.lotSummary::-webkit-details-marker {
+  display: none;
+}
+
+.lotRow {
+  display: flex;
+}
+
+.lotChevron {
+  flex-shrink: 0;
+  margin-left: auto;
+  box-sizing: content-box;
+  padding: 7px;
+  border-radius: 50%;
+  background: #ECEAE3;
+  color: #0E1A2B;
+  transition: transform 0.2s ease;
+}
+
+.lotDetails[open] .lotChevron {
+  transform: rotate(180deg);
+}
+
+.lotDetails[open] > .lotSummary {
+  margin-bottom: 18px;
+}
+
+.lotSummary:hover .lotChevron {
+  background: #DCEAE7;
+}
+
+/* Boutons de rendez-vous ajoutés dans l'introduction et après la navigation reliée */
+.introCta,
+.proofCta {
+  align-self: flex-start;
+}
+
+/* Mobile : place pour le bouton Pause sous le texte d'un lot ouvert */
+@media (max-width: 767px) {
+  .c157, .c179 { padding-bottom: 64px; }
+}

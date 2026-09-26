@@ -102,6 +102,7 @@ export default function FormationIA() {
                 <span className={s.c29}>
                   au lieu d'une demi-heure
                 </span>
+                <span className={s.exampleTag}>Exemple</span>
               </div>
             </div>
           </div>
@@ -257,9 +258,6 @@ export default function FormationIA() {
           <div className={s.c52}>
             <span className={s.c53}>
               2 JOURS
-            </span>
-            <span className={s.c54}>
-              Le plus demandé
             </span>
           </div>
           {" "}

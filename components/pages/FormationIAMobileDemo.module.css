@@ -152,6 +152,7 @@
 .saved {
   align-self: flex-start;
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
   gap: 8px;
   padding: 10px 14px;
@@ -163,4 +164,12 @@
 
 .saved strong {
   font-size: 18px;
+}
+
+.exampleTag {
+  padding: 2px 7px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.18);
+  font-family: var(--font-mono);
+  font-size: 12px;
 }

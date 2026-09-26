@@ -658,3 +658,6 @@
 .pulse:not([data-scene] *) { animation-iteration-count: 2; }
 .float:not([data-scene] *) { animation-duration: 3s; animation-iteration-count: 1; }
 .prog:not([data-scene] *) { animation-duration: 5s; animation-iteration-count: 1; animation-fill-mode: forwards; }
+
+/* Étiquette « Exemple » sur le gain de temps illustratif */
+.exampleTag { align-self: flex-start; margin-top: 4px; padding: 2px 7px; border-radius: 6px; background: rgba(255, 255, 255, 0.18); color: #FFFFFF; font-family: var(--font-mono); font-size: 12px; }

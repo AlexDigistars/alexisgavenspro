@@ -23,6 +23,9 @@ export default function About() {
           <p className={s.c6}>
             Je viens des opérations. En administration des ventes et en logistique, j'ai commencé par automatiser les livraisons, puis créé un outil de suivi de machines utilisé chaque jour par l'équipe. C'est là que j'ai appris à comprendre le travail avant de concevoir le logiciel.
           </p>
+          <CalendlyLink className={`${s.c46} ${s.introCta}`}>
+            Réserver 20 min
+          </CalendlyLink>
         </div>
         {" "}
         <div className={s.c7}>
@@ -52,7 +55,7 @@ export default function About() {
         </h2>
         {" "}
         <p className={s.c16}>
-          Administration, qualité, logistique : j'ai connu les process qui déraillent, les fichiers en double et les outils qui ralentissent au lieu d'aider.
+          Administration, qualité, logistique : j'ai connu les méthodes de travail qui déraillent, les fichiers en double et les outils qui ralentissent au lieu d'aider.
         </p>
       </div>
       {" "}
@@ -106,7 +109,7 @@ export default function About() {
             2024 – 2026 · OPÉRATIONS
           </span>
           <span className={s.c23}>
-            Responsable ADV & logistique
+            Responsable administration des ventes (ADV) & logistique
           </span>
           <span className={s.c24}>
             Commandes, facturation, stocks, livraisons. Automatisation des livraisons récurrentes, puis une application mobile de suivi du parc, utilisée chaque jour par l'équipe.
@@ -178,7 +181,7 @@ export default function About() {
             Force de proposition
           </span>
           <span className={s.c24}>
-            Je challenge le besoin, je propose des options, et je vous dis quand un développement n'est pas utile.
+            Je questionne votre besoin, je propose des options, et je vous dis quand un développement n'est pas utile.
           </span>
         </div>
         {" "}
@@ -193,7 +196,7 @@ export default function About() {
             Rigueur et sécurité
           </span>
           <span className={s.c24}>
-            Des années de qualité et d'administration : vos données et vos process sont entre de bonnes mains.
+            Des années de qualité et d'administration : vos données et vos méthodes de travail sont entre de bonnes mains.
           </span>
         </div>
       </div>
