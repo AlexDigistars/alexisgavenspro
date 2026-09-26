@@ -1,4 +1,5 @@
 import Guarantees from "@/components/Guarantees";
+import BeforeAfter from "@/components/BeforeAfter";
 import ToolsLine from "@/components/ToolsLine";
 import Scene from "@/components/Scene";
 import Image from "next/image";
@@ -103,7 +104,7 @@ export default function HomeMobile() {
       </span>
       {" "}
       <h2 className={s.c26}>
-        De l&apos;éparpillement à un seul logiciel.
+        Des fichiers dispersés à un seul logiciel.
       </h2>
       {" "}
       <Scene className={s.stage}>
@@ -421,17 +422,17 @@ export default function HomeMobile() {
     {" "}
     <section className={s.c92} data-reveal>
       <span className={s.c93}>
-        Référence client
+        Dernière réalisation
       </span>
       <span className={s.earlyCompany}>Early · Agence de communication, une quinzaine de personnes</span>
       {" "}
       <h2 className={s.c94}>
-        Leur logiciel de gestion, transformé en vrai outil de pilotage.
+        Transformer un logiciel de gestion vieillissant en véritable outil de pilotage.
       </h2>
       <p className={s.earlyIntro}>
         Clients, équipes, planning, facturation : tout passait par un logiciel qui ne suivait plus. Je l&apos;ai repris et enrichi d&apos;outils pour chacun : les salariés, les managers et la direction.
       </p>
-      {" "}
+      <BeforeAfter />
       <figure className={s.c99}>
         <blockquote className={s.c100}>
           « Alexis a vraiment fait évoluer notre logiciel : il est plus rapide, plus réactif et bien plus simple à utiliser. »

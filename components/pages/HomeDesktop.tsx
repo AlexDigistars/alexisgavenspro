@@ -1,4 +1,5 @@
 import Guarantees from "@/components/Guarantees";
+import BeforeAfter from "@/components/BeforeAfter";
 import ToolsLine from "@/components/ToolsLine";
 import Scene from "@/components/Scene";
 import Image from "next/image";
@@ -280,7 +281,7 @@ export default function HomeDesktop() {
         </span>
         {" "}
         <h2 className={s.c58}>
-          De l&apos;éparpillement à un seul logiciel.
+          Des fichiers dispersés à un seul logiciel.
         </h2>
       </div>
       {" "}
@@ -1078,7 +1079,7 @@ export default function HomeDesktop() {
     <section className={s.c218} data-reveal>
       <div className={s.c219}>
         <span className={s.c220}>
-          Référence client
+          Dernière réalisation
         </span>
         {" "}
         <div className={s.c221}>
@@ -1092,33 +1093,28 @@ export default function HomeDesktop() {
         </div>
         {" "}
         <h2 className={s.c224}>
-          Leur logiciel de gestion, transformé en vrai outil de pilotage.
+          Transformer un logiciel de gestion vieillissant en véritable outil de pilotage.
         </h2>
         <p className={s.earlyIntro}>
           Clients, équipes, planning, facturation : tout passait par un logiciel qui ne suivait plus. Je l&apos;ai repris et enrichi d&apos;outils pour chacun : les salariés, les managers et la direction.
         </p>
-      </div>
-      {" "}
-      <div className={s.earlyQuote}>
-        <figure className={s.c225}>
-          <svg aria-hidden="true" focusable="false" width="28" height="22" viewBox="0 0 28 22" fill="#8FD0C5">
-            <path d="M0 22V12C0 5 4 1 11 0l1 3c-4 1-6 4-6 7h5v12zm16 0V12c0-7 4-11 11-12l1 3c-4 1-6 4-6 7h5v12z" />
-          </svg>
-          {" "}
-          <blockquote className={s.c226}>
-            Alexis a vraiment fait évoluer notre logiciel : il est plus rapide, plus réactif et bien plus simple à utiliser.
-          </blockquote>
-          {" "}
-          <figcaption className={s.c227}>
-            Joseph Herbinet, dirigeant d&apos;Early
-          </figcaption>
-        </figure>
         <Link className={s.c229} href="/realisations/early">
           {"Lire l'étude de cas "}
           <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M5 12h14M13 5l7 7-7 7" />
           </svg>
         </Link>
+      </div>
+      <div className={s.earlyVisual}>
+        <BeforeAfter />
+        <figure className={s.earlyQuote}>
+          <blockquote className={s.c226}>
+            « Alexis a vraiment fait évoluer notre logiciel : il est plus rapide, plus réactif et bien plus simple à utiliser. »
+          </blockquote>
+          <figcaption className={s.c227}>
+            Joseph Herbinet, dirigeant d&apos;Early
+          </figcaption>
+        </figure>
       </div>
     </section>
     {" "}

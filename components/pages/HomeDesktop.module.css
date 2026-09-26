@@ -1582,15 +1582,7 @@
   font-weight: 700;
   letter-spacing: -0.035em;
 }
-.c225 {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  padding: 28px;
-  border-radius: 16px;
-  background: #16253B;
-}
+
 .c226 {
   margin: 0;
   font-size: 20px;
@@ -1875,8 +1867,8 @@
 }
 
 /* Contour de focus : vert clair sur les fonds sombres, vert pétrole sur les fonds clairs qu'ils contiennent */
-:is(.c1, .c38, .c40, .c41, .c45, .c51, .c54, .c79, .c158, .c174, .c175, .c177, .c180, .c181, .c192, .c198, .c200, .c202, .c208, .c218, .c225, .c245, .c247, .c259, .c273) :focus-visible { outline-color: #8FD0C5; }
-:is(.c1, .c38, .c40, .c41, .c45, .c51, .c54, .c79, .c158, .c174, .c175, .c177, .c180, .c181, .c192, .c198, .c200, .c202, .c208, .c218, .c225, .c245, .c247, .c259, .c273) :is(.c5, .c9, .c12, .c13, .c15, .c19, .c20, .c24, .c34, .c39, .c46, .c53, .c60, .c63, .c64, .c66, .c68, .c70, .c72, .c74, .c76, .c97, .c98, .c112, .c117, .c118, .c121, .c122, .c125, .c126, .c129, .c130, .c131, .c132, .c133, .c134, .c135, .c137, .c140, .c142, .c144, .c147, .c148, .c150, .c151, .c153, .c156, .c161, .c165, .c167, .c170, .c171, .c173, .c176, .c182, .c184, .c186, .c188, .c190, .c193, .c197, .c199, .c201, .c203, .c204, .c207, .c211, .c212, .c244, .c270) :focus-visible { outline-color: #1D5C57; }
+:is(.c1, .c38, .c40, .c41, .c45, .c51, .c54, .c79, .c158, .c174, .c175, .c177, .c180, .c181, .c192, .c198, .c200, .c202, .c208, .c218, .c245, .c247, .c259, .c273) :focus-visible { outline-color: #8FD0C5; }
+:is(.c1, .c38, .c40, .c41, .c45, .c51, .c54, .c79, .c158, .c174, .c175, .c177, .c180, .c181, .c192, .c198, .c200, .c202, .c208, .c218, .c245, .c247, .c259, .c273) :is(.c5, .c9, .c12, .c13, .c15, .c19, .c20, .c24, .c34, .c39, .c46, .c53, .c60, .c63, .c64, .c66, .c68, .c70, .c72, .c74, .c76, .c97, .c98, .c112, .c117, .c118, .c121, .c122, .c125, .c126, .c129, .c130, .c131, .c132, .c133, .c134, .c135, .c137, .c140, .c142, .c144, .c147, .c148, .c150, .c151, .c153, .c156, .c161, .c165, .c167, .c170, .c171, .c173, .c176, .c182, .c184, .c186, .c188, .c190, .c193, .c197, .c199, .c201, .c203, .c204, .c207, .c211, .c212, .c244, .c270) :focus-visible { outline-color: #1D5C57; }
 
 /* Coordonnées cliquables (e-mail et téléphone), cible de 44 px de haut */
 .contactValueLink {
@@ -1924,8 +1916,10 @@
   .c96 > .c97:nth-child(3) > :first-child { flex: 0 0 55%; }
   /* Sur le terrain : téléphone moins haut (emplacements photo réduits) */
   .c181 { height: 520px; }
-  /* Référence Early et contact : deux colonnes */
-  .c218, .c259 { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px; }
+  /* Contact : deux colonnes */
+  .c259 { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px; }
+  /* Référence Early : texte, puis illustration avant / après et citation */
+  .c218 { grid-template-columns: minmax(0, 1fr); gap: 40px; }
   .c270 { padding: 32px 28px; gap: 22px; }
   /* Méthode : les 4 étapes sur une ligne */
   .c243 { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
@@ -1994,6 +1988,9 @@
 .ctaNote { font-size: 14px; color: #A9B2BF; }
 .projectLink { align-self: flex-start; }
 
-/* Bloc Early : texte à gauche, citation et lien à droite (les 4 tuiles sont supprimées) */
-.earlyQuote { display: flex; flex-direction: column; justify-content: center; gap: 24px; }
+/* Bloc Early : texte et lien à gauche ; illustration avant / après et citation à droite */
+.earlyVisual { display: flex; flex-direction: column; justify-content: center; gap: 28px; min-width: 0; }
+.earlyQuote { display: flex; flex-direction: column; gap: 10px; margin: 0; padding-left: 18px; border-left: 2px solid #8FD0C5; }
+.earlyQuote .c226 { font-size: 18px; }
+.c219 > .c229 { align-self: flex-start; }
 .c227 { font-size: 15px; color: #A9B2BF; }
