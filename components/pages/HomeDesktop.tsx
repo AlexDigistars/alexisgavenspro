@@ -19,21 +19,21 @@ export default function HomeDesktop() {
             <span className={`${s.c5} ${s.pulse}`}></span>
             {" "}
             <span>
-              Logiciels métier sur mesure pour PME
+              Pour les PME · Partout en France
             </span>
           </div>
           {" "}
           <h1 className={s.c6}>
-            Des logiciels métier qui épousent votre façon de travailler.
+            Je crée des logiciels métier sur mesure pour vous.
           </h1>
           {" "}
           <p className={s.c7}>
-            Je conçois, reprends et fais évoluer les outils internes des PME.
+            Un seul outil pour piloter votre entreprise, gagner du temps et en finir avec les ressaisies.
           </p>
           {" "}
           <div className={s.c8}>
             <CalendlyLink className={s.c9}>
-              Réserver 20 min d'échange
+              Réserver 20 min
             </CalendlyLink>
             {" "}
             <a className={s.c10} href="#v2-demo">
@@ -704,13 +704,11 @@ export default function HomeDesktop() {
     <section className={s.c137} data-reveal id="v2-demo">
       <div className={s.c94}>
         <h2 className={s.c58}>
-          Simple, clair,
-          <br />
-          et tout est relié.
+          Un logiciel complet, connecté, simple à utiliser.
         </h2>
         {" "}
         <p className={s.c138}>
-          Au bureau comme sur le terrain : seul l'utile à l'écran, et un clic vous mène à la bonne information.
+          Au bureau comme sur le terrain : seul l'utile s'affiche à l'écran, et un clic vous mène à la bonne information.
         </p>
       </div>
       {" "}
@@ -1171,7 +1169,7 @@ export default function HomeDesktop() {
           </svg>
           <div className={s.c215}>
             <span className={s.c216}>
-              Relié
+              Connecté
             </span>
             <span className={s.c217}>
               Clients, commandes, factures : tout se répond.
@@ -1213,8 +1211,11 @@ export default function HomeDesktop() {
         </div>
         {" "}
         <h2 className={s.c224}>
-          Un logiciel repris, accéléré et enrichi, sans jamais l'arrêter.
+          Un logiciel existant, transformé en vrai outil de pilotage.
         </h2>
+        <p className={s.earlyIntro}>
+          Rendu simple à utiliser, puis enrichi de ce qui manquait : facturation automatique, suivi clients, pilotage des équipes.
+        </p>
         {" "}
         <figure className={s.c225}>
           <svg aria-hidden="true" focusable="false" width="28" height="22" viewBox="0 0 28 22" fill="#8FD0C5">
@@ -1403,7 +1404,7 @@ export default function HomeDesktop() {
       <div className={s.c250}>
         <div className={s.c251}>
           <span className={s.c252}>
-            Mes engagements, écrits dans chaque devis
+            Mes engagements, noir sur blanc.
           </span>
           <span className={s.c89}>
             SANS PETITES LIGNES
@@ -1522,7 +1523,7 @@ export default function HomeDesktop() {
                 Alexis Gavens
               </span>
               <span className={s.c263}>
-                Ex-responsable administration des ventes (ADV) & logistique, développeur de logiciels métier
+                Créateur de logiciels métier · ex-responsable ADV & logistique
               </span>
             </div>
           </div>
@@ -1545,7 +1546,7 @@ export default function HomeDesktop() {
               RÉALISATION
             </span>
             <span className={s.c269}>
-              Early : l'étude de cas complète →
+              Early : l&apos;étude de cas complète&nbsp;→
             </span>
           </Link>
           {" "}
@@ -1554,7 +1555,7 @@ export default function HomeDesktop() {
               FORMATION
             </span>
             <span className={s.c269}>
-              Former vos équipes à l'IA →
+              Former vos équipes à l&apos;IA&nbsp;→
             </span>
           </Link>
         </div>
@@ -1570,7 +1571,7 @@ export default function HomeDesktop() {
         </p>
         {" "}
         <CalendlyLink className={s.c273}>
-          Réserver un créneau
+          Réserver 20 min
         </CalendlyLink>
         {" "}
         <div className={s.c274}>

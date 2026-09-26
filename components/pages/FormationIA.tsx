@@ -28,7 +28,7 @@ export default function FormationIA() {
           {" "}
           <div className={s.c8}>
             <CalendlyLink className={s.c9}>
-              Organiser une formation
+              Réserver 20 min
             </CalendlyLink>
             {" "}
             <a className={s.c10} href="#fi-formats">

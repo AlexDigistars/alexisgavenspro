@@ -947,3 +947,6 @@
 .pulse:not([data-scene] *) { animation-iteration-count: 2; }
 .flow:not([data-scene] *) { animation-iteration-count: 4; }
 .grow:not([data-scene] *) { animation-iteration-count: 1; animation-fill-mode: forwards; }
+
+/* Bloc Early : phrase d'introduction sous le titre */
+.earlyIntro { margin: 0; font-size: 16px; line-height: 1.5; color: #A9B2BF; }

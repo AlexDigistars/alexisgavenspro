@@ -1509,7 +1509,7 @@ export default function EarlyCase() {
       {" "}
       <div className={s.c244}>
         <CalendlyLink className={s.c245}>
-          Réserver un créneau
+          Réserver 20 min
         </CalendlyLink>
         {" "}
         <Link className={s.c246} href="/">

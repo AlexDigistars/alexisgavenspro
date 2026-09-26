@@ -41,7 +41,7 @@ export default function OpengraphImage() {
         <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
           <div style={{ fontSize: 26, color: "#8FD0C5" }}>Logiciels métier sur mesure pour PME</div>
           <div style={{ fontSize: 68, fontWeight: 700, lineHeight: 1.05, letterSpacing: "-0.03em" }}>
-            Des logiciels métier qui épousent votre façon de travailler.
+            Je crée des logiciels métier sur mesure pour vous.
           </div>
         </div>
       </div>

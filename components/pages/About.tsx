@@ -17,7 +17,7 @@ export default function About() {
           </span>
           {" "}
           <h1 className={s.c5}>
-            J'ai été l'utilisateur de ces outils avant d'en être le concepteur.
+            J'ai utilisé ces outils avant de les créer.
           </h1>
           {" "}
           <p className={s.c6}>
