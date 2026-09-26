@@ -1,4 +1,4 @@
-import { CONTACT_EMAIL, CONTACT_PHONE_HREF, LEGAL_UPDATED_AT } from "@/config/site";
+import { CONTACT_EMAIL, CONTACT_PHONE, CONTACT_PHONE_HREF, LEGAL_UPDATED_AT } from "@/config/site";
 import s from "./LegalNotice.module.css";
 
 // Généré depuis design-reference/MentionsLegales.html (textes et styles de la maquette).
@@ -156,8 +156,16 @@ export default function LegalNotice() {
           </h2>
           {" "}
           <p className={s.c16}>
-            {"Écrivez-moi à "}<a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>{" ou appelez le "}<a href={CONTACT_PHONE_HREF}>06 38 61 08 42</a>.
+            Écrivez-moi ou appelez-moi :
           </p>
+          <div className={s.contactLinks}>
+            <a className={s.contactLink} href={`mailto:${CONTACT_EMAIL}`}>
+              {CONTACT_EMAIL}
+            </a>
+            <a className={s.contactLink} href={CONTACT_PHONE_HREF}>
+              {CONTACT_PHONE}
+            </a>
+          </div>
         </section>
       </article>
     </div>

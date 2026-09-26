@@ -164,7 +164,7 @@
 .c17 {
   font-family: var(--font-mono);
   font-size: 10px;
-  color: #8A93A0;
+  color: #5A6474;
 }
 .c18 {
   display: flex;
@@ -212,7 +212,7 @@
   border-radius: 999px;
   background: #F3F2EE;
   font-size: 11px;
-  color: #8A93A0;
+  color: #5A6474;
 }
 .c25 {
   display: grid;
@@ -246,7 +246,7 @@
   font-weight: 600;
 }
 .c30 {
-  color: #8A93A0;
+  color: #5A6474;
 }
 .c31 {
   color: #1D5C57;
@@ -260,7 +260,7 @@
   border-radius: 8px;
   border: 1px solid #ECEAE3;
   font-size: 11px;
-  opacity: 0.6;
+  opacity: 1;
 }
 .c33 {
   height: 58px;
@@ -829,7 +829,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  color: #8A93A0;
+  color: #5A6474;
   text-decoration: line-through;
 }
 .c115 {
@@ -869,7 +869,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  color: #8A93A0;
+  color: #5A6474;
   text-decoration: line-through;
 }
 .c120 {
@@ -904,7 +904,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  color: #8A93A0;
+  color: #5A6474;
   text-decoration: line-through;
 }
 .c124 {
@@ -939,7 +939,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  color: #8A93A0;
+  color: #5A6474;
   text-decoration: line-through;
 }
 .c128 {
@@ -1130,7 +1130,7 @@
   justify-content: space-between;
   align-items: center;
   font-size: 11px;
-  opacity: 0.55;
+  opacity: 1;
 }
 .c153 {
   padding: 2px 6px;
@@ -1205,7 +1205,7 @@
 .c164 {
   font-size: 9px;
   font-weight: 700;
-  color: #8A93A0;
+  color: #5A6474;
 }
 .c165 {
   display: flex;
@@ -1379,7 +1379,7 @@
   border-radius: 12px;
   background: #FFFFFF;
   font-size: 12px;
-  opacity: 0.6;
+  opacity: 1;
 }
 .c189 {
   display: grid;
@@ -1429,7 +1429,7 @@
   grid-template-columns: 56px repeat(5, minmax(0, 1fr));
   font-family: var(--font-mono);
   font-size: 10px;
-  color: #8A93A0;
+  color: #5A6474;
 }
 .c195 {
   display: flex;
@@ -1933,7 +1933,7 @@
 .c268 {
   font-family: var(--font-mono);
   font-size: 11px;
-  color: #BFD8D5;
+  color: #DCEAE7;
 }
 .c269 {
   font-size: 16px;
@@ -2141,4 +2141,19 @@
 .c8, .c261 { flex-wrap: wrap; }
 @media (max-width: 1360px) and (min-width: 1201px) {
   .c6 { font-size: 58px; }
+}
+
+/* Contour de focus : vert clair sur les fonds sombres, vert pétrole sur les fonds clairs qu'ils contiennent */
+:is(.c1, .c38, .c40, .c41, .c45, .c51, .c54, .c79, .c158, .c174, .c175, .c177, .c180, .c181, .c192, .c198, .c200, .c202, .c208, .c218, .c225, .c231, .c232, .c235, .c236, .c237, .c238, .c245, .c247, .c259, .c273) :focus-visible { outline-color: #8FD0C5; }
+:is(.c1, .c38, .c40, .c41, .c45, .c51, .c54, .c79, .c158, .c174, .c175, .c177, .c180, .c181, .c192, .c198, .c200, .c202, .c208, .c218, .c225, .c231, .c232, .c235, .c236, .c237, .c238, .c245, .c247, .c259, .c273) :is(.c5, .c9, .c12, .c13, .c15, .c19, .c20, .c24, .c34, .c39, .c46, .c53, .c60, .c63, .c64, .c66, .c68, .c70, .c72, .c74, .c76, .c92, .c97, .c98, .c112, .c117, .c118, .c121, .c122, .c125, .c126, .c129, .c130, .c131, .c132, .c133, .c134, .c135, .c137, .c140, .c142, .c144, .c147, .c148, .c150, .c151, .c153, .c156, .c161, .c165, .c167, .c170, .c171, .c173, .c176, .c182, .c184, .c186, .c188, .c190, .c193, .c197, .c199, .c201, .c203, .c204, .c207, .c211, .c212, .c241, .c244, .c250, .c255, .c270) :focus-visible { outline-color: #1D5C57; }
+
+/* Coordonnées cliquables (e-mail et téléphone), cible de 44 px de haut */
+.contactValueLink {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin: -12px 0;
+  text-decoration: underline;
+  text-decoration-color: rgba(14, 26, 43, 0.25);
+  text-underline-offset: 3px;
 }

@@ -70,7 +70,7 @@ export default function HomeMobile() {
           {" "}
           <div className={`${s.c19} ${s.toast}`}>
             <span className={s.c20}>
-              <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+              <svg aria-hidden="true" focusable="false" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M5 12l5 5L20 7" />
               </svg>
             </span>
@@ -174,7 +174,7 @@ export default function HomeMobile() {
         Créer, repenser, améliorer.
       </h2>
       {" "}
-      <SwipeCarousel label="Créer, repenser, améliorer">
+      <SwipeCarousel label="Créer, repenser, améliorer" slideLabels={["Créer", "Repenser", "Améliorer"]}>
         <div className={s.c44}>
           <div className={s.c45}>
             <div className={s.c46}></div>
@@ -271,7 +271,10 @@ export default function HomeMobile() {
         Au bureau comme sur le terrain, un clic vous mène à la bonne information.
       </p>
       {" "}
-      <SwipeCarousel label="Exemples d'écrans">
+      <SwipeCarousel
+        label="Exemples d'écrans"
+        slideLabels={["Un clic, la bonne information", "Sur le terrain", "Planning des interventions", "Zéro ressaisie"]}
+      >
       <div className={s.c62}>
         <span className={s.c63}>
           Un clic, la bonne information
@@ -289,7 +292,7 @@ export default function HomeMobile() {
           </span>
         </div>
         {" "}
-        <svg className={s.c66} width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <svg aria-hidden="true" focusable="false" className={s.c66} width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M12 5v14M5 12l7 7 7-7" />
         </svg>
         {" "}
@@ -302,7 +305,7 @@ export default function HomeMobile() {
           </span>
         </div>
         {" "}
-        <svg className={s.c66} width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <svg aria-hidden="true" focusable="false" className={s.c66} width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M12 5v14M5 12l7 7 7-7" />
         </svg>
         {" "}
@@ -431,7 +434,7 @@ export default function HomeMobile() {
       <div className={s.c95}>
         <div className={s.c96}>
           <span className={s.c97}>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8FD0C5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8FD0C5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M21 12a9 9 0 1 1-2.64-6.36" />
               <path d="M21 3v6h-6" />
               <circle cx="12" cy="12" r="3" />
@@ -444,7 +447,7 @@ export default function HomeMobile() {
         {" "}
         <div className={s.c96}>
           <span className={s.c97}>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8FD0C5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8FD0C5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M6 2h9l5 5v15H6z" />
               <path d="M14 2v6h6" />
               <path d="M9 15l2 2 4-4" />
@@ -457,7 +460,7 @@ export default function HomeMobile() {
         {" "}
         <div className={s.c96}>
           <span className={s.c97}>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8FD0C5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8FD0C5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <circle cx="9" cy="8" r="3.5" />
               <path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6" />
               <path d="M16 11h6M19 8v6" />
@@ -470,7 +473,7 @@ export default function HomeMobile() {
         {" "}
         <div className={s.c96}>
           <span className={s.c97}>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8FD0C5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8FD0C5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <circle cx="8" cy="8" r="3" />
               <circle cx="17" cy="9" r="2.5" />
               <path d="M2 20c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5" />

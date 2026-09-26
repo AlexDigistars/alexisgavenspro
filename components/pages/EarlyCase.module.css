@@ -144,7 +144,7 @@
 .c19 {
   font-family: var(--font-mono);
   font-size: 10px;
-  color: #8A93A0;
+  color: #5A6474;
 }
 .c20 {
   display: flex;
@@ -214,7 +214,7 @@
   gap: 6px;
   font-size: 10px;
   font-weight: 600;
-  color: #8A93A0;
+  color: #5A6474;
   text-align: center;
 }
 .c32 {
@@ -491,11 +491,11 @@
 .c74 {
   font-family: var(--font-mono);
   font-size: 11px;
-  color: #8A93A0;
+  color: #5A6474;
 }
 .c75 {
   font-size: 11px;
-  color: #8A93A0;
+  color: #5A6474;
 }
 .c76 {
   height: 22px;
@@ -677,7 +677,7 @@
   font-weight: 600;
 }
 .c101 {
-  color: #8A93A0;
+  color: #5A6474;
 }
 .c102 {
   color: #0E1A2B;
@@ -698,7 +698,7 @@
 .c105 {
   font-size: 12px;
   font-weight: 500;
-  color: #8A93A0;
+  color: #5A6474;
 }
 .c106 {
   display: grid;
@@ -1184,7 +1184,7 @@
   padding: 8px 0;
   border-top: 1px solid #ECEAE3;
   font-size: 13px;
-  color: #8A93A0;
+  color: #5A6474;
 }
 .c177 {
   text-decoration: line-through;
@@ -1287,7 +1287,7 @@
   border-radius: 10px;
   background: #16253B;
   font-size: 13px;
-  color: #8A93A0;
+  color: #A9B2BF;
 }
 .c192 {
   width: 14px;
@@ -1403,7 +1403,7 @@
   border-radius: 12px;
   background: #FFFFFF;
   border: 1px solid #E3E1DA;
-  opacity: 0.6;
+  opacity: 1;
 }
 .c209 {
   width: 10px;
@@ -1819,3 +1819,7 @@
 /* Boutons jamais coupés sur deux lignes, rangées de boutons qui passent à la ligne */
 .c245 { white-space: nowrap; }
 .c244 { flex-wrap: wrap; }
+
+/* Contour de focus : vert clair sur les fonds sombres, vert pétrole sur les fonds clairs qu'ils contiennent */
+:is(.c1, .c57, .c86, .c89, .c90, .c93, .c94, .c133, .c144, .c170, .c172, .c185, .c187, .c191, .c200, .c214, .c220, .c221, .c223, .c241) :focus-visible { outline-color: #8FD0C5; }
+:is(.c1, .c57, .c86, .c89, .c90, .c93, .c94, .c133, .c144, .c170, .c172, .c185, .c187, .c191, .c200, .c214, .c220, .c221, .c223, .c241) :is(.c13, .c14, .c15, .c17, .c21, .c25, .c36, .c37, .c38, .c39, .c40, .c41, .c42, .c43, .c45, .c46, .c47, .c48, .c49, .c50, .c51, .c61, .c62, .c71, .c72, .c76, .c80, .c81, .c82, .c83, .c84, .c98, .c100, .c108, .c111, .c114, .c116, .c120, .c123, .c125, .c132, .c135, .c137, .c140, .c142, .c145, .c148, .c149, .c150, .c151, .c152, .c157, .c160, .c164, .c167, .c168, .c174, .c175, .c179, .c181, .c183, .c184, .c194, .c195, .c199, .c203, .c204, .c206, .c207, .c208, .c209, .c211, .c213, .c217, .c232, .c233, .c236, .c237, .c238, .c239, .c240, .c245) :focus-visible { outline-color: #1D5C57; }

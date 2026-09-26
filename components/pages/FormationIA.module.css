@@ -117,7 +117,7 @@
 .c15 {
   font-family: var(--font-mono);
   font-size: 10px;
-  color: #8A93A0;
+  color: #5A6474;
 }
 .c16 {
   align-self: flex-end;
@@ -523,7 +523,7 @@
 .c72 {
   font-size: 12px;
   line-height: 1.5;
-  color: #8A93A0;
+  color: #A9B2BF;
 }
 .c73 {
   flex-grow: 1;
@@ -649,3 +649,7 @@
 /* Boutons jamais coupés sur deux lignes, rangées de boutons qui passent à la ligne */
 .c9 { white-space: nowrap; }
 .c8 { flex-wrap: wrap; }
+
+/* Contour de focus : vert clair sur les fonds sombres, vert pétrole sur les fonds clairs qu'ils contiennent */
+:is(.c1, .c16, .c17, .c27, .c51, .c54, .c62, .c64, .c66, .c67, .c71, .c73) :focus-visible { outline-color: #8FD0C5; }
+:is(.c1, .c16, .c17, .c27, .c51, .c54, .c62, .c64, .c66, .c67, .c71, .c73) :is(.c5, .c9, .c12, .c18, .c19, .c20, .c23, .c24, .c25, .c35, .c36, .c39, .c40, .c41, .c42, .c43, .c44, .c46, .c61) :focus-visible { outline-color: #1D5C57; }

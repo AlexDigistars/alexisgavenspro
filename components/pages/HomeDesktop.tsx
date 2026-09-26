@@ -2,7 +2,7 @@ import Image from "next/image";
 import portrait from "@/public/alexis-portrait.jpg";
 import Link from "next/link";
 import CalendlyLink from "@/components/CalendlyLink";
-import { CONTACT_EMAIL } from "@/config/site";
+import { CONTACT_EMAIL, CONTACT_PHONE, CONTACT_PHONE_HREF } from "@/config/site";
 import s from "./HomeDesktop.module.css";
 
 // Généré depuis design-reference/AccueilV2.html (textes et styles de la maquette).
@@ -37,7 +37,7 @@ export default function HomeDesktop() {
             {" "}
             <a className={s.c10} href="#v2-demo">
               {"Voir ce que je construis "}
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M12 5v14M5 12l7 7 7-7" />
               </svg>
             </a>
@@ -66,28 +66,28 @@ export default function HomeDesktop() {
             <div className={s.c18}>
               <div className={s.c19}>
                 <span className={s.c20}>
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <rect x="3" y="3" width="7" height="18" rx="1" />
                     <rect x="14" y="3" width="7" height="11" rx="1" />
                   </svg>
                 </span>
                 {" "}
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8A93A0" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8A93A0" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <rect x="3" y="4" width="18" height="17" rx="2" />
                   <path d="M3 9h18M8 2v4M16 2v4" />
                 </svg>
                 {" "}
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8A93A0" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8A93A0" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M3 7l9-4 9 4-9 4z" />
                   <path d="M3 7v10l9 4 9-4V7" />
                 </svg>
                 {" "}
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8A93A0" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8A93A0" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <circle cx="9" cy="8" r="4" />
                   <path d="M2 21c0-4 3-6 7-6s7 2 7 6" />
                 </svg>
                 {" "}
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8A93A0" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8A93A0" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M6 2h9l5 5v15H6z" />
                   <path d="M14 2v6h6" />
                 </svg>
@@ -202,7 +202,7 @@ export default function HomeDesktop() {
                 {" "}
                 <div className={`${s.c40} ${s.toast}`}>
                   <span className={s.c41}>
-                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                    <svg aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M5 12l5 5L20 7" />
                     </svg>
                   </span>
@@ -253,7 +253,7 @@ export default function HomeDesktop() {
               </span>
               {" "}
               <div className={s.c53}>
-                <svg width="170" height="70" viewBox="0 0 170 70" fill="none">
+                <svg aria-hidden="true" focusable="false" width="170" height="70" viewBox="0 0 170 70" fill="none">
                   <path className={s.sign} d="M14 48c10-22 18-30 22-24s-8 26 0 22 14-26 20-22-2 20 6 18 10-16 16-14 0 14 8 12 14-10 22-8 10 6 18 2" stroke="#0E1A2B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
@@ -339,7 +339,7 @@ export default function HomeDesktop() {
         </div>
         {" "}
         <div className={s.c75}>
-          <svg width="100" height="24" viewBox="0 0 100 24" fill="none">
+          <svg aria-hidden="true" focusable="false" width="100" height="24" viewBox="0 0 100 24" fill="none">
             <path className={s.flow} d="M4 12h84" stroke="#1D5C57" strokeWidth="2" />
             <path d="M84 5l10 7-10 7" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
@@ -425,7 +425,7 @@ export default function HomeDesktop() {
         </span>
         {" "}
         <span className={s.c92}>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M6 2h9l5 5v15H6z" />
             <path d="M14 2v6h6" />
             <path d="M12 12v6M9.5 14h4" />
@@ -434,7 +434,7 @@ export default function HomeDesktop() {
         </span>
         {" "}
         <span className={s.c92}>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <rect x="4" y="3" width="16" height="18" rx="2" />
             <path d="M4 9h16M4 15h16M10 9v12" />
           </svg>
@@ -442,7 +442,7 @@ export default function HomeDesktop() {
         </span>
         {" "}
         <span className={s.c92}>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <rect x="3" y="5" width="18" height="14" rx="2" />
             <path d="M3 7l9 6 9-6" />
           </svg>
@@ -450,7 +450,7 @@ export default function HomeDesktop() {
         </span>
         {" "}
         <span className={s.c92}>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <rect x="3" y="4" width="18" height="17" rx="2" />
             <path d="M3 9h18M8 2v4M16 2v4" />
           </svg>
@@ -458,7 +458,7 @@ export default function HomeDesktop() {
         </span>
         {" "}
         <span className={s.c92}>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <rect x="4" y="3" width="16" height="18" rx="2" />
             <path d="M4 9h16M4 15h16M10 9v12" />
           </svg>
@@ -466,7 +466,7 @@ export default function HomeDesktop() {
         </span>
         {" "}
         <span className={s.c92}>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <rect x="3" y="5" width="18" height="14" rx="2" />
             <path d="M3 7l9 6 9-6" />
           </svg>
@@ -474,7 +474,7 @@ export default function HomeDesktop() {
         </span>
         {" "}
         <span className={s.c92}>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <rect x="2" y="5" width="20" height="14" rx="2" />
             <path d="M2 10h20M6 15h4" />
           </svg>
@@ -482,7 +482,7 @@ export default function HomeDesktop() {
         </span>
         {" "}
         <span className={s.c92}>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M9 3L7 21M17 3l-2 18M4 8h17M3 16h17" />
           </svg>
           Slack
@@ -554,12 +554,12 @@ export default function HomeDesktop() {
               </span>
               <span className={s.c116}>
                 <span className={`${s.c117} ${s.bad}`}>
-                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="3.5" strokeLinecap="round">
+                  <svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="3.5" strokeLinecap="round">
                     <path d="M6 12h12" />
                   </svg>
                 </span>
                 <span className={`${s.c118} ${s.good}`}>
-                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round">
+                  <svg aria-hidden="true" focusable="false" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M5 12l5 5L20 7" />
                   </svg>
                 </span>
@@ -577,12 +577,12 @@ export default function HomeDesktop() {
               </span>
               <span className={s.c116}>
                 <span className={`${s.c121} ${s.bad}`}>
-                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="3.5" strokeLinecap="round">
+                  <svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="3.5" strokeLinecap="round">
                     <path d="M6 12h12" />
                   </svg>
                 </span>
                 <span className={`${s.c122} ${s.good}`}>
-                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round">
+                  <svg aria-hidden="true" focusable="false" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M5 12l5 5L20 7" />
                   </svg>
                 </span>
@@ -600,12 +600,12 @@ export default function HomeDesktop() {
               </span>
               <span className={s.c116}>
                 <span className={`${s.c125} ${s.bad}`}>
-                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="3.5" strokeLinecap="round">
+                  <svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="3.5" strokeLinecap="round">
                     <path d="M6 12h12" />
                   </svg>
                 </span>
                 <span className={`${s.c126} ${s.good}`}>
-                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round">
+                  <svg aria-hidden="true" focusable="false" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M5 12l5 5L20 7" />
                   </svg>
                 </span>
@@ -623,12 +623,12 @@ export default function HomeDesktop() {
               </span>
               <span className={s.c116}>
                 <span className={`${s.c129} ${s.bad}`}>
-                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="3.5" strokeLinecap="round">
+                  <svg aria-hidden="true" focusable="false" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="3.5" strokeLinecap="round">
                     <path d="M6 12h12" />
                   </svg>
                 </span>
                 <span className={`${s.c130} ${s.good}`}>
-                  <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round">
+                  <svg aria-hidden="true" focusable="false" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M5 12l5 5L20 7" />
                   </svg>
                 </span>
@@ -778,12 +778,12 @@ export default function HomeDesktop() {
                 </span>
               </div>
               {" "}
-              <svg className={`${s.c154} ${s.cur}`} width="20" height="20" viewBox="0 0 24 24" fill="#0E1A2B" stroke="#FFFFFF" strokeWidth="1.5" strokeLinejoin="round">
+              <svg aria-hidden="true" focusable="false" className={`${s.c154} ${s.cur}`} width="20" height="20" viewBox="0 0 24 24" fill="#0E1A2B" stroke="#FFFFFF" strokeWidth="1.5" strokeLinejoin="round">
                 <path d="M4 2l16 10-7 2-3 7z" />
               </svg>
             </div>
             {" "}
-            <svg className={s.c155} width="24" height="16" viewBox="0 0 24 16" fill="none">
+            <svg aria-hidden="true" focusable="false" className={s.c155} width="24" height="16" viewBox="0 0 24 16" fill="none">
               <path className={s.flow} d="M1 8h16" stroke="#1D5C57" strokeWidth="2" />
               <path d="M15 3l6 5-6 5" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
@@ -849,12 +849,12 @@ export default function HomeDesktop() {
                 </span>
               </div>
               {" "}
-              <svg className={`${s.c169} ${s.cur}`} width="20" height="20" viewBox="0 0 24 24" fill="#0E1A2B" stroke="#FFFFFF" strokeWidth="1.5" strokeLinejoin="round">
+              <svg aria-hidden="true" focusable="false" className={`${s.c169} ${s.cur}`} width="20" height="20" viewBox="0 0 24 24" fill="#0E1A2B" stroke="#FFFFFF" strokeWidth="1.5" strokeLinejoin="round">
                 <path d="M4 2l16 10-7 2-3 7z" />
               </svg>
             </div>
             {" "}
-            <svg className={s.c155} width="24" height="16" viewBox="0 0 24 16" fill="none">
+            <svg aria-hidden="true" focusable="false" className={s.c155} width="24" height="16" viewBox="0 0 24 16" fill="none">
               <path className={s.flow} d="M1 8h16" stroke="#1D5C57" strokeWidth="2" />
               <path d="M15 3l6 5-6 5" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
@@ -903,7 +903,7 @@ export default function HomeDesktop() {
               </div>
               {" "}
               <span className={s.c175}>
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M22 2L11 13" />
                   <path d="M22 2l-7 20-4-9-9-4z" />
                 </svg>
@@ -1084,7 +1084,7 @@ export default function HomeDesktop() {
             <div className={s.c209}>
               <div className={s.c210}>
                 <span className={s.c211}>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0E1A2B" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0E1A2B" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                     <rect x="3" y="5" width="18" height="14" rx="2" />
                     <path d="M3 7l9 6 9-6" />
                   </svg>
@@ -1099,7 +1099,7 @@ export default function HomeDesktop() {
               {" "}
               <div className={s.c210}>
                 <span className={s.c211}>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0E1A2B" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0E1A2B" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M6 2h9l5 5v15H6z" />
                     <path d="M9 13h8M9 17h6" />
                   </svg>
@@ -1114,7 +1114,7 @@ export default function HomeDesktop() {
               {" "}
               <div className={s.c210}>
                 <span className={s.c212}>
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <svg aria-hidden="true" focusable="false" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M5 12l5 5L20 7" />
                   </svg>
                 </span>
@@ -1132,7 +1132,7 @@ export default function HomeDesktop() {
       {" "}
       <div className={s.c213}>
         <div className={s.c214}>
-          <svg className={s.c155} width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <svg aria-hidden="true" focusable="false" className={s.c155} width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <circle cx="12" cy="12" r="9" />
             <path d="M9 12h6" />
           </svg>
@@ -1147,7 +1147,7 @@ export default function HomeDesktop() {
         </div>
         {" "}
         <div className={s.c214}>
-          <svg className={s.c155} width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <svg aria-hidden="true" focusable="false" className={s.c155} width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <rect x="3" y="3" width="7" height="7" rx="1.5" />
             <rect x="14" y="3" width="7" height="7" rx="1.5" />
             <rect x="3" y="14" width="7" height="7" rx="1.5" />
@@ -1164,7 +1164,7 @@ export default function HomeDesktop() {
         </div>
         {" "}
         <div className={s.c214}>
-          <svg className={s.c155} width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <svg aria-hidden="true" focusable="false" className={s.c155} width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1" />
             <path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1" />
           </svg>
@@ -1179,7 +1179,7 @@ export default function HomeDesktop() {
         </div>
         {" "}
         <div className={s.c214}>
-          <svg className={s.c155} width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <svg aria-hidden="true" focusable="false" className={s.c155} width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M13 2L4 14h7l-1 8 9-12h-7z" />
           </svg>
           <div className={s.c215}>
@@ -1216,7 +1216,7 @@ export default function HomeDesktop() {
         </h2>
         {" "}
         <figure className={s.c225}>
-          <svg width="28" height="22" viewBox="0 0 28 22" fill="#8FD0C5">
+          <svg aria-hidden="true" focusable="false" width="28" height="22" viewBox="0 0 28 22" fill="#8FD0C5">
             <path d="M0 22V12C0 5 4 1 11 0l1 3c-4 1-6 4-6 7h5v12zm16 0V12c0-7 4-11 11-12l1 3c-4 1-6 4-6 7h5v12z" />
           </svg>
           {" "}
@@ -1236,7 +1236,7 @@ export default function HomeDesktop() {
         {" "}
         <Link className={s.c229} href="/realisations/early">
           {"Lire l'étude de cas "}
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M5 12h14M13 5l7 7-7 7" />
           </svg>
         </Link>
@@ -1245,7 +1245,7 @@ export default function HomeDesktop() {
       <div className={s.c230}>
         <div className={s.c231}>
           <span className={`${s.c232} ${s.float}`}>
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8FD0C5" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
+            <svg aria-hidden="true" focusable="false" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8FD0C5" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
               <path d="M21 12a9 9 0 1 1-2.64-6.36" />
               <path d="M21 3v6h-6" />
               <circle cx="12" cy="12" r="3" />
@@ -1263,7 +1263,7 @@ export default function HomeDesktop() {
         {" "}
         <div className={s.c231}>
           <span className={`${s.c235} ${s.float}`}>
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8FD0C5" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
+            <svg aria-hidden="true" focusable="false" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8FD0C5" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
               <path d="M6 2h9l5 5v15H6z" />
               <path d="M14 2v6h6" />
               <path d="M9 15l2 2 4-4" />
@@ -1281,7 +1281,7 @@ export default function HomeDesktop() {
         {" "}
         <div className={s.c231}>
           <span className={`${s.c236} ${s.float}`}>
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8FD0C5" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
+            <svg aria-hidden="true" focusable="false" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8FD0C5" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
               <circle cx="9" cy="8" r="3.5" />
               <path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6" />
               <path d="M16 11h6M19 8v6" />
@@ -1299,7 +1299,7 @@ export default function HomeDesktop() {
         {" "}
         <div className={s.c231}>
           <span className={`${s.c237} ${s.float}`}>
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8FD0C5" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
+            <svg aria-hidden="true" focusable="false" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#8FD0C5" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
               <circle cx="8" cy="8" r="3" />
               <circle cx="17" cy="9" r="2.5" />
               <path d="M2 20c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5" />
@@ -1331,7 +1331,7 @@ export default function HomeDesktop() {
       </div>
       {" "}
       <CalendlyLink className={s.c241}>
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0E1A2B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0E1A2B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <rect x="3" y="4" width="18" height="17" rx="2" />
           <path d="M3 9h18M8 2v4M16 2v4" />
         </svg>
@@ -1412,7 +1412,7 @@ export default function HomeDesktop() {
         <div className={s.c253}>
           <div className={s.c254}>
             <span className={s.c255}>
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+              <svg aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M5 12l5 5L20 7" />
               </svg>
             </span>
@@ -1428,7 +1428,7 @@ export default function HomeDesktop() {
           {" "}
           <div className={s.c254}>
             <span className={s.c255}>
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+              <svg aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M5 12l5 5L20 7" />
               </svg>
             </span>
@@ -1444,7 +1444,7 @@ export default function HomeDesktop() {
           {" "}
           <div className={s.c254}>
             <span className={s.c255}>
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+              <svg aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M5 12l5 5L20 7" />
               </svg>
             </span>
@@ -1460,7 +1460,7 @@ export default function HomeDesktop() {
           {" "}
           <div className={s.c254}>
             <span className={s.c255}>
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+              <svg aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M5 12l5 5L20 7" />
               </svg>
             </span>
@@ -1476,7 +1476,7 @@ export default function HomeDesktop() {
           {" "}
           <div className={s.c254}>
             <span className={s.c255}>
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+              <svg aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M5 12l5 5L20 7" />
               </svg>
             </span>
@@ -1492,7 +1492,7 @@ export default function HomeDesktop() {
           {" "}
           <div className={s.c254}>
             <span className={s.c255}>
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+              <svg aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M5 12l5 5L20 7" />
               </svg>
             </span>
@@ -1532,7 +1532,7 @@ export default function HomeDesktop() {
           {" "}
           <Link className={s.c265} href="/a-propos">
             {"Mon parcours "}
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M5 12h14M13 5l7 7-7 7" />
             </svg>
           </Link>
@@ -1577,18 +1577,18 @@ export default function HomeDesktop() {
             <span className={s.c36}>
               Téléphone
             </span>
-            <span className={s.c276}>
-              06 38 61 08 42
-            </span>
+            <a className={`${s.c276} ${s.contactValueLink}`} href={CONTACT_PHONE_HREF}>
+              {CONTACT_PHONE}
+            </a>
           </div>
           {" "}
           <div className={s.c275}>
             <span className={s.c36}>
               E-mail
             </span>
-            <span className={s.c276}>
+            <a className={`${s.c276} ${s.contactValueLink}`} href={`mailto:${CONTACT_EMAIL}`}>
               {CONTACT_EMAIL}
-            </span>
+            </a>
           </div>
           {" "}
           <div className={s.c275}>

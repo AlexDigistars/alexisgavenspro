@@ -128,7 +128,7 @@ export default function About() {
         {" "}
         <div className={s.c29}>
           <span className={s.c30}>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M22 10L12 5 2 10l10 5z" />
               <path d="M6 12v5c3 2 9 2 12 0v-5" />
             </svg>
@@ -136,7 +136,7 @@ export default function About() {
           </span>
           {" "}
           <span className={s.c30}>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <circle cx="12" cy="9" r="6" />
               <path d="M9 14l-2 8 5-3 5 3-2-8" />
             </svg>
@@ -155,7 +155,7 @@ export default function About() {
       <div className={s.c32}>
         <div className={s.c33}>
           <span className={`${s.c34} ${s.float}`}>
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
+            <svg aria-hidden="true" focusable="false" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
               <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
             </svg>
           </span>
@@ -169,7 +169,7 @@ export default function About() {
         {" "}
         <div className={s.c33}>
           <span className={`${s.c36} ${s.float}`}>
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
+            <svg aria-hidden="true" focusable="false" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
               <path d="M9 18h6M10 22h4" />
               <path d="M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z" />
             </svg>
@@ -184,7 +184,7 @@ export default function About() {
         {" "}
         <div className={s.c33}>
           <span className={`${s.c37} ${s.float}`}>
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
+            <svg aria-hidden="true" focusable="false" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
               <path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z" />
               <path d="M9 12l2 2 4-4" />
             </svg>
@@ -202,7 +202,7 @@ export default function About() {
     {" "}
     <section className={s.c38} data-reveal id="ap-contact">
       <div className={s.c39}>
-        <svg width="36" height="28" viewBox="0 0 28 22" fill="#BFD8D5">
+        <svg aria-hidden="true" focusable="false" width="36" height="28" viewBox="0 0 28 22" fill="#BFD8D5">
           <path d="M0 22V12C0 5 4 1 11 0l1 3c-4 1-6 4-6 7h5v12zm16 0V12c0-7 4-11 11-12l1 3c-4 1-6 4-6 7h5v12z" />
         </svg>
         {" "}

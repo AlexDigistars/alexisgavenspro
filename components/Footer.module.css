@@ -38,3 +38,8 @@
     gap: 20px;
   }
 }
+
+/* Contour de focus lisible sur fond sombre */
+.footer :focus-visible {
+  outline-color: var(--accent-light);
+}

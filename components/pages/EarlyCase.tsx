@@ -301,7 +301,7 @@ export default function EarlyCase() {
         </p>
         {" "}
         <div className={s.c57}>
-          <svg className={s.c58} width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8FD0C5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <svg aria-hidden="true" focusable="false" className={s.c58} width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8FD0C5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z" />
           </svg>
           {" "}
@@ -317,7 +317,7 @@ export default function EarlyCase() {
       <div className={s.c60}>
         <div className={s.c61}>
           <span className={s.c62}>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A33A2F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A33A2F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <circle cx="12" cy="12" r="9" />
               <path d="M12 7v5l3 2" />
             </svg>
@@ -332,7 +332,7 @@ export default function EarlyCase() {
         {" "}
         <div className={s.c61}>
           <span className={s.c62}>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A33A2F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A33A2F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <rect x="3" y="3" width="7" height="7" />
               <rect x="14" y="3" width="7" height="7" />
               <rect x="3" y="14" width="7" height="7" />
@@ -349,7 +349,7 @@ export default function EarlyCase() {
         {" "}
         <div className={s.c61}>
           <span className={s.c62}>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A33A2F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A33A2F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <rect x="5" y="11" width="14" height="10" rx="2" />
               <path d="M8 11V7a4 4 0 0 1 8 0v4" />
             </svg>
@@ -364,7 +364,7 @@ export default function EarlyCase() {
         {" "}
         <div className={s.c61}>
           <span className={s.c62}>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A33A2F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A33A2F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M3 3v18h18" />
               <path d="M7 15l4-4 3 3 5-6" />
             </svg>
@@ -512,7 +512,7 @@ export default function EarlyCase() {
         </div>
         {" "}
         <div className={`${s.c93} ${s.pin}`}>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+          <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
             <path d="M5 12l5 5L20 7" />
           </svg>
           Validé par le dirigeant
@@ -537,21 +537,21 @@ export default function EarlyCase() {
         {" "}
         <div className={s.c96}>
           <span className={s.c97}>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8FD0C5" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+            <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8FD0C5" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
               <path d="M5 12l5 5L20 7" />
             </svg>
             Des liens cliquables entre toutes les données
           </span>
           {" "}
           <span className={s.c97}>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8FD0C5" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+            <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8FD0C5" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
               <path d="M5 12l5 5L20 7" />
             </svg>
             Seules les informations utiles à l'écran
           </span>
           {" "}
           <span className={s.c97}>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8FD0C5" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+            <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8FD0C5" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
               <path d="M5 12l5 5L20 7" />
             </svg>
             Des couleurs qui disent l'essentiel d'un coup d'œil
@@ -562,7 +562,7 @@ export default function EarlyCase() {
       <div className={s.c98}>
         <div className={s.c99}>
           <span className={s.c100}>
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0E1A2B" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+            <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0E1A2B" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M19 12H5M11 5l-7 7 7 7" />
             </svg>
             Retour
@@ -698,7 +698,7 @@ export default function EarlyCase() {
           </div>
         </div>
         {" "}
-        <svg className={`${s.c122} ${s.cur2}`} width="22" height="22" viewBox="0 0 24 24" fill="#0E1A2B" stroke="#FFFFFF" strokeWidth="1.5" strokeLinejoin="round">
+        <svg aria-hidden="true" focusable="false" className={`${s.c122} ${s.cur2}`} width="22" height="22" viewBox="0 0 24 24" fill="#0E1A2B" stroke="#FFFFFF" strokeWidth="1.5" strokeLinejoin="round">
           <path d="M4 2l16 10-7 2-3 7z" />
         </svg>
         {" "}
@@ -813,7 +813,7 @@ export default function EarlyCase() {
       </div>
       {" "}
       <div className={s.c142}>
-        <svg className={s.c143} width="620" height="520" viewBox="0 0 620 520" fill="none">
+        <svg aria-hidden="true" focusable="false" className={s.c143} width="620" height="520" viewBox="0 0 620 520" fill="none">
           <path className={s.flow} d="M130 100 L310 260" stroke="#1D5C57" strokeWidth="2" />
           <path className={s.flow} d="M490 100 L310 260" stroke="#1D5C57" strokeWidth="2" />
           <path className={s.flow} d="M130 420 L310 260" stroke="#1D5C57" strokeWidth="2" />
@@ -832,14 +832,14 @@ export default function EarlyCase() {
         </div>
         {" "}
         <div className={s.c148}>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M3 11l18-8-8 18-2-8z" />
           </svg>
           Campagnes Meta
         </div>
         {" "}
         <div className={s.c149}>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <rect x="3" y="4" width="18" height="17" rx="2" />
             <path d="M3 9h18M8 2v4M16 2v4" />
           </svg>
@@ -847,7 +847,7 @@ export default function EarlyCase() {
         </div>
         {" "}
         <div className={s.c150}>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <rect x="3" y="5" width="18" height="14" rx="2" />
             <path d="M3 7l9 6 9-6" />
           </svg>
@@ -855,7 +855,7 @@ export default function EarlyCase() {
         </div>
         {" "}
         <div className={s.c151}>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <rect x="4" y="3" width="16" height="18" rx="2" />
             <path d="M4 9h16M4 15h16M10 9v12" />
           </svg>
@@ -863,7 +863,7 @@ export default function EarlyCase() {
         </div>
         {" "}
         <div className={s.c152}>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M6 2h9l5 5v15H6z" />
             <path d="M14 2v6h6" />
           </svg>
@@ -1078,7 +1078,7 @@ export default function EarlyCase() {
             </div>
             {" "}
             <span className={s.c194}>
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#0E1A2B" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+              <svg aria-hidden="true" focusable="false" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#0E1A2B" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M22 2L11 13" />
                 <path d="M22 2l-7 20-4-9-9-4z" />
               </svg>
@@ -1383,7 +1383,7 @@ export default function EarlyCase() {
     {" "}
     {" "}
     <section className={s.c226} data-reveal>
-      <svg width="44" height="34" viewBox="0 0 28 22" fill="#1D5C57">
+      <svg aria-hidden="true" focusable="false" width="44" height="34" viewBox="0 0 28 22" fill="#1D5C57">
         <path d="M0 22V12C0 5 4 1 11 0l1 3c-4 1-6 4-6 7h5v12zm16 0V12c0-7 4-11 11-12l1 3c-4 1-6 4-6 7h5v12z" />
       </svg>
       {" "}
@@ -1410,7 +1410,7 @@ export default function EarlyCase() {
       <div className={s.c231}>
         <div className={s.c232}>
           <span className={`${s.c233} ${s.float}`}>
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
+            <svg aria-hidden="true" focusable="false" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
               <path d="M21 12a9 9 0 1 1-2.64-6.36" />
               <path d="M21 3v6h-6" />
               <circle cx="12" cy="12" r="3" />
@@ -1428,7 +1428,7 @@ export default function EarlyCase() {
         {" "}
         <div className={s.c232}>
           <span className={`${s.c236} ${s.float}`}>
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
+            <svg aria-hidden="true" focusable="false" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
               <path d="M6 2h9l5 5v15H6z" />
               <path d="M14 2v6h6" />
               <path d="M9 15l2 2 4-4" />
@@ -1446,7 +1446,7 @@ export default function EarlyCase() {
         {" "}
         <div className={s.c232}>
           <span className={`${s.c237} ${s.float}`}>
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
+            <svg aria-hidden="true" focusable="false" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
               <circle cx="9" cy="8" r="3.5" />
               <path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6" />
               <path d="M16 11h6M19 8v6" />
@@ -1464,7 +1464,7 @@ export default function EarlyCase() {
         {" "}
         <div className={s.c232}>
           <span className={`${s.c238} ${s.float}`}>
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
+            <svg aria-hidden="true" focusable="false" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
               <circle cx="8" cy="8" r="3" />
               <circle cx="17" cy="9" r="2.5" />
               <path d="M2 20c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5" />
@@ -1483,7 +1483,7 @@ export default function EarlyCase() {
         {" "}
         <div className={s.c232}>
           <span className={`${s.c239} ${s.float}`}>
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
+            <svg aria-hidden="true" focusable="false" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
               <path className={s.flow} d="M2 12h4l3-8 5 16 3-8h5" />
             </svg>
           </span>
@@ -1499,7 +1499,7 @@ export default function EarlyCase() {
         {" "}
         <div className={s.c232}>
           <span className={`${s.c240} ${s.float}`}>
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
+            <svg aria-hidden="true" focusable="false" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
               <path d="M3 12a9 9 0 1 0 2.64-6.36" />
               <path d="M3 3v6h6" />
               <path d="M12 7v5l3 2" />
