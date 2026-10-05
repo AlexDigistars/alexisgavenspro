@@ -175,17 +175,43 @@
 
 /* Le formulaire */
 .formSection { background: #ECEAE3; }
+/* « Parlez-moi de votre entreprise » : titre et réassurance à gauche, formulaire à droite (une colonne sous 900 px) */
+@media (min-width: 900px) {
+  .formSection {
+    display: grid;
+    grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+    align-items: start;
+    gap: 64px;
+  }
+}
+.formIntro {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.reassure {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 17px;
+  line-height: 1.5;
+  color: #3A4556;
+}
+.reassure li { display: flex; align-items: flex-start; gap: 12px; }
+.reassure svg { flex-shrink: 0; margin-top: 3px; }
+/* Carte du formulaire : même rayon et même padding que les autres cartes du site */
 .formCard {
   width: 100%;
-  max-width: 680px;
-  padding: 28px 32px;
-  border-radius: 24px;
+  padding: 32px;
+  border-radius: 20px;
   background: #FFFFFF;
 }
 .frame {
   display: block;
   width: 100%;
-  min-height: 500px;
   border: 0;
 }
 .frame:focus-visible,
@@ -195,7 +221,6 @@
   border-radius: 8px;
 }
 
-/* Qui suis-je */
 .formSection + .sectionTight { padding-top: 112px; }
 .about {
   display: flex;
@@ -308,7 +333,7 @@
   .steps { grid-template-columns: minmax(0, 1fr); gap: 24px; }
   .step { flex-direction: row; align-items: center; gap: 16px; }
   .stepText { font-size: 17px; }
-  .formCard { padding: 20px 16px; border-radius: 18px; }
+  .formCard { padding: 24px; }
   .about { flex-direction: column; align-items: flex-start; gap: 20px; }
   .portrait { width: 96px; height: 96px; }
   .aboutBio { font-size: 17px; }

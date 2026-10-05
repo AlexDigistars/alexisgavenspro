@@ -418,12 +418,12 @@ export default function FormationIA() {
         <p className={s.c75}>
           20 minutes pour cerner vos besoins et construire le programme adapté.
         </p>
-        <CalendlyLink className={s.c9}>
-          Réserver 20 min
+        <CalendlyLink className={s.directLink}>
+          Ou réserver directement 20 min →
         </CalendlyLink>
       </div>
       <div className={s.contactForm}>
-        <TallyEmbed formId={TALLY_TRAINING_FORM_ID} title="Formulaire de demande de formation" className={s.contactFrame} height={420} />
+        <TallyEmbed formId={TALLY_TRAINING_FORM_ID} title="Formulaire de demande de formation" className={s.contactFrame} height={800} />
       </div>
     </section>
     {" "}

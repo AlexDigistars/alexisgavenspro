@@ -17,6 +17,13 @@ const STEPS = [
   "On en parle 20 minutes en visio",
 ];
 
+// Réassurance à côté du formulaire : phrases déjà présentes sur le site.
+const REASSURANCE = [
+  "Vous répondez à quelques questions — 2 minutes",
+  "20 minutes, gratuit et sans engagement.",
+  "Vous repartez avec des pistes concrètes, même si nous ne travaillons pas ensemble.",
+];
+
 export default function Diagnostic() {
   return (
     <>
@@ -79,9 +86,21 @@ export default function Diagnostic() {
 
       {/* Le formulaire */}
       <section className={`${s.section} ${s.formSection}`} id="formulaire" data-reveal>
-        <h2 className={s.h2}>Parlez-moi de votre entreprise</h2>
+        <div className={s.formIntro}>
+          <h2 className={s.h2}>Parlez-moi de votre entreprise</h2>
+          <ul className={s.reassure}>
+            {REASSURANCE.map((line) => (
+              <li key={line}>
+                <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M5 12l5 5L20 7" />
+                </svg>
+                <span>{line}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
         <div className={s.formCard}>
-          <TallyEmbed formId={TALLY_FORM_ID} title="Formulaire de diagnostic" className={s.frame} />
+          <TallyEmbed formId={TALLY_FORM_ID} title="Formulaire de diagnostic" className={s.frame} height={500} />
         </div>
       </section>
 
