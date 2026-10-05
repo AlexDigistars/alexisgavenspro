@@ -22,7 +22,7 @@ export const SITE_NAME = "Alexis Gavens";
 
 export const NAV_LINKS = [
   { href: "/", label: "Logiciels métier" },
-  { href: "/realisations/agence-communication", label: "Réalisations" },
+  { href: "/realisations", label: "Réalisations" },
   { href: "/formation-ia", label: "Formation IA" },
   { href: "/a-propos", label: "À propos" },
 ] as const;

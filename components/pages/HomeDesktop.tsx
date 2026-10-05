@@ -1098,6 +1098,9 @@ export default function HomeDesktop() {
             <path d="M5 12h14M13 5l7 7-7 7" />
           </svg>
         </Link>
+        <Link className={s.examplesLink} href="/realisations">
+          Voir aussi deux exemples de projets types →
+        </Link>
       </div>
       <div className={s.caseVisual}>
         <BeforeAfter />

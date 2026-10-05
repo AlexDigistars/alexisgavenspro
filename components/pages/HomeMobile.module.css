@@ -860,3 +860,17 @@
 
 /* Bloc réalisation mobile : ligne de présentation de l'agence */
 .caseCompany { margin-top: -8px; font-size: 15px; color: #A9B2BF; }
+
+/* Lien discret vers la page des réalisations et exemples types */
+.examplesLink {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  min-height: 44px;
+  font-size: 15px;
+  color: #A9B2BF;
+  text-decoration: underline;
+  text-decoration-color: rgba(169, 178, 191, 0.5);
+  text-underline-offset: 4px;
+}
+.examplesLink:hover { color: #F6F5F1; }

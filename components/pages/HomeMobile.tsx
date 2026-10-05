@@ -446,6 +446,9 @@ export default function HomeMobile() {
       <Link className={s.c102} href="/realisations/agence-communication">
         Lire l&apos;étude de cas →
       </Link>
+      <Link className={s.examplesLink} href="/realisations">
+        Voir aussi deux exemples de projets types →
+      </Link>
     </section>
     {" "}
     {" "}
