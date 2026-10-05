@@ -1,7 +1,9 @@
 import { AssistantMobile } from "./FormationIAMobileDemo";
 import m from "./FormationIAMobileDemo.module.css";
 import Scene from "@/components/Scene";
-import DiagnosticLink from "@/components/DiagnosticLink";
+import CalendlyLink from "@/components/CalendlyLink";
+import TallyEmbed from "@/components/TallyEmbed";
+import { TALLY_TRAINING_FORM_ID } from "@/config/site";
 import s from "./FormationIA.module.css";
 
 // Généré depuis design-reference/FormationIA.html (textes et styles de la maquette).
@@ -27,9 +29,9 @@ export default function FormationIA() {
           </p>
           {" "}
           <div className={s.c8}>
-            <DiagnosticLink className={s.c9}>
+            <CalendlyLink className={s.c9}>
               Réserver 20 min
-            </DiagnosticLink>
+            </CalendlyLink>
             {" "}
             <a className={s.c10} href="#fi-formats">
               Voir les formats
@@ -408,18 +410,21 @@ export default function FormationIA() {
     </section>
     {" "}
     {" "}
-    <section className={s.c73} data-reveal id="fi-contact">
-      <h2 className={s.c74}>
-        Parlons de votre équipe.
-      </h2>
-      {" "}
-      <p className={s.c75}>
-        20 minutes pour cerner vos besoins et construire le programme adapté.
-      </p>
-      {" "}
-      <DiagnosticLink className={s.c9}>
-        Réserver 20 min
-      </DiagnosticLink>
+    <section className={`${s.c73} ${s.contactSection}`} data-reveal id="fi-contact">
+      <div className={s.contactText}>
+        <h2 className={s.c74}>
+          Parlons de votre équipe.
+        </h2>
+        <p className={s.c75}>
+          20 minutes pour cerner vos besoins et construire le programme adapté.
+        </p>
+        <CalendlyLink className={s.c9}>
+          Réserver 20 min
+        </CalendlyLink>
+      </div>
+      <div className={s.contactForm}>
+        <TallyEmbed formId={TALLY_TRAINING_FORM_ID} title="Formulaire de demande de formation" className={s.contactFrame} height={420} />
+      </div>
     </section>
     {" "}
     {" "}

@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import portrait from "@/public/alexis-portrait-hd.jpg";
 import TallyEmbed from "@/components/TallyEmbed";
-import { CALENDLY_URL } from "@/config/site";
+import { CALENDLY_URL, TALLY_FORM_ID } from "@/config/site";
 import s from "./Diagnostic.module.css";
 
 const OUTCOMES = [
@@ -81,7 +81,7 @@ export default function Diagnostic() {
       <section className={`${s.section} ${s.formSection}`} id="formulaire" data-reveal>
         <h2 className={s.h2}>Parlez-moi de votre entreprise</h2>
         <div className={s.formCard}>
-          <TallyEmbed className={s.frame} />
+          <TallyEmbed formId={TALLY_FORM_ID} title="Formulaire de diagnostic" className={s.frame} />
         </div>
       </section>
 

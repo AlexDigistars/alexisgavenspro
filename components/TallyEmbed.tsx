@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { TALLY_FORM_ID } from "@/config/site";
 
 declare global {
   interface Window {
@@ -10,14 +9,22 @@ declare global {
 }
 
 const EMBED_SCRIPT = "https://tally.so/widgets/embed.js";
-const EMBED_SRC = `https://tally.so/embed/${TALLY_FORM_ID}?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1`;
 
 /**
  * Formulaire Tally, avec le code d'intégration officiel de Tally (hauteur dynamique).
  * Le script de Tally n'est chargé que lorsque la section approche de l'écran.
  */
-export default function TallyEmbed({ className }: { className?: string }) {
+type Props = {
+  formId: string;
+  title: string;
+  className?: string;
+  /** Hauteur réservée avant le chargement du formulaire. */
+  height?: number;
+};
+
+export default function TallyEmbed({ formId, title, className, height = 500 }: Props) {
   const ref = useRef<HTMLIFrameElement>(null);
+  const src = `https://tally.so/embed/${formId}?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1`;
 
   useEffect(() => {
     const frame = ref.current;
@@ -69,24 +76,26 @@ export default function TallyEmbed({ className }: { className?: string }) {
       io.disconnect();
       cleanFocus();
     };
-  }, []);
+  }, [formId]);
+
+  if (!formId) return <p className={className}>Formulaire bientôt disponible.</p>;
 
   return (
     <>
       <iframe
         ref={ref}
         className={className}
-        data-tally-src={EMBED_SRC}
+        data-tally-src={src}
         loading="lazy"
         width="100%"
-        height="500"
+        height={height}
         frameBorder="0"
         marginHeight={0}
         marginWidth={0}
-        title="Formulaire de diagnostic"
+        title={title}
       ></iframe>
       <noscript>
-        <a href={`https://tally.so/r/${TALLY_FORM_ID}`}>Formulaire de diagnostic</a>
+        <a href={`https://tally.so/r/${formId}`}>{title}</a>
       </noscript>
     </>
   );
