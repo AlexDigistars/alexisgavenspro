@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { NAV_LINKS } from "@/config/site";
-import CalendlyLink from "./CalendlyLink";
+import DiagnosticLink from "./DiagnosticLink";
 import Logo from "./Logo";
 import styles from "./Header.module.css";
 
@@ -108,7 +108,7 @@ export default function Header() {
               </Link>
             );
           })}
-          <CalendlyLink className={styles.cta}>Parlons de votre projet</CalendlyLink>
+          <DiagnosticLink className={styles.cta}>Parlons de votre projet</DiagnosticLink>
         </nav>
 
         <button
@@ -148,9 +148,9 @@ export default function Header() {
             );
           })}
         </nav>
-        <CalendlyLink className={styles.panelCta} onClick={close}>
+        <DiagnosticLink className={styles.panelCta} onClick={close}>
           Parlons de votre projet
-        </CalendlyLink>
+        </DiagnosticLink>
       </div>
     </header>
   );

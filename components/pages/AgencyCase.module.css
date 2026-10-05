@@ -1,4 +1,4 @@
-/* Généré depuis design-reference/EtudeCasEarly.html : styles de la maquette. */
+/* Généré depuis la maquette de l'étude de cas : styles de la maquette. */
 
 /* Animations de la maquette */
 .pulse{animation:pulse 2s ease-out infinite;animation-delay:calc(-1 * var(--scene-shift, 0s))}
@@ -902,8 +902,8 @@
   }
 }
 
-/* ===== Refonte du contenu : étude de cas Early ===== */
-/* E1. Haut de page : bouton et ancre côte à côte, fenêtre « Early Work » à hauteur de son contenu */
+/* ===== Refonte du contenu : étude de cas (agence de communication) ===== */
+/* E1. Haut de page : bouton et ancre côte à côte, fenêtre « Gestion de l'agence » à hauteur de son contenu */
 .heroActions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 28px; }
 .heroAnchor { display: inline-flex; align-items: center; min-height: 44px; font-size: 16px; font-weight: 600; color: #F6F5F1; }
 .heroWindow { width: 100%; height: auto; }

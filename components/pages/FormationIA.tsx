@@ -2,6 +2,8 @@ import { AssistantMobile } from "./FormationIAMobileDemo";
 import m from "./FormationIAMobileDemo.module.css";
 import Scene from "@/components/Scene";
 import CalendlyLink from "@/components/CalendlyLink";
+import TallyEmbed from "@/components/TallyEmbed";
+import { TALLY_TRAINING_FORM_ID } from "@/config/site";
 import s from "./FormationIA.module.css";
 
 // Généré depuis design-reference/FormationIA.html (textes et styles de la maquette).
@@ -27,9 +29,17 @@ export default function FormationIA() {
           </p>
           {" "}
           <div className={s.c8}>
-            <CalendlyLink className={s.c9}>
-              Réserver 20 min
-            </CalendlyLink>
+            <div className={s.ctaStack}>
+              <CalendlyLink className={s.c9}>
+                Réserver 20 min
+              </CalendlyLink>
+              <a className={s.formButton} href="#fi-contact">
+                Décrire votre besoin
+                <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M12 5v14M5 12l7 7 7-7" />
+                </svg>
+              </a>
+            </div>
             {" "}
             <a className={s.c10} href="#fi-formats">
               Voir les formats
@@ -408,18 +418,31 @@ export default function FormationIA() {
     </section>
     {" "}
     {" "}
-    <section className={s.c73} data-reveal id="fi-contact">
-      <h2 className={s.c74}>
-        Parlons de votre équipe.
-      </h2>
-      {" "}
-      <p className={s.c75}>
-        20 minutes pour cerner vos besoins et construire le programme adapté.
-      </p>
-      {" "}
-      <CalendlyLink className={s.c9}>
-        Réserver 20 min
-      </CalendlyLink>
+    <section className={`${s.c73} ${s.contactSection}`} data-reveal id="fi-contact">
+      <div className={s.contactText}>
+        <h2 className={s.c74}>
+          Parlons de votre équipe.
+        </h2>
+        <p className={s.c75}>
+          20 minutes pour cerner vos besoins et construire le programme adapté.
+        </p>
+        <ul className={s.reassure}>
+          {["Réponse sous 48 h ouvrées", "Programme adapté à vos outils et à votre métier", "Sans engagement"].map((line) => (
+            <li key={line}>
+              <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8FD0C5" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M5 12l5 5L20 7" />
+              </svg>
+              <span>{line}</span>
+            </li>
+          ))}
+        </ul>
+        <CalendlyLink className={s.directLink}>
+          Ou réserver directement 20 min →
+        </CalendlyLink>
+      </div>
+      <div className={s.contactForm}>
+        <TallyEmbed formId={TALLY_TRAINING_FORM_ID} title="Formulaire de demande de formation" className={s.contactFrame} height={800} />
+      </div>
     </section>
     {" "}
     {" "}

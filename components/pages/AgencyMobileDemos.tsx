@@ -1,8 +1,8 @@
-// Versions mobiles (< 768 px) des démonstrations de l'étude de cas Early.
+// Versions mobiles (< 768 px) des démonstrations de l'étude de cas (agence de communication).
 // Plutôt que de réduire un écran de bureau entier, chaque scène montre une seule
 // partie utile de l'interface, en taille réelle. Données fictives.
-import s from "./EarlyCase.module.css";
-import m from "./EarlyMobileDemos.module.css";
+import s from "./AgencyCase.module.css";
+import m from "./AgencyMobileDemos.module.css";
 
 const TEAM_MONDAY = [
   { name: "Camille", value: "✓ 7 h", tone: m.ok },
@@ -13,11 +13,11 @@ const TEAM_MONDAY = [
 ];
 
 /** Managers : le suivi de l'équipe, réduit à la journée du lundi. */
-export function EarlyTeamMobile() {
+export function AgencyTeamMobile() {
   return (
     <div className={`${m.mobileOnly} ${m.window}`}>
       <div className={m.windowBar}>
-        <span className={m.windowTitle}>Early Work — Tâches</span>
+        <span className={m.windowTitle}>Gestion de l&apos;agence — Tâches</span>
         <span className={m.fictive}>DONNÉES FICTIVES</span>
       </div>
       <div className={m.windowBody}>
@@ -53,7 +53,7 @@ const COMMENTS = [
 ];
 
 /** Pensé avec la direction : la maquette commentée, puis validée. */
-export function EarlyMockupMobile() {
+export function AgencyMockupMobile() {
   return (
     <div className={`${m.mobileOnly} ${m.beige}`}>
       <div className={m.paper}>
@@ -84,7 +84,7 @@ export function EarlyMockupMobile() {
 const TOOLS = ["Campagnes Meta", "Google Agenda", "47 plannings Excel", "Pennylane"];
 
 /** Tout centralisé : les outils, reliés au logiciel par un trait vertical. */
-export function EarlyHubMobile() {
+export function AgencyHubMobile() {
   return (
     <div className={`${m.mobileOnly} ${m.beige}`}>
       <div className={m.hub}>
@@ -100,7 +100,7 @@ export function EarlyHubMobile() {
         </ul>
         <div className={m.core}>
           <span className={`${m.coreDot} ${s.pulse}`} aria-hidden="true" />
-          <span className={m.coreTitle}>Le logiciel Early</span>
+          <span className={m.coreTitle}>Le logiciel de l&apos;agence</span>
         </div>
       </div>
     </div>

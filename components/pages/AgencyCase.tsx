@@ -1,9 +1,9 @@
-import { EarlyTeamMobile, EarlyMockupMobile, EarlyHubMobile } from "./EarlyMobileDemos";
-import m from "./EarlyMobileDemos.module.css";
+import { AgencyTeamMobile, AgencyMockupMobile, AgencyHubMobile } from "./AgencyMobileDemos";
+import m from "./AgencyMobileDemos.module.css";
 import Scene from "@/components/Scene";
 import Link from "next/link";
-import CalendlyLink from "@/components/CalendlyLink";
-import s from "./EarlyCase.module.css";
+import DiagnosticLink from "@/components/DiagnosticLink";
+import s from "./AgencyCase.module.css";
 
 function Check() {
   return (
@@ -99,20 +99,20 @@ function RolesVisual() {
   );
 }
 
-export default function EarlyCase() {
+export default function AgencyCase() {
   return (
     <>
       {/* E1. Haut de page */}
       <section className={s.c1} data-reveal>
         <div className={s.c2}>
           <div className={s.c3}>
-            <span className={s.c4}>Étude de cas · Early</span>
-            <h1 className={s.c5}>Early : reprendre un logiciel sans repartir de zéro.</h1>
+            <span className={s.c4}>Étude de cas : une agence de communication</span>
+            <h1 className={s.c5}>Reprendre un logiciel sans repartir de zéro.</h1>
             <p className={s.c6}>
               Une agence de communication d&apos;une quinzaine de personnes gérait tout dans un logiciel qui ne suivait plus : clients, équipes, planning, facturation. Je l&apos;ai repris avec la direction pour en faire un outil taillé pour son métier.
             </p>
             <div className={s.heroActions}>
-              <CalendlyLink className={s.c245}>Réserver 20 min</CalendlyLink>
+              <DiagnosticLink className={s.c245}>Réserver 20 min</DiagnosticLink>
               <a className={s.heroAnchor} href="#changements">
                 Voir ce qui change ↓
               </a>
@@ -126,7 +126,7 @@ export default function EarlyCase() {
                   <span className={s.c17}></span>
                   <span className={s.c17}></span>
                 </div>
-                <span className={s.c18}>Early Work — Suivi financier</span>
+                <span className={s.c18}>Gestion de l&apos;agence — Suivi financier</span>
                 <span className={s.c19}>Démonstration · données fictives</span>
               </div>
               <div className={`${s.c20} ${s.heroBody}`}>
@@ -285,7 +285,7 @@ export default function EarlyCase() {
                 ))}
               </div>
             </div>
-            <EarlyTeamMobile />
+            <AgencyTeamMobile />
           </Scene>
         </div>
 
@@ -359,7 +359,7 @@ export default function EarlyCase() {
             </svg>
             <div className={s.c144}>
               <span className={`${s.c145} ${s.pulse}`}></span>
-              <span className={s.c146}>Le logiciel Early</span>
+              <span className={s.c146}>Le logiciel de l&apos;agence</span>
             </div>
             <div className={s.c148}>
               <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1D5C57" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -389,7 +389,7 @@ export default function EarlyCase() {
               Pennylane
             </div>
           </div>
-          <EarlyHubMobile />
+          <AgencyHubMobile />
         </Scene>
       </section>
 
@@ -450,7 +450,7 @@ export default function EarlyCase() {
               Validé par le dirigeant
             </div>
           </div>
-          <EarlyMockupMobile />
+          <AgencyMockupMobile />
         </Scene>
       </section>
 
@@ -463,14 +463,14 @@ export default function EarlyCase() {
           <blockquote className={s.c227}>
             « Alexis a vraiment fait évoluer notre logiciel : il est plus rapide, plus réactif et bien plus simple à utiliser. Il écoute nos besoins et il est force de proposition. C&apos;est agréable de travailler avec lui. »
           </blockquote>
-          <figcaption className={s.c229}>Joseph Herbinet, dirigeant d&apos;Early</figcaption>
+          <figcaption className={s.c229}>Le dirigeant de l&apos;agence</figcaption>
         </figure>
       </section>
       <section className={s.c241} data-reveal id="ec-contact">
         <h2 className={s.c242}>Votre logiciel mérite la même reprise.</h2>
         <p className={s.c243}>20 minutes pour comprendre ce qui bloque et vous dire franchement si je peux vous aider.</p>
         <div className={s.c244}>
-          <CalendlyLink className={s.c245}>Réserver 20 min</CalendlyLink>
+          <DiagnosticLink className={s.c245}>Réserver 20 min</DiagnosticLink>
           <Link className={s.c246} href="/">
             Retour à l&apos;accueil
           </Link>

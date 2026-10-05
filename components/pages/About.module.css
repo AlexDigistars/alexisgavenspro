@@ -402,8 +402,8 @@
   }
 }
 
-/* Lien vers l'étude de cas Early (remplace la citation) */
-.earlyLink {
+/* Lien vers l'étude de cas (remplace la citation) */
+.caseLink {
   display: inline-flex;
   align-items: center;
   align-self: flex-start;

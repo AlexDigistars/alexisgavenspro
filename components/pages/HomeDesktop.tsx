@@ -5,7 +5,7 @@ import Scene from "@/components/Scene";
 import Image from "next/image";
 import portrait from "@/public/alexis-portrait-hd.jpg";
 import Link from "next/link";
-import CalendlyLink from "@/components/CalendlyLink";
+import DiagnosticLink from "@/components/DiagnosticLink";
 import { CONTACT_EMAIL, CONTACT_PHONE, CONTACT_PHONE_HREF } from "@/config/site";
 import s from "./HomeDesktop.module.css";
 
@@ -36,12 +36,12 @@ export default function HomeDesktop() {
           {" "}
           <div className={s.c8}>
             <div className={s.ctaStack}>
-              <CalendlyLink className={s.c9}>
+              <DiagnosticLink className={s.c9}>
                 Réserver 20 min
-              </CalendlyLink>
+              </DiagnosticLink>
               <span className={s.ctaNote}>20 minutes, gratuit et sans engagement.</span>
             </div>
-            <Link className={`${s.c10} ${s.projectLink}`} href="/realisations/early">
+            <Link className={`${s.c10} ${s.projectLink}`} href="/realisations/agence-communication">
               Voir un projet réalisé
               <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M5 12h14M13 5l7 7-7 7" />
@@ -1082,37 +1082,34 @@ export default function HomeDesktop() {
           Dernière réalisation
         </span>
         {" "}
-        <div className={s.c221}>
-          <span className={s.c222}>
-            Early
-          </span>
-          {" "}
-          <span className={s.c223}>
-            Agence de communication, une quinzaine de personnes
-          </span>
-        </div>
+        <span className={s.c223}>
+          Agence de communication · une quinzaine de personnes
+        </span>
         {" "}
         <h2 className={s.c224}>
           Transformer un logiciel de gestion vieillissant en véritable outil de pilotage.
         </h2>
-        <p className={s.earlyIntro}>
+        <p className={s.caseIntro}>
           Clients, équipes, planning, facturation : tout passait par un logiciel qui ne suivait plus. Je l&apos;ai repris et enrichi d&apos;outils pour chacun : les salariés, les managers et la direction.
         </p>
-        <Link className={s.c229} href="/realisations/early">
+        <Link className={s.c229} href="/realisations/agence-communication">
           {"Lire l'étude de cas "}
           <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M5 12h14M13 5l7 7-7 7" />
           </svg>
         </Link>
+        <Link className={s.examplesLink} href="/realisations">
+          Voir mes autres réalisations →
+        </Link>
       </div>
-      <div className={s.earlyVisual}>
+      <div className={s.caseVisual}>
         <BeforeAfter />
-        <figure className={s.earlyQuote}>
+        <figure className={s.caseQuote}>
           <blockquote className={s.c226}>
             « Alexis a vraiment fait évoluer notre logiciel : il est plus rapide, plus réactif et bien plus simple à utiliser. »
           </blockquote>
           <figcaption className={s.c227}>
-            Joseph Herbinet, dirigeant d&apos;Early
+            Le dirigeant de l&apos;agence
           </figcaption>
         </figure>
       </div>
@@ -1233,9 +1230,9 @@ export default function HomeDesktop() {
           20 minutes pour comprendre votre besoin et vous dire franchement si je peux vous aider.
         </p>
         {" "}
-        <CalendlyLink className={s.c273}>
+        <DiagnosticLink className={s.c273}>
           Réserver 20 min
-        </CalendlyLink>
+        </DiagnosticLink>
         {" "}
         <div className={s.c274}>
           <div className={s.c275}>
