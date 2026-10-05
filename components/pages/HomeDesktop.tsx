@@ -5,7 +5,7 @@ import Scene from "@/components/Scene";
 import Image from "next/image";
 import portrait from "@/public/alexis-portrait-hd.jpg";
 import Link from "next/link";
-import CalendlyLink from "@/components/CalendlyLink";
+import DiagnosticLink from "@/components/DiagnosticLink";
 import { CONTACT_EMAIL, CONTACT_PHONE, CONTACT_PHONE_HREF } from "@/config/site";
 import s from "./HomeDesktop.module.css";
 
@@ -36,9 +36,9 @@ export default function HomeDesktop() {
           {" "}
           <div className={s.c8}>
             <div className={s.ctaStack}>
-              <CalendlyLink className={s.c9}>
+              <DiagnosticLink className={s.c9}>
                 Réserver 20 min
-              </CalendlyLink>
+              </DiagnosticLink>
               <span className={s.ctaNote}>20 minutes, gratuit et sans engagement.</span>
             </div>
             <Link className={`${s.c10} ${s.projectLink}`} href="/realisations/agence-communication">
@@ -1227,9 +1227,9 @@ export default function HomeDesktop() {
           20 minutes pour comprendre votre besoin et vous dire franchement si je peux vous aider.
         </p>
         {" "}
-        <CalendlyLink className={s.c273}>
+        <DiagnosticLink className={s.c273}>
           Réserver 20 min
-        </CalendlyLink>
+        </DiagnosticLink>
         {" "}
         <div className={s.c274}>
           <div className={s.c275}>

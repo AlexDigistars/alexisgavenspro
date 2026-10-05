@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import portrait from "@/public/alexis-portrait-hd.jpg";
-import CalendlyLink from "@/components/CalendlyLink";
+import DiagnosticLink from "@/components/DiagnosticLink";
 import s from "./About.module.css";
 
 // Généré depuis design-reference/APropos.html (textes et styles de la maquette).
@@ -24,9 +24,9 @@ export default function About() {
           <p className={s.c6}>
             Ancien responsable de l&apos;administration des ventes et de la logistique, je pars de votre travail quotidien pour concevoir ou faire évoluer votre logiciel.
           </p>
-          <CalendlyLink className={`${s.c46} ${s.introCta}`}>
+          <DiagnosticLink className={`${s.c46} ${s.introCta}`}>
             Réserver 20 min
-          </CalendlyLink>
+          </DiagnosticLink>
         </div>
         {" "}
         <div className={s.c7}>
@@ -214,9 +214,9 @@ export default function About() {
           20 minutes pour faire connaissance et parler de votre projet. Partout en France, sur site ou à distance.
         </span>
         {" "}
-        <CalendlyLink className={s.c46}>
+        <DiagnosticLink className={s.c46}>
           Réserver 20 min
-        </CalendlyLink>
+        </DiagnosticLink>
       </div>
     </section>
     {" "}

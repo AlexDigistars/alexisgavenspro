@@ -6,7 +6,7 @@ import Image from "next/image";
 import portrait from "@/public/alexis-portrait-hd.jpg";
 import SwipeCarousel from "@/components/SwipeCarousel";
 import Link from "next/link";
-import CalendlyLink from "@/components/CalendlyLink";
+import DiagnosticLink from "@/components/DiagnosticLink";
 import { CONTACT_EMAIL, CONTACT_PHONE_HREF } from "@/config/site";
 import s from "./HomeMobile.module.css";
 
@@ -32,9 +32,9 @@ export default function HomeMobile() {
         </p>
         {" "}
         <div className={s.ctaStack}>
-          <CalendlyLink className={s.c7}>
+          <DiagnosticLink className={s.c7}>
             Réserver 20 min
-          </CalendlyLink>
+          </DiagnosticLink>
           <span className={s.ctaNote}>20 minutes, gratuit et sans engagement.</span>
           <Link className={s.projectLink} href="/realisations/agence-communication">
             Voir un projet réalisé →
@@ -543,9 +543,9 @@ export default function HomeMobile() {
           20 minutes pour comprendre votre besoin et vous dire franchement si je peux vous aider.
         </p>
         {" "}
-        <CalendlyLink className={s.c125}>
+        <DiagnosticLink className={s.c125}>
           Réserver 20 min
-        </CalendlyLink>
+        </DiagnosticLink>
         {" "}
         <a className={s.c126} href={CONTACT_PHONE_HREF}>
           <span className={s.c34}>

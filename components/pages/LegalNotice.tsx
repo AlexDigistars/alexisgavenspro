@@ -129,8 +129,8 @@ export default function LegalNotice() {
             Données personnelles
           </h2>
           <p className={s.c14}>
-            Ce site ne comporte aucun formulaire de contact. Vous pouvez me joindre par e-mail à {CONTACT_EMAIL} (messagerie
-            hébergée par OVHcloud, en France), par téléphone, ou réserver un rendez-vous avec Calendly.
+            Vous pouvez me joindre par e-mail à {CONTACT_EMAIL} (messagerie hébergée par OVHcloud, en France), par
+            téléphone, ou réserver un rendez-vous avec Calendly.
           </p>
 
           <h3 className={s.subTitle}>Demandes et rendez-vous</h3>
@@ -150,6 +150,23 @@ export default function LegalNotice() {
             </li>
           </ul>
 
+          <h3 className={s.subTitle}>Formulaire de diagnostic</h3>
+          <ul className={s.facts}>
+            <li>
+              <strong>Données recueillies :</strong> nom, prénom, entreprise, e-mail, téléphone (facultatif), taille et activité
+              de l&apos;entreprise, outils utilisés, description du besoin, et la façon dont la personne a connu le site.
+            </li>
+            <li>
+              <strong>Finalité :</strong> préparer l&apos;échange de diagnostic et y répondre.
+            </li>
+            <li>
+              <strong>Base légale :</strong> mesures précontractuelles prises à la demande de la personne (article 6.1.b du RGPD).
+            </li>
+            <li>
+              <strong>Conservation :</strong> trois ans après le dernier échange.
+            </li>
+          </ul>
+
           <h3 className={s.subTitle}>Mesure d&apos;audience</h3>
           <ul className={s.facts}>
             <li>
@@ -163,7 +180,8 @@ export default function LegalNotice() {
           <h3 className={s.subTitle}>Destinataires</h3>
           <p className={s.c14}>
             Vos données sont destinées uniquement à Alexis Gavens. Sous-traitants techniques : Vercel Inc. (hébergement et
-            mesure d&apos;audience), Calendly LLC (prise de rendez-vous) et OVHcloud (messagerie).
+            mesure d&apos;audience), Calendly LLC (prise de rendez-vous), OVHcloud (messagerie) ; Tally (formulaire de
+            diagnostic), données hébergées dans l&apos;Union européenne.
           </p>
 
           <h3 className={s.subTitle}>Transferts hors de l&apos;Union européenne</h3>

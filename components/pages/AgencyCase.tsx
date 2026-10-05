@@ -2,7 +2,7 @@ import { AgencyTeamMobile, AgencyMockupMobile, AgencyHubMobile } from "./AgencyM
 import m from "./AgencyMobileDemos.module.css";
 import Scene from "@/components/Scene";
 import Link from "next/link";
-import CalendlyLink from "@/components/CalendlyLink";
+import DiagnosticLink from "@/components/DiagnosticLink";
 import s from "./AgencyCase.module.css";
 
 function Check() {
@@ -112,7 +112,7 @@ export default function AgencyCase() {
               Une agence de communication d&apos;une quinzaine de personnes gérait tout dans un logiciel qui ne suivait plus : clients, équipes, planning, facturation. Je l&apos;ai repris avec la direction pour en faire un outil taillé pour son métier.
             </p>
             <div className={s.heroActions}>
-              <CalendlyLink className={s.c245}>Réserver 20 min</CalendlyLink>
+              <DiagnosticLink className={s.c245}>Réserver 20 min</DiagnosticLink>
               <a className={s.heroAnchor} href="#changements">
                 Voir ce qui change ↓
               </a>
@@ -470,7 +470,7 @@ export default function AgencyCase() {
         <h2 className={s.c242}>Votre logiciel mérite la même reprise.</h2>
         <p className={s.c243}>20 minutes pour comprendre ce qui bloque et vous dire franchement si je peux vous aider.</p>
         <div className={s.c244}>
-          <CalendlyLink className={s.c245}>Réserver 20 min</CalendlyLink>
+          <DiagnosticLink className={s.c245}>Réserver 20 min</DiagnosticLink>
           <Link className={s.c246} href="/">
             Retour à l&apos;accueil
           </Link>

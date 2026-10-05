@@ -1,7 +1,7 @@
 import { AssistantMobile } from "./FormationIAMobileDemo";
 import m from "./FormationIAMobileDemo.module.css";
 import Scene from "@/components/Scene";
-import CalendlyLink from "@/components/CalendlyLink";
+import DiagnosticLink from "@/components/DiagnosticLink";
 import s from "./FormationIA.module.css";
 
 // Généré depuis design-reference/FormationIA.html (textes et styles de la maquette).
@@ -27,9 +27,9 @@ export default function FormationIA() {
           </p>
           {" "}
           <div className={s.c8}>
-            <CalendlyLink className={s.c9}>
+            <DiagnosticLink className={s.c9}>
               Réserver 20 min
-            </CalendlyLink>
+            </DiagnosticLink>
             {" "}
             <a className={s.c10} href="#fi-formats">
               Voir les formats
@@ -417,9 +417,9 @@ export default function FormationIA() {
         20 minutes pour cerner vos besoins et construire le programme adapté.
       </p>
       {" "}
-      <CalendlyLink className={s.c9}>
+      <DiagnosticLink className={s.c9}>
         Réserver 20 min
-      </CalendlyLink>
+      </DiagnosticLink>
     </section>
     {" "}
     {" "}

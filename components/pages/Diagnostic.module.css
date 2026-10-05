@@ -1,0 +1,324 @@
+/* Page /diagnostic : mêmes couleurs, polices et conteneur commun que le reste du site. */
+
+/* ===== Haut de page ===== */
+.hero {
+  padding: 96px 80px 112px;
+  background: #0E1A2B;
+  color: #F6F5F1;
+}
+.heroInner {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  max-width: 860px;
+}
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: #8FD0C5;
+}
+.h1 {
+  margin: 0;
+  font-size: 62px;
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+.lead {
+  margin: 0;
+  max-width: 680px;
+  font-size: 19px;
+  line-height: 1.55;
+  color: #A9B2BF;
+}
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 28px;
+}
+.primary {
+  display: inline-flex;
+  align-items: center;
+  min-height: 54px;
+  padding: 0 28px;
+  border-radius: 999px;
+  background: #F6F5F1;
+  color: #0E1A2B;
+  font-size: 16px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  color: #F6F5F1;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: rgba(246, 245, 241, 0.4);
+  text-underline-offset: 4px;
+}
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+.hero :focus-visible { outline-color: #8FD0C5; }
+
+/* ===== Sections ===== */
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 112px 80px;
+}
+.sectionTight { padding-top: 0; }
+.h2 {
+  margin: 0;
+  font-size: 48px;
+  line-height: 1.05;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+}
+
+/* Ce que vous avez à la fin des 20 minutes */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 32px;
+  border-radius: 20px;
+  background: #FFFFFF;
+}
+.number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: #DCEAE7;
+  color: #1D5C57;
+  font-weight: 700;
+}
+.cardTitle {
+  margin: 4px 0 0;
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.cardText {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.55;
+  color: #3A4556;
+}
+
+/* Comment ça se passe : frise de 3 étapes, comme la méthode de l'accueil */
+.timeline { position: relative; }
+.line {
+  position: absolute;
+  left: 24px;
+  width: calc((100% - 64px) * 2 / 3 + 64px);
+  top: 23px;
+  height: 2px;
+  background: #1D5C57;
+}
+.steps {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.step {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.stepNumber {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #1D5C57;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+.stepText {
+  max-width: 320px;
+  font-size: 20px;
+  line-height: 1.35;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+/* Le formulaire */
+.formSection { background: #ECEAE3; }
+.formCard {
+  max-width: 820px;
+  padding: 40px;
+  border-radius: 24px;
+  background: #FFFFFF;
+}
+.frame {
+  display: block;
+  width: 100%;
+  min-height: 500px;
+  border: 0;
+}
+.frame:focus-visible,
+.frame[data-focused] {
+  outline: 2px solid #1D5C57;
+  outline-offset: 6px;
+  border-radius: 8px;
+}
+
+/* Qui suis-je */
+.formSection + .sectionTight { padding-top: 112px; }
+.about {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  max-width: 860px;
+}
+.portrait {
+  flex-shrink: 0;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 30%;
+}
+.aboutText {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.aboutName {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.aboutBio {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #3A4556;
+}
+
+/* Questions fréquentes */
+.faqSection { padding-top: 0; }
+.faq {
+  display: flex;
+  flex-direction: column;
+  max-width: 860px;
+  border-top: 1px solid #D5D2CA;
+}
+.item { border-bottom: 1px solid #D5D2CA; }
+.question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 64px;
+  padding: 12px 0;
+  font-size: 19px;
+  font-weight: 700;
+  list-style: none;
+  cursor: pointer;
+}
+.question::-webkit-details-marker { display: none; }
+.question::after {
+  content: "";
+  flex-shrink: 0;
+  width: 10px;
+  height: 10px;
+  margin-right: 6px;
+  border-right: 2px solid #1D5C57;
+  border-bottom: 2px solid #1D5C57;
+  transform: rotate(45deg) translateY(-3px);
+  transition: transform 0.2s ease;
+}
+.item[open] > .question::after { transform: rotate(-135deg) translateY(-3px); }
+.answer {
+  margin: 0;
+  padding: 0 0 22px;
+  max-width: 720px;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #3A4556;
+}
+.textLink {
+  color: #1D5C57;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ===== Tablette ===== */
+@media (max-width: 1100px) {
+  .hero { padding: 72px 40px 88px; }
+  .section { padding: 88px 40px; }
+  .formSection + .sectionTight { padding-top: 88px; }
+  .h1 { font-size: 51px; }
+  .h2 { font-size: 39px; }
+}
+@media (max-width: 1023px) {
+  .cards { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .card { padding: 28px; }
+}
+
+/* ===== Mobile ===== */
+@media (max-width: 767px) {
+  .hero { padding: 48px 20px 56px; }
+  .heroInner { gap: 24px; }
+  .h1 { font-size: 36px; }
+  .lead { font-size: 17px; }
+  .actions { flex-direction: column; align-items: stretch; }
+  .primary { justify-content: center; }
+  .secondary { justify-content: center; }
+  .section { gap: 32px; padding: 56px 20px; }
+  .sectionTight, .faqSection { padding-top: 0; }
+  .formSection + .sectionTight { padding-top: 56px; }
+  .h2 { font-size: 30px; }
+  .card { padding: 24px; }
+  .line { left: 23px; top: 24px; bottom: 24px; width: 2px; height: auto; }
+  .steps { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .step { flex-direction: row; align-items: center; gap: 16px; }
+  .stepText { font-size: 17px; }
+  .formCard { padding: 20px 16px; border-radius: 18px; }
+  .about { flex-direction: column; align-items: flex-start; gap: 20px; }
+  .portrait { width: 96px; height: 96px; }
+  .aboutBio { font-size: 17px; }
+  .question { font-size: 17px; }
+  .answer { font-size: 16px; }
+}
+
+/* ===== Conteneur commun : au-delà de 1440 px, contenu de 1 280 px centré et aligné sur l'en-tête ===== */
+@media (min-width: 1441px) {
+  .hero, .section {
+    padding-left: calc((100% - 1280px) / 2);
+    padding-right: calc((100% - 1280px) / 2);
+  }
+}
