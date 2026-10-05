@@ -675,12 +675,31 @@
 /* « Parlons de votre équipe » : texte et réservation à gauche, mini-formulaire à droite */
 .contactSection {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr);
   align-items: start;
   justify-items: start;
-  gap: 64px;
+  gap: 40px;
   text-align: left;
 }
+/* Ordinateur (≥ 900 px) : deux colonnes, la colonne de gauche reste visible pendant qu'on remplit le formulaire */
+@media (min-width: 900px) {
+  .contactSection { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 64px; }
+  .contactText { position: sticky; top: 120px; }
+}
+/* Lignes à coche, même style que sur /diagnostic (couleurs adaptées au fond vert) */
+.reassure {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 17px;
+  line-height: 1.5;
+  color: #FFFFFF;
+}
+.reassure li { display: flex; align-items: flex-start; gap: 12px; }
+.reassure svg { flex-shrink: 0; margin-top: 3px; }
 .contactText {
   display: flex;
   flex-direction: column;
@@ -706,9 +725,6 @@
   outline: 2px solid #1D5C57;
   outline-offset: 6px;
   border-radius: 8px;
-}
-@media (max-width: 1023px) {
-  .contactSection { grid-template-columns: minmax(0, 1fr); gap: 40px; }
 }
 /* Le formulaire est l'action principale : la réservation directe devient un lien texte discret */
 .directLink {

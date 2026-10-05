@@ -418,6 +418,16 @@ export default function FormationIA() {
         <p className={s.c75}>
           20 minutes pour cerner vos besoins et construire le programme adapté.
         </p>
+        <ul className={s.reassure}>
+          {["Réponse sous 48 h ouvrées", "Programme adapté à vos outils et à votre métier", "Sans engagement"].map((line) => (
+            <li key={line}>
+              <svg aria-hidden="true" focusable="false" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8FD0C5" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M5 12l5 5L20 7" />
+              </svg>
+              <span>{line}</span>
+            </li>
+          ))}
+        </ul>
         <CalendlyLink className={s.directLink}>
           Ou réserver directement 20 min →
         </CalendlyLink>

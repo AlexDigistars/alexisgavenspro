@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { preconnect } from "react-dom";
 import st from "./TallyEmbed.module.css";
 
 declare global {
@@ -13,7 +14,7 @@ const EMBED_SCRIPT = "https://tally.so/widgets/embed.js";
 
 /**
  * Formulaire Tally, avec le code d'intégration officiel de Tally (hauteur dynamique).
- * Le script de Tally n'est chargé que lorsque la section approche de l'écran.
+ * Le formulaire se charge quand la section arrive à 800 px de l'écran (connexion à Tally préparée dès l'affichage de la page).
  */
 type Props = {
   formId: string;
@@ -24,6 +25,8 @@ type Props = {
 };
 
 export default function TallyEmbed({ formId, title, className, height = 500 }: Props) {
+  // <link rel="preconnect" href="https://tally.so"> dans l'en-tête de la page
+  preconnect("https://tally.so");
   const ref = useRef<HTMLIFrameElement>(null);
   const [loaded, setLoaded] = useState(false);
   const src = `https://tally.so/embed/${formId}?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1`;
@@ -71,7 +74,7 @@ export default function TallyEmbed({ formId, title, className, height = 500 }: P
           load();
         }
       },
-      { rootMargin: "600px 0px" },
+      { rootMargin: "800px 0px" },
     );
     io.observe(frame);
     return () => {
@@ -93,7 +96,6 @@ export default function TallyEmbed({ formId, title, className, height = 500 }: P
         ref={ref}
         className={className}
         data-tally-src={src}
-        loading="lazy"
         width="100%"
         height={height}
         frameBorder="0"
