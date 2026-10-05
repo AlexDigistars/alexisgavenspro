@@ -5,7 +5,8 @@ const legacyRedirects = [
   { source: "/formation", destination: "/formation-ia" },
   { source: "/outils", destination: "/" },
   { source: "/outils-sur-mesure", destination: "/" },
-  { source: "/cas-clients", destination: "/realisations/early" },
+  { source: "/cas-clients", destination: "/realisations/agence-communication" },
+  { source: "/realisations/early", destination: "/realisations/agence-communication" },
   { source: "/a-propos-de-moi", destination: "/a-propos" },
   { source: "/contact", destination: "/" },
 ];

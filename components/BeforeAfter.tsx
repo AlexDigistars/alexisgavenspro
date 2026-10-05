@@ -1,4 +1,4 @@
-// Illustration « avant / après » du bloc Early de l'accueil : un logiciel daté et lent,
+// Illustration « avant / après » du bloc réalisation de l'accueil : un logiciel daté et lent,
 // puis le même logiciel repensé en tableau de bord. Données fictives.
 import Scene from "@/components/Scene";
 import s from "./BeforeAfter.module.css";

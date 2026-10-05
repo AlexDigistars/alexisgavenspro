@@ -36,7 +36,7 @@ export default function HomeMobile() {
             Réserver 20 min
           </CalendlyLink>
           <span className={s.ctaNote}>20 minutes, gratuit et sans engagement.</span>
-          <Link className={s.projectLink} href="/realisations/early">
+          <Link className={s.projectLink} href="/realisations/agence-communication">
             Voir un projet réalisé →
           </Link>
         </div>
@@ -424,12 +424,12 @@ export default function HomeMobile() {
       <span className={s.c93}>
         Dernière réalisation
       </span>
-      <span className={s.earlyCompany}>Early · Agence de communication, une quinzaine de personnes</span>
+      <span className={s.caseCompany}>Agence de communication · une quinzaine de personnes</span>
       {" "}
       <h2 className={s.c94}>
         Transformer un logiciel de gestion vieillissant en véritable outil de pilotage.
       </h2>
-      <p className={s.earlyIntro}>
+      <p className={s.caseIntro}>
         Clients, équipes, planning, facturation : tout passait par un logiciel qui ne suivait plus. Je l&apos;ai repris et enrichi d&apos;outils pour chacun : les salariés, les managers et la direction.
       </p>
       <BeforeAfter />
@@ -439,11 +439,11 @@ export default function HomeMobile() {
         </blockquote>
         {" "}
         <figcaption className={s.c75}>
-          Joseph Herbinet, dirigeant d&apos;Early
+          Le dirigeant de l&apos;agence
         </figcaption>
       </figure>
       {" "}
-      <Link className={s.c102} href="/realisations/early">
+      <Link className={s.c102} href="/realisations/agence-communication">
         Lire l&apos;étude de cas →
       </Link>
     </section>

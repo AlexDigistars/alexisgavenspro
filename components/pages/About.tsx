@@ -200,8 +200,8 @@ export default function About() {
     {" "}
     <section className={s.c38} data-reveal id="ap-contact">
       <div className={s.c39}>
-        <Link className={s.earlyLink} href="/realisations/early">
-          Voir le logiciel repris pour Early →
+        <Link className={s.caseLink} href="/realisations/agence-communication">
+          Voir le logiciel repris pour une agence de communication →
         </Link>
       </div>
       {" "}

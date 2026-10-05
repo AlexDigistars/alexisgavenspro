@@ -829,8 +829,8 @@
 .flow:not([data-scene] *) { animation-iteration-count: 4; }
 .grow:not([data-scene] *) { animation-iteration-count: 1; animation-fill-mode: forwards; }
 
-/* Bloc Early : phrase d'introduction sous le titre */
-.earlyIntro { margin: 0; font-size: 16px; line-height: 1.5; color: #A9B2BF; }
+/* Bloc réalisation : phrase d'introduction sous le titre */
+.caseIntro { margin: 0; font-size: 16px; line-height: 1.5; color: #A9B2BF; }
 
 /* Avant / après : onglets et carte forment une seule démonstration (bouton Pause dans la carte) */
 .stage { display: flex; flex-direction: column; gap: 20px; }
@@ -858,5 +858,5 @@
 .formationTitle { font-size: 16px; font-weight: 600; }
 .contactIntro { margin: 0; font-size: 16px; line-height: 1.5; color: #3A4556; }
 
-/* Bloc Early mobile : ligne de présentation de l'agence */
-.earlyCompany { margin-top: -8px; font-size: 15px; color: #A9B2BF; }
+/* Bloc réalisation mobile : ligne de présentation de l'agence */
+.caseCompany { margin-top: -8px; font-size: 15px; color: #A9B2BF; }
