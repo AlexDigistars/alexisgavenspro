@@ -167,6 +167,23 @@ export default function LegalNotice() {
             </li>
           </ul>
 
+          <h3 className={s.subTitle}>Formulaire Formation IA</h3>
+          <ul className={s.facts}>
+            <li>
+              <strong>Données recueillies :</strong> prénom et nom, entreprise, e-mail, nombre de personnes à former, format qui
+              vous intéresse et, si vous le souhaitez, votre besoin en quelques mots.
+            </li>
+            <li>
+              <strong>Finalité :</strong> répondre à la demande de formation.
+            </li>
+            <li>
+              <strong>Base légale :</strong> mesures précontractuelles (article 6.1.b du RGPD).
+            </li>
+            <li>
+              <strong>Conservation :</strong> trois ans après le dernier échange.
+            </li>
+          </ul>
+
           <h3 className={s.subTitle}>Mesure d&apos;audience</h3>
           <ul className={s.facts}>
             <li>
@@ -180,8 +197,8 @@ export default function LegalNotice() {
           <h3 className={s.subTitle}>Destinataires</h3>
           <p className={s.c14}>
             Vos données sont destinées uniquement à Alexis Gavens. Sous-traitants techniques : Vercel Inc. (hébergement et
-            mesure d&apos;audience), Calendly LLC (prise de rendez-vous), OVHcloud (messagerie) ; Tally (formulaire de
-            diagnostic), données hébergées dans l&apos;Union européenne.
+            mesure d&apos;audience), Calendly LLC (prise de rendez-vous), OVHcloud (messagerie) ; Tally (formulaires de
+            diagnostic et de Formation IA), données hébergées dans l&apos;Union européenne.
           </p>
 
           <h3 className={s.subTitle}>Transferts hors de l&apos;Union européenne</h3>
