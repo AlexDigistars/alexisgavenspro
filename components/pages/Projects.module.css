@@ -1,4 +1,4 @@
-/* Page /realisations : la réalisation (client anonymisé), puis deux exemples types clairement signalés. */
+/* Page /realisations : trois réalisations (clients anonymisés), chacune avec son étude de cas. */
 
 .hero {
   display: flex;
@@ -85,52 +85,54 @@
   transform: translateY(-50%);
 }
 
-/* Exemples types */
-.intro {
-  margin: 16px 0 0;
-  max-width: 820px;
-  font-size: 18px;
-  line-height: 1.6;
-  color: #3A4556;
-}
-.examples {
+/* Autres réalisations : deux cartes cliquables, même famille que la carte de l'agence */
+
+.typeGrid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
 }
-.example {
+.typeCard {
   display: flex;
   flex-direction: column;
   gap: 14px;
   padding: 36px;
   border-radius: 24px;
-  border: 1.5px dashed #B7BDC6;
-  background: #FFFFFF;
+  background: #16253B;
+  color: #F6F5F1;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.tagExample {
-  align-self: flex-start;
-  padding: 5px 12px;
-  border-radius: 999px;
-  background: #F1E3B0;
-  color: #5C4508;
-  font-family: var(--font-mono);
-  font-size: 12px;
-  font-weight: 600;
+.typeCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 24px 48px -24px rgba(14, 26, 43, 0.6);
 }
-.exampleTitle {
-  margin: 4px 0 6px;
-  font-size: 26px;
-  line-height: 1.15;
+.typeCard:focus-visible { outline-offset: 4px; }
+
+.typeTitle {
+  margin: 4px 0 0;
+  font-size: 28px;
+  line-height: 1.12;
   font-weight: 700;
   letter-spacing: -0.02em;
 }
-.row {
+.typeText {
   margin: 0;
   font-size: 16px;
   line-height: 1.6;
-  color: #3A4556;
+  color: #C9D0DA;
 }
-.row strong { color: #0E1A2B; }
+.typeMore {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-end;
+  width: 44px;
+  height: 44px;
+  margin-top: auto;
+  border-radius: 50%;
+  background: #F6F5F1;
+  color: #0E1A2B;
+}
 
 @media (max-width: 1100px) {
   .hero { padding: 72px 40px 88px; }
@@ -138,7 +140,7 @@
   .h1 { font-size: 51px; }
 }
 @media (max-width: 1023px) {
-  .examples { grid-template-columns: minmax(0, 1fr); }
+  .typeGrid { grid-template-columns: minmax(0, 1fr); }
 }
 @media (max-width: 767px) {
   .hero { padding: 48px 20px 56px; gap: 20px; }
@@ -149,9 +151,9 @@
   .caseTitle { font-size: 28px; }
   .caseText { font-size: 16px; }
   .caseMore { top: auto; right: 24px; bottom: 24px; transform: none; width: 44px; height: 44px; }
-  .intro { margin-top: 8px; font-size: 16px; }
-  .example { padding: 24px; }
-  .exampleTitle { font-size: 22px; }
+
+  .typeCard { padding: 24px; }
+  .typeTitle { font-size: 22px; }
 }
 
 /* Conteneur commun : au-delà de 1440 px, contenu de 1 280 px centré et aligné sur l'en-tête */

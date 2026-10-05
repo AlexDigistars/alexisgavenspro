@@ -861,7 +861,7 @@
 /* Bloc réalisation mobile : ligne de présentation de l'agence */
 .caseCompany { margin-top: -8px; font-size: 15px; color: #A9B2BF; }
 
-/* Lien discret vers la page des réalisations et exemples types */
+/* Lien discret vers la page des réalisations */
 .examplesLink {
   display: inline-flex;
   align-items: center;

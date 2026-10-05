@@ -447,7 +447,7 @@ export default function HomeMobile() {
         Lire l&apos;étude de cas →
       </Link>
       <Link className={s.examplesLink} href="/realisations">
-        Voir aussi deux exemples de projets types →
+        Voir mes autres réalisations →
       </Link>
     </section>
     {" "}

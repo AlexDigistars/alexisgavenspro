@@ -1099,7 +1099,7 @@ export default function HomeDesktop() {
           </svg>
         </Link>
         <Link className={s.examplesLink} href="/realisations">
-          Voir aussi deux exemples de projets types →
+          Voir mes autres réalisations →
         </Link>
       </div>
       <div className={s.caseVisual}>

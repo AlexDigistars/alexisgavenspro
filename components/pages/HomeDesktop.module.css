@@ -1986,7 +1986,7 @@
 .c219 > .c229 { align-self: flex-start; }
 .c227 { font-size: 15px; color: #A9B2BF; }
 
-/* Lien discret vers la page des réalisations et exemples types */
+/* Lien discret vers la page des réalisations */
 .examplesLink {
   display: inline-flex;
   align-items: center;
