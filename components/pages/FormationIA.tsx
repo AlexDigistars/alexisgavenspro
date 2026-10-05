@@ -29,9 +29,17 @@ export default function FormationIA() {
           </p>
           {" "}
           <div className={s.c8}>
-            <CalendlyLink className={s.c9}>
-              Réserver 20 min
-            </CalendlyLink>
+            <div className={s.ctaStack}>
+              <CalendlyLink className={s.c9}>
+                Réserver 20 min
+              </CalendlyLink>
+              <a className={s.formButton} href="#fi-contact">
+                Décrire votre besoin
+                <svg aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M12 5v14M5 12l7 7 7-7" />
+                </svg>
+              </a>
+            </div>
             {" "}
             <a className={s.c10} href="#fi-formats">
               Voir les formats
