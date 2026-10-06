@@ -5,7 +5,7 @@ const OTHER_CASES = [
   {
     href: "/realisations/menuisier-toulouse",
     title: "Un menuisier à Toulouse et son assistant IA",
-    text: "Mails résumés, réponses préparées, listes de tâches et planning, puis un nouveau site et une fiche Google qui le font ressortir sur « menuisier Toulouse ».",
+    text: "Mails résumés, devis et relances préparés, journées organisées, puis un nouveau site et une fiche Google active : plus de temps pour son métier.",
   },
   {
     href: "/realisations/pme-distribution",
