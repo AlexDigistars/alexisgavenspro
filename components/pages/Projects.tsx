@@ -3,13 +3,13 @@ import s from "./Projects.module.css";
 
 const OTHER_CASES = [
   {
-    href: "/realisations/artisan-electricien",
-    title: "Un artisan électricien et son assistant IA",
-    text: "Devis préparés à partir de ses notes, relances des devis non signés et résumé de la journée. Tout reste à relire avant envoi.",
+    href: "/realisations/menuisier-toulouse",
+    title: "Un menuisier à Toulouse et son assistant IA",
+    text: "Mails résumés, réponses préparées, listes de tâches et planning, puis un nouveau site et une fiche Google qui le font ressortir sur « menuisier Toulouse ».",
   },
   {
     href: "/realisations/pme-distribution",
-    title: "Une PME de distribution : commandes, stock et factures reliés",
+    title: "Une PME de distribution à Paris : commandes, stock et factures reliés",
     text: "Les commandes arrivent au bon endroit, le stock prévient avant la rupture et les factures partent dans le logiciel comptable.",
   },
 ];
@@ -25,7 +25,7 @@ export default function Projects() {
     <>
       <section className={s.hero} data-reveal>
         <h1 className={s.h1}>Réalisations</h1>
-        <p className={s.lead}>Ce que j&apos;ai construit, et ce que je peux construire pour vous.</p>
+        <p className={s.lead}>Des exemples de ce que j&apos;ai construit, et de ce que je peux construire pour vous.</p>
       </section>
 
       <section className={s.section} data-reveal>

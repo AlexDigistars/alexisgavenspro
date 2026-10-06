@@ -7,6 +7,7 @@ const legacyRedirects = [
   { source: "/outils-sur-mesure", destination: "/" },
   { source: "/cas-clients", destination: "/realisations/agence-communication" },
   { source: "/realisations/early", destination: "/realisations/agence-communication" },
+  { source: "/realisations/artisan-electricien", destination: "/realisations/menuisier-toulouse" },
   { source: "/a-propos-de-moi", destination: "/a-propos" },
   { source: "/contact", destination: "/" },
 ];

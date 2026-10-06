@@ -74,10 +74,10 @@ export default function DistributionCase() {
       <section className={s.hero} data-reveal>
         <div className={s.heroInner}>
           <div className={s.heroText}>
-            <span className={s.eyebrow}>Étude de cas : une PME de distribution</span>
+            <span className={s.eyebrow}>Étude de cas : une PME de distribution à Paris</span>
             <h1 className={s.h1}>Commandes, stock et factures, enfin reliés.</h1>
             <p className={s.lead}>
-              Une PME de distribution de 20 personnes recevait ses commandes par e-mail, suivait son stock sur Excel et refaisait
+              Une PME de distribution parisienne de 20 personnes recevait ses commandes par e-mail, suivait son stock sur Excel et refaisait
               ses factures dans la compta. J&apos;ai construit avec elle un logiciel de gestion qui relie commandes, stock,
               entrepôt et factures.
             </p>
