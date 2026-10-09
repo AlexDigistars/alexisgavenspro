@@ -11,7 +11,7 @@ const CASES: { href: string; tag: string; what: string; who: string; text: strin
     href: "/realisations/agence-communication",
     tag: "Réalisation · client anonymisé",
     what: "Un logiciel de gestion",
-    who: "pour une agence de communication de 15 personnes",
+    who: "pour une agence de communication",
     text: "Repris et enrichi\u00a0: saisie du temps simplifiée, factures préparées, alertes de production.",
     Visual: AgencyBeforeAfter,
   },
