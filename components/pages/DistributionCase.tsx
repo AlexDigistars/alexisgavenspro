@@ -1,4 +1,4 @@
-// Étude de cas (en poste, entreprise anonymisée) : une PME de machines à café et son application de suivi du parc.
+// Étude de cas (entreprise anonymisée) : une PME de machines à café et son application de suivi du parc.
 // Textes repris du brief ; démonstrations à données fictives.
 import type { CSSProperties } from "react";
 import Scene from "@/components/Scene";
@@ -20,9 +20,9 @@ export default function DistributionCase() {
   return (
     <>
       <CaseHero
-        tag="Réalisation · en poste, entreprise anonymisée"
+        tag="Réalisation · entreprise anonymisée"
         title="Une application mobile pour suivre chaque machine."
-        lead="Cette PME vend et loue des machines à café aux entreprises, livre le café en grains, et installe, répare et remplace les machines. Une activité qui mêle commerce B2B, stocks chez les fournisseurs et chez les clients, et interventions sur le terrain. Responsable de l'administration des ventes et de la logistique, j'ai conçu l'application mobile qui suit chaque machine, et automatisé les livraisons récurrentes."
+        lead="Cette PME vend et loue des machines à café aux entreprises, livre le café en grains, et installe, répare et remplace les machines. Une activité qui mêle commerce B2B, stocks chez les fournisseurs et chez les clients, et interventions sur le terrain. J'ai conçu l'application mobile qui suit chaque machine, et automatisé les livraisons récurrentes."
         pills={["Vente", "Location", "Café en grains", "Installation et réparation"]}
       >
         <Scene className={b.heroScene} shift={6}>
