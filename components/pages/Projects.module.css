@@ -66,12 +66,12 @@
   font-family: var(--font-mono);
   font-size: 12px;
 }
-/* Titre : en gros ce qui a été construit, en dessous pour qui */
-.title {
+/* Titre : en gros ce qui a été construit, en dessous pour qui (l'écart se règle sur le lien qui les entoure) */
+.title { margin: 2px 0 0; }
+.title .link {
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  margin: 2px 0 0;
+  gap: 12px;
 }
 .what {
   display: block;
@@ -169,6 +169,7 @@
   .featured .body { justify-content: center; padding: 40px 44px; }
   .featured .what { font-size: 48px; }
   .featured .who { font-size: 22px; }
+  .featured .title .link { gap: 14px; }
   .featured .more { margin-top: 8px; }
 }
 
@@ -198,6 +199,7 @@
   .body { padding: 22px 20px 24px; }
   .what, .featured .what { font-size: 30px; }
   .who, .featured .who { font-size: 17px; }
+  .title .link, .featured .title .link { gap: 10px; }
   .moreCases { margin-top: 20px; padding: 28px 22px; }
   .moreTitle { font-size: 26px; }
   .moreText { font-size: 16px; }
