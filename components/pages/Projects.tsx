@@ -22,7 +22,7 @@ const CASES: { href: string; tag: string; title: string; text: string; Visual: C
   {
     href: "/realisations/pme-distribution",
     tag: "Réalisation · en poste, entreprise anonymisée",
-    title: "Une PME de machines à café : le parc dans la poche",
+    title: "Une PME de machines à café",
     text: "Vente, location, café en grains et interventions : une application mobile pour gérer le parc de machines, utilisée chaque jour par l'équipe.",
     Visual: CafeBeforeAfter,
   },

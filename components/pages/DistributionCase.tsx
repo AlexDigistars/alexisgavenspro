@@ -21,7 +21,7 @@ export default function DistributionCase() {
     <>
       <CaseHero
         tag="Réalisation · en poste, entreprise anonymisée"
-        title="Le parc de machines dans la poche."
+        title="Une application mobile pour suivre chaque machine."
         lead="Cette PME vend et loue des machines à café aux entreprises, livre le café en grains, et installe, répare et remplace les machines. Une activité qui mêle commerce B2B, stocks chez les fournisseurs et chez les clients, et interventions sur le terrain. Responsable de l'administration des ventes et de la logistique, j'ai conçu l'application mobile qui suit chaque machine, et automatisé les livraisons récurrentes."
         pills={["Vente", "Location", "Café en grains", "Installation et réparation"]}
       >
