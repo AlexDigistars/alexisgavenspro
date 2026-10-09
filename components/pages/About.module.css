@@ -414,3 +414,18 @@
   color: #FFFFFF;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
+
+/* Lien de la frise vers l'étude de cas correspondante */
+.timelineLink {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  min-height: 44px;
+  margin-bottom: -8px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1D5C57;
+  text-decoration: underline;
+  text-decoration-color: rgba(29, 92, 87, 0.4);
+  text-underline-offset: 4px;
+}

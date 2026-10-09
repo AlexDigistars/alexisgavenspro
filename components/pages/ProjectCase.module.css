@@ -1,4 +1,4 @@
-/* Mise en page commune des études de cas « artisan » et « PME de distribution » :
+/* Mise en page commune des études de cas « artisan menuisier » et « PME de machines à café » :
    mêmes couleurs, tailles et conteneur que l'étude de cas de l'agence. */
 
 /* ===== Haut de page ===== */
@@ -8,7 +8,7 @@
 }
 .heroInner {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
   gap: 64px;
   align-items: center;
   padding: 56px 80px 96px;
@@ -16,12 +16,16 @@
 .heroText {
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  align-items: flex-start;
+  gap: 26px;
 }
-.eyebrow {
+.tag {
+  padding: 6px 12px;
+  border-radius: 14px;
+  background: rgba(143, 208, 197, 0.16);
+  color: #8FD0C5;
   font-family: var(--font-mono);
   font-size: 13px;
-  color: #8FD0C5;
 }
 .h1 {
   margin: 0;
@@ -33,16 +37,26 @@
 .lead {
   margin: 0;
   font-size: 19px;
-  line-height: 1.55;
-  color: #A9B2BF;
+  line-height: 1.6;
+  color: #C9D0DA;
 }
-.actions {
+.pills {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  gap: 12px 28px;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-.primary {
+.pills li {
+  padding: 7px 14px;
+  border: 1px solid rgba(246, 245, 241, 0.3);
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.primary,
+.ctaPrimary {
   display: inline-flex;
   align-items: center;
   min-height: 54px;
@@ -54,241 +68,197 @@
   font-weight: 600;
   white-space: nowrap;
 }
-.anchor {
-  display: inline-flex;
-  align-items: center;
-  min-height: 44px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #F6F5F1;
-}
 .hero :focus-visible,
-.dark :focus-visible,
 .cta :focus-visible { outline-color: #8FD0C5; }
 .heroVisual {
   display: flex;
   justify-content: center;
   min-width: 0;
 }
-.fictive {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  color: #5A6474;
-}
 
 /* ===== Sections ===== */
 .section {
   display: flex;
   flex-direction: column;
-  gap: 56px;
-  padding: 120px 80px;
+  gap: 40px;
+  padding: 112px 80px;
 }
+.sectionTop { padding-top: 0; }
 .sand { background: #ECEAE3; }
-.dark {
-  background: #0E1A2B;
-  color: #F6F5F1;
-}
-.sectionHead {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  max-width: 780px;
-}
 .h2 {
   margin: 0;
-  font-size: 48px;
+  font-size: 44px;
   line-height: 1.05;
   font-weight: 700;
   letter-spacing: -0.035em;
 }
-.intro {
-  margin: 0;
-  font-size: 18px;
-  line-height: 1.6;
-  color: #3A4556;
-}
-.dark .intro { color: #C9D0DA; }
 
-/* La situation : 3 cartes */
-.pains {
+/* En 30 secondes : avant, ce que j'ai fait, après */
+.inShortSection { padding-top: 88px; padding-bottom: 88px; }
+.inShort {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 24px;
+  border: 1px solid #E3E1DA;
+  border-radius: 24px;
+  background: #FFFFFF;
+}
+.inShortCol {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 32px 36px 36px;
+}
+.inShortCol + .inShortCol { border-left: 1px solid #E3E1DA; }
+/* Flèche entre deux colonnes : on lit de gauche à droite */
+.inShortCol + .inShortCol::before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: 34px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #E3E1DA;
+  border-radius: 50%;
+  background: #FFFFFF url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231D5C57' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14M13 6l6 6-6 6'/%3E%3C/svg%3E") center / 14px no-repeat;
+}
+.inShortTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+.inShortIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.inShortIcon svg { width: 16px; height: 16px; }
+.toneBefore .inShortTitle { color: #8A2A20; }
+.toneBefore .inShortIcon { background: #F6D8D4; color: #A33A2F; }
+.toneDid .inShortTitle { color: #143F3C; }
+.toneDid .inShortIcon { background: #DCEAE7; color: #1D5C57; }
+.toneAfter .inShortTitle { color: #2F6B3E; }
+.toneAfter .inShortIcon { background: #E3F1E6; color: #2F6B3E; }
+.inShortText {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.55;
+  color: #0E1A2B;
+}
+
+/* Avant / après : le visuel des réalisations, en grand */
+.bigVisual {
+  width: 100%;
+  max-width: 1080px;
+  margin-inline: auto;
+}
+
+/* Ce que fait l'outil : points avec icône, démonstration à côté */
+.pointsGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 56px;
+  align-items: center;
+}
+.points {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.pain {
+.point {
   display: flex;
-  flex-direction: column;
-  gap: 12px;
-  padding: 32px;
-  border-radius: 20px;
+  align-items: center;
+  gap: 18px;
+  padding: 18px 22px;
+  border-radius: 18px;
   background: #FFFFFF;
 }
-.painIcon {
+.pointIcon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
-  background: #F6D8D4;
-  color: #A33A2F;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: #DCEAE7;
+  color: #1D5C57;
 }
-.painTitle {
-  margin: 4px 0 0;
+.pointText {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #0E1A2B;
+}
+.highlight {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 0;
+  padding: 22px 28px;
+  border-radius: 20px;
+  background: #1D5C57;
+  color: #FFFFFF;
   font-size: 21px;
-  line-height: 1.2;
+  line-height: 1.35;
   font-weight: 700;
   letter-spacing: -0.01em;
 }
-.painText {
-  margin: 0;
-  font-size: 16px;
-  line-height: 1.55;
-  color: #3A4556;
-}
-
-/* Fonctionnalités : texte et visuel, en alternance sur ordinateur */
-.features {
-  display: flex;
-  flex-direction: column;
-  gap: 96px;
-}
-.feature {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
-  gap: 72px;
-  align-items: center;
-}
-.featureText {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.label {
-  font-family: var(--font-mono);
-  font-size: 13px;
-  color: #1D5C57;
-}
-.h3 {
-  margin: 0;
-  font-size: 34px;
-  line-height: 1.1;
-  font-weight: 700;
-  letter-spacing: -0.03em;
-}
-.checks {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  font-size: 17px;
-  line-height: 1.55;
-  color: #3A4556;
-}
-.checks li { display: flex; align-items: flex-start; gap: 12px; }
-.checks svg { flex-shrink: 0; margin-top: 3px; }
-.panel {
-  min-width: 0;
-  padding: 40px 40px 64px;
-  border-radius: 24px;
-  background: #ECEAE3;
-}
-@media (min-width: 1024px) {
-  .featureReverse > .featureText { order: 2; }
-}
-
-/* Le principe : 3 engagements sur fond sombre */
-.principles {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 24px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.principle {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  padding: 32px;
-  border-radius: 20px;
-  background: #16253B;
-}
-.principleIcon {
+.highlightIcon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
-  background: rgba(143, 208, 197, 0.16);
-  color: #8FD0C5;
-}
-.principleTitle {
-  margin: 4px 0 0;
-  font-size: 21px;
-  font-weight: 700;
-}
-.principleText {
-  margin: 0;
-  font-size: 16px;
-  line-height: 1.55;
-  color: #C9D0DA;
-}
-
-/* Déroulé : frise de 3 étapes, comme la méthode de l'accueil */
-.timeline { position: relative; }
-.line {
-  position: absolute;
-  left: 24px;
-  width: calc((100% - 64px) * 2 / 3 + 64px);
-  top: 23px;
-  height: 2px;
-  background: #1D5C57;
-}
-.steps {
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 32px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.step {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-.stepNumber {
   flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: #1D5C57;
+  background: rgba(255, 255, 255, 0.16);
   color: #FFFFFF;
-  font-weight: 700;
 }
-.stepBody { display: flex; flex-direction: column; gap: 8px; }
-.stepTitle {
-  font-size: 21px;
+
+/* Ce que ça change : pastilles */
+.changes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.change {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 28px 14px 14px;
+  border: 1px solid #E3E1DA;
+  border-radius: 999px;
+  background: #FFFFFF;
+  font-size: 20px;
+  line-height: 1.3;
   font-weight: 700;
   letter-spacing: -0.01em;
 }
-.stepText {
-  margin: 0;
-  max-width: 340px;
-  font-size: 16px;
-  line-height: 1.55;
-  color: #3A4556;
+.changeIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #1D5C57;
+  color: #FFFFFF;
 }
 
 /* Appel à l'action */
@@ -296,7 +266,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 26px;
+  gap: 32px;
   padding: 104px 80px;
   background: #1D5C57;
   color: #FFFFFF;
@@ -304,17 +274,11 @@
 }
 .ctaTitle {
   margin: 0;
+  max-width: 900px;
   font-size: 52px;
-  line-height: 1.04;
+  line-height: 1.05;
   font-weight: 700;
   letter-spacing: -0.04em;
-}
-.ctaText {
-  margin: 0;
-  max-width: 640px;
-  font-size: 19px;
-  line-height: 1.55;
-  color: #D6E6E4;
 }
 .ctaActions {
   display: flex;
@@ -337,40 +301,46 @@
 
 /* ===== Tablette ===== */
 @media (max-width: 1100px) {
-  .heroInner { padding: 48px 40px 88px; }
+  .heroInner { padding: 48px 40px 88px; gap: 48px; }
   .section { padding: 96px 40px; }
+  .inShortSection { padding-top: 72px; padding-bottom: 72px; }
+  .sectionTop { padding-top: 0; }
   .cta { padding: 88px 40px; }
   .h1 { font-size: 48px; }
-  .h2 { font-size: 40px; }
+  .h2 { font-size: 38px; }
+  .inShortCol { padding: 28px; }
 }
 @media (max-width: 1023px) {
-  .heroInner { grid-template-columns: minmax(0, 1fr); gap: 48px; }
-  .feature { grid-template-columns: minmax(0, 1fr); gap: 32px; }
-  .panel { max-width: 640px; width: 100%; }
-  .pains, .principles { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .heroInner { grid-template-columns: minmax(0, 1fr); }
+  .pointsGrid { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .inShort { grid-template-columns: minmax(0, 1fr); }
+  .inShortCol + .inShortCol { border-left: 0; border-top: 1px solid #E3E1DA; }
+  .inShortCol + .inShortCol::before { left: 36px; top: -15px; transform: rotate(90deg); }
+  .changes { grid-template-columns: minmax(0, 1fr); max-width: 520px; }
 }
 
 /* ===== Mobile ===== */
 @media (max-width: 767px) {
   .heroInner { padding: 40px 20px 56px; gap: 40px; }
-  .heroText { gap: 22px; }
-  .h1 { font-size: 34px; }
+  .heroText { gap: 20px; }
+  .h1 { font-size: 36px; }
   .lead { font-size: 17px; }
-  .actions { flex-direction: column; align-items: stretch; }
-  .primary, .anchor { justify-content: center; }
-  .section { gap: 36px; padding: 56px 20px; }
-  .features { gap: 56px; }
+  .primary { align-self: stretch; justify-content: center; }
+  .section { gap: 28px; padding: 64px 20px; }
+  .inShortSection { padding-top: 56px; padding-bottom: 56px; }
+  .sectionTop { padding-top: 0; }
   .h2 { font-size: 30px; }
-  .h3 { font-size: 26px; }
-  .checks { font-size: 16px; }
-  .pain, .principle { padding: 24px; }
-  .panel { padding: 16px 16px 64px; }
-  .line { left: 23px; top: 24px; bottom: 24px; width: 2px; height: auto; }
-  .steps { grid-template-columns: minmax(0, 1fr); gap: 24px; }
-  .step { flex-direction: row; align-items: flex-start; gap: 16px; }
-  .cta { padding: 56px 20px; }
+  .inShortCol { padding: 24px 22px; }
+  .inShortCol + .inShortCol::before { left: 22px; }
+  .inShortText, .pointText { font-size: 17px; }
+  .point { align-items: flex-start; padding: 16px; gap: 14px; }
+  .pointIcon { width: 44px; height: 44px; }
+  .highlight { align-items: flex-start; padding: 20px; font-size: 18px; }
+  .highlightIcon { width: 40px; height: 40px; }
+  .change { font-size: 18px; padding-right: 22px; }
+  .changeIcon { width: 44px; height: 44px; }
+  .cta { padding: 56px 20px; gap: 26px; }
   .ctaTitle { font-size: 32px; }
-  .ctaText { font-size: 17px; }
   .ctaActions { flex-direction: column; align-items: stretch; width: 100%; }
   .ctaActions > * { justify-content: center; }
 }
@@ -381,4 +351,26 @@
     padding-left: calc((100% - 1280px) / 2);
     padding-right: calc((100% - 1280px) / 2);
   }
+}
+
+/* Démonstration animée à côté des points (fond sombre, bouton Pause en bas à droite) */
+.demoPanel {
+  min-width: 0;
+  padding: 40px 32px 72px;
+  border-radius: 24px;
+  background: #0E1A2B;
+  --pause-right: 12px;
+  --pause-bottom: 12px;
+}
+.fictive {
+  position: absolute;
+  left: 28px;
+  bottom: 26px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: #A9B2BF;
+}
+@media (max-width: 767px) {
+  .demoPanel { padding: 24px 16px 68px; }
+  .fictive { left: 20px; }
 }
