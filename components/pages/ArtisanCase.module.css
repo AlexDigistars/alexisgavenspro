@@ -1,4 +1,4 @@
-/* Démonstrations de l'étude de cas « artisan électricien » (données fictives).
+/* Démonstrations de l'étude de cas « artisan menuisier » (données fictives).
    Chaque élément apparaît à son tour (délai --d), reste affiché, puis le cycle recommence.
    La démonstration démarre au milieu du cycle (Scene shift) : elle s'affiche déjà remplie. */
 
@@ -10,17 +10,6 @@
   0% { opacity: 0; transform: translateY(6px); }
   5%, 93% { opacity: 1; transform: none; }
   100% { opacity: 0; transform: none; }
-}
-.flow {
-  stroke-dasharray: 5 6;
-  animation: flow 1.2s linear infinite;
-}
-@keyframes flow { to { stroke-dashoffset: -22; } }
-.statusWarn .warn { animation: pulseWarn 2s ease-out infinite; }
-@keyframes pulseWarn {
-  0% { box-shadow: 0 0 0 0 rgba(197, 139, 42, 0.5); }
-  70% { box-shadow: 0 0 0 8px rgba(197, 139, 42, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(197, 139, 42, 0); }
 }
 
 /* ===== Haut de page : téléphone avec la conversation ===== */
@@ -34,7 +23,7 @@
   --pause-bottom: 0px;
 }
 .phone {
-  width: 320px;
+  width: 340px;
   max-width: 100%;
   padding: 10px;
   border-radius: 40px;
@@ -45,7 +34,6 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-  min-height: 460px;
   padding: 18px 14px;
   border-radius: 31px;
   background: #F6F5F1;
@@ -106,8 +94,7 @@
   font-size: 13px;
 }
 .botLine { padding: 0 2px; color: #3A4556; }
-.quote,
-.card {
+.quote {
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -115,19 +102,13 @@
   border-radius: 12px;
   background: #F6F5F1;
 }
-.card {
-  padding: 16px;
-  border-radius: 16px;
-  background: #FFFFFF;
-  box-shadow: 0 20px 40px -24px rgba(14, 26, 43, 0.35);
-}
 .quoteHead {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 8px;
   margin-bottom: 2px;
-  font-size: 13px;
+  font-size: 14px;
 }
 .draft {
   flex-shrink: 0;
@@ -167,6 +148,7 @@
   border-radius: 999px;
   font-size: 12px;
   font-weight: 700;
+  white-space: nowrap;
 }
 .ghostBtn { border: 1px solid #C9CDD3; color: #3A4556; }
 .sendBtn { background: #1D5C57; color: #FFFFFF; }
@@ -178,85 +160,20 @@
   text-align: center;
 }
 
-/* ===== Devis : des notes au devis ===== */
-.noteFlow {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
-  max-width: 440px;
-  margin-inline: auto;
-}
-.paper {
-  align-self: flex-start;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  width: 78%;
-  padding: 14px 16px;
-  background: #FBF7E4;
-  box-shadow: 0 10px 24px -16px rgba(14, 26, 43, 0.5);
-  font-size: 14px;
-  color: #3A4556;
-  transform: rotate(-1.5deg);
-}
-.paperTitle {
-  margin-bottom: 2px;
-  font-family: var(--font-mono);
-  font-size: 11px;
-  color: #8A4B0F;
-}
-.flowArrow { flex-shrink: 0; }
-.noteFlow > .card { align-self: stretch; }
-
-/* ===== Relances ===== */
-.stack {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  max-width: 440px;
-  margin-inline: auto;
-}
-.cardTitle {
-  margin-bottom: 4px;
-  font-size: 14px;
-  font-weight: 700;
-}
-.statusRow {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-  padding: 8px 10px;
-  border-radius: 10px;
-  background: #F6F5F1;
-  font-size: 13px;
-}
-.statusWarn { background: #FFF8EC; box-shadow: inset 0 0 0 1px #E8C98A; }
-.ok, .warn, .muted, .chip {
-  flex-shrink: 0;
-  padding: 2px 8px;
-  border-radius: 999px;
-  font-size: 11px;
-  font-weight: 700;
-  white-space: nowrap;
-}
-.ok { background: #E3F1E6; color: #2F6B3E; }
-.warn { background: #FBEBD3; color: #8A4B0F; }
-.muted { background: #ECEAE3; color: #3A4556; }
-.chip { background: #DCEAE7; color: #143F3C; }
-.draftCard { margin-left: 28px; }
-.message {
-  margin: 0;
-  font-size: 13px;
-  line-height: 1.5;
-  color: #3A4556;
-}
-
 /* ===== Résumé de fin de journée ===== */
 .summary {
   max-width: 440px;
   margin-inline: auto;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 18px;
+  border-radius: 18px;
+  background: #FFFFFF;
+  color: #0E1A2B;
+  box-shadow: 0 24px 48px -24px rgba(0, 0, 0, 0.6);
 }
 .time {
   font-family: var(--font-mono);
@@ -264,7 +181,7 @@
   color: #5A6474;
 }
 .group {
-  margin-top: 6px;
+  margin-top: 8px;
   font-family: var(--font-mono);
   font-size: 11px;
   color: #1D5C57;
@@ -276,17 +193,24 @@
   align-items: center;
   justify-content: space-between;
   gap: 8px;
-  padding: 7px 10px;
+  padding: 8px 10px;
   border-radius: 10px;
   background: #F6F5F1;
   font-size: 13px;
 }
+.chip, .warn {
+  flex-shrink: 0;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.chip { background: #DCEAE7; color: #143F3C; }
+.warn { background: #FBEBD3; color: #8A4B0F; }
 
 /* ===== Mobile ===== */
 @media (max-width: 767px) {
-  .phone { width: 300px; }
-  .screen { min-height: 440px; }
-  .draftCard { margin-left: 12px; }
-  .paper { width: 92%; }
-  .statusRow, .item { flex-wrap: wrap; }
+  .phone { width: 310px; }
+  .item { flex-wrap: wrap; }
 }

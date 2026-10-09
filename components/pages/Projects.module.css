@@ -1,12 +1,11 @@
-/* Page /realisations : trois réalisations (clients anonymisés), chacune avec son étude de cas. */
+/* Page /realisations : trois réalisations (clients anonymisés), chacune avec son visuel avant / après
+   et son étude de cas. Fond clair, cartes blanches. */
 
 .hero {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  padding: 96px 80px 104px;
-  background: #0E1A2B;
-  color: #F6F5F1;
+  gap: 20px;
+  padding: 96px 80px 56px;
 }
 .h1 {
   margin: 0;
@@ -18,142 +17,128 @@
 .lead {
   margin: 0;
   max-width: 680px;
-  font-size: 19px;
+  font-size: 20px;
   line-height: 1.55;
-  color: #A9B2BF;
+  color: #3A4556;
 }
 
-.section {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  padding: 96px 80px 120px;
-}
+.section { padding: 0 80px 120px; }
 
-/* Réalisation : carte cliquable vers l'étude de cas */
-.caseCard {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  padding: 40px 120px 40px 40px;
-  border-radius: 24px;
-  background: #0E1A2B;
-  color: #F6F5F1;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.caseCard:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 24px 48px -24px rgba(14, 26, 43, 0.6);
-}
-.caseCard:focus-visible { outline-offset: 4px; }
-.tagCase {
-  align-self: flex-start;
-  padding: 5px 12px;
-  border-radius: 999px;
-  background: rgba(143, 208, 197, 0.16);
-  color: #8FD0C5;
-  font-family: var(--font-mono);
-  font-size: 12px;
-}
-.caseTitle {
-  margin: 0;
-  font-size: 40px;
-  line-height: 1.08;
-  font-weight: 700;
-  letter-spacing: -0.03em;
-}
-.caseText {
-  margin: 0;
-  max-width: 760px;
-  font-size: 18px;
-  line-height: 1.55;
-  color: #C9D0DA;
-}
-.caseMore {
-  position: absolute;
-  right: 40px;
-  top: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  background: #F6F5F1;
-  color: #0E1A2B;
-  transform: translateY(-50%);
-}
-
-/* Autres réalisations : deux cartes cliquables, même famille que la carte de l'agence */
-
-.typeGrid {
+/* Grille : la première carte en pleine largeur, les deux autres côte à côte */
+.grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-.typeCard {
+.card {
+  position: relative;
   display: flex;
   flex-direction: column;
-  gap: 14px;
-  padding: 36px;
+  overflow: hidden;
+  border: 1px solid #E3E1DA;
   border-radius: 24px;
-  background: #16253B;
-  color: #F6F5F1;
+  background: #FFFFFF;
+  box-shadow: 0 24px 48px -36px rgba(14, 26, 43, 0.45);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.typeCard:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 24px 48px -24px rgba(14, 26, 43, 0.6);
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 32px 56px -32px rgba(14, 26, 43, 0.5);
 }
-.typeCard:focus-visible { outline-offset: 4px; }
-
-.typeTitle {
+.featured { grid-column: 1 / -1; }
+.visual { flex-shrink: 0; }
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  flex-grow: 1;
+  padding: 28px 32px 32px;
+}
+.tag {
+  padding: 5px 12px;
+  border-radius: 14px;
+  background: #DCEAE7;
+  color: #143F3C;
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+.title {
   margin: 4px 0 0;
   font-size: 28px;
   line-height: 1.12;
   font-weight: 700;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
 }
-.typeText {
+/* Toute la carte est cliquable ; au clavier, le contour de focus entoure la carte entière */
+.link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: 24px;
+}
+.link:focus-visible { outline: none; }
+.card:has(.link:focus-visible) { outline: 2px solid #1D5C57; outline-offset: 4px; }
+.link:hover { opacity: 1; }
+.text {
   margin: 0;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #C9D0DA;
+  font-size: 17px;
+  line-height: 1.55;
+  color: #3A4556;
 }
-.typeMore {
+.more {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  align-self: flex-end;
-  width: 44px;
-  height: 44px;
+  gap: 8px;
   margin-top: auto;
-  border-radius: 50%;
-  background: #F6F5F1;
-  color: #0E1A2B;
+  padding-top: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1D5C57;
+}
+.card:hover .more svg { transform: translateX(3px); }
+.more svg { transition: transform 0.2s ease; }
+
+/* Carte en pleine largeur : visuel à gauche, texte à droite (un visuel 16/10 sur toute la largeur serait trop haut) */
+@media (min-width: 900px) {
+  .featured {
+    display: grid;
+    grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+    align-items: stretch;
+  }
+  .featured .visual { align-self: center; }
+  .featured .body { justify-content: center; padding: 40px 44px; }
+  .featured .title { font-size: 36px; }
+  .featured .more { margin-top: 8px; }
 }
 
 @media (max-width: 1100px) {
-  .hero { padding: 72px 40px 88px; }
-  .section { padding: 72px 40px 96px; }
+  .hero { padding: 72px 40px 48px; }
+  .section { padding: 0 40px 96px; }
   .h1 { font-size: 51px; }
+  .title { font-size: 24px; }
 }
-@media (max-width: 1023px) {
-  .typeGrid { grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 900px) and (max-width: 1100px) {
+  .featured .body { padding: 32px; }
+  .featured .title { font-size: 30px; }
+}
+@media (max-width: 899px) {
+  .grid { grid-template-columns: minmax(0, 1fr); }
 }
 @media (max-width: 767px) {
-  .hero { padding: 48px 20px 56px; gap: 20px; }
-  .h1 { font-size: 36px; }
-  .lead { font-size: 17px; }
-  .section { gap: 28px; padding: 48px 20px 64px; }
-  .caseCard { padding: 28px 24px 88px; }
-  .caseTitle { font-size: 28px; }
-  .caseText { font-size: 16px; }
-  .caseMore { top: auto; right: 24px; bottom: 24px; transform: none; width: 44px; height: 44px; }
-
-  .typeCard { padding: 24px; }
-  .typeTitle { font-size: 22px; }
+  .hero { padding: 48px 20px 32px; gap: 14px; }
+  .h1 { font-size: 40px; }
+  .lead { font-size: 18px; }
+  .section { padding: 0 20px 64px; }
+  .grid { gap: 20px; }
+  .card, .link::after { border-radius: 20px; }
+  .body { padding: 22px 20px 24px; }
+  .title, .featured .title { font-size: 23px; }
+  .text { font-size: 16px; }
 }
 
 /* Conteneur commun : au-delà de 1440 px, contenu de 1 280 px centré et aligné sur l'en-tête */

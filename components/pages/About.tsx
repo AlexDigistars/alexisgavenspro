@@ -109,6 +109,9 @@ export default function About() {
           <span className={s.c24}>
             Commandes, facturation, stocks, livraisons. Automatisation des livraisons récurrentes, puis une application mobile de suivi des machines, utilisée chaque jour par l&apos;équipe.
           </span>
+          <Link className={s.timelineLink} href="/realisations/pme-distribution">
+            Voir l&apos;application du parc de machines →
+          </Link>
         </div>
         {" "}
         <div className={s.c25}>
